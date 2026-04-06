@@ -1,6 +1,8 @@
-from zoneinfo import ZoneInfo
+#config.py
 
-KST = ZoneInfo("Asia/Seoul")
+from datetime import timezone, timedelta
+
+KST = timezone(timedelta(hours=9))
 
 GOOGLE_NEWS_RSS_SEARCH_URL = "https://news.google.com/rss/search?q={query}&hl=ko&gl=KR&ceid=KR:ko"
 
@@ -103,3 +105,29 @@ KEYWORDS = [
     "해상풍력 OR 육상풍력 OR 재생에너지 입찰",
     "RE100 OR 직접 PPA OR 기업 PPA",
 ]
+
+TRUSTED_SOURCES = [
+    "전기신문",
+    "전자신문",
+    "연합뉴스",
+    "뉴스1",
+    "한국경제",
+    "매일경제",
+    "서울경제",
+    "머니투데이",
+    "이투뉴스",
+    "에너지경제신문",
+    "투데이에너지",
+    "에너지신문",
+    "에너지데일리",
+    "에너지프로슈머",
+    "임팩트온",
+]
+
+TOP_NEWS_MIN = 0
+TOP_NEWS_MAX = 2
+
+MARKET_SNAPSHOT_MIN = 10
+MARKET_SNAPSHOT_MAX = 20
+
+CLUSTER_SIMILARITY_THRESHOLD = 0.55

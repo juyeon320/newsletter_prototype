@@ -1,3 +1,4 @@
+#news_collector.py
 from datetime import datetime
 from typing import List
 
@@ -11,6 +12,7 @@ from config import (
 )
 from filters import (
     deduplicate_news,
+    deduplicate_by_title,
     filter_foreign_news,
     filter_stock_news,
     filter_local_news,
@@ -22,6 +24,7 @@ from utils import (
     parse_entry_datetime,
     save_news_to_json,
 )
+
 
 
 def collect_news_by_keyword(
@@ -86,8 +89,14 @@ def collect_news_for_keywords(
         except Exception as e:
             print(f"[ERROR] keyword='{keyword}' 수집 실패: {e}")
 
+    
     deduped = deduplicate_news(all_items)
+
+    deduped = deduplicate_by_title(deduped)
+
+    # 정렬
     deduped.sort(key=lambda x: x.published_at_kst, reverse=True)
+
     return deduped
 
 

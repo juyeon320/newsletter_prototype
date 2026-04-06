@@ -1,3 +1,4 @@
+#filters.py
 from typing import List
 
 from config import (
@@ -77,3 +78,18 @@ def filter_local_news(items: List[NewsItem], exclude_keywords: List[str]) -> Lis
         filtered.append(item)
 
     return filtered
+
+def deduplicate_by_title(items: List[NewsItem]) -> List[NewsItem]:
+    seen_titles = set()
+    unique_items = []
+
+    for item in items:
+        title = item.title.strip().lower()
+
+        if title in seen_titles:
+            continue
+
+        seen_titles.add(title)
+        unique_items.append(item)
+
+    return unique_items

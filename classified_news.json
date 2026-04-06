@@ -4,1350 +4,1736 @@
     "title": "\"재생 원료 활용 종량제 봉투 늘린다\" 기후부 생산 점검 - v.daum.net",
     "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1uZE9PRXd1aEJfQndrdGNVY09ybzBhQ3lLYUZwbHB4OEZXRkNkaGE2VE0weVFMalQtLWhiQk1XV2MxTTRnYW1rdGx2TU1nMlU?oc=5",
     "published_at_kst": "2026-04-06T07:33:03+09:00",
-    "source": "v.daum.net"
+    "source": "v.daum.net",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
     "title": "李대통령 “에너지전환 속도 느리다” 지적…공장 지붕태양광 의무화, LPG택시 전기화 추진 - ekn.kr",
     "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBXbE11T2NDVktVUVFEdGZXNmZnOVljZGhrSllhVkJiLWlzMHZmdGpxRDV5ZW9NTW5yT2NnUmxFd1ZBdzlUWmlrNVZTU2pqUERFZHRaZDhJWEF5ajg?oc=5",
     "published_at_kst": "2026-04-06T07:32:57+09:00",
-    "source": "ekn.kr"
+    "source": "ekn.kr",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "AI 데이터센터 OR 데이터센터 OR 전력수요",
     "title": "AI 데이터센터 보험 수요 급증…GPU 담보 대출까지 확산 - 디지털투데이",
     "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1pYm91VUlSNE95cWNKanpQdVVSMnZzSy0tQWtZcVNjbExmNTBPSldzNDNRREd0V1QyOW5wZmJ5UkJUZlRwVFlyRjhrNS1mN1lSaHFFUXNhSHNEQnlRTmNjM1dFc29MUE1LYzU1ajk0c1pkRHc?oc=5",
     "published_at_kst": "2026-04-06T07:31:09+09:00",
-    "source": "디지털투데이"
+    "source": "디지털투데이",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "AI 데이터센터 OR 데이터센터 OR 전력수요",
     "title": "KB자산운용, ‘RISE 미국AI전력인프라액티브 ETF’ 7일 상장 - 팍스경제TV",
     "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE95NVM0Vi1kTHNjN185TnBHY2FIZVAzRm1lWlpVZU52ejUyMEc1XzB1YTk5ZldBU3RCaVE1V1BSUUhqbWs1SUdzZXR0UXpuS2wtWHpXRkZFSDNFTjdmT2ZLRmxDdWpVeVU?oc=5",
     "published_at_kst": "2026-04-06T07:31:00+09:00",
-    "source": "팍스경제TV"
+    "source": "팍스경제TV",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
     "title": "군산시, 재생에너지 주택지원사업 보조금 지원 - 한국방송뉴스",
     "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE82QWZqNmQ5dEV2T0U0Y0lVYkhDZVZXOXRraWZ1MUJoc1g2VnNTUkktalVYRExKNjJXLXJ2ZEctMXA4YzQtRGUyNFdHTjExM09WdVUyWDJwQ1k2c0NpRHFjNQ?oc=5",
     "published_at_kst": "2026-04-06T07:26:59+09:00",
-    "source": "한국방송뉴스"
+    "source": "한국방송뉴스",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "AI 데이터센터 OR 데이터센터 OR 전력수요",
     "title": "LS일렉트릭, 美 데이터센터에 1천억원 규모 초고압 변압기 공급 - 이투뉴스",
     "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5yNmYwSTB5VUc5TzBxaGdvNVdTTUctb1ZHaWc3SWRLQkg1aGJCQ0o0MnRUamw5RDNBSGFGWmJUeGd2cnNWSmpQM2dQX2pGV0dVZFVFNnRZZVE4bUxERVJIdFFVM3VrRU3SAWtBVV95cUxPTGpRRmpFWnRVYl8ybC1NdV90RGUtTzdmLWt3TE8wQzJldXJVVmI0YXZER004ODhpczVkTFJjNno5S3pkZ3c5Y1NocnpoRno5UjBfZWVhMGI0cUlxMGNRX2N5YklsTUtiYzlqTQ?oc=5",
     "published_at_kst": "2026-04-06T07:24:27+09:00",
-    "source": "이투뉴스"
+    "source": "이투뉴스",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
     "title": "인천 중구, 단독주택 신재생에너지 설비 최대 80% 지원 - 경인신문",
     "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1ldF9vQmRsLVVXcGttWkZaYU85b1RMNmdhUkkwT1E4SGQ1YXMzeHgzS2JaZTFMVjV4ZW53M3Mtb3dvX0ZhbWQ4Z0tfcERUQWphVmpERVRQcWloTjlhakY1WFVsaUctRjg?oc=5",
     "published_at_kst": "2026-04-06T07:23:43+09:00",
-    "source": "경인신문"
+    "source": "경인신문",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전기요금 OR PPA OR 기후부",
     "title": "기후부, 폐아이씨 트레이·폐석재 순환자원 지정 추진 - AI타임스",
     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5QVzlTRjNPLXJnSTdtNWFNZ3hTYzh2UDRXTzVNN0VURlN4ekEwMkV1NU8wVWZHbW83NWphTUxSVU5CNXZtQ0hrYVZRQzNQOEFlNXdvWFhRQnlJb3lFeDlVUkp3SkVLb3U4Rmc?oc=5",
     "published_at_kst": "2026-04-06T07:20:00+09:00",
-    "source": "AI타임스"
+    "source": "AI타임스",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "기후정책 OR 탄소정책 OR 에너지정책",
     "title": "기후정책 힘주는 김동연 지사...경기도, 햇빛소득마을 현장지원 방안 논의 - 소비자가 만드는 신문",
     "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9jTzBQYTY4NmJ6cVAwa3Bfdmp4UUltYzNKUzRxUk5QeXRIeFNMVVFTenFSVmNvSWlKYWoyYktWeHFOdUlEMmhXY09sVktCRXBYSkdnVmp1SzluSlFhRkFMMk1iYTM2blU2dkc3UXVqem5CaVU?oc=5",
     "published_at_kst": "2026-04-06T07:19:07+09:00",
-    "source": "소비자가 만드는 신문"
+    "source": "소비자가 만드는 신문",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "ESS OR 에너지저장장치 OR BESS OR 배터리에너지저장장치",
     "title": "\"ESS로 버틴다\"…K배터리, 1분기 부진 속 '체질 개선' 속도 - 네이트",
     "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1KMUp6clBuVXQ3bnVwUVAzaTQ1WHFrYndfZEYtbDJHVE4zaURFR2tJUWFUU0pfMTZjSVhxN1lmLVgyLWRSX1ZBQmtGMll5N1dDbXlv?oc=5",
     "published_at_kst": "2026-04-06T07:18:00+09:00",
-    "source": "네이트"
+    "source": "네이트",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전기요금 OR PPA OR 기후부",
     "title": "기후부 장관 \"재생에너지 대전환 추진계획, 전환 가속 '의지' 담았다\" - 네이트",
     "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBzRGlUQkxqT0g1bDdqNTk2bEVxTGNzd0gxTEFNZlZaUHZsdUNERk9VUFpoRVBROHdmWVd6STNVTHprWm9TTHQ1c1ZOOVNpQ0JfaXQ0?oc=5",
     "published_at_kst": "2026-04-06T07:16:00+09:00",
-    "source": "네이트"
+    "source": "네이트",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전기요금 OR PPA OR 기후부",
     "title": "김정재 의원 `철강산업 전기요금 부담 감면법` 대표 발의 - 매일신문",
     "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5CbjFFUlRqREoydnM3VUxoMXdwUmRWbnJodWRYQkJfU0M5ZGpWSFNMUllNYVBpYUNRSTdaZVc1RzE4T0Fxc2poVjlCVS03dzVPMlZOZERPZWR5VlI1LXJBeU9R?oc=5",
     "published_at_kst": "2026-04-06T07:12:58+09:00",
-    "source": "매일신문"
+    "source": "매일신문",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "AI 데이터센터 OR 데이터센터 OR 전력수요",
     "title": "현대차 '9조 새만금'에 정책금융 뭉쳤다…첨단산업 거점 본격화 - 조세일보",
     "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1aZTM0NUNtUUREbW1DUFlEYjF6RDE1UXFiQ1Z2ZWxUdUxoN2JRbGRTZndsME9pWUtMeUF3TVdzXzRlN3VPTlZ5clUzMl9QdWZDcG9heGVjS0RndWg2TUt5WU9jampXMHZBcUh2dlhPaw?oc=5",
     "published_at_kst": "2026-04-06T07:08:14+09:00",
-    "source": "조세일보"
+    "source": "조세일보",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
     "title": "기후부, 재생에너지 중심으로 에너지 체계 전환... 탈탄소화 추진 - 인디포커스",
     "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxON0xSNlZSSklNUC1HYXNyVWFqSm0wbVE5enZxZzlGOTNhblZiMGpoSHpHZjFDaGhvVHdvdlhJR0xzU0pDbGpsMVVTM1pLNWo4S1d1bnBfbjhJZVctQmtiMHRFbGYtVjVIWlZ1azBkLUFya3gyZldxekxhamVubk5lLWd0RnpjdjhzaGJxRWNRRnk?oc=5",
     "published_at_kst": "2026-04-06T07:08:00+09:00",
-    "source": "인디포커스"
+    "source": "인디포커스",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
     "title": "인천 중구, 단독주택 신재생에너지 설비 설치비 최대 80% 지원... 신재생에너지 설비로 전기료 절감 기대 - 24news.kr",
     "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE53MXIyX2I4azVFdDNUMElsc1ktQlZDeXVJTEdlcVRaVHZvOFptYkt6NUdWd3FpWjBjUEViM2w2Z28wVjFIWC1XbFdUWi1WVHNwS2JYSERvdnh3MWlmOUhVTF9mTjNJc3c?oc=5",
     "published_at_kst": "2026-04-06T07:04:06+09:00",
-    "source": "24news.kr"
+    "source": "24news.kr",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전기요금 OR PPA OR 기후부",
     "title": "기후부, 소양강댐 상류 ‘인제대교~양구대교’ 구간 녹조대책 마련 - KBS 뉴스",
     "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1tVlhRcmk5Q1NYTmJ0SXJiY3BfUFZkVmdfbWVBRlc2SnFkejZWeDFRYW81STNOaWFPQ1FMcllpbnVCcF9KMzBERFJFQlZWNWQ0UlFiS0V4allyVkk?oc=5",
     "published_at_kst": "2026-04-06T07:03:00+09:00",
-    "source": "KBS 뉴스"
+    "source": "KBS 뉴스",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "AI 데이터센터 OR 데이터센터 OR 전력수요",
     "title": "3조 신산업·AI 관광…주낙영 경주시장 예비후보 ‘경주 미래 100년’ 승부수 - 경북매일",
     "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5qTmYzN3hITUtSOVc2dmZDSTZ1N2hMSmY3ckN5R1d1dVJrQTlXZzZlNjBHY3BNbmpQNThFTVJ0anlrcG5GZ2c2bE5sN0t2enU1emhjUjBiaW15UQ?oc=5",
     "published_at_kst": "2026-04-06T07:03:00+09:00",
-    "source": "경북매일"
+    "source": "경북매일",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "AI 데이터센터 OR 데이터센터 OR 전력수요",
     "title": "LS일렉트릭, 美 빅테크 데이터센터에 1000억대 초고압 변압기 공급 - 한국금융신문",
     "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5JUzBlOGM4dENyampYRG9mNmR2RXRJVGJpTEE4SDc4MURkZjBuNW55anE2dEIwZ1F1VUF1NnQ1UVdHLWktV3pOcXNuN21pakotb0FUSk5BSHFneGdyZ2lNRmQwWi1PUFp5VV9jNkRmVUFvQVdmV3d3NS1GVXk?oc=5",
     "published_at_kst": "2026-04-06T07:00:36+09:00",
-    "source": "한국금융신문"
+    "source": "한국금융신문",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전력시장 OR 전력계통 OR 전력시스템 OR 전력거래소 OR 계통안정화",
     "title": "[포커스] 전력계통 안정 기능 갖춘 ‘액화 공기 에너지저장시스템’ - todayenergy.kr",
     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE93MTN2ekp0a0NVbUtpR1NCSFpObG0xVGdqQWpWMThtbmtuNHRoOHZub1hCUVc2a2t0b3p6MVhXZEZMRVRZd1UxeHNVNk4wOTZGNDZUNDVzdzBHRmpaTklNNUh6eUptcHFGR3VtRg?oc=5",
     "published_at_kst": "2026-04-06T06:57:41+09:00",
-    "source": "todayenergy.kr"
+    "source": "todayenergy.kr",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "AI 데이터센터 OR 데이터센터 OR 전력수요",
     "title": "북미 데이터센터 전력 잡았다…LS일렉트릭, AI 인프라 핵심 공급자로 부상 - 네이트",
     "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1WMFY0ck9za2tTZ1R3Z0c5enR1VmVJbjhsR2Jvak1sWVBrbHdpaFlHeUdZUllxbURqNTRVdy1uWWdNOExvbmplazVGYkFxRjEwaTlR?oc=5",
     "published_at_kst": "2026-04-06T06:52:00+09:00",
-    "source": "네이트"
+    "source": "네이트",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
     "title": "재생에너지 2030년까지 20%로 확대…지역별 전기료 차등화도 - 한겨레",
     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBhR3lnamU0b1pPMDA4M1gyX2ZfMnFsNnpJNWJfaDQ3Z1ZKRlYyMHVaSndJUGN0NUxJcHZra0llVUdSR3NvVGYwUGNZOGg5VThUSnVhV1ROLWVIM3N4T3BxZXVCRDNqTzc0X1VyRA?oc=5",
     "published_at_kst": "2026-04-06T06:50:00+09:00",
-    "source": "한겨레"
+    "source": "한겨레",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전기요금 OR PPA OR 기후부",
     "title": "대정부질문 답변하는 김성환 기후부 장관 - 네이트",
     "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9VNTV4Q1RDWlVBaTB3YlNLNWxEdklDYjdGbmY0VUJ5QlYzaHRkLVFaV2RRTHpiNzJ0b0I3N2VVTTlkRlF4d2pmRTFVeWNBM0hwcjdz?oc=5",
     "published_at_kst": "2026-04-06T06:45:00+09:00",
-    "source": "네이트"
+    "source": "네이트",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "AI 데이터센터 OR 데이터센터 OR 전력수요",
     "title": "경주, ‘AI 산업·관광 복합도시’로 전환 시동 - hidomin.com",
     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5qbkZiUEl5ZVVBWFVkbzNFWExFVXQ5MU5UV3dveVFUd2lFMkRRWnNRWFpUdjJsX2pUNEVjUDFQTWN5MlJPN1JjcnNTY1I0Y21kUExKbGFSNS1WSjIySXlWdXc3bkhoZHJLU1E?oc=5",
     "published_at_kst": "2026-04-06T06:42:39+09:00",
-    "source": "hidomin.com"
+    "source": "hidomin.com",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
     "title": "영광군, '2027년 재생에너지 융복합지원사업' 참여 희망자 모집 - seoulfn.com",
     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE12Unl4VURGeXAzZUtWbVJJZmFfUGFCdmNEY0p2UGRyV2NtVUEyenhrcDdqN0VBUUl6TW9TWUxUU2dlY0NIaTJINFBuQ3BmUktINFVpaGdOdkZtdVBzVXBKRnpmMGdWdlBrWnc?oc=5",
     "published_at_kst": "2026-04-06T06:42:11+09:00",
-    "source": "seoulfn.com"
+    "source": "seoulfn.com",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전기요금 OR PPA OR 기후부",
     "title": "기후부, 소양강댐 녹조 발생 구간 집중 관리 대응 - todayenergy.kr",
     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5SeDFiU3JTVXRCX0thejl0Rmhtby0wVmVWNDBfUVI4bk9sV0hJdFJEbTZZbmFrN2pBRFg4N0RGekRnNEJILUhiOHljcURuQ2p1MkVIMFBTdlYxQWRTQTJmNXZsdGZ1VWFtUGl0ag?oc=5",
     "published_at_kst": "2026-04-06T06:38:33+09:00",
-    "source": "todayenergy.kr"
+    "source": "todayenergy.kr",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전기요금 OR PPA OR 기후부",
     "title": "기후부, 순환자원 추가지정 등 고시개정안 행정예고 - todayenergy.kr",
     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1nb2dDNEk1dFhmY183d2VVZkpwSXA0QmZGYTRBQlQwRWlwQ3lZdm53YlA4Rkl2NVVuam1hdHpublNXdFMycDNvRGlhWWJtbFREeE93RWtOU1dMUTdST2hNS29sX3B4LXJJeS02dw?oc=5",
     "published_at_kst": "2026-04-06T06:38:33+09:00",
-    "source": "todayenergy.kr"
+    "source": "todayenergy.kr",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전기요금 OR PPA OR 기후부",
     "title": "기후부, 장관 이어 1차관도 ‘종량제봉투 생산 현장 점검’ - KBS 뉴스",
     "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9ybWdoazI5RzdCUkIyemlUZFNmYlh6Umt4aEprcEk0aHVKd1AtSk5XdGYzTGFjcGFJS0VfRjhRaEp4bUpVTXdfUWFVWkxyaHJWYXpQa1plMmRFbUU?oc=5",
     "published_at_kst": "2026-04-06T06:36:00+09:00",
-    "source": "KBS 뉴스"
+    "source": "KBS 뉴스",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "AI 데이터센터 OR 데이터센터 OR 전력수요",
     "title": "\"국내 데이터센터, 절반 이상이 기준 미달…전력 인프라 구축 시급” - AI타임스",
     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9mS1FWY0FQTkRvMDFiX3FLOUN2cHF3UzlkWEJzZGg5Zi1iSk5COTdPWW9CQ0g2REpmX05UcHRuVndOdUZyVDFuUnRsQkFkZndQMmlKMlY5Q3czWjVXLVZBMmxzVkxGdUhJbEE?oc=5",
     "published_at_kst": "2026-04-06T06:31:57+09:00",
-    "source": "AI타임스"
+    "source": "AI타임스",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
     "title": "[PV신년기획③] 신재생에너지의 지속가능성, ‘사람’에게 묻다 - 솔라투데이",
     "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9YYUdYQmhTRERHR2ZIcjVUX2Z2T3BTMGM3S1BaXzlUN2FhZFRkZ21MTXBsZnV5RWZPUFBZMGNLUEtzWHZmcG11VVB3R19qa1dnU2ItS3lfWHRxX1lzMHppQmFuUXlMRXJWMTJWNUs0LV8?oc=5",
     "published_at_kst": "2026-04-06T06:30:52+09:00",
-    "source": "솔라투데이"
+    "source": "솔라투데이",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
     "title": "‘애물단지’의 대변신! 태양광 폐패널로 ‘수소’ 만든다 - 솔라투데이",
     "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE85YnROZHUwb0l1dHFPQ0hxM3NPSTczMW1DaWVvT3Y4NTJTMk8wd3ZQLTFGbTlDMjFYR0tTVTNDZ0FzbnFCWlFpNFhKQ1FGUmJ4bXpBdEYtMXE0cDEzd3VxWnBOeVZ1OFhMM3RTbXYwZ0Y?oc=5",
     "published_at_kst": "2026-04-06T06:30:52+09:00",
-    "source": "솔라투데이"
+    "source": "솔라투데이",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전기요금 OR PPA OR 기후부",
     "title": "기후부, 재생에너지 100GW·신차 40% 전기·수소차로 조기 달성 추진 - 직썰",
     "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9COXprenpBQUw3MXdfcXphdkJ1dktOZjE4Q2l2akFKWU82X2NlWWc0UTYtR1VZX1M5RnNfckF3b1ptMGdMTzQ3WGdHOVFuRDBxMGxUQjZxSkI4SjY0RVdCZlJIWFF6ZDVf0gFsQVVfeXFMUDE2aXdacHZqUlJpbUx1bjZkdHRSMU5fRXZfbGVTaVJuVjRhaEZONFRDOEpia2RQZW1jckU1MFZHdHBYOUtOdHNnVUo4RUZDd2tRR2NFY1JhN3Awb3Bub3hsUWdSSDVhY3BMSzJM?oc=5",
     "published_at_kst": "2026-04-06T06:28:43+09:00",
-    "source": "직썰"
+    "source": "직썰",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "AI 데이터센터 OR 데이터센터 OR 전력수요",
     "title": "한국산 변압기 없으면 AI도 끝… 美 빅테크, K-전력기기에 도움 요청 - 디지털투데이",
     "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5md1FvTTAwUEdqUmVuX3gzS19JdXhadWJ1dGtsemV5YjhUVU1XbmRJUWpkOXNXX0U0cEVqRVFBc3pPREhpN3BWb2Z0M3F0ZkdadFM3MTBXcjhMMUFzSHJuY3g5dUt1akhsdEx1V3h4X3JFS00?oc=5",
     "published_at_kst": "2026-04-06T06:28:41+09:00",
-    "source": "디지털투데이"
+    "source": "디지털투데이",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
     "title": "군산시, 재생에너지 주택지원사업 최대 258만원 지원 - 위즈뉴스",
     "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE0zX0k0d0plX3lqUzBlWVdMaDBxRXotS2w2QWFIWGw5TkNvSFJHVFExYWJOeUQ4UEVGMUtUWjJORnVyTzhkMjd5QVByTk5zcXpqSmw0OWVvcE05MGxZc1JOSXo1eUZkV0Z4ampB?oc=5",
     "published_at_kst": "2026-04-06T06:27:49+09:00",
-    "source": "위즈뉴스"
+    "source": "위즈뉴스",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
     "title": "중구, 신재생에너지 주택지원사업 추진 - 서울일보",
     "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5oVFZXZy1mazhpY1dmcnUyV2ZFUGo3dS1iQUhaVk5ndlpuUS1xMTA1eVJVM191T1pfTDZ2cDhLUmU3MXV5NS1PMHJHOERGQ25BbS1ha3R5UkJkaldyaHQ5WDlRcjBrMnlvRVFJ0gFvQVVfeXFMT0NkUnphdlZHQS11UE5QZ2RRY0hWOHBKUHFZM0MzcUpwaGZBa3hMM1h5aVBsNHNnZVlCaU9ydEl4RUlxQTZnVTVkTE85WmRRbmpBd0cxWkRfcWJBZHNLQzJJRFEtUmNhUG5JUTJUVjlN?oc=5",
     "published_at_kst": "2026-04-06T06:22:42+09:00",
-    "source": "서울일보"
+    "source": "서울일보",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전기요금 OR PPA OR 기후부",
     "title": "김정재 의원, '철강산업 전기요금 감면법' 대표발의 - 네이트",
     "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBpLW9qWGhaS00tQWZjZFNzckVic3p2dUJmdjNJeHEweEowZ1F4T01VUmVPTXQteWF6ZFlMZjJOQzBOSUstYmRpSkpJVmxzTFNoUWln?oc=5",
     "published_at_kst": "2026-04-06T06:22:00+09:00",
-    "source": "네이트"
+    "source": "네이트",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전기요금 OR PPA OR 기후부",
     "title": "서구, 기후부 장관과 종량제봉투 생산 현장 동행 점검 - 서울일보",
     "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBDclgyR21nXzhwczdOb3c4UTRDSERwVDVRRWhGN0w5UnpKSWlfcUhBMk9lUUxSRjdNRUQxWlVkM3RnZkZUdFVMdkxvUEhyX2xKUHExeTZ0V1d4WTlQaDdyV290VldHSS00cFd30gFvQVVfeXFMUEhRU2RrbVFwZUZTWkNyeHZqempRRUVJdzdNTXVZZHlGUzk4QWhIR3NqZnViRkhZZEtsMEZ5RmFGTkhRUmxnLWNrSUp4eHVqZFBQSnhuQ2ZFbUk1bWg0ZGM4c2dXU0dpZkFrdVYtbkVV?oc=5",
     "published_at_kst": "2026-04-06T06:17:48+09:00",
-    "source": "서울일보"
+    "source": "서울일보",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "AI 데이터센터 OR 데이터센터 OR 전력수요",
     "title": "AI 시대 광물 쟁탈전… “은 부족 현상 심화” - 더에이아이",
     "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9OY25QNWFZX2VQeXRLUVFiTjhFZzY1ZGRCSXp2QnBiTWp2R2xLZy01TW5MU04tZTVBRGNiaTFDVEZVeUM3N1JTcHFVSlYyOHhEcmVCNjJ2UWljNjljX3hfeFc4XzFGOEV2MDQw?oc=5",
     "published_at_kst": "2026-04-06T06:16:04+09:00",
-    "source": "더에이아이"
+    "source": "더에이아이",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "AI 데이터센터 OR 데이터센터 OR 전력수요",
     "title": "정책금융·현대차 결합…새만금 ‘AI 데이터센터·수소 클러스터’ 구축 본격화 - 이코노미사이언스",
     "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE95ZTBzMmwxZ1pha2c5bmwxZHpzTERNeFdKenBpeUJDOGw2Qnh1MGJtRGZwMXc4QjNvQy1TVjZKWXphd2c2Z0tJbmdET3JycGdyTzdXT2ZGaE9HWnZ0SzFhcmIyM0ZrRUEyNThvTkVCMA?oc=5",
     "published_at_kst": "2026-04-06T06:11:30+09:00",
-    "source": "이코노미사이언스"
+    "source": "이코노미사이언스",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "ESS OR 에너지저장장치 OR BESS OR 배터리에너지저장장치",
     "title": "[경제] 버려진 소금 동굴이 공기저장소로...中 산둥성, 신형 ESS 구축 확대 - 동방일보",
     "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5ZTElTZkFBMVROdW12VDJvTmJtaFpKUXVwbGdWYUxTeExfeGlUOHpBeWNHZDJ3RlN0aGdXRjZRUHVSd1ludmNZUGpUOVRMSVQ5VU5yTXRNdkN0aF9nTXRWbVRBM2NIWEc2OUVzNnFaOU1Ndw?oc=5",
     "published_at_kst": "2026-04-06T06:09:56+09:00",
-    "source": "동방일보"
+    "source": "동방일보",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "기후정책 OR 탄소정책 OR 에너지정책",
     "title": "미국의 기후 정책이 한국에 주는 시사점 - 브랜드경제신문",
     "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE95elZqZV9ZQmtZVDZ0cHpyUzRCdFdSN1NJSHNVZU9ZT2ZNQVp3Vk5CZ2ZZSXM0V2V2WTNYblRCTlJ2Y3BHc2R6YWgwcHA?oc=5",
     "published_at_kst": "2026-04-06T06:08:59+09:00",
-    "source": "브랜드경제신문"
+    "source": "브랜드경제신문",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "기후정책 OR 탄소정책 OR 에너지정책",
     "title": "'에너지 수도 나주', 미래 에너지 정책 중심지로 부상 - 뉴스핌",
     "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1qMXlqb3dhVG50ODJpdE5SNkRGYTlrRGRoY3d2b2hid2tkN19jYnpJQUdaZWlMaU5QdHUtU0VKMVMxWGtZWWdEU2pQYkd3UzdKMlk5Nk1kMHNZQi1E?oc=5",
     "published_at_kst": "2026-04-06T06:08:00+09:00",
-    "source": "뉴스핌"
+    "source": "뉴스핌",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "기후정책 OR 탄소정책 OR 에너지정책",
     "title": "에너지 정책이 모였다…나주, '미래 전환 거점' 존재감 확인 - 폴리뉴스 Polinews",
     "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBCX25ONDBOTXcxWTk4VHFVbTJpYXJ2XzdpVkJWbVpfbi03RFIyUk9iVXEtRmV2elRiWnZYNm41QUZVa0NhamJHdFI0b3FHRDlySlEtSUw0amVLQkZDRXItVnZONlJRZExYRmhXb25B0gFyQVVfeXFMT0VDOHpMRmM3MTRXNzhIcFhCZUxRMTNzNzlHMW10MFVXdFZ6QWtTMHA4VXVrbjJlWjFZVlZFdnAzNDBWYUo3bk1KSFRCckFSVGZ6aW5aZXkxN1lWZnl0V2hZc3laMDJrZnVqa293LUN4QmJn?oc=5",
     "published_at_kst": "2026-04-06T06:00:50+09:00",
-    "source": "폴리뉴스 Polinews"
+    "source": "폴리뉴스 Polinews",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
     "title": "김천시, 재생에너지 자립 기반 마련하다! - 데일리대구경북뉴스",
     "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE8zQjNwdGkySUIxVUUwM1lyUl9CVmFCQ19pcFpvODZlQzNYRF8zQ1E4OFJvN3lqa2c0VndENDFHSGROc0hyQ2t2TWJ1M2x0QTVia0tMb2V0U2NxWklWM1RBWnMxNnNIdw?oc=5",
     "published_at_kst": "2026-04-06T05:57:35+09:00",
-    "source": "데일리대구경북뉴스"
+    "source": "데일리대구경북뉴스",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전기요금 OR PPA OR 기후부",
     "title": "“치솟는 전기료에 철강 흔들”… 김정재, 산업위기지역 요금 감면법 발의 - 경북신문",
     "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE82SDA3Wm1iS0pfakk1RkZNM0xHWF9rbGo0Rk40a0hfV0ljY3Q4b0M4Z2dvUHNFYXlGTEc5aGlLSUlTenNkcE01M1BLYkI0ZDNEX3dMT3FzTVo?oc=5",
     "published_at_kst": "2026-04-06T05:56:00+09:00",
-    "source": "경북신문"
+    "source": "경북신문",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전기요금 OR PPA OR 기후부",
     "title": "김정재 의원, ‘철강산업 전기요금 부담 감면법’ 대표발의 - 경북매일",
     "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBWVzNrX2ZPc3R0ZkY1UVV6ZkxmMW5ndFRYZnVuV1FJMjg4OGRCTndCN1d5NW1WSFVQb2FoOHZzQlkxVVNMMnBIek1fWUJFeU94LUM0SHpVNmNtZw?oc=5",
     "published_at_kst": "2026-04-06T05:54:00+09:00",
-    "source": "경북매일"
+    "source": "경북매일",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "기후정책 OR 탄소정책 OR 에너지정책",
     "title": "\"에너지 정책 동참\"…삼성, 차량 10부제 운행서 5부제로 확대 시행 - 네이트",
     "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1EUmx6ci10NmtGdmVYV1dSVDZmODJ4Mmd5Rl84QXBRTDV4ak5mcmVmUnkzTkVmT0JQd0JIaW1vS1lpVl9tNFVEdUFFZHVkWFlCNWM4?oc=5",
     "published_at_kst": "2026-04-06T05:53:00+09:00",
-    "source": "네이트"
+    "source": "네이트",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전력시장 OR 전력계통 OR 전력시스템 OR 전력거래소 OR 계통안정화",
     "title": "HD현대일렉트릭, 네덜란드 주요 기업 '에너지 우군' 확보…친환경 전력 시장 '타깃' - 더구루",
     "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBhOGJ6TjIwMGxSZ0tTTTNHZkFWbTE5RUQ2RFU2cnpWOGpCSUtlems0bVQ1SWNDM0hZVEM2RS1teUpYUmY2aFdWa2xYeFN1Y0RGczY1Sk1tR1M0NExMXzJxbThDU2d2Zw?oc=5",
     "published_at_kst": "2026-04-06T05:49:59+09:00",
-    "source": "더구루"
+    "source": "더구루",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전기요금 OR PPA OR 기후부",
     "title": "경기도 전기요금 절감 무료 서비스 제공 - 서울와이어",
     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE52UmQ0OHE2THVDU09waUNJSnZkU0k0VzNVUlZvSk5qTDZ6eFVYektLa1NNNDgyUG1YQThxbkF5eXk4R2s3T2Q3aXlVSVg5WkpKM003VmZWTDdCVE42OTdZS2ZWUW5lS1EzQ2QyVA?oc=5",
     "published_at_kst": "2026-04-06T05:46:24+09:00",
-    "source": "서울와이어"
+    "source": "서울와이어",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "ESS OR 에너지저장장치 OR BESS OR 배터리에너지저장장치",
     "title": "공유형 ESS, 한국 전력망 미래를 바꾼다 - 브랜드경제신문",
     "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5GZzlOaHJ5RkppeGtoVXZzZUdtQ2VLUl9zTWJPTDdTbTFwWUJkTFBmS1lYQ3ZsVUl2LVRVdm1NRm5DZnEtRmV6Tjc1Q0o?oc=5",
     "published_at_kst": "2026-04-06T05:40:28+09:00",
-    "source": "브랜드경제신문"
+    "source": "브랜드경제신문",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
     "title": "[오마이포토2026] 김성환 \"재생에너지 중심으로 에너지 체계 전환해야\" - 오마이뉴스",
     "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9UbWIydTB5T2RrdElacG9LREY0R2tnYkpOa1J0akdVRXBZY3NNOFVOdlhsMUx4N2NKZUJJTFotUXc3akJsWmV0V3pUTEdvZ1loeDBPdXA4WWZhUnFGSVd0RzU2N2ZpYTJRVXpYQVp0bnZyMS1Jb2dB?oc=5",
     "published_at_kst": "2026-04-06T05:37:27+09:00",
-    "source": "오마이뉴스"
+    "source": "오마이뉴스",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "기후정책 OR 탄소정책 OR 에너지정책",
     "title": "\"韓, 에너지 자강 전환 서둘러야\"…민간서도 에너지 정책 전환 촉구 - 네이트",
     "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9MQ3RFblZGdE9ndnBqNkVGZVh2TjY0bGpXZWhnSlB1aDA1NlE0QkR4bUY4M2haNWE0SXNLWDBVZFBiN2IyeGYyZ3FnYTRHYlN0ZkE4?oc=5",
     "published_at_kst": "2026-04-06T05:37:00+09:00",
-    "source": "네이트"
+    "source": "네이트",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
     "title": "\"버려진 태양광이 ‘수소 광산’으로\"... 폐패널로 수소·소재 동시에 뽑아냈다 - 특허뉴스",
     "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1GWTFobWJJZU4zeUhfdVgwOF9JNG1rZU1Kc0YwOXR1QXk4VFBva0ZibGx4Rk5nN3RkVS1ESjNXNWtiZE5ueEhqNg?oc=5",
     "published_at_kst": "2026-04-06T05:36:00+09:00",
-    "source": "특허뉴스"
+    "source": "특허뉴스",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "AI 데이터센터 OR 데이터센터 OR 전력수요",
     "title": "KB자산운용, ‘AI 전력 인프라’ ETF 출시 … 데이터센터 수요 겨냥 - 뉴데일리 경제",
     "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE8wTS1lTGJGeUtQQUdEb1NNQVNpTHZfT3Rla2Y0VW5lNnR2Nk5XWlM2X3FyenpWc0NpMkFCMGpPVy1XdXprZDRTeHJ4Q1VBanBQemFVSFVDeWpOaDVKZ2h3R2RRUGdWMXJIbUVhMVNfU1RSUF80UVdMSUxNYw?oc=5",
     "published_at_kst": "2026-04-06T05:36:00+09:00",
-    "source": "뉴데일리 경제"
+    "source": "뉴데일리 경제",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "AI 데이터센터 OR 데이터센터 OR 전력수요",
     "title": "AI 데이터센터, 전장의 표적 되다…이란, 오픈AI ‘스타게이트’ 공격 위협 - mstoday.co.kr",
     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9JT1Zrb08zS3RrOGlUNnNMVkJzLThZNkJMay1VV0pKOXdfQjh2THBqQ25UNUlZVWtXOUJMX0V5Z0ViNXE4c3UtczFCWTIzcFhRZ1pEdlNJNWYtbWUxWXFxMGJ6VEhXVWVsTE9STA?oc=5",
     "published_at_kst": "2026-04-06T05:34:15+09:00",
-    "source": "mstoday.co.kr"
+    "source": "mstoday.co.kr",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
     "title": "김성환 기후장관 \"산업단지 지붕 태양광 의무화 추진\" - KB Think",
     "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFAyZTdjVW9NdEJ0Nm0tY05MQWluNUdqdjZzOVF0aGFiQXFPelhVV3NVWENCZ0NvQ3R5ckFyN2pPSXhqVkFBbUxPQWs0aEZoUll0bFFkanJFUElFZkoyQ1dnemZHdXdDc0pVUUdEMFJTRjVPUQ?oc=5",
     "published_at_kst": "2026-04-06T05:33:50+09:00",
-    "source": "KB Think"
+    "source": "KB Think",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전기요금 OR PPA OR 기후부",
     "title": "경기도, 전기요금 ‘무료 진단’…에너지 절감 서비스 본격 운영 - 로이슈",
     "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE11d2c4R2xtb1BYZE1UbV9UMVFsd1pmSDNXVGF3dmdjRHVEelRvckp3d2hHNkZiWlNCazZWQ1BWeDd4Ui1CV1pxemZXTDF1SmpWR1gtODJTYUhBMVFzOEdrdVhrdzJXX2xrWE1ZeTN3SXpqM0EyTmxQaWZ3?oc=5",
     "published_at_kst": "2026-04-06T05:31:59+09:00",
-    "source": "로이슈"
+    "source": "로이슈",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "AI 데이터센터 OR 데이터센터 OR 전력수요",
     "title": "이란 전쟁에 생성형AI 투자 위축 가능성, 삼성전자 SK하이닉스 반도체 영향권 - 비즈니스포스트",
     "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1paXBqSG02OVhpR3FpMjc2MlpPVmtPdkJ3ZG1FcFk5OHNlajF4eTA2dWxDMXR5TkF0cXJnWkV5M2tIWVBPSFhDRVZMOVVFb2c0UUg1S0hnX2FlRy1oSHR2anlmTUdueVVPd2lSdmRwVjVVY2s?oc=5",
     "published_at_kst": "2026-04-06T05:31:03+09:00",
-    "source": "비즈니스포스트"
+    "source": "비즈니스포스트",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전기요금 OR PPA OR 기후부",
     "title": "기후부, ‘수도권 식수원’ 소양강댐 상류 녹조 사전 차단 집중 관리 - v.daum.net",
     "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5Vby1CU29zeUVSSVd0aXU4OWpWRVUtZ0ljREhSTTVXclR4WFlDeURMbHU5a0MzWnNBMWNORWlBbXdSbkFDQjIxbENqSjRHNGs?oc=5",
     "published_at_kst": "2026-04-06T05:30:45+09:00",
-    "source": "v.daum.net"
+    "source": "v.daum.net",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
     "title": "기후부 “재생에너지 중심으로 에너지 대전환···화석연료 의존 탈피해야” - 경향신문",
     "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBHd18xWFY0bzNJdVp5TzdXSWpKV1RJQmlqTkVMa0pQT0ZWYnJPWmFmVXhjMTEwYkhxWk5UV0lBeEQ1aVpycXVuNEt3S2d0SzcxanRGa1RtZHJsQdIBX0FVX3lxTFA3Q0xja3NjWVRqNWpiR3pHbE8zSGpuQWJ5TGJDcERKbENuVFg3a0k5RHF2bWticjRpdEQyTnkyeVhHai0zc2ZzMXRUUC1DRG41N3M0ZVhkRl9PUWpJeDU0?oc=5",
     "published_at_kst": "2026-04-06T05:27:00+09:00",
-    "source": "경향신문"
+    "source": "경향신문",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "AI 데이터센터 OR 데이터센터 OR 전력수요",
     "title": "[단독] “엔비디아에 맞설 준비 끝”... MS가 야심차게 내놓은 AI칩 ‘마이아 200’ 최종 품질 검수장 가보니 - 조선일보",
     "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQYnNxQXpIQnhjSmJYdmNJeTB0RWdpNzRpdThUSmctb1lnWnFRYmhXUVBKM0tRWmRYU01tOUowbkdsdDRqX3lBS1dCeWlnVTVWWW1TUDhjaTVaa05FWXRpU1YwTjVMRTdSM2EzSHNqUkxyRkdfNm91d2FYLVpSU21BRHF2VdIBlwFBVV95cUxOSUZWOExfTWdkeTJmN2FGdm1fdkR5YTRlc05ISERRajV5dnJWUkY3bzI3bHZLaEM4N2ZJenNobF9iVjBEdWc1dEVENU1MWjhENlJpa3RUanRQRlZlakpmZ3B2SVBlNmlYMHlDVlBVc1h4dkJ6Y2FCMWNzSnBLTGwyM184VlVVQ0otUzc5ZmxUYmpqT1NSWkpR?oc=5",
     "published_at_kst": "2026-04-06T05:27:00+09:00",
-    "source": "조선일보"
+    "source": "조선일보",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
     "title": "[이로운체크]\"재생에너지는 환경이 아니라 안보\"…전쟁이 드러낸 한국 에너지 체제 - 이로운넷",
     "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE44bV9xLWotd1U4STZOSi03WjNNbEUzbFg3dkh0dWp0eEh4R1R0ZkM4RF9vLTFXa09FT21IY3F4YTN3em9melpQTnBSMk9iQTRrVFZ6MVV4VG1MVEkxejJZcVhXNDIzUQ?oc=5",
     "published_at_kst": "2026-04-06T05:26:58+09:00",
-    "source": "이로운넷"
+    "source": "이로운넷",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전기요금 OR PPA OR 기후부",
     "title": "기후부 1차관, 종량제봉투 생산현장 점검 - 부산일보",
     "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5MRVY3bVNIN1ZkTTc2bTAyVDlYdXJfREl0WFFBUDgwb1RLYlJ0UEJqelhNQWRlaU5mS2xLWWptRjJpVzlQaFhxaUYtYzZHSUhkaWNOVDNjd2VCam4xVmJaR0xOTVkyWl81aUhfSmJkUjlVQ09Y?oc=5",
     "published_at_kst": "2026-04-06T05:26:45+09:00",
-    "source": "부산일보"
+    "source": "부산일보",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "AI 데이터센터 OR 데이터센터 OR 전력수요",
     "title": "'한국판 스트래티지' 비트플래닛, \"AI 데이터센터·채굴로 사업 확장\" - v.daum.net",
     "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE8wdHJsWV9fVWNMZ2p1MVNVS01ES0txbDhRZGdJd0tfTzRVdnViUFUtMm0zcG9SVE41TmxzZ3RoTWIwRkYxaEJJeHNqajNfR0E?oc=5",
     "published_at_kst": "2026-04-06T05:25:24+09:00",
-    "source": "v.daum.net"
+    "source": "v.daum.net",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
     "title": "사고 잇따른 영덕 풍력발전기, 군유지 내 14기 전면 철거 - v.daum.net",
     "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9JZHNvUkJ6b1A2VDBzbWxTZExGWHJkWlY2Mkh1cDByU3JYU2dGNm93TVhOeVJwVnMzOWQxS0FURkJTS2R2NExKWnhGRWxfVjg?oc=5",
     "published_at_kst": "2026-04-06T05:22:20+09:00",
-    "source": "v.daum.net"
+    "source": "v.daum.net",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "AI 데이터센터 OR 데이터센터 OR 전력수요",
     "title": "[종합] 한국 클라우드, AI 타고 몸집 키웠다…이제 승부는 GPU·공공 - 지디넷코리아",
     "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5jcEV1azE1RWRlWHJQTmN0MjBPMzdfd0VxNVBxNERuWGxObm4zWWt4Smd5by1UZmszRXFoZ0YwLTFEeDNsdHI2d21SWUozVS1hTHU1NjVR?oc=5",
     "published_at_kst": "2026-04-06T05:19:14+09:00",
-    "source": "지디넷코리아"
+    "source": "지디넷코리아",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "AI 데이터센터 OR 데이터센터 OR 전력수요",
     "title": "LS일렉트릭, 美 데이터센터 전력망에 1천억 원대 초고압 변압기 공급 - 헬로티",
     "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5FdGhOVmV6bVY5YnF3TEppMDMxV2YwSHZlVnR0aDc4TmtoSzRTSG5ReEJEREQ1V0VLUnVCbTY0T2N5Wm5OaktuSk5YcUhNMFgxRExmN29IRVRneENCTkZr?oc=5",
     "published_at_kst": "2026-04-06T05:18:30+09:00",
-    "source": "헬로티"
+    "source": "헬로티",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "AI 데이터센터 OR 데이터센터 OR 전력수요",
     "title": "AI 데이터센터, 환영 끝났다…반대 여론 65% - 디지털투데이",
     "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9abWZGUUJ5T3RxXzdYdmM2S2JicDd4LWVkb0ozUU5rNGpLeDlnRnpERkNNY1RjUk1NbXpQYk42cUpoeFoyaUFqNzRUMjIwM0NKZEFqX3laNE9Oc0hfT0E4eGhHdEhibWE0VWlyVXhxU09waG8?oc=5",
     "published_at_kst": "2026-04-06T05:15:39+09:00",
-    "source": "디지털투데이"
+    "source": "디지털투데이",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "ESS OR 에너지저장장치 OR BESS OR 배터리에너지저장장치",
     "title": "[AI의 종목 이야기] 중국 하이퍼스트롱, 에너지 저장장치 출하 '두 배' - 네이트",
     "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9Xd1d0M2xNTUJCOGxtNjhlMnpJdU5RZUFBNks3UHg3eW1pRXJkZmhFX0lKUWVLWjZremRzWGJUOFlUdm9sWkhxOGhKN2tjT0huSWMw?oc=5",
     "published_at_kst": "2026-04-06T05:15:00+09:00",
-    "source": "네이트"
+    "source": "네이트",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
     "title": "‘3명 사망’ 영덕 풍력발전 화재... 경찰, 운영사 압수수색 - 조선일보",
     "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPaGpXLUJXdGhLZUllV0FuNUtUelp6NzZQa2p3S0o1Y29tU3dBM0M3UWFUNV81d0N2bmdidm5aOURic0ItRW9STkRKS2JqQ2lhbG1IMVdEQ1VlUVJtNFJjckJSMlRoWTlQWGoyck8wSHdzQVpzaFozNXVhQXpWdWpGNlVEcjFCZ9IBmgFBVV95cUxOM3RPelNxNGhMeXpuVDUxRVhFTDVoOG1yNTM2cGo5UURySHZGRXlqZ21oazR1b1lSOG1ZOUVIMWR0alZwblZrazdVb2hJTUtpT1RJWHlZWjBzdEN4Y05ib1VuQTFTTXpzQ1A1emRGZlgzanBmRkxuMllIbGlVcDNfMk9iNEhsS0hZeVpSLUt2T05CaDRkNE4wVXpn?oc=5",
     "published_at_kst": "2026-04-06T05:14:00+09:00",
-    "source": "조선일보"
+    "source": "조선일보",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "AI 데이터센터 OR 데이터센터 OR 전력수요",
     "title": "AI 시대, 데이터센터의 전력난 해법은? - 유스연합",
     "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFB0ampQQnF6NXNsY0I1SXppby1Bc2xfdlVWM18tQzlYY1VSSUEyTFBDWlhZbzFLcEVmZkN3aWpVRVFMUEsxSVU4UXNFZ1ptQkF3QWc?oc=5",
     "published_at_kst": "2026-04-06T05:13:28+09:00",
-    "source": "유스연합"
+    "source": "유스연합",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
     "title": "정부, 재생에너지 중심 에너지 대전환 본격화…전기화·탈탄소화 가속 - 냉동공조저널",
     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5QRlpFWmZOQWhUNGVQZ2RNMFQ2WGdrTks1blBCNVN4VU85M0RLSVROMXR2LU1Ba1BHeTVqclFidl80QUdhY3ZIU1RCRHNjanY2YjJzWmdzQzZvYmtjaXk3MUVYNEhET2hETVE?oc=5",
     "published_at_kst": "2026-04-06T05:09:01+09:00",
-    "source": "냉동공조저널"
+    "source": "냉동공조저널",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전기차 충전 OR 전기자동차 OR EV 충전 OR V2G OR 충전인프라",
     "title": "'EV 충전 인프라 1위' 채비, 코스닥 상장 추진…‘적자·실적 변동성’ 해소 관건 - 데일리한국",
     "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1WblhPV0lScjhPRnl5WFlBRHgwTFFoZGZrRHBKYXl0eXl6XzFuZmRHdmhyX2ZlbzJ2OUdtbGRSSlFzUnRWNWhBQmNZNEpYb1FWeFNaU2NTLVFMZER6TWY0R3dJR05xR09ncUtUSlZlWdIBc0FVX3lxTFBGdHVwWmlmeXdRelIyVmZWQ3o2WFQ0SmY3UjlRUlU4VmVXWkZvMm1TNVNfeVV0SGJOb1VZcG5pR3ZHOVI0ZWc2Wk1MZ3pDTG1XOVBub1FmYTBwdGZBWnpLdkdjN3AydXZES3pLY3RnWjBLd2c?oc=5",
     "published_at_kst": "2026-04-06T05:08:33+09:00",
-    "source": "데일리한국"
+    "source": "데일리한국",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
     "title": "임종득 의원 “풍력발전기, 특정소방대상물에 포함해야” - 소방방재신문",
     "link": "https://news.google.com/rss/articles/CBMiREFVX3lxTE5qTEVWWEFzVDZ1eFFQMktBVXFNOTNIeFF2VkdHTHFCd3dMR0VpZ1BrVVMyOVZtZE5oX2lyU3NoZXl3Vk5D?oc=5",
     "published_at_kst": "2026-04-06T05:06:00+09:00",
-    "source": "소방방재신문"
+    "source": "소방방재신문",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전기차 충전 OR 전기자동차 OR EV 충전 OR V2G OR 충전인프라",
     "title": "전기차 충전업체 '채비', 해외 IR 성료…\"글로벌 투심 확인, 성장성에 이목 집중\" - 인포스탁데일리",
     "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE91ZUlPX0hDd3pwOGE3TC1sazhWTmY5ZGZfZEhvTmZhd1hVTEVLejRRZGQ5RGp6WjNPTDhNSVlRdHYzRWtfNUpyVUEzTTdrWGUyb3VsNzVKRl8wMDhrOHpUTDN6VVJxc3lZRTF3aFJUN2x5cFMzMkE?oc=5",
     "published_at_kst": "2026-04-06T05:03:10+09:00",
-    "source": "인포스탁데일리"
+    "source": "인포스탁데일리",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전기요금 OR PPA OR 기후부",
     "title": "기후부, 연일 쓰레기 종량제봉투 생산현장 점검 - nocutnews.co.kr",
     "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9MZWI1UFBuMEJQUUtxSlY4Y1pnMTV5dHVBQmhrVFNrSkR1OUljTzQyMW5iakNaVHlOYUtiYjl1ZVdHZDRTRDFmYUZETmtGaTZ2amc?oc=5",
     "published_at_kst": "2026-04-06T05:00:00+09:00",
-    "source": "nocutnews.co.kr"
+    "source": "nocutnews.co.kr",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
     "title": "노동부·경찰, ‘3명 사망’ 영덕 풍력발전기 업체 압수수색 - 한겨레",
     "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5ick01U2k1YXBQWmp2Yk1YMFVlb2tnY0pfSkplVWNoeTFIa0VETm1pcF9obHdRSzhjc0RudzdmZHBHUEptZmZnVXctRTZ1ZFJ4bWJ2X1VLenNReWdfMWhVX21Lc0k?oc=5",
     "published_at_kst": "2026-04-06T04:55:00+09:00",
-    "source": "한겨레"
+    "source": "한겨레",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "AI 데이터센터 OR 데이터센터 OR 전력수요",
     "title": "신세계, 데이터센터 건립으로 ‘이마트 2.0’ 본격 착수 …AI 사업에 뛰어든 이유 - 더밸류뉴스",
     "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5laDZfNEJScVBHQjUtVUJ2VE5QOWRhR1I0SGFtREM2ai1pSHpEaTNKbVVheDA3UjRCdjFSQXhDbDhrQThPTl9pLXhaQmFqLW9wOUN2cQ?oc=5",
     "published_at_kst": "2026-04-06T04:52:54+09:00",
-    "source": "더밸류뉴스"
+    "source": "더밸류뉴스",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전기요금 OR PPA OR 기후부",
     "title": "재생에너지 100GW·신차 40% 전기·수소차로‥기후부, 에너지 대전환 속도 - MBC 뉴스",
     "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE8wdmhqT0w2LTNiWEE3XzVrOVlPUEtmb01ZSTBjOFZMMWNfaTFFZ0lMUVpONDF1N0ROM2J1RXAzRFNhYUg1QkVxSFlnbTZ2enE0RE53TzVobG5FYUFMY2d0UGlyQk1tVFVBSUNSSUJ6a1NIaXN4T1dJ0gF3QVVfeXFMUElPOW5ZeXYtMGt4cFZtQlh3QVA4TUY0NnFNVVR4Y0VEaWo2Y2t1dllxX0V1X3pSRW4wTnZZQkdpNzJWR2Fqc2dycFF1WmF4RzVka1JucFlnVXBUS0JSVVd3UERUbWdHTDhSYmFvSENkZE1XNU4wbkU?oc=5",
     "published_at_kst": "2026-04-06T04:47:14+09:00",
-    "source": "MBC 뉴스"
+    "source": "MBC 뉴스",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전기요금 OR PPA OR 기후부",
     "title": "인천 서구, 김성환 기후부 장관과 종량제봉투 생산 현장 점검 - 기호일보",
     "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9QVU93QVJnQmdncmFZU21Ua25vS05vUEFsQUN1VzJQZWs3NDFlLVFxajhSUkVaZGNycHZlSFFhSW8wMTJ6azh1QkJiaUxFMTZidkJ3UXdjanhURUUyXzhaY09aT1lPUGNqZDlDemVtQQ?oc=5",
     "published_at_kst": "2026-04-06T04:47:00+09:00",
-    "source": "기호일보"
+    "source": "기호일보",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
     "title": "경찰, 근로자 3명 사망한 영덕 풍력발전소 압수수색 - v.daum.net",
     "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE04V1l1dTFnOC00ZDVyZXExYXVQdFM2Mm95TVB6c2JGNzRnMXBHdHdVX1V4aEZtLWdrNE5pMC1qSTJtdWNOcVVUMDFyX0tMS3c?oc=5",
     "published_at_kst": "2026-04-06T04:45:07+09:00",
-    "source": "v.daum.net"
+    "source": "v.daum.net",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
     "title": "2030년 재생에너지 발전 비중 20% 이상 확대한다 - v.daum.net",
     "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5RX091eGdFU0h0TXMyZ0N5NjdCVkVOeGVKMlJBeU5QcVNGSGxLU2lTMnRuVUZvdXB6SjkxOGcyUFh2N0FZckNoWThYRnNvdm8?oc=5",
     "published_at_kst": "2026-04-06T04:42:55+09:00",
-    "source": "v.daum.net"
+    "source": "v.daum.net",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전기차 충전 OR 전기자동차 OR EV 충전 OR V2G OR 충전인프라",
     "title": "“주유소를 슈퍼차저로 바꿔버렸다” 테슬라 충전 네트워크 확장 속도 낸다 - 엠투데이",
     "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE8tQVpsbHZYa2NUNV82bHRNam1rMl92bU9HS3RqZlozNDlFaWhKZ1N3T0NSVld5bVp2U1JNYzNhS1ZTOXVxb1phaDM3eFI3bVBrR01fRHlGS2RSWUk3MDlxQktIMXRTVXlvY1hsNkdYTdIBc0FVX3lxTE9BWHpGLVcxV21EM3EyTWJycTh5SzFKcFlhMHEybDdYSG5WdGtjNXN5WHFVdGZTd0R4c1pwV3RfaWZRb0xjS0hVV0JHT2VZOXJsdE1BX1VLbkV2MUtvY2QtVlhtMXJIbmxvNjFQNE93T2ZpNFE?oc=5",
     "published_at_kst": "2026-04-06T04:37:59+09:00",
-    "source": "엠투데이"
+    "source": "엠투데이",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
     "title": "그린벨트 규제 풀린다…체육시설·야영장 확대, 태양광 설치도 완화 - v.daum.net",
     "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9LbnFpSm83bWVQWUJTRGFSMmVkS1hBTFVWYklaazRvZXlHVV9DMWtoeGRvbDUyQnd1SUlOM2RWaERidlpNbTZ3YkZrOVI2MDQ?oc=5",
     "published_at_kst": "2026-04-06T04:36:02+09:00",
-    "source": "v.daum.net"
+    "source": "v.daum.net",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전기요금 OR PPA OR 기후부",
     "title": "김성환 기후부 장관, 에너지 대전환 추진 계획 발표 - 뉴시스",
     "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9TcWJZWVBGNWVlWkozeE1uNldxME01VDNzVWlDNjk4dzV3OGVzcUxRSlJaeWJCdTdkX3paeTZnU1gxNG1pSlV2YXkzT2E5YjExdXpLWnRKdFhMeHZRSjBhQg?oc=5",
     "published_at_kst": "2026-04-06T04:35:47+09:00",
-    "source": "뉴시스"
+    "source": "뉴시스",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
     "title": "경북 경찰, '3명 숨진' 영덕 풍력발전소 압수수색 - dgmbc.com",
     "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9ncXJ2UEtMMERaTFJzcGJlSGdzX1gxaHlVbEhrb2phMmhzU0lNQzVFWElod3IyRnFwNWRqaVBNQlpwYXRVT3FvUHBkNGo?oc=5",
     "published_at_kst": "2026-04-06T04:35:12+09:00",
-    "source": "dgmbc.com"
+    "source": "dgmbc.com",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "AI 데이터센터 OR 데이터센터 OR 전력수요",
     "title": "LS일렉, 美 빅테크 AI데이터센터에 변압기 공급…전력 인프라 공략 가속 - 메트로신문",
     "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9MLUdTYjFfU1JRejNxdWIyZ1owWVEteWxlZTBYRkZEX3h0RmpFUFRBcGpXVmcxNDdINkhQQnlRQXBNVl80ODgtcTdpeko3NG91R2dVSXBVZUY0TXM3SEUw?oc=5",
     "published_at_kst": "2026-04-06T04:31:43+09:00",
-    "source": "메트로신문"
+    "source": "메트로신문",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "AI 데이터센터 OR 데이터센터 OR 전력수요",
     "title": "도심 땅 부족 해법 찾나……日, 도쿄 선로 아래 데이터센터 설치 - 디지털투데이",
     "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1waEFGZG1Pc2UzTlI5UzBEODk0aW1Ldm9MUHQyQURCMHo3cXF5bEFUampOMFpTV29zOFRoNUNFX2wyZGdJdnozQ1FBQkd1blhvc0NYMDhFVE53X3VMV3U2SFRFbjR1STV6emx4S043R2dub28?oc=5",
     "published_at_kst": "2026-04-06T04:30:16+09:00",
-    "source": "디지털투데이"
+    "source": "디지털투데이",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "기후정책 OR 탄소정책 OR 에너지정책",
     "title": "나주시, '대한민국 에너지 정책 포럼' 개최 - mt.co.kr",
     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9qcFE4MlgxN1htSC01SF91eldRX0h2X0VjeWRyOTFEeGdOWXVsdV9wOG9NMENMYm5Zb1JDRG8zQktNbU9sU0Eta1BzaGFSVlk0NGZxdjl5ZHUtVjVZSkFmbEpCNDFSLTFJWkE?oc=5",
     "published_at_kst": "2026-04-06T04:21:49+09:00",
-    "source": "mt.co.kr"
+    "source": "mt.co.kr",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "기후정책 OR 탄소정책 OR 에너지정책",
     "title": "나주시, 대한민국 에너지 정책포럼' 개최 정책 과제 공유 - 한스경제",
     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9nN3JCWlJNLU95bGZzTDJ0eDllM3p2bjRUOGxQX3N2bGRvUkNBN3l1bkk3dXpYS2FvOF9sY3pUS1hGYUJ5Sk5nY2QyU0xobUtGVmhjd3lXTFI0aXJValM2N0tsaUV1dUs1aTBrLdIBb0FVX3lxTE1IeC1ZM3A1ZV83azI2WVB6bkZWa21LN3FMU0VnUFJZVDJKOGo5eFdCNlhWbFBvX0kzVmdkZ2JJX0s3N0pfSWJCQktLM0ZNSF82MjdSaDdGNVBTMkg4WFVueHp1WnJLNml3dm9JdnkxNA?oc=5",
     "published_at_kst": "2026-04-06T04:02:10+09:00",
-    "source": "한스경제"
+    "source": "한스경제",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전기차 충전 OR 전기자동차 OR EV 충전 OR V2G OR 충전인프라",
     "title": "中 커화, 韓 전기차 충전 전력인프라 시장 진출 - 이투뉴스",
     "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9YM2xKNEV1TVNvZDE4TlhRRVUyOVdiSmFOYWw5YjlGWFRyLS10dm5Tc3NqZ2hRM0dMQlJ2T0Q1Um1hdHk4SDRZT1JzSVYzR2ZQVVNLM3Q1cm1TSmJHanItYzJScmZxN03SAWtBVV95cUxPUnVJN2MyRmFJalcwa3NzMHZZRHhpSE1aMi1BbTR4dFpaSFU0bncteDhCUlg0alNGbzE3NlV2Y0pHcWxlSGpwZ2QwZ3hxWVhTYmxfc0lJcjYtU3R2MXRhbUI3Rk5pR3BkaFZrcw?oc=5",
     "published_at_kst": "2026-04-06T03:56:20+09:00",
-    "source": "이투뉴스"
+    "source": "이투뉴스",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
     "title": "맥쿼리, 한국 해상풍력 사업 철수…1.3조원 투자 계획 무산 - JTBC",
     "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5sSFhwUDJ4Z3JCVnY5UXItWG1kdV9tUlNjY2NFeW51Z1Q5NTNHeDRKTXRHX1RnQ3cyMTRPU0lKRmpOYnloX2g1OFBaeDc0UUEwYXJmMg?oc=5",
     "published_at_kst": "2026-04-06T03:51:00+09:00",
-    "source": "JTBC"
+    "source": "JTBC",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전기차 충전 OR 전기자동차 OR EV 충전 OR V2G OR 충전인프라",
     "title": "영국 와이트섬 1500개 충전소 구축, 한국 전기차 인프라에 주는 교훈 - 환경감시일보",
     "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE10R0p4WFpFSG9sTGp5aVZSVnY5VndWMm5VbEExVUVkVUFpSE9DYk1qMVVyaHM4ZF9KNXpOOVlOSjdBOFM2d2Y3NndIcjlCOW8?oc=5",
     "published_at_kst": "2026-04-06T03:48:59+09:00",
-    "source": "환경감시일보"
+    "source": "환경감시일보",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전력시장 OR 전력계통 OR 전력시스템 OR 전력거래소 OR 계통안정화",
     "title": "오금현대아파트 재건축조합 협력업체(전기설계 및 전력계통영향평가)선정 입찰공고 - 한국주택경제신문",
     "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5wRHpJZmhyem1KY3dKWDBVOUNYSWJGb1NveTJLRUw1MFMyaXJza3U5UmQxeXVoV0lZSXVfZmtRV1dXcmsxei1YUFlPWWUxRm9YVzVGajZkeUFvU1lPZWo2YTdKa0xoTDA1?oc=5",
     "published_at_kst": "2026-04-06T03:34:43+09:00",
-    "source": "한국주택경제신문"
+    "source": "한국주택경제신문",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "AI 데이터센터 OR 데이터센터 OR 전력수요",
     "title": "LS일렉트릭, 북미 데이터센터용 1000억 수주 - 매일일보",
     "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFB1UWhkS2FkR0E2dk9PbW1tak93WThPR214bnE5b0ZiMl9mc1pScGtlWTFJUko2YU96YWZEdDJrTldrTGUwTG55QWNOd3Jmc3RIS05rYnFxMWJEQVR1VVVRTUxGcUI?oc=5",
     "published_at_kst": "2026-04-06T03:31:11+09:00",
-    "source": "매일일보"
+    "source": "매일일보",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전기요금 OR PPA OR 기후부",
     "title": "석탄발전소 60기 2040년까지 폐지…기후부, 에너지 대전환 선언 - 매일신문",
     "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBPRDFjUnFwNjVYdXBqWU91YWpUZjJCcVdqYzh1SHB4SlZZRFE1UmxXaU1yTXlBZGdPWmtaR2RwbldEY2JRamJiQUl5LWd0UEU3RkE2eTNIZkpNSFZNajJjejl3?oc=5",
     "published_at_kst": "2026-04-06T03:13:34+09:00",
-    "source": "매일신문"
+    "source": "매일신문",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
     "title": "한국재생에너지단체총연합회, 대구그린에너지엑스포서 공식 출범 - 일렉트릭파워",
     "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1BMnVReFZ1LWp2bkd3OEVZTENvN2tONUxpWkN3MW9KQ29yM1F5aHp5aTh4ZGpMb2w5Vm5hU0E1aVNhN1FjY0pha1BHOGRjMVQwRWhJalplQjR3ZVhJV0llR29ELUU?oc=5",
     "published_at_kst": "2026-04-06T03:11:00+09:00",
-    "source": "일렉트릭파워"
+    "source": "일렉트릭파워",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
     "title": "재생에너지 중심 에너지 대전환...화석연료 의존적 경제구조 탈피 - BBS불교방송",
     "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBUVVJGNngxa21zOEFiWW5kaHNKcFN5OUNaMGhfQWlvaGI3cDRYdllhaFFROVZxazJZS2lzYy1Qakh0TDZOQU85RWNkYkhIZksxU2R0ZVFjRVhuRzlLOFZ3UXppMXlkcUlUQWZN?oc=5",
     "published_at_kst": "2026-04-06T03:07:38+09:00",
-    "source": "BBS불교방송"
+    "source": "BBS불교방송",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
     "title": "전쟁 장기화 조짐에… ‘재생에너지’로 대전환 가속 - 문화일보",
     "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5taWZVTTVaMC1TZUZaalNJLWxTVWtZVjNaUjdKWTBmbks1WTVVcVBYWE9OcFU2U1FKUmV6TDM3dUYtdk14TmFyOEIyMGxIMTdq?oc=5",
     "published_at_kst": "2026-04-06T03:06:42+09:00",
-    "source": "문화일보"
+    "source": "문화일보",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전기요금 OR PPA OR 기후부",
     "title": "기획처·기후부… 민노총, 줄줄이 직접교섭 요구 - 문화일보",
     "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBxVnBKUl9HT2o1VlFONThjckJONERuUDJVZW8xTUY1SFI0eXBZWjNJV3FaeEV3aDZMLWY3RlNTcFVqZGNXZ0lTXzlJOXhJVWk1?oc=5",
     "published_at_kst": "2026-04-06T03:05:20+09:00",
-    "source": "문화일보"
+    "source": "문화일보",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "AI 데이터센터 OR 데이터센터 OR 전력수요",
     "title": "\"AI 돌릴 전기가 없다\"…구글·MS·메타, 결국 가스발전 다시 켠다 - 디지털투데이",
     "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1GMmpwbXR0SVdYUXFWUmdseUl5RlR3QnY5YllQb21VX0d1ZU5DdkxKQUhtdHFUNXc3elg0aF9TX2VGSmZSWlBldTd3YUw3VUYwQ1hHUjJVMHRObWdJclRVMUVMcV9TWGtkRXExa1Fzd0ZJaFU?oc=5",
     "published_at_kst": "2026-04-06T03:02:42+09:00",
-    "source": "디지털투데이"
+    "source": "디지털투데이",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "AI 데이터센터 OR 데이터센터 OR 전력수요",
     "title": "AI 붐의 수혜자 된 크립토 채굴업체들…전력 확보 경쟁 격화 - 디지털투데이",
     "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE40ZV9zalNleXI4MDAtR1h5TUFVclhYc2hjc0RaT0JMRlRTT3dWR2YzUTFrZGhJRGFOQVdjeDRWekVBY3hPUmlabjA3NXpUY1VwYnN4LUVqMUt2dUdrakU4T0ZOLWJQRkJXdnljY2FnSXh0V1E?oc=5",
     "published_at_kst": "2026-04-06T03:01:00+09:00",
-    "source": "디지털투데이"
+    "source": "디지털투데이",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "AI 데이터센터 OR 데이터센터 OR 전력수요",
     "title": "리벨리온 \"엔비디아 뛰어 넘었다\"…랙 단위 AI 시스템으로 시장 공략 - 디지털투데이",
     "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBTa0VJSjRJZTA2UWRXaXZkN25scldjdmx4cXlzMjlEa2ZWTDl2UkpBRGt4S2d6SWJmc0l0dHRFSUNCY2gwQnNESUJ3ZGN1R1NYU2hxR3RuU0NBVTMtd2syY0xFU0ZNajBLWmNKaGt5VWFXT1k?oc=5",
     "published_at_kst": "2026-04-06T03:01:00+09:00",
-    "source": "디지털투데이"
+    "source": "디지털투데이",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전기요금 OR PPA OR 기후부",
     "title": "기후부, 2030년 재생에너지100GW·석탄발전 2040년 전면 폐지 - 파이낸셜뉴스",
     "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1aTTVVbkQ5SHprbWhpZm03ekxGeDJEZ0ZWM29ZSm9JUzg2c3dnbmhHckxDbUplNncyb2NicThXZXVEd1ptVzNqQ1BlOFlFdHNIaHhUUFhyOTNyQdIBXkFVX3lxTE9TdXZiTTRGZ2o1UzlJNVp3VWZucWtHVHE1dzVSVjlpdno4UFRDMDhkVVpia0FsamFuc1hfWkJjRkZ1eHVkcXpsbXZpYmhQcWptMnZPNE5BMFJqYmZpdmc?oc=5",
     "published_at_kst": "2026-04-06T03:00:39+09:00",
-    "source": "파이낸셜뉴스"
+    "source": "파이낸셜뉴스",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전기요금 OR PPA OR 기후부",
     "title": "기후부, 소양강댐 상류 녹조 발생구간 집중 관리 - 뉴시스",
     "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBoR3N5N3RrSlQ3QlhCMk9XaGZBV3JYZS1qeXlLSGw1TV9IME5CclM0SnBjZDNvTlJNOTRlcm5iQXNwZng3aFpRSlJ5WjctcGsybF9GOFNrby1odHhmSFFJTdIBeEFVX3lxTFBqd2h2MDRYVXRnMjB6QXJ5UmNPM1RKeW42eFJKTmxxVjFaNkJuNDI4SHo5aUpzTE91cVFpa1Q5bWI4dW53LWZmYlMwZWtGNWZfaWtQTmRGanVhSVFsMTY3ZE9OR2ROLVRPMm1DVm5xOGJBRG15UkRUdw?oc=5",
     "published_at_kst": "2026-04-06T03:00:00+09:00",
-    "source": "뉴시스"
+    "source": "뉴시스",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전기요금 OR PPA OR 기후부",
     "title": "기후부, 폐IC트레이·폐석재 순환자원 추가 지정 - 서울뉴스통신",
     "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBXcTI1SDNXWGMybWtUYXdzeGVnZmlDTlpZSjRpbkt4OHFOaC1qb0RPWUFTOUZlSFBPNFVzd0hadFVPbnZ1VnREbFp0LVotbHVvOWl1NE5SeXRzSXFvbThyYUI2SUpESlVfM2lZ?oc=5",
     "published_at_kst": "2026-04-06T03:00:00+09:00",
-    "source": "서울뉴스통신"
+    "source": "서울뉴스통신",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "기후정책 OR 탄소정책 OR 에너지정책",
     "title": "나주시, 대한민국 에너지 정책포럼 개최 - 신아일보",
     "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1rN0gtY1ZKSEpmbVhLT3RpcEQ0M2NfOUo1U2todFozX3F3WFdyYWN6ZlNmLTlVM04xSm10VGN5UkpoeTNpME1Lb0xtak1HTG13eXVCNXNrSGFuSXBpWVV4aXdFRFVkejVoaUEwdEpJeUY?oc=5",
     "published_at_kst": "2026-04-06T02:54:06+09:00",
-    "source": "신아일보"
+    "source": "신아일보",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
     "title": "2030년까지 재생에너지 비중 20%…신차 40% 전기·수소차 목표 앞당긴다 - v.daum.net",
     "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE0zWnJBRXZJem5aRFViTVFCRDRmTHJTcnN6cmdIMnhKWHdzZEczYkFHTDQ0Rk5SZ1VsTWMtMi1aVC1FdzFRZ2NvbHBubnhfdnM?oc=5",
     "published_at_kst": "2026-04-06T02:52:38+09:00",
-    "source": "v.daum.net"
+    "source": "v.daum.net",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "AI 데이터센터 OR 데이터센터 OR 전력수요",
     "title": "LS일렉트릭, 美 데이터센터 변압기 수주…관세 인하·AI 전력 수요 ‘이중 호재’ - 이코노미트리뷴",
     "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9rSTE0ODU2N1hBb0xmOGFrMGo1VUpYWGJHdDhaNVF2SWNIa3RkRGNTU0hkZTZyd0FXb1FPbGJGeGpQZzhFbHZ2U0dhUDNIVjRNOHpZTnRidGxpOU9FWnZyYnNnSTFvMWRKQ1IyYi02aU5BOXliVFJ3?oc=5",
     "published_at_kst": "2026-04-06T02:38:14+09:00",
-    "source": "이코노미트리뷴"
+    "source": "이코노미트리뷴",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
     "title": "2030년 재생에너지 비중 20% 이상 달성…\"모든 동력원 전기화\" - 국제신문",
     "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQSHhRQmdlbUdVOVMxSWg0YTdIOFZZQVByV09WT19RaWkwWGRSX3JjbWROQTUzeHExdXRNTi1CMkVRQklmUXFSaWJnendSZ0k1TU84LV9pd1BjRHRzWTNRUy12bkNOVEl3RXdrMkpDN0JzUk4tNUlqV29PUzd3QjRrLWE4WWVjcDhHNVNJeWhn?oc=5",
     "published_at_kst": "2026-04-06T02:36:00+09:00",
-    "source": "국제신문"
+    "source": "국제신문",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
     "title": "민형배 \"풍부한 재생에너지로 서부권 대도약 시대 열 것\" - 연합뉴스",
     "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5EdWpXRDJJWGFndi1QZXQzOGZMbFhLcXE4NzMwdFo2S0FRUWhjUElINXdFNTVuNi16M0lFcGJscjViMTVrQngwTnVWZ2t0a1p2bjA4TG04T2ZwVlXSAWBBVV95cUxNTUVFVHdWc3dnaHVxejdhTlF2S093N2JKVkpyekY2cm9ZZ1VZM0pVbk9TcUhrdjBwNVg3NTJNeTUzTDlKNjFmOUlSWWZkNllWd0tCOGNxejZnTXZIN0FRemk?oc=5",
     "published_at_kst": "2026-04-06T02:35:34+09:00",
-    "source": "연합뉴스"
+    "source": "연합뉴스",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
     "title": "재생에너지 100GW·신차 40% 전기·수소차로…조기 달성 추진 - 연합뉴스",
     "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5rZ05MZWVnRE1YRVAtbXdGVXZoQnNWaHU5NTQ1OW5BUXRJX0VoMFBETlhMXzZfSjY5WlYwSVZZSzBTNGVxZlBXWUJMRHFWaGJybTZ5dGdUMGVJMUnSAWBBVV95cUxNQjVTXzJxTVhiV1R3MnhPZ0xaQmNqWHg3ZlNsZVd2VmFtYnpYTXlLSGY1Z2VueTB6dkd0QWpVOGdJU041TGgtRjU3SFk2bHdaRWNVYktmd0w3WGxhaDQxdWs?oc=5",
     "published_at_kst": "2026-04-06T02:34:19+09:00",
-    "source": "연합뉴스"
+    "source": "연합뉴스",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전기차 충전 OR 전기자동차 OR EV 충전 OR V2G OR 충전인프라",
     "title": "고유가 시대에 수소전기차 '현대 넥쏘' 판매 고공행진…\"충전 인프라는 아쉬워\" - 뉴시스",
     "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBic2FzR1NiTUg3WGZpU2NiNzEyZkpqbHdSMnBiM0FIMk9haExHT2pFSE1fbGJlbVkxcEtMQmpFTWxzR0I3X1hlSHlGaFBHNXNfbDlpVk5YMTVNTk0tQWV0cNIBeEFVX3lxTFAxM3VLN3hsOERNRDdjWUJ1TkpDX3ZuN3dmUGROdkVwY1hmQUNRaFVCZWxDVlhjUkZYNS03MnhqQ3dEMTdJbFZrQWlTdk41Qkl6Q1dIQjZQRmJFSUNObHRCTEhtQUFpeTFicXBPREJLWm5rXzdEYkViMg?oc=5",
     "published_at_kst": "2026-04-06T02:33:09+09:00",
-    "source": "뉴시스"
+    "source": "뉴시스",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전력시장 OR 전력계통 OR 전력시스템 OR 전력거래소 OR 계통안정화",
     "title": "재생에너지 중심 전력시장 개편…1000만명 '햇빛·바람·계통 소득' 실현 - 뉴시스",
     "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5DSmJwYVJ5bTFZRGdPdUhQcE5ra2pIRnVXZEg5Vi0yRVBkMXRENE5YZVMzVGhKUXM4aGlOMms4Wjlocy1OWFFnbXR6ZzNlVGxwaURGSWNFb0o5bGg5YURvZNIBeEFVX3lxTE93R0FJM0Zzd2EzcUJsRXNsNTNVUDlMLTRwZ1F0ejhiX3k5YllZRGVabHJxdHdwaXdXNlhQVUxwM3l4Xy16dlFORGFGMUkyZm82RFVFYkpBWGNsRjhfLU9CMmRSeHhmUGUwWU8ybjRNYk03c1ZUeU8tdQ?oc=5",
     "published_at_kst": "2026-04-06T02:32:03+09:00",
-    "source": "뉴시스"
+    "source": "뉴시스",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전기요금 OR PPA OR 기후부",
     "title": "정부, 재생E 100GW 보급 2030년 전 조기달성…지역별 전기요금제 도입 추진 - 지디넷코리아",
     "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9CRm90U3U5ZnVLR3RWdHRxYjJSQlA3V1JtMkV5TXBPN2x4UXVqOEZjREFfVU1OSzlqN00yZFkwV3NaRXZQb2ZQSmFnVmM1Qm1LMU5FZ19n?oc=5",
     "published_at_kst": "2026-04-06T02:31:53+09:00",
-    "source": "지디넷코리아"
+    "source": "지디넷코리아",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "기후정책 OR 탄소정책 OR 에너지정책",
     "title": "나주시, 에너지 정책포럼 개최...미래 산업 거점 위상 강화 - 전국매일신문",
     "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9heXhWTGN1c2tBVkYybnJhVG9KYTFpYklfVXpqUGwySFJIcjZjQmgwZ1phS3VhNWZON0g2MExaUmRLYTd6aVo5bnNpTUtuck9wbjViV2MxdGJ4WWJVV3dkT014a0ZLcU5KejRpa1dR?oc=5",
     "published_at_kst": "2026-04-06T02:27:03+09:00",
-    "source": "전국매일신문"
+    "source": "전국매일신문",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "기후정책 OR 탄소정책 OR 에너지정책",
     "title": "나주시, '대한민국 에너지 정책포럼' 개최…미래 에너지 전환 핵심 거점 부상 논의 - 전자신문",
     "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBlQmYwRkMwMkpQOFlhRFh0VkdOdEpWTTdwM1JWa2dsa0xYZW1Lak1INWFuV242b1ZqMGxTX3pINnVRbkZoLWxzX1ZrNzM1QQ?oc=5",
     "published_at_kst": "2026-04-06T02:21:36+09:00",
-    "source": "전자신문"
+    "source": "전자신문",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "기후정책 OR 탄소정책 OR 에너지정책",
     "title": "나주시, 에너지 정책 포럼 열고 미래 산업 방향 모색 - 전남인터넷신문",
     "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1Xa3djZDA2OEtFeV9FaWFiVFNseW9wdHoyLWlEdWdqS1Vaa29nNW93c0tid2VBVVJyOGhXc3lpbjY2b09vRUNmYWVWSjBQdF9NUHItQVc1SQ?oc=5",
     "published_at_kst": "2026-04-06T02:19:24+09:00",
-    "source": "전남인터넷신문"
+    "source": "전남인터넷신문",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전기요금 OR PPA OR 기후부",
     "title": "'전기요금 아끼자'...'경기기후플랫폼'에서 처방전 제공 - 뉴스;트리",
     "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5HdXVYRktyeHVWblZPdDBYOHZ5XzQ3cTBrWU55X3hZRUtkYjdWRVcxTFB4U2hpdnIyOEVvdW43aVpCajBIZDN0SjdOR2lPLVdrUkw4UzQwbmdsU3h6?oc=5",
     "published_at_kst": "2026-04-06T02:13:49+09:00",
-    "source": "뉴스;트리"
+    "source": "뉴스;트리",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전기요금 OR PPA OR 기후부",
     "title": "데이터로 잡는 전기요금, 경기도가 중소기업과 아파트에 ‘에너지 처방전’ 쏜다 > 뉴스 - thekorea.kr",
     "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5nZGdMWHp5T19wZFdvMTlfZHljc29iTVhtVGN5Nl90NUlmV2FkcGdDaWYxdjdZRTN6ejVSeWZHZzhiQ0hNUG5WYkNlcFBFX3FWaW05VkFrOUVuRzk5dUxXSkwya1VWeU1hTk03bjluRmw?oc=5",
     "published_at_kst": "2026-04-06T02:09:00+09:00",
-    "source": "thekorea.kr"
+    "source": "thekorea.kr",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "AI 데이터센터 OR 데이터센터 OR 전력수요",
     "title": "이란, 오픈AI 데이터센터 노린다…\"완전하고 철저히 파괴\" - 네이트",
     "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9wdHBmWG9ad2ZDdDN0b1NrcC02T0Mwc2ZfN3JjNDgyMk9CS2dJM1dSWVN4azNabVZGeVZDTXcyMTVKcW1acWh5U1Jnd0RFNkRUZEtn?oc=5",
     "published_at_kst": "2026-04-06T02:09:00+09:00",
-    "source": "네이트"
+    "source": "네이트",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
     "title": "태양광 폐패널로 수소 만든다...오염도 줄이고 비용도 줄이고 - 뉴스;트리",
     "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9rMmZnVFRYSjcyX05zc1FoeWNhNHpmZUtnRUUtVFVmdnRnUFF3ZmN0ZFpsSHVsdXZ6eUgxeWtuaXg5RjZ2bDNnbmE5SUtfeFp6X3REZmhRVE5hX2Jj?oc=5",
     "published_at_kst": "2026-04-06T02:03:38+09:00",
-    "source": "뉴스;트리"
+    "source": "뉴스;트리",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "AI 데이터센터 OR 데이터센터 OR 전력수요",
     "title": "LS일렉트릭, 북미 AI 데이터센터 전력망 구축 사업서 대규모 수주 - 라이센스뉴스",
     "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE10cVgyS3BMS0tscXVhemZTMDMySnJFcmdpSXhlRWV6cW5FYURSYnpBT3dXTG53RnZSX1RiNS1tLWxqNjFoTHBoRW5HYmdXdjJZQ3dFa3I4dlZ6STVtNXIzU3VhaFp2NmRSTWFv?oc=5",
     "published_at_kst": "2026-04-06T02:00:00+09:00",
-    "source": "라이센스뉴스"
+    "source": "라이센스뉴스",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
     "title": "문턱 낮춘 레스코, 실효성 키웠지만 '3년 실적' 유불리 논쟁 여전 - 전기신문",
     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE55ekRjYjNkYXhJOWp0eTRhc3lRMnItRFBRbTdPd0xrM0FlcmdiZG5pRTZ6R0wyU0FielhFUUhlMU1nYkNFTHI3NWlvQW1GbWhSTjVIZjJRUGRvU3cyeWgwTWItMHZnSmFqcXRNVtIBcEFVX3lxTFAzUHh0eV9VclQ0aWZqTm1yUHdjbXpVRWw5ZjlYalVTZk5VNndNT3dKTmxINUlpdzBCNkZNaDViRUh0WDB2cnhHdHo2c3FmVGNRQWE0LTBIX0xuTmVtT00zR2dXdXl3RkdiVFpYZTNBVGQ?oc=5",
     "published_at_kst": "2026-04-06T01:59:41+09:00",
-    "source": "전기신문"
+    "source": "전기신문",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전기요금 OR PPA OR 기후부",
     "title": "인천 서구, 기후부 장관과 종량제 봉투 생산 현장 점검 - 한국NGO신문",
     "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9LUS1YMW5NcXJOeWxPb3hQQXNwSUxoaHBScjJWM1kyS0sxRi1JVXZNSjBqdmJ1c2tuakJ4d0F2V004Umk5V1ZyV01veXZjT1lJWWlFMEFReXJzRkVvYy1aV3RmeUJSYVBy?oc=5",
     "published_at_kst": "2026-04-06T01:55:10+09:00",
-    "source": "한국NGO신문"
+    "source": "한국NGO신문",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "AI 데이터센터 OR 데이터센터 OR 전력수요",
     "title": "LS일렉트릭, 북미 AI 데이터센터 대규모 수주 성공...1000억 규모 초고압 변압기 공급 - Queen 이코노미퀸",
     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1YOWhraXlZbjdPUW00dkVJZllXMnFxcEJMd1BXLThLdUEwbG9SWmRJbG1qbjFtTkRVRjNUdEVIdjgxd3BSemdLUmdKaXVoSnhQams0bk9OcnhGREVFeGdwTVFRVE9jYjFfS3c?oc=5",
     "published_at_kst": "2026-04-06T01:49:09+09:00",
-    "source": "Queen 이코노미퀸"
+    "source": "Queen 이코노미퀸",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "기후정책 OR 탄소정책 OR 에너지정책",
     "title": "에너지 정책: 많은 국가들이 충격을 극복하기 위해 '방향 전환'을 시도하고 있습니다. - Vietnam.vn",
     "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNQXBlM0ZfTDhhclM3Y3pRRHl0UFU5QkxOUnFQWURPbjhLQUdjREl6N3ZXdXVSbWNMaFREY0FfblN1RHZXWFFFSVNMZ3k0R21Lc2lnZ3RsbWVFbkJVWlNuUWtzcDRZMkVOT042ckNvTk5YLXBYMWZZWE40X0pJTW9EU2l4RGxmWU02djdyZm5wdkVrdw?oc=5",
     "published_at_kst": "2026-04-06T01:46:19+09:00",
-    "source": "Vietnam.vn"
+    "source": "Vietnam.vn",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "ESS OR 에너지저장장치 OR BESS OR 배터리에너지저장장치",
     "title": "솔리스, 국제그린에너지엑스포서 6세대 인버터 및 ESS 솔루션 ‘에버코어’ 공개 - 솔라투데이",
     "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9URTMxNjZjdTM0dy14eU5IdUE0OVlXVzVaVVhwYk9CNmpxblpjcWc5Q09OU3BZS2FyNXNiLUFsb2sycnVzRFR6ZVlqYnJwek9kWE1pQ1ppLVR1NlVZMVRaUTY4S3F1Nk1aX3E4VzNJMm4?oc=5",
     "published_at_kst": "2026-04-06T01:25:14+09:00",
-    "source": "솔라투데이"
+    "source": "솔라투데이",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
     "title": "인천 중구, ‘2026년 신재생에너지 주택지원사업’ 추진 - 영종뉴스",
     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFB3XzUxX2Q1NmpTbFpGMm9MRlZTcWhxUVY3ejBtX1VhemNtNWVjYVVza09ta09fMlFqTWxzdWxOaEpobmlfZ3poRVBnNHQzM2JuOGk3U3ZrLVFFSFZFRUVOR2NIUklwMGhRLWM1UA?oc=5",
     "published_at_kst": "2026-04-06T01:20:50+09:00",
-    "source": "영종뉴스"
+    "source": "영종뉴스",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
     "title": "\"물류센터를 재생에너지 발전소로\" - 한국해운신문",
     "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1ESEtVTEc0cEl4LWFLNTFZRE5KN0xBVUd4TXFJQVZfSTRabmg1a09MaEhhdldzX0hmWFJ4QWFIaUZfVWtRNEhBRE5BV3dSLWlaM2NxUjR4UlVPZTdaYzFGNTRRLWhwdlN3RGE5OUU5c3VaekU?oc=5",
     "published_at_kst": "2026-04-06T01:15:09+09:00",
-    "source": "한국해운신문"
+    "source": "한국해운신문",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "AI 데이터센터 OR 데이터센터 OR 전력수요",
     "title": "HPE·엔비디아, AI 인프라 운영 경쟁 본격화…차세대 AI 팩토리·슈퍼컴 공개 - itworld.co.kr",
     "link": "https://news.google.com/rss/articles/CBMizgJBVV95cUxPZlZ6TkVCSEVndjFfNVRNT3g0R0VyMXEtRTdic2NQSG5oSG5HeHdKNm5pWGFPT3c0X0h5OElsMHQxd21lZHpkcGV1d1o3QVc4WU1yLWFjY1NuWS1GYnJucmFMNUo4X0VRclgwNEdZV2UyWWR1dmkxQUpHZGtweERtVldwZDFkSUpFWDBOeko2Mk1FNy1tX21sTjNrOVdyY01lNkZuUmFSRTJ0Wk1ra29jb3VCZmtFRUR1WWs5M0g2VXlMLTFSNXV6RVJsZGdDQlhYd3dYS1JnRDhMSGRYMjVucmpsdHJwWHRtUVhXS2RmTXlYUmJVeHlJU19tamg4a2xEem1aLWpVU0gzc0pLamczS2pnM3JzLUh3MlpNcU5tMVFqSnptRGFQVUlJUEo3azU5eElyNEt2T3NqcVg0Tms1QldLbDRCT1BxNXY3WjZ3?oc=5",
     "published_at_kst": "2026-04-06T01:08:03+09:00",
-    "source": "itworld.co.kr"
+    "source": "itworld.co.kr",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "AI 데이터센터 OR 데이터센터 OR 전력수요",
     "title": "LS일렉트릭, 북미 데이터센터용 초고압 변압기 수주…AI시대 수혜 계속된다 - 위키리크스한국",
     "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE80YUhNYkszbjlmOW1HaUVRR2JZSzJIdzFwZUptOEFVbm9nbkJHTVo1WE1kMDRiNG9wWGlNRWdudE9XY1VKZFJ1aTZ6YXNMd0dRU1pYMlowRDVPY2c0dVNEQzY3T3lHSVlVUnVCR0FrOA?oc=5",
     "published_at_kst": "2026-04-06T01:06:00+09:00",
-    "source": "위키리크스한국"
+    "source": "위키리크스한국",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전기요금 OR PPA OR 기후부",
     "title": "“중소기업·아파트 새는 전기요금, 데이터로 잡는다” - hnrsm.com",
     "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5XVHNrby10ZGxxV3lscnpvei0wV0pxSkRoRkt3US13RlFSMk1YYWtpVmtVVjZNaVRnRTlDbmVBbmlxUVIybGRWc2o1RU00cDV4SVdF?oc=5",
     "published_at_kst": "2026-04-06T00:55:00+09:00",
-    "source": "hnrsm.com"
+    "source": "hnrsm.com",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "AI 데이터센터 OR 데이터센터 OR 전력수요",
     "title": "LS일렉트릭, 美 빅테크 데이터센터에 초고압 변압기 수주…1000억원 규모 - 디지털데일리",
     "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE93bUZLR21tdFljaW5CajU2VXg2bUZUX3gxUUVvZnhKN1ZZY1ZLT3gzUGZ1V09PNzl1Z3JiVm9sY2t1d3ZXRjUxVS1qREMxbC00cEp4aU5MYnlPOEQ2YzUtRXpUNEk?oc=5",
     "published_at_kst": "2026-04-06T00:48:24+09:00",
-    "source": "디지털데일리"
+    "source": "디지털데일리",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전기요금 OR PPA OR 기후부",
     "title": "[포토] ‘에너지절약 동참’ 지하철 출근하는 김성환 기후부 장관 - 서울신문",
     "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE95YkxzUkFkTzZGcTB0WEhnbFhmc1Iwb0hqeHQ3SDFRWGxpdmxUbnk2dFZQbEliNkIyY29UZ09fUHdZY2Z3VG9fLWUxYngwTWlBQjdXVXFpbTFvOGFNdW5xQ3hYUE1Ba21UaGR5QU5adw?oc=5",
     "published_at_kst": "2026-04-06T00:45:37+09:00",
-    "source": "서울신문"
+    "source": "서울신문",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전기요금 OR PPA OR 기후부",
     "title": "경기도, 경기기후플랫폼 에너지 절감 서비스 무료 제공...중소기업·아파트 새는 전기요금, 데이터로 잡아! - 경기종합뉴스",
     "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBPWnMwdkNKQ290NGdOcjQ1Q2FmQXI0d3VjMHJPRUhYa1hZeVpPVGRGdWFkUkxxeklCak1lTXMxYUMtYWlVX2ZBTjJPTkd2Q1g1bmwyRU50X21XYm0wdFlfdU41UDBzSHI5WHg1MmNMaHdKVzcx?oc=5",
     "published_at_kst": "2026-04-06T00:37:12+09:00",
-    "source": "경기종합뉴스"
+    "source": "경기종합뉴스",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전기차 충전 OR 전기자동차 OR EV 충전 OR V2G OR 충전인프라",
     "title": "“53조 북미 전기차 충전 시장 정조준”..채비, 현지 생산 체제 구축한다! - dailycar.co.kr",
     "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE54anNZdDMxVm5LenpCWElZaDB6V3c2SnFqSnl0V2lXT04wLXVPX2xWbjZMQ3YzWTFPdFlubEhneGZhSFA4ejJUUUl5U3pqYmcxMkFGb3RlRUdiZ2t3VEJXTklJQ0xrejFXXy1fbUhHTmE1X0xvTVE?oc=5",
     "published_at_kst": "2026-04-06T00:29:13+09:00",
-    "source": "dailycar.co.kr"
+    "source": "dailycar.co.kr",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전기차 충전 OR 전기자동차 OR EV 충전 OR V2G OR 충전인프라",
     "title": "[강세 토픽] 무선충전 테마, 제이케이시냅스 +5.88%, 포스코DX +5.57% - 조선비즈 - Chosunbiz",
     "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOV3dXZVFuMmx0MUR3ZXJVMGRaYWJJQWgyZ2kxX3BpMzM4REp5TzJtM0F2amU4aEZGd3JpV2l1eVJmVG1paUFYM2w4RE9QR2tLWkF2M1hySVl1SmNLY3VEMlNuQXZIVVJOeDJ4WlRkRjlKNXdWTjBaRHA2aDhSWFNiZ3dBb9IBlwFBVV95cUxQcklERWhKTDlfRkRZTHRxSXhwT1JCZl8zbHg1S3B4aGRoOVM2U1pSQ3lCWnBFc3h4SDM5NG9JbmNWbUpHZFpOamlEWnM5WkFmNEpZTmZVNjhHcFpIN1FZVWZ4bENkNFQ1VUU0ZEVQd2drcnpqckJsZUs0cF9fbmdacG9RSkJrRmh6ZGhIQXlGOWtucVVDd1Zv?oc=5",
     "published_at_kst": "2026-04-06T00:29:12+09:00",
-    "source": "Chosunbiz"
+    "source": "Chosunbiz",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "AI 데이터센터 OR 데이터센터 OR 전력수요",
     "title": "LS일렉트릭, 미국 데이터센터에 초고압 변압기 공급 - 디일렉",
     "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5YMHdHYXpqd2t2ZEFkZU5CQmNRZEItLWlFdWd0QWk4bm5tUTdrT0dRUThkb3RBSTlyWUx6WEVwMlRUd0xyMkhqRHBHUHBPeEI5QnROSjJ4QlJQeVRESExkTW5Fa09hdw?oc=5",
     "published_at_kst": "2026-04-06T00:26:00+09:00",
-    "source": "디일렉"
+    "source": "디일렉",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
     "title": "태양광 패널 재활용해 고순도 수소 생산 - 전자신문",
     "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5MU3lnejNGQ2JfNjZTTVg3cExXb0kxa3JIcWNGOXkzNDZTTUk5YzNfcWJ3OG9IR1dWR2g5ZzV2OEZxZFM5bHU5Z0ZleEg4dw?oc=5",
     "published_at_kst": "2026-04-06T00:21:11+09:00",
-    "source": "전자신문"
+    "source": "전자신문",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전기요금 OR PPA OR 기후부",
     "title": "[포토뉴스]김성환 기후부 장관, 지하철 출근으로 에너지절약 국민행동 동참 - BBS불교방송",
     "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9WZ0xkNFRhZi1sQ0ZKd25QVDQ4Z0tOVHRQTHdUOUNJTmFPbzJfOGUwMnh6ZkwzTUJkWnJVUkQxMXNzanJYdlc0anRJYk1QMTlMdTdhMm41Mk9ONlJJc3ZIM0xnTHNBbGQtZklZ?oc=5",
     "published_at_kst": "2026-04-06T00:20:50+09:00",
-    "source": "BBS불교방송"
+    "source": "BBS불교방송",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "AI 데이터센터 OR 데이터센터 OR 전력수요",
     "title": "[특징주]LS일렉트릭, 북미 AI 데이터센터에 변압기 공급 소식에 7%↑ - 아시아경제",
     "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1QbHBFYld5dG13NkFWcUNVTHZ3NFZCWHdxdVFqdU9IV3dRZGwzbzBNb0xFaDh0eEF3bUhXSngxckhHUHprdHRidUlhZ3lVQUxqNTQ1RE1rOU5KSnJtbm9lLQ?oc=5",
     "published_at_kst": "2026-04-06T00:15:46+09:00",
-    "source": "아시아경제"
+    "source": "아시아경제",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "AI 데이터센터 OR 데이터센터 OR 전력수요",
     "title": "AI 호황 타고…일진전기, 북미 데이터센터 시장 공략 가속 - 전기신문",
     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE83UEw1SWhJZE9YYmh1cXFrY1ozNFZ3QVhsTWdpQ3BGOExWZGR2RGx6RFFZN3c1aE5TZnFRTkNxdkx3TjY4WFFZU3hHSkYyVVhKU2x6SXdZbC1KaHFkdUFGWDk1SkpjdmZyZk1pb9IBcEFVX3lxTE1XOW44TFIwbEtUaG5RZl9CTG1fTTNLbkpCV1l6RnY1dHBaZm5fYmxGV0pEVFF2cFdRNWhzei1DYnYwb3A1TS11eUdoT0RsWkhOLWc1VW1kUzhaeVV4bnFnd2RObVVTQVlIUC04NWJFNDk?oc=5",
     "published_at_kst": "2026-04-06T00:08:11+09:00",
-    "source": "전기신문"
+    "source": "전기신문",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전기요금 OR PPA OR 기후부",
     "title": "전기요금 절감 돕는다…경기도 ‘에너지 절감 서비스’ 무료 제공 - v.daum.net",
     "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9LbjRCdDNlTFo5UE4tbkNMd1cxQ0FYRG1teFFvTVY0V2tWWWw5MW9BUVlwX2RBRWI3SzZZNnNfaFlsc2gyeVBLanpQYzdBUm8?oc=5",
     "published_at_kst": "2026-04-05T23:51:50+09:00",
-    "source": "v.daum.net"
+    "source": "v.daum.net",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전기요금 OR PPA OR 기후부",
     "title": "김성환 기후에너지환경부 장관 지하철 출근길 - 환경포커스",
     "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9nNGEzeHFXTFhlMjU5WFBlcFBrWEhZSUkxT3hvY2dTdWFWeXB6anpuRURveFUwUjIwbUpWbDhZbjU1VHp6M3FpQW41RTVCaGM5bklWc2F1NjdsMVR5QWhfLTc5RQ?oc=5",
     "published_at_kst": "2026-04-05T23:49:04+09:00",
-    "source": "환경포커스"
+    "source": "환경포커스",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "AI 데이터센터 OR 데이터센터 OR 전력수요",
     "title": "데이터센터 하나에 축구장 450개 패널? 우주 AI의 냉혹한 비용 - 디지털투데이",
     "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFB6LVd2WDVYUldUNURMUzhaejBWLUhhdldwdmZaNDV4dW9NWXdscmJNamhubGktVExENFFTZ2llUV8ydzVjSEFfR2FaWXhkcFV4MTFaczN0WUJKZWtJdEp3MVprOWpkRVNYdnA5R2FHb0NQRzA?oc=5",
     "published_at_kst": "2026-04-05T23:47:49+09:00",
-    "source": "디지털투데이"
+    "source": "디지털투데이",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전기요금 OR PPA OR 기후부",
     "title": "[기후부] 인공지능 대전환 시대… 국민의 아이디어가 생활 속 환경·에너지 문제 해결 이끈다 - 워터저널",
     "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBmX3M2TjBMaGwxUll4eUtwRW1zXzhTbTRUVVFVQ1JmNU1zd1AwTFdhQWZRbW84SGJNRmhuY3hJMjM3SzRMNHJCWjFjM0l4MmZ2V1oxeHRUa3FhMFFvWnNJdWtUbFMtaWhZMDNUYXp4RFJxd9IBdkFVX3lxTE5ZZ2NwMGd1ZVZaazBaOTR3dWY2cEc0bzlKR0hYVDlsVkQwNkIzRlNROXJ4eUlQSzJxbjFqWHBIaVRRT2o0c0F2M25FUGFmb2Y0cERMNGk0X1VqOGJhSkFXSUZsMEwtNzZ4NXFCajVuRnFNX2ptb2c?oc=5",
     "published_at_kst": "2026-04-05T23:47:43+09:00",
-    "source": "워터저널"
+    "source": "워터저널",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "ESS OR 에너지저장장치 OR BESS OR 배터리에너지저장장치",
     "title": "[기획] 스탠다드에너지, 고출력 ESS로 AI 전력 병목 해결 - 국토일보",
     "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9FUFZic1hNcnQ0YkpRVW80cno0ZFNUVnR4NWxkTEZkYWdrUi1SWUw1eV9jOGFNRnBFc09ralp3VU15clhPTkF4NC1FRG81Nl80VXN5dklHLVNET0U3Rkp0VWVWbw?oc=5",
     "published_at_kst": "2026-04-05T23:36:43+09:00",
-    "source": "국토일보"
+    "source": "국토일보",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전기요금 OR PPA OR 기후부",
     "title": "김성환 기후부 장관, 지하철 출근으로 에너지절약 국민행동 동참 - 연합뉴스",
     "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1GUlZDWDdIQUNGSDRsSVJUY0lOX2xQaXZVVWUzUVg0N3N6YnFERm52RE9wMEV1QWlKRTk2S2pEMFV0U2FrRGVoc3FEazlTZE1adUVhSVJEX2NMU3BOS0hBONIBYEFVX3lxTE1GUlZDWDdIQUNGSDRsSVJUY0lOX2xQaXZVVWUzUVg0N3N6YnFERm52RE9wMEV1QWlKRTk2S2pEMFV0U2FrRGVoc3FEazlTZE1adUVhSVJEX2NMU3BOS0hBOA?oc=5",
     "published_at_kst": "2026-04-05T23:29:43+09:00",
-    "source": "연합뉴스"
+    "source": "연합뉴스",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전력시장 OR 전력계통 OR 전력시스템 OR 전력거래소 OR 계통안정화",
     "title": "가스 터빈 가격 195% 폭등, 공급 병목에 글로벌 발전 시장 '비상' - 에너지안전신문",
     "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1odjRRNEVoQWkzRnBSLVhIaEVPZzhybUJjeDF0SXJ4TWFuZUtaUmZoNFZyNWRDVmlBZDNhUlJoY3dhVHZBbFRRNG5yMmlSZlFRRXRKckFGQzRkQkx6eHA3QVlRSFU?oc=5",
     "published_at_kst": "2026-04-05T23:24:43+09:00",
-    "source": "에너지안전신문"
+    "source": "에너지안전신문",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "AI 데이터센터 OR 데이터센터 OR 전력수요",
     "title": "LS일렉트릭, 북미 AI 데이터센터에 1000억 규모 초고압 변압기 공급 - 뉴스1",
     "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBDLTFyVi16ODI4V19sTVdrM09ubElxZEo0ZTEyMGRNSDVpMVd0YkszU3R5YkdYVnJTd0s5NHpaOVBIbTRsenBtbEgtZUhvX2xObEFOYnpFWUpZUDlVZ2E0LUt5WFE?oc=5",
     "published_at_kst": "2026-04-05T23:20:58+09:00",
-    "source": "뉴스1"
+    "source": "뉴스1",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "AI 데이터센터 OR 데이터센터 OR 전력수요",
     "title": "\"챗GPT 쓰면 전기 바닥날까?\" 당신의 일상을 뒤흔들 AI와 에너지의 비밀 - 에너지안전신문",
     "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFA4TGd3WC1JV3RTTnlfVkw1QTllMkZ2b0NQVHpaWm1DTS1XSThxTFpjQzZWRHAwSUpfeUtYc3BVNUc0OGNUcmhnTEc2OF9Nc3BZREdWcV93MUtTNS1YOWhPekJUZ1Q?oc=5",
     "published_at_kst": "2026-04-05T22:49:09+09:00",
-    "source": "에너지안전신문"
+    "source": "에너지안전신문",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "ESS OR 에너지저장장치 OR BESS OR 배터리에너지저장장치",
     "title": "중동 리스크에 에너지 시장 지각변동…유럽, ESS 계약 ‘폭증’ - energyprosumer.info",
     "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9UVjhyWW8tRkhwaDhmS0RrRzdrcE9vMFhVdWs1QTJYUHc1WmxhNkVCeVFPVlRCU2JIdEhNR3BqUXdnaXVZZXFNMERHd3E?oc=5",
     "published_at_kst": "2026-04-05T22:03:00+09:00",
-    "source": "energyprosumer.info"
+    "source": "energyprosumer.info",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "AI 데이터센터 OR 데이터센터 OR 전력수요",
     "title": "이란, 오픈AI 40조 ‘스타게이트’ 정조준… AI 데이터센터 ‘군사 표적’ 됐다 - 글로벌이코노믹",
     "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNMDBvODhfdnJmblIxekYybWlwZ3o4NDRTT2JmcmF0RmJnclpTUVJ0WmZQWExVVEVzNWJiVUNiVzNrZ01Dd3hkOXpicmtRc0VOLW5uMFhQbXN0eUxNTjZnQTdDTENfV19rSHgxSkVaOVVLMTNSTWVLWmR6eERVNUZQSWpGazFwcERv?oc=5",
     "published_at_kst": "2026-04-05T22:02:17+09:00",
-    "source": "글로벌이코노믹"
+    "source": "글로벌이코노믹",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전기요금 OR PPA OR 기후부",
     "title": "[사설] 지역별 전기요금제 언젠가는 실현해야 - 이투뉴스",
     "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBRVERhOHNWLUxPRmVtUU4zR0xWQ0VUb1VjQTZOb0c0WnFhXzZ6RkhGRUVoeExRUVR6SEQ0eXlpZmpic2NreGxaRF80ckRqNndESEVEUEVLS3Q0OFZuQzJVZmczNXFEUk3SAWtBVV95cUxQcEdUMEZ0Y1V5T3E3eHg4dGRnb0s4RFJFdGJybXhBZUE4QndKYU14cTBnR2xaS3h6NHB4LUpXQUR5dnRCN3ZXb2xqNUg0VTJRSlpyS1NVZ19SMDFNamRtYng3c0M0ZVVEZGdWMA?oc=5",
     "published_at_kst": "2026-04-05T22:00:00+09:00",
-    "source": "이투뉴스"
+    "source": "이투뉴스",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "ESS OR 에너지저장장치 OR BESS OR 배터리에너지저장장치",
     "title": "[기획시리즈] K-성장산업, 기계설비가 주역 (3) 데이터센터·ESS - 기계설비신문",
     "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBIcnIyd0Z2YngzdVp4cWJHenFNRklRME5yZ3dvSlF3ckRha0JkSzRGNDJmdkVzU2hjaXYwSDVtMjVFTlRaVkZlbjN0VWJLWGRCaEtsckliX3N3Q3l6Rzg4RlhKRUpvSDhJX0xr?oc=5",
     "published_at_kst": "2026-04-05T21:00:00+09:00",
-    "source": "기계설비신문"
+    "source": "기계설비신문",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "AI 데이터센터 OR 데이터센터 OR 전력수요",
     "title": "AI 시대의 데이터센터 기술⑧: 데이터센터 에너지효율 기준-3 - 기계설비신문",
     "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9hYWVpX1VHeXduZmhiYjlZNmpvUmVZVHRLclRjRTEtUklyYkxrWWdsSnlGaHU4WHhCSEhuRURoVkl1c19mZ3BkSzE3VDlTUVhyR3BwTjk5OXNWdWJHRmdmSk5FS2xwYW5CVVpF?oc=5",
     "published_at_kst": "2026-04-05T20:30:00+09:00",
-    "source": "기계설비신문"
+    "source": "기계설비신문",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전기요금 OR PPA OR 기후부",
     "title": "독일 전기요금, 프랑스의 5배…탈원전 대가 혹독 - 글로벌이코노믹",
     "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxORW93QU9XMzZ2WnRvNWQ3eVF3bHVhQXlDcWhGd3gtRTM1dmloRjJYQS1RVi13dWpvZlFMZHBhdmtuS3V3NExVNi01WVJXVENiVjhobm5MS19DdTZTdFBfQWxUQmlLMmE4Y0NSWWNkWHhPZDVkdzRKQkNoM1lfeHpvdFBTOWwxdFow?oc=5",
     "published_at_kst": "2026-04-05T18:40:00+09:00",
-    "source": "글로벌이코노믹"
+    "source": "글로벌이코노믹",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "AI 데이터센터 OR 데이터센터 OR 전력수요",
     "title": "구글, AI 전력 확보 위해 가스발전소 추진 - ESG비즈니스리뷰",
     "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE81ZjFTWUtpX2RXTWtBZXNyV0ltX0QybU04NVJBNENmaUlIVjRTTnQzSlBBS1A3U25EcHNSNGtiTXEydlRmZHZKTFNGZWFOSldDQUk5ajgtVUlUUWxmX2JwQ2FWQ1h3YTdGY0piVjlNOU5CVm8?oc=5",
     "published_at_kst": "2026-04-05T15:43:37+09:00",
-    "source": "ESG비즈니스리뷰"
+    "source": "ESG비즈니스리뷰",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "수요반응 OR 플러스DR OR 전력수요관리 OR 수요관리",
     "title": "[사설] 물가 충격 먹거리까지 위협… 공급·수요 관리에 만전을 - 세계일보",
     "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9BNFUxQjVnSURRcUhTcEpGNGtub0dkVm9nTUpzM2VHdHY2U0JjV205S3AwOENXM0hKWHRPWDJRUTVfR2VWU2lWdVpleGwxV1E1SjRnRm5IN2bSAVRBVV95cUxNZFdUYkZnaTV2aU4tN0JBRU0xM0hMeDJ3OVpXM1lhWFozcjNPQ25OOWpsVE9saE9pUHpaTDlxbWpjb29Na2xLMlRxOTVPaUhXQjNBQ0Q?oc=5",
     "published_at_kst": "2026-04-05T13:58:09+09:00",
-    "source": "세계일보"
+    "source": "세계일보",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "AI 데이터센터 OR 데이터센터 OR 전력수요",
     "title": "‘사천 스카이시티 AI 데이터센터’ 건립 본격화 - 경남일보",
     "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9yMHlBaVhJVWNxQXZFa3pWS2NXWE5tQWxzLXk5TUhYbERxckFLUlNRQ1I3bG5pTy16emk2cHJRNzAzRkFsYVRhc0JBYTJYY09ETENTbEo2TUFDMzBKS3FZUGhETDVfSDZoUW9J?oc=5",
     "published_at_kst": "2026-04-05T10:54:08+09:00",
-    "source": "경남일보"
+    "source": "경남일보",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전기차 충전 OR 전기자동차 OR EV 충전 OR V2G OR 충전인프라",
     "title": "강남구, 전기차 화재 대응 질식소화포 동청사 15곳에 설치 완료 - ignnews.kr",
     "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBIMXN5Y0lvYVY4bHpPYkZmbFdkd1ZjMkdCR3c4N29zdWsya2J1Z180NFBHcUxGTHdwVDRaSEVnZ0U2eUFFSlZ6U0JzQWU0SE1vSmZSSmdDaEZhZzJvQnd0Sk9YS1J1QQ?oc=5",
     "published_at_kst": "2026-04-05T10:40:27+09:00",
-    "source": "ignnews.kr"
+    "source": "ignnews.kr",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "ESS OR 에너지저장장치 OR BESS OR 배터리에너지저장장치",
     "title": "전기차부터 에너지 저장 장치까지! ’배터리’의 존재가 더욱 중요해진 이유 - 채널A",
     "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5aYmtUbDBfRmdncVVyX0pST3o2RlNmcG9sWGRtT1Zib29pNkdFM0FGM0RRNXlVQ3NndVVWenVvTEo0ZWNxZWJaeVhYZXNmS3Nlb3ZvM25oQUVyZThqODZv?oc=5",
     "published_at_kst": "2026-04-05T09:11:00+09:00",
-    "source": "채널A"
+    "source": "채널A",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전기차 충전 OR 전기자동차 OR EV 충전 OR V2G OR 충전인프라",
     "title": "SK시그넷, 플라노 시장과 전기차 충전 협력 논의 - 한스경제",
     "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE53dEJ0LXdzZS1scjZDZWVFWUNQVVhCbjRfWjVvYzY0WEVNTVd4UzNNVFVxOWRkTkhlb2E0RTdZOG9FMDZwQnQ4TmI1dDRTU2NQMTdCVVNxZ2MxZzZkVDlnMllpbTlRQXhYeXNZ0gFvQVVfeXFMTUFQWElsM2syQ21ybVhiS2ktTzdUTUZZTTZFamFQZ1NSNW1qNTFrY184LTFiZndjaEdmTndfWDF2bjk1bWdpT2FJVXJZSjJFM0dyR1FIbk9uOFh3ZjdDLUhVeVc0bWdHYXJDY0stYmE0?oc=5",
     "published_at_kst": "2026-04-05T08:59:28+09:00",
-    "source": "한스경제"
+    "source": "한스경제",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전기차 충전 OR 전기자동차 OR EV 충전 OR V2G OR 충전인프라",
     "title": "[공모주 예상] 채비, 공모주 청약 예정…전기차 충전 인프라 ‘원스톱’ 사업모델 부각,공모가는 1만2300원에서 1만5300원 범위로 제시 - cbci.co.kr",
     "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5KN1REd3M5eGhqSXJtNWo1NzVZeGVXM2R3cG9ybFU4Q1k5OWxMaTUxM3BXWWQyUVlmc3o2N0pvbE9FdG94VVBIdlVkdDBETDV0aTJheUVQWjVQclAtTXJJTnpZMnZhU0Y1?oc=5",
     "published_at_kst": "2026-04-05T07:35:00+09:00",
-    "source": "cbci.co.kr"
+    "source": "cbci.co.kr",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "ESS OR 에너지저장장치 OR BESS OR 배터리에너지저장장치",
     "title": "K―배터리 R&D, 전기차 밖으로…ESS·차세대 전지로 보폭 확대 - 메트로신문",
     "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9MVEk1cEkxRGNHSk5NcDZ6RGRucDNYTHJYNEhIX1A0RVJwdUtkbzBlSHNmQ2JGbmNqM01lZmk4elM0TXpnX0QxYTUzLV9velZmcFpEU0JyZ2dzdWNqUGRpMg?oc=5",
     "published_at_kst": "2026-04-05T06:38:48+09:00",
-    "source": "메트로신문"
+    "source": "메트로신문",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "ESS OR 에너지저장장치 OR BESS OR 배터리에너지저장장치",
     "title": "AI 전력난이 키운 새 투자처…ESS·전력인프라, '넥스트 반도체' 될까 - 이투데이",
     "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5meGZZcnBHTE9GTW81ZU12UDJnTW5PNXFRaTczcVFwTWN5VFk3SzVNUHg0WVhqMm5jS3RLR0ZCZDFGWUU1eTY5T1JUUEpkYmVab3Rfdw?oc=5",
     "published_at_kst": "2026-04-05T05:38:00+09:00",
-    "source": "이투데이"
+    "source": "이투데이",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "ESS OR 에너지저장장치 OR BESS OR 배터리에너지저장장치",
     "title": "[에너지전환2050] 중부발전, 해상풍력·ESS·RE100 총공세···‘탈석탄’ 가속 - 이뉴스투데이",
     "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFB0endXRGdpbmVxSUV1b052T2hfQWlPWTEtQXRGZzgxUGRjWGRfT0E0a0ZIQ2YtcC1vdG5rZE51ckdtNnIyOHFKNVRub0dqRDhoN1BMc25aS0g0SnVxUWpqVW4xYTlIYmpxRFFBS3VrS1PSAXRBVV95cUxNZHFGUFZ5aE9LR2hzNTV3NXMtWXE2WkdFOGF3VVJyTUpyNHZpQmZMS2V2MEhtMENVZGZWS0xKRzExdGx6RjVhSzhoZngwLTBnVkwwZDM4bVlFZHhtSTBRWEh4NDh2ckdmWFlrWUhlaEYwWHJUag?oc=5",
     "published_at_kst": "2026-04-05T04:27:14+09:00",
-    "source": "이뉴스투데이"
+    "source": "이뉴스투데이",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전기차 충전 OR 전기자동차 OR EV 충전 OR V2G OR 충전인프라",
     "title": "[이번주 공모주]전기차 충전업체 채비 수요예측 돌입 - 네이트",
     "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBXSl9UVWwxV2FJbWxWY1lzUXJVYTVvbkNhSjFRd3BWVjZKOG1KVTU5al9lSV80ZVBVbk5ra0RQSWJFT2xBN2QyOEdONWFmVnNIQXMw?oc=5",
     "published_at_kst": "2026-04-05T01:41:00+09:00",
-    "source": "네이트"
+    "source": "네이트",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전기차 충전 OR 전기자동차 OR EV 충전 OR V2G OR 충전인프라",
     "title": "전기차 충전업체 채비 수요예측 돌입 - 한국경제",
     "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5nTVctTEN3aXdaa0VtVDhJUTFCZ3JZR2xzZVkteEJFS0piVXJVQmVCR2ZPeU9MWFR3WnI1dGJHVjJIckttdVc3bFlEQWFBTjNtdjNFOdIBVEFVX3lxTE5nTVctTEN3aXdaa0VtVDhJUTFCZ3JZR2xzZVkteEJFS0piVXJVQmVCR2ZPeU9MWFR3WnI1dGJHVjJIckttdVc3bFlEQWFBTjNtdjNFOQ?oc=5",
     "published_at_kst": "2026-04-05T01:40:16+09:00",
-    "source": "한국경제"
+    "source": "한국경제",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전기차 충전 OR 전기자동차 OR EV 충전 OR V2G OR 충전인프라",
     "title": "‘국산 토종 급속 충전 인프라’ 채비, 53조 북미 마켓 공략 다각화 - 스포츠경향",
     "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBzTzh0Q1I2US1wd3pqd1VJUFRzZnB1Sk5FTVJqNXZEcXFVeEpiR1VfYlFndHF2WnBQQ3VnZkZIWndPSEZCWG9wOHFGU19Tb1h6VmljTWVnZ1QxcnlmN0HSAWNBVV95cUxOUktzTzlSbV9iWnhmYmtoU2ZvaHR5ckVQV3QtSWcyUEZUd2hGSURUamI0M3pELWpVR1pfNVZHaUJJS1BEMWV3d2lsOG1hUXFnNGw3UjBOODV0YXdJeU5LMG5UZlk?oc=5",
     "published_at_kst": "2026-04-05T01:10:00+09:00",
-    "source": "스포츠경향"
+    "source": "스포츠경향",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전기차 충전 OR 전기자동차 OR EV 충전 OR V2G OR 충전인프라",
     "title": "“북미 전기차 충전 인프라 구축”..美 플라노 시장이 SK시그넷 공장을 방문한 이유는? - dailycar.co.kr",
     "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9JNVZEMEFSWEJPSTY3RGNDeW5IZVBYZWprLTBFWklEbHhRckg0dkxORmt1Zy1XWDRUdHFWbWFQbW1NR25oOFM2ZHJLNDN6VEN3NkNZTndlUk5nZHZqMThMaHJGWEtLSDMwUDFWUWd5U0lTXzB1LWc?oc=5",
     "published_at_kst": "2026-04-05T00:15:20+09:00",
-    "source": "dailycar.co.kr"
+    "source": "dailycar.co.kr",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "ESS OR 에너지저장장치 OR BESS OR 배터리에너지저장장치",
     "title": "EV↓·ESS↑…LG엔솔, 2분기 연속 1천억대 적자 전망 - 연합인포맥스",
     "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5Md01iTmZhdjBZYnhnY2FSWlpHRWlHLUlGM0s1aC1taXJuLXl5SXhfZzNDbGVZR1lUVWh1RUJQYmxKYWwxRDY5ajVDVUV4dWJLTkZ2UzRNU2lqdFJsNkxGb3FIMTZWblRSVU9tbTA2UHc?oc=5",
     "published_at_kst": "2026-04-05T00:03:22+09:00",
-    "source": "연합인포맥스"
+    "source": "연합인포맥스",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전기차 충전 OR 전기자동차 OR EV 충전 OR V2G OR 충전인프라",
     "title": "[IPO챗] 줄이은 수요예측 속 차분한 공모시장…대어급은 잠정휴업 - 매일경제 마켓",
     "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9YSkhlX0J4UnRROGdrLWc0MTQxdGxXTzJJZG5iMHNrLVlWcUJ5SG0wRnFhZzRZYlVUNGc5RUlUSlNZX0drSTZFLXctUldMeC0zUXc?oc=5",
     "published_at_kst": "2026-04-05T00:00:10+09:00",
-    "source": "매일경제 마켓"
+    "source": "매일경제 마켓",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전기차 충전 OR 전기자동차 OR EV 충전 OR V2G OR 충전인프라",
     "title": "[글로벌전략] 채비, 북미 전기차 충전시장 공략 가속…현지 생산 체제 구축 - 코리아포스트 한글판",
     "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBiZzRJV1RaeWlFVHNpWThXc0ItbTVaR0luTUN4STk2b2FFaWdOVk9xVFpEcUhZNVUxRHdkSzBJYnctMVB0eGlhQnhhMkFmdWRzc3VHWGlxd1dLci1DbWZJeVEwOU8zVkdLcjJSX3hn?oc=5",
     "published_at_kst": "2026-04-04T23:05:00+09:00",
-    "source": "코리아포스트 한글판"
+    "source": "코리아포스트 한글판",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전기요금 OR PPA OR 기후부",
     "title": "정부의 원전 도박 ①\"원전 출력 80% 줄여야\" 기후부 내부 문건 입수 - newstapa",
     "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1FaGF0UTBiWW1ZYnJKM3hPYUZUMVV4QlZyY0p5dUVJdEZTdmE1MmFmQnRKM2pSb0tVMm9jNEFrMGp6ZWQzRmk1MQ?oc=5",
     "published_at_kst": "2026-04-04T21:52:08+09:00",
-    "source": "newstapa"
+    "source": "newstapa",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전기요금 OR PPA OR 기후부",
     "title": "밤낮 바뀐 전기요금…인천 철강·유화업계 ‘연간 수백억’ 비상 - 경기일보",
     "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1ZOU9LeHVwM1dxb3NoZjVJcGtQeWZ4c3RxLXZoVmdObnhuY3hYSVhncHQ0dTNCQ25jMWNwWmZ0MnNHM0dDVFZOWWQwdDFmeGJmeS1HVHVveHdkb0E?oc=5",
     "published_at_kst": "2026-04-04T19:30:00+09:00",
-    "source": "경기일보"
+    "source": "경기일보",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "산단공 OR 산업단지 OR 탄소중립 산단",
     "title": "[부산광역시] 전국 최초 '산업단지 유치업종 체계' 전면 재설계...‘산단 진화’ 본격화 - 한국지방정부신문",
     "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9Yd1k3eE5aeENMbm1ib0kyVnctbVFJNDNhZlNYME11WDNlT29CUDFveEdZSEhCSXhTOG0xMlgtUE9TMmQwTVFYVUZkLVRvLXdhYXhKUWJ3VTA2Wk93d1ZOQWRKamhDblNhSXc1VEM2MTc3dw?oc=5",
     "published_at_kst": "2026-04-04T12:53:19+09:00",
-    "source": "한국지방정부신문"
+    "source": "한국지방정부신문",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전기차 충전 OR 전기자동차 OR EV 충전 OR V2G OR 충전인프라",
     "title": "SK시그넷, 미 텍사스주 플라노시와 북미 전기차 충전 인프라 확대 논의 - 디지털경제뉴스",
     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5TZWc4VFdwQ2tjQkdOSHFtaGkxLVNwazJQcDItYXpfdElwOVlCTnJmSlhNczNSZ05LS0dSVWxWcHZ2a1B2SXpKeTRnM1FUME9lcnpBZW83cXg1QVowMUROSktlaFVId09NOWc?oc=5",
     "published_at_kst": "2026-04-04T12:52:06+09:00",
-    "source": "디지털경제뉴스"
+    "source": "디지털경제뉴스",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "산단공 OR 산업단지 OR 탄소중립 산단",
     "title": "대통령직속 국가기후위기대응위원회 - 국가기후위기대응위원회",
     "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPR21ZR0VtanpTaDk4cGRrRng0bWJ6Q1JxaTdzbXdicGhZdXJBeDd5c0ZXV0VVOXB4QjdROXpibDA3X05PVmpzWDBRMjg5Z1MtR2hnUTBGNUFzNkh3YzAtOXRhQWRycDI1VzBKYVhsODJPTl9LQlhYcGJLRHpmMzcyZnF6SnV0THdhcWhmczBfZG9OWDluYW41NTFoZnFnS3pGbEVBbXZUTV93SFppSkFVNGF4MnJKSGN4eHhTWF9zdHhWajhkcWV0YmVfYUhSWnd3bW9RdkRJLVVNUQ?oc=5",
     "published_at_kst": "2026-04-04T11:40:41+09:00",
-    "source": "국가기후위기대응위원회"
+    "source": "국가기후위기대응위원회",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전기차 충전 OR 전기자동차 OR EV 충전 OR V2G OR 충전인프라",
     "title": "전기차 충전소가 아파트 단지에 들어설 때: 친환경 도시 개발의 새로운 과제. - Vietnam.vn",
     "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQUUp6Qm9Pa0N3OG0tc3FxSURsV1lhamZNRElJaTNTSnB3ai1ZTUg1ekN6RnBUVEt4bUVpalhKSXBHMG1uUGZpaUFnQnFnTGIwYURJbjZ1LUxTdVV1UmpObWpoTU9LTDdwNmYyYkk3N2tUdUNLLVEtZm1mckhnb1RlTTkyMlRybDJrU3RhRXJYd1Z5ZkhoSklua1cwZw?oc=5",
     "published_at_kst": "2026-04-04T06:44:19+09:00",
-    "source": "Vietnam.vn"
+    "source": "Vietnam.vn",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "AI 데이터센터 OR 데이터센터 OR 전력수요",
     "title": "AI 데이터센터, 공랭에서 액체로…냉각 패러다임 본격 전환 - 냉동공조저널",
     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBFcEVUUGFkNERyQzlPR2RJSXM3dkpLS205aUkycE9jM3NXLXFiUVJoTC1mZVpFZnNRY0taRW5vUkRCMHhGWmRCbzhsOVlENXVGN2dsRndmclZrTGQyQ3Q1Q3dYLTdjZzliWUE?oc=5",
     "published_at_kst": "2026-04-04T04:47:56+09:00",
-    "source": "냉동공조저널"
+    "source": "냉동공조저널",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "ESS OR 에너지저장장치 OR BESS OR 배터리에너지저장장치",
     "title": "벼랑 끝 배터리, 발로 뛰는 총수들 - v.daum.net",
     "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1zcTg4Y2NBRld2STRJaGdKUFhLd1pnc2hld2w3YmdqcHJNNV9tNzk3SG5FaGNTTXNBckZFN2ZpeV8xSlQ4T04zLVB6c1Nsak0?oc=5",
     "published_at_kst": "2026-04-04T03:14:02+09:00",
-    "source": "v.daum.net"
+    "source": "v.daum.net",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "배터리 제조사 OR 배터리 인증 OR 인증 취소",
     "title": "전기차 배터리 정보 4가지 더, EV3 구매자 꼭 - 브런치",
     "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1vaWx2YWpzcGhEVWVsTndpMFJ6clFVWW1lZE4zWGdWZEZ0ZXNoQmJSbTFINXl2c3NSLVRoQzJXbTN3TVdyQzN4NE5oV3ZtMWpfenpB?oc=5",
     "published_at_kst": "2026-04-04T03:08:47+09:00",
-    "source": "브런치"
+    "source": "브런치",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "ESS OR 에너지저장장치 OR BESS OR 배터리에너지저장장치",
     "title": "에너지 리스크 속 기회...윤석천 \"2차전지·ESS, 구조적 성장 지속\"[경제일타강사] - MTN 머니투데이방송",
     "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBneEt6bWlwWVlzOXd5ZlhYdm5kZjlyR1k2R2V5X2JVNUxtcV9GSS1WMmdBMFRsSG9WcHpNdk5zbHU2MTYtc1BEdG5RUmNzT2oxdDgyQ1hzbm5WVFBJNFoybVh0b1I?oc=5",
     "published_at_kst": "2026-04-04T01:00:01+09:00",
-    "source": "MTN 머니투데이방송"
+    "source": "MTN 머니투데이방송",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전기차 충전 OR 전기자동차 OR EV 충전 OR V2G OR 충전인프라",
     "title": "K-충전, 美 NEVI 5.3조원 시장 공략 나선다 - 전기신문",
     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE95TXNIcUExUTR2RVNiaTYtcEhGVE1MRktGRTVIWTFhZDg0ZDBPV09obGVfUHpNaEFSRjV5SFRYc0Q5NHV0cFdaUTZFYmw4MTVuZVVPSHdDY09mZm5GcEFpbnhOYVQyMXNsRTdGadIBcEFVX3lxTE5yd2JXNDAwbVlkcEVNZk9fMVNUdVVDTy1lNnY1cDJ3TlpRd0J2S2tXMi1QRTZCQ09mTk9rVFpRazU1Y2pEdzd4QUFiZEhSbnltajJDaldpYmNTRlowRW5vektSODdrLUFjeEViZ1hEMGI?oc=5",
     "published_at_kst": "2026-04-04T00:11:04+09:00",
-    "source": "전기신문"
+    "source": "전기신문",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전기차 충전 OR 전기자동차 OR EV 충전 OR V2G OR 충전인프라",
     "title": "K-충전 기술, 美 시장 정조준···채비·SK시그넷, 현지화 전략 가속 - seoulfn.com",
     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9UUEtlVDNJRHFfTnFCR0ZHWjJyMVBHSVQ5SU81UWZRZ3MtamozS2NOejB1VG1lQmE5bG5oY3ltS0VUSExzWTFnNlQ2MW5xTHZhcUFsYWRhb0FVNU1INkN4U01QSzNtSWtOWWc?oc=5",
     "published_at_kst": "2026-04-04T00:00:00+09:00",
-    "source": "seoulfn.com"
+    "source": "seoulfn.com",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "해상풍력 OR 육상풍력 OR 재생에너지 입찰",
     "title": "[중화학ON]부유식 해상풍력 입찰 상한가 논란 \"차액결제계약제도 없이 어렵다\" - 네이트",
     "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE53SllQV1B3TzRFZFQxUWktWFQ4Tk1TYzF2NnlUREZxWnBuX2MwUTg3a2c5cDNUS3c1b3VGVHhpUC1Pb0lDR0RDMnFoOGJBYnEwUVllaDdZRkVlWWVQR0ZTZWI3VjdISGg2Vm1TZ0RoNWNBTUhOaU9OUw?oc=5",
     "published_at_kst": "2026-04-03T23:10:38+09:00",
-    "source": "네이트"
+    "source": "네이트",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "해상풍력 OR 육상풍력 OR 재생에너지 입찰",
     "title": "[중화학ON]부유식 해상풍력 입찰 상한가 논란 \"차액결제계약제도 없이 어렵다\" - v.daum.net",
     "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE4xNVZpeUVSTDFCQXdOZWdUd3o3dnYzUjJKMk1rNGVQSDRRRWRzcm5QOFNBRVM5dG1rWC1ELUlZckxXX3lSNXBpOVJkSktxWHhTSUZHVw?oc=5",
     "published_at_kst": "2026-04-03T23:02:37+09:00",
-    "source": "v.daum.net"
+    "source": "v.daum.net",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "기후정책 OR 탄소정책 OR 에너지정책",
     "title": "[이지 사이언스] \"현행 기후정책으론 2030 NDC 달성 쉽지 않아\" - 매일경제 마켓",
     "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9Ic0tUdXNDUkJ0R0V1bkR3SXRTZHNod2hYSkViYUQ0UDBtYlVfeHgzWmRkR3FZTzJ3U25Ea1hjZ0xNd3ZaRDYyamowV0NqQkNyZUE?oc=5",
     "published_at_kst": "2026-04-03T23:00:02+09:00",
-    "source": "매일경제 마켓"
+    "source": "매일경제 마켓",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "산단공 OR 산업단지 OR 탄소중립 산단",
     "title": "‘RE100 산단 특별법’ 국회 문턱 넘을까 - 전기신문",
     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9xdl9XaGw5MldPanNrSUQ2TnhiSUNQQk9jN1lqZjlNeUVycURWQWU4WjFXbWVsVUlrNUo3VHBkMWVoX2V4aGVlREN0ZFVNM3g1aWk3QzRIQUVHelRHT0d6WFFwLWFWVDFiN2wtbdIBcEFVX3lxTE52N3gzek5lckNwdUo2VVdyTXF4NWpWZzlTQUJEeHBXMzBQNm1DTGNwekhCaGNWWXJnRHpCSThpSHphYUpDbWlVVnIwSXVZa25fNjlXMFE5ZUpBVllpSUtJOFNwOHNmdy1KV0N0TXlIczk?oc=5",
     "published_at_kst": "2026-04-03T22:00:00+09:00",
-    "source": "전기신문"
+    "source": "전기신문",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전기차 충전 OR 전기자동차 OR EV 충전 OR V2G OR 충전인프라",
     "title": "[오늘의 국회 에너지 입법 : 전기차 충전요금, 주유소처럼 공개 표시해야] - 에너지플랫폼뉴스",
     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1hYzFxbU9zdE5nZUNTU196ejNqUlppVWF4ZDJyaFBGc05DTmVzcHEzbjFKVG9UTGs0T1Z3dEpXYWNJYWRxSGkxZ0ZITi1VbktXaDFrOTIyellmY2VSMVRSRU54MmRhdEViUUl3N9IBcEFVX3lxTE5qYnhDM2xZRXhzbzZodzRoNHJjTjJOaTlfMzZ0SkVQSlB4U2lmR0M0MUU5VnRlb3R2UXRsX0w2dEhuejJhU0VCcGd1ZmRGSWRYVHdhTjdkOU5sMmZWR0daX1FGME1GUmwzZXhrSWpWbjA?oc=5",
     "published_at_kst": "2026-04-03T21:48:23+09:00",
-    "source": "에너지플랫폼뉴스"
+    "source": "에너지플랫폼뉴스",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전력시장 OR 전력계통 OR 전력시스템 OR 전력거래소 OR 계통안정화",
     "title": "에너지 전환서 찬밥 신세된 ‘수소’…일반수소발전 입찰 사라질듯 - 기후에너지데이터뱅크",
     "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBtM252bFJtUnNBZ2xRNzZjaFZqOERkcEMzRXcxVm1kRW9keWNtM05LYjhMMlA0OC1SM1hseEZyQkE5ZTFkRnNueXVNa0gyZDBmS1M5NEM1aG9iRW5wa2c?oc=5",
     "published_at_kst": "2026-04-03T21:43:00+09:00",
-    "source": "기후에너지데이터뱅크"
+    "source": "기후에너지데이터뱅크",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   },
   {
     "keyword": "전기차 충전 OR 전기자동차 OR EV 충전 OR V2G OR 충전인프라",
     "title": "12분 충전 배터리, 전기차 혁명 신호탄? - 유스연합",
     "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE4xWUJUZnNvQmtwWGhhck9NM0EwS1R0WVpJMDljYVdKNGRFeXMzdWhpQl9tZ3hWaWo2VnpVR09rTmtOWUpxZk5LZWtNNGRMZXhkUGc?oc=5",
     "published_at_kst": "2026-04-03T15:31:14+09:00",
-    "source": "유스연합"
+    "source": "유스연합",
+    "label": "IRRELEVANT",
+    "reason": "API 호출 실패: name 'classify_article_label' is not defined"
   }
 ]
