@@ -8,3 +8,4 @@ class NewsItem:
     link: str
     published_at_kst: str
     source: str
+    summary: str = ""  # ← 추가

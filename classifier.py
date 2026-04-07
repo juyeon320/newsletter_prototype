@@ -1,3 +1,7 @@
+#classifier.py
+from config import OUTPUT_DIR
+ #"filtered_news.json" → f"{OUTPUT_DIR}/filtered_news.json"
+# "classified_news.json" → f"{OUTPUT_DIR}/classified_news.json"
 import os
 import json
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -17,7 +21,7 @@ def classify_article(title: str, summary: str):
     user_prompt = build_user_prompt(title, summary)
 
     response = client.chat.completions.create(
-        model="gpt-5-mini",
+        model="gpt-4o-mini",
         messages=[
             {"role": "system", "content": SYSTEM_PROMPT},
             {"role": "user", "content": user_prompt}
@@ -40,7 +44,7 @@ def process_article(idx: int, article: dict) -> tuple[int, dict]:
     summary = article.get("summary", "")
 
     try:
-        result = classify_article_label(title, summary)
+        result = classify_article(title, summary)
         article["label"] = result.get("label", "IRRELEVANT")
         article["reason"] = result.get("reason", "분류 실패")
     except Exception as e:
@@ -51,7 +55,7 @@ def process_article(idx: int, article: dict) -> tuple[int, dict]:
 
 
 def main():
-    input_file = "filtered_news.json"
+    input_file = f"{OUTPUT_DIR}/filtered_news.json"
     output_file = "classified_news.json"
 
     if not os.path.exists(input_file):

@@ -1,4 +1,8 @@
 #news_collector.py
+
+from config import OUTPUT_DIR
+# "filtered_news.json" → f"{OUTPUT_DIR}/filtered_news.json"
+
 from datetime import datetime
 from typing import List
 
@@ -16,6 +20,7 @@ from filters import (
     filter_foreign_news,
     filter_stock_news,
     filter_local_news,
+    filter_non_korean_titles,
 )
 from models import NewsItem
 from utils import (
@@ -60,7 +65,9 @@ def collect_news_by_keyword(
             link=getattr(entry, "link", "").strip(),
             published_at_kst=published_dt_kst.isoformat(),
             source=source.strip(),
-        )
+            summary=getattr(entry, "summary", "").strip(),  # ← 추가
+)
+        
         items.append(item)
 
         if len(items) >= max_items:
@@ -130,9 +137,9 @@ if __name__ == "__main__":
     )
     print(f"[지역사회 뉴스 필터 후] 총 {len(filtered_no_local)}건")
 
-    final_results = filtered_no_local
+    final_results = filter_non_korean_titles(filtered_no_local)
 
-    save_news_to_json("filtered_news.json", final_results)
+    save_news_to_json(f"{OUTPUT_DIR}/filtered_news.json", final_results)
     print("filtered_news.json 저장 완료\n")
 
     for item in final_results:

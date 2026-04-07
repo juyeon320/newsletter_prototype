@@ -1,5 +1,7 @@
 #config.py
-
+import os
+OUTPUT_DIR = "output"
+os.makedirs(OUTPUT_DIR, exist_ok=True)
 from datetime import timezone, timedelta
 
 KST = timezone(timedelta(hours=9))
@@ -83,15 +85,21 @@ FOREIGN_KEYWORDS = [
 ]
 
 ALLOWED_FOREIGN_KEYWORDS = [
-    "미국", "일본", "호주", "유럽", "EU", "중국"
+    "미국", "일본", "호주", "유럽", "EU", "중국", "중동"
 ]
 
 KEYWORDS = [
     "그리드위즈 OR Gridwiz",
     "수요반응 OR 플러스DR OR 전력수요관리 OR 수요관리",
-    "전기차 충전 OR 전기자동차 OR EV 충전 OR V2G OR 충전인프라",
+
+    # K-충전, 충전CPO 추가
+    "전기차 충전 OR 전기자동차 OR EV 충전 OR V2G OR 충전인프라 OR K-충전 OR 충전사업자 OR 충전CPO",
+
     "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
-    "전력시장 OR 전력계통 OR 전력시스템 OR 전력거래소 OR 계통안정화",
+
+    # 광역정전 추가
+    "전력시장 OR 전력계통 OR 전력시스템 OR 전력거래소 OR 계통안정화 OR 광역정전 OR 대규모정전",
+
     "ESS OR 에너지저장장치 OR BESS OR 배터리에너지저장장치",
     "가상발전소 OR VPP OR 분산에너지 OR 분산자원",
     "전기요금 OR PPA OR 기후부",
@@ -103,7 +111,15 @@ KEYWORDS = [
     "배터리 제조사 OR 배터리 인증 OR 인증 취소",
     "기후정책 OR 탄소정책 OR 에너지정책",
     "해상풍력 OR 육상풍력 OR 재생에너지 입찰",
-    "RE100 OR 직접 PPA OR 기업 PPA",
+
+    # RE100 특별법, 산단 조합 추가
+    "RE100 OR 직접 PPA OR 기업 PPA OR RE100 특별법 OR RE100 산단",
+
+    # 신규: 수소 (수소발전 입찰 커버)
+    "수소발전 OR 수소입찰 OR 청정수소 OR 수소법 OR 수소경제",
+
+    # 신규: 에너지 기관/협회/포럼
+    "전기산업연합회 OR 에너지전환포럼 OR 대한전기협회 OR 전기협회",
 ]
 
 TRUSTED_SOURCES = [
@@ -127,7 +143,7 @@ TRUSTED_SOURCES = [
 TOP_NEWS_MIN = 0
 TOP_NEWS_MAX = 2
 
-MARKET_SNAPSHOT_MIN = 10
+MARKET_SNAPSHOT_MIN = 5
 MARKET_SNAPSHOT_MAX = 20
 
-CLUSTER_SIMILARITY_THRESHOLD = 0.55
+CLUSTER_SIMILARITY_THRESHOLD = 0.25

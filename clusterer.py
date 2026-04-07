@@ -10,8 +10,8 @@ from config import CLUSTER_SIMILARITY_THRESHOLD
 
 
 STOPWORDS = {
-    "정부", "기후부", "추진", "도입", "확대", "조기", "달성", "중심", "기반",
-    "관련", "가속화", "발표", "전환", "개편", "추진…", "추진...", "보급",
+    "정부", "기후부", "추진", "도입", "조기", "달성", "중심", "기반",
+    "관련", "가속화", "개편", "추진…", "추진...", "보급",
     "한다", "한다.", "추진한다", "통해", "위해", "대한", "및", "에서", "으로",
     "까지", "전면", "조기달성", "추진\"", "추진”"
 }
@@ -57,26 +57,23 @@ def is_similar_article(article1: Dict[str, Any], article2: Dict[str, Any]) -> bo
 
 
 def filter_relevant_articles(articles):
-    return [a for a in articles if a.get("label") in ("TOP", "MARKET")]
+    return [a for a in articles if a.get("label") in ("TOP", "MARKET_SNAPSHOT")]
 
 def cluster_articles(articles: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
-    """
-    반환 형태:
-    [
-      {
-        "cluster_id": 1,
-        "articles": [...],
-        "cluster_topic": "대표 제목"
-      }
-    ]
-    """
     relevant_articles = filter_relevant_articles(articles)
     clusters: List[Dict[str, Any]] = []
+
+    MAX_CLUSTER_SIZE = 5  # 클러스터 최대 크기 제한
 
     for article in relevant_articles:
         placed = False
 
         for cluster in clusters:
+            # 최대 크기 초과 클러스터 건너뜀
+            if len(cluster["articles"]) >= MAX_CLUSTER_SIZE:
+                continue
+
+            # 아무 기사가 아닌 대표 기사(첫 기사)와만 비교 → 체인 방지
             representative = cluster["articles"][0]
             if is_similar_article(article, representative):
                 cluster["articles"].append(article)

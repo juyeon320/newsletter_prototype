@@ -1,0 +1,2552 @@
+category_classifier.py
+import os
+import json
+from concurrent.futures import ThreadPoolExecutor, as_completed
+
+
+from openai import OpenAI
+from dotenv import load_dotenv
+from prompts import CATEGORY_SYSTEM_PROMPT, build_category_user_prompt
+
+
+load_dotenv()
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+
+
+MAX_WORKERS = 10
+
+
+
+def classify_category(title: str, summary: str):
+    user_prompt = build_category_user_prompt(title, summary)
+
+
+    response = client.chat.completions.create(
+        model="gpt-5-mini",
+        messages=[
+            {"role": "system", "content": CATEGORY_SYSTEM_PROMPT},
+            {"role": "user", "content": user_prompt}
+        ]
+    )
+
+
+    content = response.choices[0].message.content.strip()
+
+
+    try:
+        return json.loads(content)
+    except Exception:
+        return {
+            "category": "기타",
+            "reason": content
+        }
+
+
+
+def process_cluster(idx: int, cluster: dict) -> tuple[int, dict]:
+    representative = cluster.get("representative", {})
+    title = representative.get("title", "")
+    summary = representative.get("summary", "")
+
+
+    try:
+        result = classify_category(title, summary)
+        cluster["category"] = result.get("category", "기타")
+        cluster["category_reason"] = result.get("reason", "분류 실패")
+    except Exception as e:
+        cluster["category"] = "기타"
+        cluster["category_reason"] = f"API 호출 실패: {str(e)}"
+
+
+    return idx, cluster
+
+
+
+def main():
+    input_file = "labeled_clusters.json"
+    output_file = "categorized_clusters.json"
+
+
+    if not os.path.exists(input_file):
+        print(f"{input_file} 파일이 없습니다.")
+        return
+
+
+    with open(input_file, "r", encoding="utf-8") as f:
+        clusters = json.load(f)
+
+
+    results = [None] * len(clusters)
+
+
+    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
+        futures = {
+            executor.submit(process_cluster, idx, cluster): idx
+            for idx, cluster in enumerate(clusters)
+        }
+
+
+        for count, future in enumerate(as_completed(futures), start=1):
+            idx = futures[future]
+
+
+            try:
+                result_idx, processed_cluster = future.result()
+                results[result_idx] = processed_cluster
+                rep = processed_cluster.get("representative", {})
+                print(f"[{count}/{len(clusters)}] {processed_cluster['category']} - {rep.get('title', '')}")
+            except Exception as e:
+                print(f"[ERROR] {idx + 1}번째 카테고리 처리 실패: {e}")
+
+
+    with open(output_file, "w", encoding="utf-8") as f:
+        json.dump(results, f, ensure_ascii=False, indent=2)
+
+
+    print(f"\n완료: {output_file} 생성됨")
+
+
+
+if __name__ == "__main__":
+    main()
+
+
+import os
+import json
+from concurrent.futures import ThreadPoolExecutor, as_completed
+
+
+from openai import OpenAI
+from dotenv import load_dotenv
+from prompts import SYSTEM_PROMPT, build_user_prompt
+
+
+load_dotenv()
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+
+
+# 병렬 작업 수
+MAX_WORKERS = 10
+
+
+
+def classify_article(title: str, summary: str):
+    user_prompt = build_user_prompt(title, summary)
+
+
+    response = client.chat.completions.create(
+        model="gpt-5-mini",
+        messages=[
+            {"role": "system", "content": SYSTEM_PROMPT},
+            {"role": "user", "content": user_prompt}
+        ]
+    )
+
+
+    content = response.choices[0].message.content.strip()
+
+
+    try:
+        return json.loads(content)
+    except Exception:
+        return {
+            "label": "IRRELEVANT",
+            "reason": content
+        }
+
+
+
+def process_article(idx: int, article: dict) -> tuple[int, dict]:
+    title = article.get("title", "")
+    summary = article.get("summary", "")
+
+
+    try:
+        result = classify_article_label(title, summary)
+        article["label"] = result.get("label", "IRRELEVANT")
+        article["reason"] = result.get("reason", "분류 실패")
+    except Exception as e:
+        article["label"] = "IRRELEVANT"
+        article["reason"] = f"API 호출 실패: {str(e)}"
+
+
+    return idx, article
+
+
+
+def main():
+    input_file = "filtered_news.json"
+    output_file = "classified_news.json"
+
+
+    if not os.path.exists(input_file):
+        print(f"{input_file} 파일이 없습니다.")
+        return
+
+
+    with open(input_file, "r", encoding="utf-8") as f:
+        articles = json.load(f)
+
+
+    results = [None] * len(articles)
+
+
+    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
+        futures = {
+            executor.submit(process_article, idx, article): idx
+            for idx, article in enumerate(articles)
+        }
+
+
+        for count, future in enumerate(as_completed(futures), start=1):
+            idx = futures[future]
+
+
+            try:
+                result_idx, processed_article = future.result()
+                results[result_idx] = processed_article
+                print(f"[{count}/{len(articles)}] {processed_article['label']} - {processed_article['title']}")
+            except Exception as e:
+                print(f"[ERROR] {idx + 1}번째 기사 처리 실패: {e}")
+
+
+    with open(output_file, "w", encoding="utf-8") as f:
+        json.dump(results, f, ensure_ascii=False, indent=2)
+
+
+    print(f"\n완료: {output_file} 생성됨")
+
+
+
+if __name__ == "__main__":
+    main()
+
+import os
+import json
+from concurrent.futures import ThreadPoolExecutor, as_completed
+
+
+from openai import OpenAI
+from dotenv import load_dotenv
+from prompts import CLUSTER_LABEL_SYSTEM_PROMPT, build_cluster_label_user_prompt
+
+
+load_dotenv()
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+
+
+MAX_WORKERS = 10
+
+
+
+def classify_cluster_label(cluster_topic, representative_title, article_titles):
+    user_prompt = build_cluster_label_user_prompt(
+        cluster_topic,
+        representative_title,
+        article_titles,
+    )
+
+
+    response = client.chat.completions.create(
+        model="gpt-5-mini",
+        messages=[
+            {"role": "system", "content": CLUSTER_LABEL_SYSTEM_PROMPT},
+            {"role": "user", "content": user_prompt},
+        ],
+    )
+
+
+    content = response.choices[0].message.content.strip()
+
+
+    try:
+        return json.loads(content)
+    except Exception:
+        return {
+            "cluster_label": "MARKET",
+            "reason": content,
+        }
+
+
+
+def process_cluster(idx, cluster):
+    representative = cluster.get("representative", {})
+    representative_title = representative.get("title", "")
+
+
+    cluster_topic = cluster.get("cluster_topic", representative_title)
+
+
+    article_titles = [
+        article.get("title", "")
+        for article in cluster.get("articles", [])
+    ]
+
+
+    try:
+        result = classify_cluster_label(
+            cluster_topic,
+            representative_title,
+            article_titles,
+        )
+
+
+        cluster["cluster_label"] = result.get("cluster_label", "MARKET")
+        cluster["cluster_reason"] = result.get("reason", "분류 실패")
+
+
+    except Exception as e:
+        cluster["cluster_label"] = "MARKET"
+        cluster["cluster_reason"] = f"API 실패: {str(e)}"
+
+
+    return idx, cluster
+
+
+
+def main():
+    input_file = "representative_news.json"
+    output_file = "labeled_clusters.json"
+
+
+    if not os.path.exists(input_file):
+        print(f"{input_file} 파일이 없습니다.")
+        return
+
+
+    with open(input_file, "r", encoding="utf-8") as f:
+        clusters = json.load(f)
+
+
+    results = [None] * len(clusters)
+
+
+    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
+        futures = {
+            executor.submit(process_cluster, idx, cluster): idx
+            for idx, cluster in enumerate(clusters)
+        }
+
+
+        for count, future in enumerate(as_completed(futures), start=1):
+            idx = futures[future]
+
+
+            try:
+                result_idx, processed_cluster = future.result()
+                results[result_idx] = processed_cluster
+
+
+                rep = processed_cluster.get("representative", {})
+                print(f"[{count}/{len(clusters)}] {processed_cluster['cluster_label']} - {rep.get('title', '')}")
+
+
+            except Exception as e:
+                print(f"[ERROR] {idx + 1}번째 실패: {e}")
+
+
+    with open(output_file, "w", encoding="utf-8") as f:
+        json.dump(results, f, ensure_ascii=False, indent=2)
+
+
+    print(f"\n완료: {output_file} 생성됨")
+
+
+
+if __name__ == "__main__":
+    main()
+
+#clusterer.py
+
+
+# clusterer.py
+import re
+from difflib import SequenceMatcher
+from typing import List, Dict, Any
+
+
+from config import CLUSTER_SIMILARITY_THRESHOLD
+
+
+
+STOPWORDS = {
+    "정부", "기후부", "추진", "도입", "확대", "조기", "달성", "중심", "기반",
+    "관련", "가속화", "발표", "전환", "개편", "추진…", "추진...", "보급",
+    "한다", "한다.", "추진한다", "통해", "위해", "대한", "및", "에서", "으로",
+    "까지", "전면", "조기달성", "추진\"", "추진”"
+}
+
+
+
+def normalize_title(title: str) -> str:
+    title = title.lower()
+    title = re.sub(r"\[[^\]]+\]", " ", title)   # [속보] 제거
+    title = re.sub(r"\([^)]+\)", " ", title)    # (종합) 제거
+    title = re.sub(r"[\"'“”‘’]", " ", title)
+    title = re.sub(r"[^0-9a-zA-Z가-힣\s]", " ", title)
+    title = re.sub(r"\s+", " ", title).strip()
+    return title
+
+
+
+def title_tokens(title: str) -> set[str]:
+    normalized = normalize_title(title)
+    tokens = set(normalized.split())
+    return {t for t in tokens if len(t) >= 2 and t not in STOPWORDS}
+
+
+
+def jaccard_similarity(a: set[str], b: set[str]) -> float:
+    if not a or not b:
+        return 0.0
+    intersection = len(a & b)
+    union = len(a | b)
+    return intersection / union if union else 0.0
+
+
+
+def sequence_similarity(a: str, b: str) -> float:
+    return SequenceMatcher(None, normalize_title(a), normalize_title(b)).ratio()
+
+
+
+def combined_similarity(title1: str, title2: str) -> float:
+    token_score = jaccard_similarity(title_tokens(title1), title_tokens(title2))
+    seq_score = sequence_similarity(title1, title2)
+    return max(token_score, seq_score)
+
+
+
+def is_similar_article(article1: Dict[str, Any], article2: Dict[str, Any]) -> bool:
+    score = combined_similarity(article1["title"], article2["title"])
+    return score >= CLUSTER_SIMILARITY_THRESHOLD
+
+
+
+def filter_relevant_articles(articles):
+    return [a for a in articles if a.get("label") in ("TOP", "MARKET")]
+
+
+def cluster_articles(articles: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    """
+    반환 형태:
+    [
+      {
+        "cluster_id": 1,
+        "articles": [...],
+        "cluster_topic": "대표 제목"
+      }
+    ]
+    """
+    relevant_articles = filter_relevant_articles(articles)
+    clusters: List[Dict[str, Any]] = []
+
+
+    for article in relevant_articles:
+        placed = False
+
+
+        for cluster in clusters:
+            representative = cluster["articles"][0]
+            if is_similar_article(article, representative):
+                cluster["articles"].append(article)
+                placed = True
+                break
+
+
+        if not placed:
+            clusters.append({
+                "cluster_id": len(clusters) + 1,
+                "articles": [article],
+                "cluster_topic": article["title"],
+            })
+
+
+    return clusters
+
+#config.py
+
+
+from datetime import timezone, timedelta
+
+
+KST = timezone(timedelta(hours=9))
+
+
+GOOGLE_NEWS_RSS_SEARCH_URL = "https://news.google.com/rss/search?q={query}&hl=ko&gl=KR&ceid=KR:ko"
+
+
+ALLOWED_SOURCES = [
+    "전기신문",
+    "에너지데일리",
+    "에너지프로슈머",
+    "임팩트온",
+    "이투뉴스",
+    "투데이에너지",
+    "에너지경제신문",
+    "에너지신문",
+    "에너지플랫폼뉴스",
+    "전자신문",
+    "연합뉴스",
+    "뉴스1",
+    "환경일보",
+    "연합뉴스",
+    "뉴스1",
+    "한국경제",
+    "매일경제",
+    "서울경제",
+    "머니투데이",
+]
+
+
+STOCK_EXCLUDE_KEYWORDS = [
+    "목표주가",
+    "주가",
+    "급등",
+    "급락",
+    "상승",
+    "하락",
+    "투자의견",
+    "매수",
+    "매도",
+    "증권사",
+    "리포트",
+    "수혜주",
+    "관련주",
+    "컨센서스",
+    "밸류에이션",
+]
+
+
+LOCAL_EXCLUDE_KEYWORDS = [
+    "시의원",
+    "도의원",
+    "시의회",
+    "도의회",
+    "공공청사",
+    "어린이",
+    "챌린지",
+    "체험관",
+    "발대식",
+    "행사",
+    "특별강연",
+    "캘린더",
+    "조례",
+    "구청",
+    "시청",
+    "군청",
+    "교육",
+    "봉사",
+    "대회",
+    "축제",
+    "주민",
+    "시민",
+    "지역사회",
+    "개관",
+    "캠페인",
+]
+
+
+FOREIGN_KEYWORDS = [
+    "미국", "일본", "호주", "유럽", "EU",
+    "중국", "베트남", "인도", "러시아", "중동",
+    "아프리카", "브라질", "멕시코", "캐나다", "싱가포르",
+    "태국", "인도네시아", "말레이시아", "필리핀",
+    "대만", "홍콩", "몽골", "사우디", "UAE", "두바이",
+]
+
+
+ALLOWED_FOREIGN_KEYWORDS = [
+    "미국", "일본", "호주", "유럽", "EU", "중국"
+]
+
+
+KEYWORDS = [
+    "그리드위즈 OR Gridwiz",
+    "수요반응 OR 플러스DR OR 전력수요관리 OR 수요관리",
+    "전기차 충전 OR 전기자동차 OR EV 충전 OR V2G OR 충전인프라",
+    "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
+    "전력시장 OR 전력계통 OR 전력시스템 OR 전력거래소 OR 계통안정화",
+    "ESS OR 에너지저장장치 OR BESS OR 배터리에너지저장장치",
+    "가상발전소 OR VPP OR 분산에너지 OR 분산자원",
+    "전기요금 OR PPA OR 기후부",
+    "배출권거래제 OR ETS",
+    "AI 데이터센터 OR 데이터센터 OR 전력수요",
+    "출력제한 OR 계통 포화 OR 저수요 고발전 OR 송배전망 OR 접속지연",
+    "P2X OR 잉여전력 OR 전력저장",
+    "산단공 OR 산업단지 OR 탄소중립 산단",
+    "배터리 제조사 OR 배터리 인증 OR 인증 취소",
+    "기후정책 OR 탄소정책 OR 에너지정책",
+    "해상풍력 OR 육상풍력 OR 재생에너지 입찰",
+    "RE100 OR 직접 PPA OR 기업 PPA",
+]
+
+
+TRUSTED_SOURCES = [
+    "전기신문",
+    "전자신문",
+    "연합뉴스",
+    "뉴스1",
+    "한국경제",
+    "매일경제",
+    "서울경제",
+    "머니투데이",
+    "이투뉴스",
+    "에너지경제신문",
+    "투데이에너지",
+    "에너지신문",
+    "에너지데일리",
+    "에너지프로슈머",
+    "임팩트온",
+]
+
+
+TOP_NEWS_MIN = 0
+TOP_NEWS_MAX = 2
+
+
+MARKET_SNAPSHOT_MIN = 10
+MARKET_SNAPSHOT_MAX = 20
+
+
+CLUSTER_SIMILARITY_THRESHOLD = 0.55
+
+#filters.py
+from typing import List
+
+
+from config import (
+    ALLOWED_FOREIGN_KEYWORDS,
+    FOREIGN_KEYWORDS,
+)
+from models import NewsItem
+
+
+
+def deduplicate_news(items: List[NewsItem]) -> List[NewsItem]:
+    seen = set()
+    unique_items = []
+
+
+    for item in items:
+        if item.link in seen:
+            continue
+        seen.add(item.link)
+        unique_items.append(item)
+
+
+    return unique_items
+
+
+
+def filter_by_allowed_sources(items: List[NewsItem], allowed_sources: List[str]) -> List[NewsItem]:
+    filtered = []
+
+
+    for item in items:
+        if any(allowed_source in item.source for allowed_source in allowed_sources):
+            filtered.append(item)
+
+
+    return filtered
+
+
+
+def is_foreign_news(title: str) -> bool:
+    return any(keyword in title for keyword in FOREIGN_KEYWORDS)
+
+
+
+def is_allowed_foreign_news(title: str) -> bool:
+    return any(keyword in title for keyword in ALLOWED_FOREIGN_KEYWORDS)
+
+
+
+def filter_foreign_news(items: List[NewsItem]) -> List[NewsItem]:
+    filtered = []
+
+
+    for item in items:
+        title = item.title.strip()
+
+
+        if not is_foreign_news(title):
+            filtered.append(item)
+            continue
+
+
+        if is_allowed_foreign_news(title):
+            filtered.append(item)
+            continue
+
+
+    return filtered
+
+
+
+def filter_stock_news(items: List[NewsItem], exclude_keywords: List[str]) -> List[NewsItem]:
+    filtered = []
+
+
+    for item in items:
+        title = item.title.strip()
+        if any(keyword in title for keyword in exclude_keywords):
+            continue
+        filtered.append(item)
+
+
+    return filtered
+
+
+
+def filter_local_news(items: List[NewsItem], exclude_keywords: List[str]) -> List[NewsItem]:
+    filtered = []
+
+
+    for item in items:
+        title = item.title.strip()
+        if any(keyword in title for keyword in exclude_keywords):
+            continue
+        filtered.append(item)
+
+
+    return filtered
+
+
+def deduplicate_by_title(items: List[NewsItem]) -> List[NewsItem]:
+    seen_titles = set()
+    unique_items = []
+
+
+    for item in items:
+        title = item.title.strip().lower()
+
+
+        if title in seen_titles:
+            continue
+
+
+        seen_titles.add(title)
+        unique_items.append(item)
+
+
+    return unique_items
+
+#models.py
+from dataclasses import dataclass
+
+
+@dataclass
+class NewsItem:
+    keyword: str
+    title: str
+    link: str
+    published_at_kst: str
+    source: str
+
+#news_collector.py
+from datetime import datetime
+from typing import List
+
+
+import feedparser
+
+
+from config import (
+    KST,
+    STOCK_EXCLUDE_KEYWORDS,
+    LOCAL_EXCLUDE_KEYWORDS,
+    KEYWORDS,
+)
+from filters import (
+    deduplicate_news,
+    deduplicate_by_title,
+    filter_foreign_news,
+    filter_stock_news,
+    filter_local_news,
+)
+from models import NewsItem
+from utils import (
+    get_news_window,
+    build_google_news_rss_url,
+    parse_entry_datetime,
+    save_news_to_json,
+)
+
+
+
+
+def collect_news_by_keyword(
+    keyword: str,
+    start: datetime,
+    end: datetime,
+    max_items: int = 50,
+) -> List[NewsItem]:
+    url = build_google_news_rss_url(keyword)
+    feed = feedparser.parse(url)
+
+
+    items: List[NewsItem] = []
+
+
+    for entry in feed.entries:
+        published_dt_utc = parse_entry_datetime(entry)
+        if published_dt_utc is None:
+            continue
+
+
+        published_dt_kst = published_dt_utc.astimezone(KST)
+
+
+        if not (start <= published_dt_kst <= end):
+            continue
+
+
+        source = ""
+        if hasattr(entry, "source") and entry.source:
+            source = entry.source.get("title", "")
+        elif hasattr(entry, "author"):
+            source = entry.author
+
+
+        item = NewsItem(
+            keyword=keyword,
+            title=getattr(entry, "title", "").strip(),
+            link=getattr(entry, "link", "").strip(),
+            published_at_kst=published_dt_kst.isoformat(),
+            source=source.strip(),
+        )
+        items.append(item)
+
+
+        if len(items) >= max_items:
+            break
+
+
+    return items
+
+
+
+def collect_news_for_keywords(
+    keywords: List[str],
+    start: datetime,
+    end: datetime,
+    max_items_per_keyword: int = 50,
+) -> List[NewsItem]:
+    all_items: List[NewsItem] = []
+
+
+    for keyword in keywords:
+        try:
+            news = collect_news_by_keyword(
+                keyword=keyword,
+                start=start,
+                end=end,
+                max_items=max_items_per_keyword,
+            )
+            all_items.extend(news)
+        except Exception as e:
+            print(f"[ERROR] keyword='{keyword}' 수집 실패: {e}")
+
+
+   
+    deduped = deduplicate_news(all_items)
+
+
+    deduped = deduplicate_by_title(deduped)
+
+
+    # 정렬
+    deduped.sort(key=lambda x: x.published_at_kst, reverse=True)
+
+
+    return deduped
+
+
+
+if __name__ == "__main__":
+    now_kst = datetime.now(KST)
+    start, end = get_news_window(now_kst)
+
+
+    print("수집 시작:", start)
+    print("수집 종료:", end)
+
+
+    all_results = collect_news_for_keywords(
+        keywords=KEYWORDS,
+        start=start,
+        end=end,
+        max_items_per_keyword=50,
+    )
+    print(f"[1차 수집] 총 {len(all_results)}건")
+
+
+    filtered_no_foreign = filter_foreign_news(all_results)
+    print(f"[해외 뉴스 필터 후] 총 {len(filtered_no_foreign)}건")
+
+
+    filtered_no_stock = filter_stock_news(
+        filtered_no_foreign,
+        STOCK_EXCLUDE_KEYWORDS,
+    )
+    print(f"[주가 뉴스 필터 후] 총 {len(filtered_no_stock)}건")
+
+
+    filtered_no_local = filter_local_news(
+        filtered_no_stock,
+        LOCAL_EXCLUDE_KEYWORDS,
+    )
+    print(f"[지역사회 뉴스 필터 후] 총 {len(filtered_no_local)}건")
+
+
+    final_results = filtered_no_local
+
+
+    save_news_to_json("filtered_news.json", final_results)
+    print("filtered_news.json 저장 완료\n")
+
+
+    for item in final_results:
+        print("=" * 80)
+        print(f"[키워드] {item.keyword}")
+        print(f"[제목] {item.title}")
+        print(f"[언론사] {item.source}")
+        print(f"[발행시각 KST] {item.published_at_kst}")
+        print(f"[링크] {item.link}")
+# newsletter_pipeline.py
+import json
+import os
+
+
+from clusterer import cluster_articles
+from representative import choose_representatives
+from cluster_labeler import process_cluster as process_cluster_label
+from category_classifier import process_cluster as process_cluster_category
+from selector import build_newsletter_result
+
+
+
+def main():
+    input_file = "classified_news.json"
+    clusters_file = "clustered_news.json"
+    representatives_file = "representative_news.json"
+    cluster_labeled_file = "labeled_clusters.json"
+    categorized_file = "categorized_clusters.json"
+    output_file = "newsletter_result.json"
+
+
+    if not os.path.exists(input_file):
+        print(f"{input_file} 파일이 없습니다.")
+        return
+
+
+    with open(input_file, "r", encoding="utf-8") as f:
+        articles = json.load(f)
+
+
+    # 1. TOP / MARKET 기사만 클러스터링
+    clusters = cluster_articles(articles)
+    with open(clusters_file, "w", encoding="utf-8") as f:
+        json.dump(clusters, f, ensure_ascii=False, indent=2)
+    print(f"클러스터링 완료: {clusters_file}")
+
+
+    # 2. 각 클러스터 대표 기사 선정
+    representatives = choose_representatives(clusters)
+    with open(representatives_file, "w", encoding="utf-8") as f:
+        json.dump(representatives, f, ensure_ascii=False, indent=2)
+    print(f"대표 기사 선정 완료: {representatives_file}")
+
+
+    # 3. 클러스터 단위 TOP/MARKET 재판단
+    labeled_clusters = []
+    for idx, cluster in enumerate(representatives):
+        _, processed = process_cluster_label(idx, cluster)
+        labeled_clusters.append(processed)
+
+
+    with open(cluster_labeled_file, "w", encoding="utf-8") as f:
+        json.dump(labeled_clusters, f, ensure_ascii=False, indent=2)
+    print(f"클러스터 라벨링 완료: {cluster_labeled_file}")
+
+
+    # 4. 대표 기사에 카테고리 부여
+    categorized_clusters = []
+    for idx, cluster in enumerate(labeled_clusters):
+        _, processed = process_cluster_category(idx, cluster)
+        categorized_clusters.append(processed)
+
+
+    with open(categorized_file, "w", encoding="utf-8") as f:
+        json.dump(categorized_clusters, f, ensure_ascii=False, indent=2)
+    print(f"카테고리 분류 완료: {categorized_file}")
+
+
+    # 5. 최종 결과 생성
+    newsletter_result = build_newsletter_result(categorized_clusters)
+    with open(output_file, "w", encoding="utf-8") as f:
+        json.dump(newsletter_result, f, ensure_ascii=False, indent=2)
+    print(f"최종 결과 생성 완료: {output_file}")
+
+
+    print("\n=== Top News ===")
+    for idx, item in enumerate(newsletter_result["top_news"], start=1):
+        print(f"[{idx}] {item['title']} ({item['source']})")
+
+
+    print("\n=== Market Snapshot ===")
+    for category, items in newsletter_result["market_snapshot"].items():
+        print(f"\n[{category}] {len(items)}건")
+        for item in items:
+            print(f"- {item['title']} ({item['source']})")
+
+
+
+if __name__ == "__main__":
+    main()
+
+#prompts.py
+
+
+CLUSTER_LABEL_SYSTEM_PROMPT = """
+너는 에너지 산업 분석가다.
+
+
+목표:
+뉴스가 '그리드위즈(수요관리, 전력시장, VPP, ESS, 전기차 충전 등)'에
+도움이 되는지 판단하고,
+추가로 해당 뉴스의 카테고리를 분류한다.
+
+
+========================
+1. 중요도 분류 (label)
+========================
+
+
+1) TOP
+- 전력시장 제도 변화 (DR, VPP, SMP, 요금제)
+- 정부 정책 / 규제 변화
+- 전력 수급, 계통 이슈
+- 전기차, ESS, 재생에너지 시장 구조 변화
+- 그리드위즈 사업과 직접적으로 연결되는 핵심 뉴스
+
+
+2) MARKET_SNAPSHOT
+- 에너지 산업 관련 일반 뉴스
+- 기술 개발, 기업 동향
+- 간접적으로 영향 있는 뉴스
+- 다만 단순 홍보성 기사, 지역 행사성 기사, 주민 대상 지원사업은 제외
+
+
+3) IRRELEVANT
+- 주식/투자/증권 기사
+- 단순 기업 홍보성 기사
+- 사고/사건
+- 지역 사회뉴스
+- 지자체 행사/포럼/캠페인/보조금 지원 기사
+- 주민 대상 단순 지원사업 기사
+- 그리드위즈 사업과 직접적인 산업적 시사점이 약한 기사
+
+
+========================
+2. 지역사회 뉴스 판정 규칙
+========================
+
+
+다음 유형은 원칙적으로 IRRELEVANT로 분류한다.
+
+
+- "○○시", "○○군", "○○구", "○○도" 중심의 지역 행정 기사
+- 주민 대상 보조금, 설치비 지원, 캠페인, 행사, 포럼, 설명회
+- 특정 지역 홍보성 기사
+- 에너지 산업 전체 구조 변화보다 지역 정책 홍보가 중심인 기사
+
+
+단, 예외적으로 전국 제도 변화나 산업 전반에 영향을 주는 정책이면 TOP 또는 MARKET_SNAPSHOT 가능하다.
+
+
+
+========================
+출력 형식 (반드시 JSON)
+========================
+
+
+{
+  "label": "TOP | MARKET_SNAPSHOT | IRRELEVANT",
+  "reason": "한 줄 이유"
+}
+"""
+
+
+
+def build_user_prompt(title: str, summary: str) -> str:
+    return f"""
+제목: {title}
+요약: {summary}
+
+
+이 뉴스가 그리드위즈에 얼마나 중요한지 분류해라.
+"""
+
+
+CATEGORY_SYSTEM_PROMPT = """
+너는 에너지 산업 뉴스레터 편집자다.
+
+
+대표 기사를 읽고 아래 카테고리 중 하나만 선택한다.
+
+
+카테고리:
+- 수요관리: DR, 수요반응, 부하관리, 전력 수요 조절
+- 전기차충전: EV, 충전 인프라, V2G, 충전 서비스
+- ESS: 에너지저장장치, BESS, 배터리 저장 시스템
+- 재생에너지: 태양광, 풍력, 신재생에너지, RE100
+- 전력계통: 송배전, 계통 안정화, 전력망, 전력시장, SMP, 요금제
+- 기타: 위에 명확히 속하지 않는 경우
+
+
+주의:
+- 전력계통과 수요관리는 한국 전력시장 / 한국 전력시스템 관련 기사 중심으로 판단한다.
+- 해외 전력시장/전력시스템 기사는 전력계통보다 기타로 분류하는 편이 적절하다.
+- 단, ESS / 재생에너지 / 전기차충전은 해외 기사여도 해당 카테고리로 분류 가능하다.
+
+
+반드시 JSON만 출력한다.
+
+
+{
+  "category": "수요관리 | 전기차충전 | ESS | 재생에너지 | 전력계통 | 기타",
+  "reason": "한 줄 이유"
+}
+"""
+
+
+
+def build_article_label_user_prompt(title: str, summary: str) -> str:
+    return f"""
+제목: {title}
+요약: {summary}
+
+
+이 기사에 대해 중요도를 분류해라.
+"""
+
+
+
+def build_cluster_label_user_prompt(cluster_topic: str, representative_title: str, article_titles: list[str]) -> str:
+    joined_titles = "\n".join([f"- {title}" for title in article_titles[:10]])
+
+
+    return f"""
+클러스터 주제: {cluster_topic}
+대표 기사 제목: {representative_title}
+
+
+클러스터에 포함된 기사 제목들:
+{joined_titles}
+
+
+이 뉴스 클러스터를 최종적으로 TOP 또는 MARKET 중 하나로 분류해라.
+"""
+
+
+
+def build_category_user_prompt(title: str, summary: str) -> str:
+    return f"""
+제목: {title}
+요약: {summary}
+
+
+이 대표 기사에 가장 적절한 카테고리를 하나만 분류해라.
+"""
+
+
+# representative.py
+from typing import Dict, Any, List
+
+
+from config import TRUSTED_SOURCES
+
+
+
+def source_priority(source: str) -> int:
+    for idx, trusted in enumerate(TRUSTED_SOURCES):
+        if trusted in source:
+            return idx
+    return 9999
+
+
+
+def is_trusted_source(source: str) -> bool:
+    return any(trusted in source for trusted in TRUSTED_SOURCES)
+
+
+
+def choose_representative_article(cluster: Dict[str, Any]) -> Dict[str, Any]:
+    articles: List[Dict[str, Any]] = cluster["articles"]
+
+
+    trusted_articles = [
+        article for article in articles
+        if is_trusted_source(article.get("source", ""))
+    ]
+
+
+    if trusted_articles:
+        trusted_articles.sort(
+            key=lambda x: (
+                source_priority(x.get("source", "")),
+                x.get("published_at_kst", "")
+            )
+        )
+        chosen = trusted_articles[0]
+    else:
+        chosen = articles[0]
+
+
+    return {
+        "cluster_id": cluster["cluster_id"],
+        "cluster_topic": cluster["cluster_topic"],
+        "article_count": len(articles),
+        "representative": chosen,
+        "articles": articles,
+    }
+
+
+
+def choose_representatives(clusters: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    return [choose_representative_article(cluster) for cluster in clusters]
+
+# selector.py
+from typing import List, Dict, Any
+
+
+TOP_NEWS_MAX = 2
+
+
+MAX_PER_CATEGORY = {
+    "수요관리": 3,
+    "전기차충전": 3,
+    "ESS": 1,
+    "재생에너지": 3,
+    "전력계통": 3,
+    "기타": 5,
+}
+
+
+CATEGORY_ORDER = ["수요관리", "전기차충전", "ESS", "재생에너지", "전력계통", "기타"]
+
+
+KOREAN_SOURCES = [
+    "연합뉴스", "뉴스1", "전기신문", "전자신문",
+    "한국경제", "매일경제", "서울경제", "머니투데이",
+    "이투뉴스", "에너지경제신문", "투데이에너지",
+    "에너지신문", "에너지데일리", "에너지프로슈머",
+    "임팩트온", "뉴시스", "KBS", "MBC", "SBS",
+    "한겨레", "경향신문", "조선일보", "중앙일보", "동아일보"
+]
+
+
+
+def is_korean_news(article: Dict[str, Any]) -> bool:
+    source = article.get("source", "")
+    return any(keyword in source for keyword in KOREAN_SOURCES)
+
+
+
+def adjust_category(article: Dict[str, Any], category: str) -> str:
+    if category in ("전력계통", "수요관리"):
+        if not is_korean_news(article):
+            return "기타"
+    return category
+
+
+
+def score_cluster(cluster: Dict[str, Any]) -> int:
+    rep = cluster.get("representative", {})
+    title = rep.get("title", "")
+    source = rep.get("source", "")
+    cluster_label = cluster.get("cluster_label", "MARKET")
+    category = cluster.get("category", "기타")
+
+
+    score = 0
+
+
+    if cluster_label == "TOP":
+        score += 50
+    else:
+        score += 20
+
+
+    if category in ("전력계통", "수요관리", "재생에너지", "ESS", "전기차충전"):
+        score += 10
+
+
+    major_keywords = [
+        "정부", "기후부", "전력시장", "전기요금", "요금제", "계통",
+        "수급", "재생에너지", "석탄", "vpp", "ess", "데이터센터", "ai"
+    ]
+    if any(keyword.lower() in title.lower() for keyword in major_keywords):
+        score += 20
+
+
+    trusted_like = ["연합뉴스", "뉴스1", "전기신문", "전자신문", "한국경제", "매일경제", "서울경제"]
+    if any(t in source for t in trusted_like):
+        score += 5
+
+
+    return score
+
+
+
+def build_market_snapshot_buckets() -> Dict[str, List[Dict[str, Any]]]:
+    return {category: [] for category in CATEGORY_ORDER}
+
+
+
+def cluster_to_item(cluster: Dict[str, Any]) -> Dict[str, Any]:
+    rep = cluster.get("representative", {})
+    category = adjust_category(rep, cluster.get("category", "기타"))
+
+
+    return {
+        "cluster_id": cluster.get("cluster_id"),
+        "cluster_topic": cluster.get("cluster_topic"),
+        "article_count": cluster.get("article_count", 1),
+        "title": rep.get("title", ""),
+        "source": rep.get("source", ""),
+        "published_at_kst": rep.get("published_at_kst", ""),
+        "category": category,
+        "cluster_label": cluster.get("cluster_label", "MARKET"),
+        "cluster_reason": cluster.get("cluster_reason", ""),
+        "link": rep.get("link", ""),
+        "score": score_cluster(cluster),
+    }
+
+
+
+def select_top_news(clusters: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    top_candidates = [cluster_to_item(c) for c in clusters if c.get("cluster_label") == "TOP"]
+    top_candidates.sort(key=lambda x: x["score"], reverse=True)
+
+
+    selected = []
+    used_topics = set()
+
+
+    for item in top_candidates:
+        if item["cluster_topic"] in used_topics:
+            continue
+
+
+        selected.append(item)
+        used_topics.add(item["cluster_topic"])
+
+
+        if len(selected) >= TOP_NEWS_MAX:
+            break
+
+
+    return selected
+
+
+
+def select_market_snapshot(
+    clusters: List[Dict[str, Any]],
+    top_news: List[Dict[str, Any]],
+) -> Dict[str, List[Dict[str, Any]]]:
+    top_links = {item["link"] for item in top_news}
+    buckets = build_market_snapshot_buckets()
+
+
+    remaining = []
+
+
+    for cluster in clusters:
+        item = cluster_to_item(cluster)
+
+
+        if item["link"] in top_links:
+            continue
+
+
+        # 남은 TOP + MARKET 모두 Market Snapshot으로 감
+        if item["cluster_label"] not in ("TOP", "MARKET"):
+            continue
+
+
+        remaining.append(item)
+
+
+    remaining.sort(key=lambda x: x["score"], reverse=True)
+
+
+    for article in remaining:
+        category = article.get("category", "기타")
+        if category not in buckets:
+            category = "기타"
+        buckets[category].append(article)
+
+
+    for category, items in buckets.items():
+        max_count = MAX_PER_CATEGORY.get(category)
+        if max_count:
+            buckets[category] = items[:max_count]
+
+
+    return buckets
+
+
+
+def build_newsletter_result(categorized_clusters: List[Dict[str, Any]]) -> Dict[str, Any]:
+    top_news = select_top_news(categorized_clusters)
+    market_snapshot = select_market_snapshot(categorized_clusters, top_news)
+
+
+    return {
+        "top_news": top_news,
+        "market_snapshot": market_snapshot,
+    }
+
+#utils.py
+
+
+import json
+import time
+from dataclasses import asdict
+from datetime import datetime, timedelta, timezone
+from typing import Optional
+from urllib.parse import quote
+
+
+from config import KST, GOOGLE_NEWS_RSS_SEARCH_URL
+from models import NewsItem
+
+
+
+def get_news_window(now: datetime) -> tuple[datetime, datetime]:
+    now = now.astimezone(KST)
+
+
+    if now.weekday() == 0:  # Monday
+        friday = now - timedelta(days=3)
+        start = friday.replace(hour=15, minute=0, second=0, microsecond=0)
+    else:
+        yesterday = now - timedelta(days=1)
+        start = yesterday.replace(hour=9, minute=0, second=0, microsecond=0)
+
+
+    end = now
+    return start, end
+
+
+
+def build_google_news_rss_url(keyword: str) -> str:
+    encoded_query = quote(keyword)
+    return GOOGLE_NEWS_RSS_SEARCH_URL.format(query=encoded_query)
+
+
+
+def parse_entry_datetime(entry) -> Optional[datetime]:
+    time_struct = None
+
+
+    if hasattr(entry, "published_parsed") and entry.published_parsed:
+        time_struct = entry.published_parsed
+    elif hasattr(entry, "updated_parsed") and entry.updated_parsed:
+        time_struct = entry.updated_parsed
+
+
+    if not time_struct:
+        return None
+
+
+    return datetime.fromtimestamp(time.mktime(time_struct), tz=timezone.utc)
+
+
+
+def save_news_to_json(filename: str, items: list[NewsItem]) -> None:
+    with open(filename, "w", encoding="utf-8") as f:
+        json.dump([asdict(item) for item in items], f, ensure_ascii=False, indent=2)
+
+이게 내 코드야
+
+코드 전체를 리뷰했습니다. 런타임 오류를 유발하는 버그들과 논리적 불일치를 정리했습니다.
+
+즉시 오류 발생 (Critical)
+1. classify_article_label 미정의 함수 호출
+두 번째 파일(article classifier)의 process_article 함수에서:
+
+python
+# ❌ 현재
+result = classify_article_label(title, summary)
+
+# ✅ 수정
+result = classify_article(title, summary)
+같은 파일에서 함수명이 classify_article로 정의되어 있는데 다른 이름으로 호출하고 있습니다. → NameError
+
+2. SYSTEM_PROMPT 미정의
+두 번째 파일이 from prompts import SYSTEM_PROMPT, build_user_prompt를 import하지만 prompts.py에는 SYSTEM_PROMPT가 정의되어 있지 않습니다. → ImportError
+
+prompts.py 하단에 추가 필요:
+
+python
+SYSTEM_PROMPT = CLUSTER_LABEL_SYSTEM_PROMPT
+논리 불일치 (Logic Bug)
+3. cluster_label 값 불일치
+위치	사용 값
+CLUSTER_LABEL_SYSTEM_PROMPT (프롬프트)	TOP, MARKET_SNAPSHOT, IRRELEVANT
+cluster_labeler.py 기본값	"MARKET"
+build_cluster_label_user_prompt 지시문	TOP, MARKET
+selector.py 필터 조건	("TOP", "MARKET")
+프롬프트는 MARKET_SNAPSHOT을 출력하도록 지시하지만, selector는 "MARKET"을 기대합니다. 어느 쪽으로 통일하든 세 곳을 일치시켜야 합니다. MARKET_SNAPSHOT으로 통일을 권장합니다.
+
+python
+# cluster_labeler.py
+cluster["cluster_label"] = result.get("cluster_label", "MARKET_SNAPSHOT")
+
+# selector.py
+if item["cluster_label"] not in ("TOP", "MARKET_SNAPSHOT"):
+    continue
+소소한 문제
+4. config.py 중복 항목
+python
+ALLOWED_SOURCES = [
+    ...
+    "연합뉴스",  # 중복
+    "뉴스1",     # 중복
+    ...
+]
+5. selector.py에서 config 값 재정의
+TOP_NEWS_MAX = 2를 selector.py에서 직접 정의하고 있는데, config.py에도 동일하게 존재합니다. from config import TOP_NEWS_MAX로 통일하는 게 좋습니다.
+
+파일 구조 확인 필요
+newsletter_pipeline.py에서 from cluster_labeler import ...를 호출하는데, 붙여넣은 코드에 cluster_labeler.py 헤더가 없습니다. 해당 파일명이 실제로 cluster_labeler.py인지 확인해보세요.
+
+# selector.py
+from typing import List, Dict, Any
+
+
+TOP_NEWS_MAX = 2
+
+
+MAX_PER_CATEGORY = {
+    "수요관리": 3,
+    "전기차충전": 3,
+    "ESS": 1,
+    "재생에너지": 3,
+    "전력계통": 3,
+    "기타": 5,
+}
+
+
+CATEGORY_ORDER = ["수요관리", "전기차충전", "ESS", "재생에너지", "전력계통", "기타"]
+
+
+KOREAN_SOURCES = [
+    "연합뉴스", "뉴스1", "전기신문", "전자신문",
+    "한국경제", "매일경제", "서울경제", "머니투데이",
+    "이투뉴스", "에너지경제신문", "투데이에너지",
+    "에너지신문", "에너지데일리", "에너지프로슈머",
+    "임팩트온", "뉴시스", "KBS", "MBC", "SBS",
+    "한겨레", "경향신문", "조선일보", "중앙일보", "동아일보"
+]
+
+
+
+def is_korean_news(article: Dict[str, Any]) -> bool:
+    source = article.get("source", "")
+    return any(keyword in source for keyword in KOREAN_SOURCES)
+
+
+
+def adjust_category(article: Dict[str, Any], category: str) -> str:
+    if category in ("전력계통", "수요관리"):
+        if not is_korean_news(article):
+            return "기타"
+    return category
+
+
+
+def score_cluster(cluster: Dict[str, Any]) -> int:
+    rep = cluster.get("representative", {})
+    title = rep.get("title", "")
+    source = rep.get("source", "")
+    cluster_label = cluster.get("cluster_label", "MARKET_SNAPSHOT")
+    category = cluster.get("category", "기타")
+
+
+    score = 0
+
+
+    if cluster_label == "TOP":
+        score += 50
+    else:
+        score += 20
+
+
+    if category in ("전력계통", "수요관리", "재생에너지", "ESS", "전기차충전"):
+        score += 10
+
+
+    major_keywords = [
+        "정부", "기후부", "전력시장", "전기요금", "요금제", "계통",
+        "수급", "재생에너지", "석탄", "vpp", "ess", "데이터센터", "ai"
+    ]
+    if any(keyword.lower() in title.lower() for keyword in major_keywords):
+        score += 20
+
+
+    trusted_like = ["연합뉴스", "뉴스1", "전기신문", "전자신문", "한국경제", "매일경제", "서울경제"]
+    if any(t in source for t in trusted_like):
+        score += 5
+
+
+    return score
+
+
+
+def build_market_snapshot_buckets() -> Dict[str, List[Dict[str, Any]]]:
+    return {category: [] for category in CATEGORY_ORDER}
+
+
+
+def cluster_to_item(cluster: Dict[str, Any]) -> Dict[str, Any]:
+    rep = cluster.get("representative", {})
+    category = adjust_category(rep, cluster.get("category", "기타"))
+
+
+    return {
+        "cluster_id": cluster.get("cluster_id"),
+        "cluster_topic": cluster.get("cluster_topic"),
+        "article_count": cluster.get("article_count", 1),
+        "title": rep.get("title", ""),
+        "source": rep.get("source", ""),
+        "published_at_kst": rep.get("published_at_kst", ""),
+        "category": category,
+        "cluster_label": cluster.get("cluster_label", "_SNAPSHOT"),
+        "cluster_reason": cluster.get("cluster_reason", ""),
+        "link": rep.get("link", ""),
+        "score": score_cluster(cluster),
+    }
+
+
+
+def select_top_news(clusters: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    top_candidates = [cluster_to_item(c) for c in clusters if c.get("cluster_label") == "TOP"]
+    top_candidates.sort(key=lambda x: x["score"], reverse=True)
+
+
+    selected = []
+    used_topics = set()
+
+
+    for item in top_candidates:
+        if item["cluster_topic"] in used_topics:
+            continue
+
+
+        selected.append(item)
+        used_topics.add(item["cluster_topic"])
+
+
+        if len(selected) >= TOP_NEWS_MAX:
+            break
+
+
+    return selected
+
+
+
+def select_market_snapshot(
+    clusters: List[Dict[str, Any]],
+    top_news: List[Dict[str, Any]],
+) -> Dict[str, List[Dict[str, Any]]]:
+    top_links = {item["link"] for item in top_news}
+    buckets = build_market_snapshot_buckets()
+
+
+    remaining = []
+
+
+    for cluster in clusters:
+        item = cluster_to_item(cluster)
+
+
+        if item["link"] in top_links:
+            continue
+
+
+        # 남은 TOP + MARKET 모두 Market Snapshot으로 감
+        if item["cluster_label"] not in ("TOP", "MARKET_SNAPSHOT"):
+            continue
+
+
+        remaining.append(item)
+
+
+    remaining.sort(key=lambda x: x["score"], reverse=True)
+
+
+    for article in remaining:
+        category = article.get("category", "기타")
+        if category not in buckets:
+            category = "기타"
+        buckets[category].append(article)
+
+
+    for category, items in buckets.items():
+        max_count = MAX_PER_CATEGORY.get(category)
+        if max_count:
+            buckets[category] = items[:max_count]
+
+
+    return buckets
+
+
+
+def build_newsletter_result(categorized_clusters: List[Dict[str, Any]]) -> Dict[str, Any]:
+    top_news = select_top_news(categorized_clusters)
+    market_snapshot = select_market_snapshot(categorized_clusters, top_news)
+
+
+    return {
+        "top_news": top_news,
+        "market_snapshot": market_snapshot,
+    } ㅇㄸ
+
+거의 다 됐는데 cluster_to_item 안에 오타 하나가 남아있습니다.
+
+python
+# ❌ 현재
+"cluster_label": cluster.get("cluster_label", "_SNAPSHOT"),
+
+# ✅ 수정
+"cluster_label": cluster.get("cluster_label", "MARKET_SNAPSHOT"),
+"MARKET"이 빠진 채로 "_SNAPSHOT"이 기본값으로 들어가 있어서, cluster_label이 없는 클러스터는 select_market_snapshot의 필터 조건 ("TOP", "MARKET_SNAPSHOT")에 걸리지 않고 전부 누락됩니다.
+
+나머지 score_cluster의 기본값("MARKET_SNAPSHOT")과 select_market_snapshot의 필터 조건은 모두 올바르게 수정되어 있습니다.
+
+내 UI플립북이야. 보여? 이대로 해줘
+
+첨부 파일
+image.jpg
+
+
+
+이미지가 너무 작아서 디테일이 안 보여요. 좀 더 크게 보내줄 수 있어요? 아니면 스크린 하나씩 따로 캡처해주셔도 돼요.
+
+옛다
+
+첨부 파일 4개
+
+
+
+
+
+index.html
+HTML
+
+
+GridWiz Newsletter App
+GridWiz Newsletter App
+앱
+플립북 그대로 구현했어요.
+
+화면 흐름:
+
+시작 화면 — Gridwiz 로고 + 마지막 발송 시각 + 시작 버튼
+
+로딩 — "뉴스를 수집하는 중... → 분류 중... → 요약 중... → 생성 중..." 진행바
+
+미리보기 — NEWSLETTER 이메일 레이아웃 (Gridwiz News / Top News / Market Snapshot / 바로가기)
+
+발송 완료 — 발송 시각 업데이트 후 처음으로 돌아가기
+
+파이프라인 연동 시에는 index.html 안의 const DATA = {...} 부분을 newsletter_result.json 내용으로 교체하면 돼요. generate_html.py처럼 Python으로 자동 주입하는 방식도 가능해요.
+
+수정 원하는 부분 있으면 말해줘요.
+
+GridWiz Newsletter App
+
+
+GridWiz Newsletter App 열기
+코드를 달라고
+
+
+
+index.html
+HTML
+여기요. C:\Users\Judy\Desktop\newsletter_prototype\ 에 저장하고 쓰면 돼요.
+
+newsletter_result.json 데이터 자동으로 넣으려면 newsletter_pipeline.py 끝에 추가:
+
+python
+import re
+
+with open("index.html", "r", encoding="utf-8") as f:
+    html = f.read()
+
+import json
+json_str = json.dumps(newsletter_result, ensure_ascii=False)
+html = re.sub(r'const DATA = \{.*?\};', f'const DATA = {json_str};', html, flags=re.DOTALL)
+
+with open("index.html", "w", encoding="utf-8") as f:
+    f.write(html)
+그러면 파이프라인 돌릴 때마다 오늘자 데이터로 자동 업데이트돼요.
+
+
+index.html
+HTML
+
+
+index
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GridWiz Newsletter</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  background: #F5F5F5;
+  color: #1A1A1A;
+  min-height: 100vh;
+}
+
+/* ═══ HEADER ════════════════════════════════════════════════ */
+.app-header {
+  background: #fff;
+  border-bottom: 1px solid #E5E7EB;
+  padding: 0 32px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 700;
+  color: #16A34A;
+  letter-spacing: -0.5px;
+}
+
+.header-center {
+  font-size: 13px;
+  color: #6B7280;
+}
+
+.last-sent {
+  font-size: 12px;
+  color: #9CA3AF;
+}
+
+/* ═══ SCREENS ════════════════════════════════════════════════ */
+.screen { display: none; min-height: calc(100vh - 56px); }
+.screen.active { display: flex; flex-direction: column; }
+
+/* ── Screen 1: Start ── */
+#screen-start {
+  align-items: center;
+  justify-content: center;
+  background: #F5F5F5;
+}
+
+.start-box {
+  background: #fff;
+  border: 1px solid #E5E7EB;
+  border-radius: 4px;
+  width: 480px;
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.start-title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #1A1A1A;
+  margin-bottom: 32px;
+}
+
+.btn-start {
+  background: #1A1A1A;
+  color: #fff;
+  border: none;
+  padding: 12px 48px;
+  font-size: 14px;
+  font-family: inherit;
+  font-weight: 500;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.btn-start:hover { background: #333; }
+
+/* ── Screen 2: Loading ── */
+#screen-loading {
+  align-items: center;
+  justify-content: center;
+  background: #F5F5F5;
+}
+
+.loading-box {
+  background: #fff;
+  border: 1px solid #E5E7EB;
+  border-radius: 4px;
+  width: 480px;
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.loading-text {
+  font-size: 15px;
+  color: #6B7280;
+  margin-top: 16px;
+}
+
+.loading-dots::after {
+  content: '';
+  animation: dots 1.5s infinite;
+}
+
+@keyframes dots {
+  0%   { content: ''; }
+  25%  { content: '.'; }
+  50%  { content: '..'; }
+  75%  { content: '...'; }
+}
+
+.progress-bar {
+  width: 100%;
+  height: 3px;
+  background: #E5E7EB;
+  border-radius: 2px;
+  margin-top: 24px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #16A34A;
+  border-radius: 2px;
+  width: 0%;
+  transition: width 0.4s ease;
+}
+
+/* ── Screen 3: Preview ── */
+#screen-preview {
+  background: #F5F5F5;
+  align-items: center;
+  padding: 32px 16px 0;
+}
+
+.preview-actions {
+  width: 100%;
+  max-width: 580px;
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.btn-action {
+  background: #fff;
+  color: #1A1A1A;
+  border: 1px solid #D1D5DB;
+  padding: 8px 20px;
+  font-size: 13px;
+  font-family: inherit;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-action:hover { background: #F9FAFB; }
+
+/* ─ Newsletter Email Container ─ */
+.newsletter-wrap {
+  width: 100%;
+  max-width: 580px;
+  background: #fff;
+  border: 1px solid #E5E7EB;
+  overflow-y: auto;
+  flex: 1;
+}
+
+/* ─ Inner Email ─ */
+.nl-inner {
+  padding: 32px 40px;
+}
+
+.nl-header-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #E5E7EB;
+  margin-bottom: 8px;
+}
+
+.nl-logo {
+  font-size: 16px;
+  font-weight: 700;
+  color: #16A34A;
+}
+
+.nl-label {
+  font-size: 12px;
+  color: #9CA3AF;
+}
+
+.nl-title {
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 6px;
+  padding: 24px 0;
+  border-bottom: 2px solid #1A1A1A;
+  margin-bottom: 28px;
+}
+
+/* Sections */
+.nl-section {
+  margin-bottom: 28px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid #E5E7EB;
+}
+
+.nl-section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.nl-section-title {
+  font-size: 13px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 14px;
+  color: #1A1A1A;
+}
+
+.nl-section-title .icon {
+  color: #16A34A;
+  font-size: 14px;
+}
+
+/* GridWiz News */
+.gw-article-title {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+.gw-related-label {
+  font-size: 11px;
+  color: #6B7280;
+  margin-bottom: 4px;
+}
+
+.gw-related-list {
+  list-style: none;
+}
+
+.gw-related-list li {
+  font-size: 12px;
+  color: #374151;
+  line-height: 1.7;
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.gw-related-list li::before {
+  content: '•';
+  color: #9CA3AF;
+  flex-shrink: 0;
+}
+
+.no-article {
+  font-size: 12px;
+  color: #9CA3AF;
+  font-style: italic;
+}
+
+/* Top News */
+.top-news-item {
+  margin-bottom: 18px;
+  padding-bottom: 18px;
+  border-bottom: 1px dashed #F3F4F6;
+}
+
+.top-news-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.top-news-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 6px;
+}
+
+.top-news-title {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #1A1A1A;
+  flex: 1;
+}
+
+.link-btn {
+  font-size: 11px;
+  color: #2563EB;
+  text-decoration: none;
+  white-space: nowrap;
+  padding: 2px 8px;
+  border: 1px solid #BFDBFE;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+
+.link-btn:hover { background: #EFF6FF; }
+
+.top-summary {
+  font-size: 12px;
+  color: #4B5563;
+  line-height: 1.7;
+  padding-left: 2px;
+}
+
+.top-summary.dim { color: #9CA3AF; }
+
+/* Market Snapshot */
+.snap-category {
+  margin-bottom: 16px;
+}
+
+.snap-cat-name {
+  font-size: 12px;
+  font-weight: 700;
+  color: #374151;
+  margin-bottom: 6px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #F3F4F6;
+}
+
+.snap-item-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 4px 0;
+}
+
+.snap-bullet {
+  font-size: 12px;
+  color: #374151;
+  line-height: 1.5;
+  flex: 1;
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.snap-bullet::before {
+  content: '•';
+  color: #D1D5DB;
+  flex-shrink: 0;
+}
+
+/* Footer */
+.nl-footer {
+  background: #F9FAFB;
+  border-top: 1px solid #E5E7EB;
+  padding: 24px 40px;
+  text-align: center;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.footer-icon {
+  width: 28px;
+  height: 28px;
+  border: 1px solid #D1D5DB;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6B7280;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.footer-email {
+  font-size: 12px;
+  color: #6B7280;
+  margin-bottom: 12px;
+}
+
+.footer-addr {
+  font-size: 11px;
+  color: #9CA3AF;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.footer-logo {
+  font-size: 16px;
+  font-weight: 700;
+  color: #16A34A;
+}
+
+/* Send button */
+.send-bar {
+  width: 100%;
+  max-width: 580px;
+  padding: 16px 0 32px;
+}
+
+.btn-send {
+  width: 100%;
+  background: #1A1A1A;
+  color: #fff;
+  border: none;
+  padding: 16px;
+  font-size: 15px;
+  font-family: inherit;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.btn-send:hover { background: #333; }
+.btn-send:disabled { background: #9CA3AF; cursor: not-allowed; }
+
+/* ── Screen 4: Done ── */
+#screen-done {
+  align-items: center;
+  justify-content: center;
+  background: #F5F5F5;
+}
+
+.done-box {
+  background: #fff;
+  border: 1px solid #E5E7EB;
+  border-radius: 4px;
+  width: 480px;
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.done-icon {
+  font-size: 40px;
+  margin-bottom: 16px;
+}
+
+.done-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.done-sub {
+  font-size: 13px;
+  color: #6B7280;
+}
+
+.btn-restart {
+  margin-top: 24px;
+  background: #fff;
+  color: #1A1A1A;
+  border: 1px solid #D1D5DB;
+  padding: 10px 24px;
+  font-size: 13px;
+  font-family: inherit;
+  border-radius: 4px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<!-- ═══ HEADER ════════════════════════════ -->
+<header class="app-header">
+  <span class="logo">Gridwiz</span>
+  <span class="header-center">Newsletter</span>
+  <span class="last-sent" id="last-sent-text">마지막으로 발송한 시각 : 2026-03-31 13:00:00</span>
+</header>
+
+<!-- ═══ SCREEN 1: START ═══════════════════ -->
+<div class="screen active" id="screen-start">
+  <div class="start-box">
+    <p class="start-title">그리드위즈 뉴스레터 발송하기</p>
+    <button class="btn-start" onclick="startLoading()">시작</button>
+  </div>
+</div>
+
+<!-- ═══ SCREEN 2: LOADING ═══════════════════ -->
+<div class="screen" id="screen-loading">
+  <div class="loading-box">
+    <p id="loading-msg" class="loading-text loading-dots">뉴스를 수집하는 중</p>
+    <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
+  </div>
+</div>
+
+<!-- ═══ SCREEN 3: PREVIEW ════════════════════ -->
+<div class="screen" id="screen-preview">
+  <div class="preview-actions">
+    <button class="btn-action">수정하기</button>
+    <button class="btn-action">편집</button>
+  </div>
+
+  <div class="newsletter-wrap">
+    <!-- Header bar -->
+    <div class="nl-inner">
+      <div class="nl-header-bar">
+        <span class="nl-logo">Gridwiz</span>
+        <span class="nl-label">Newsletter</span>
+      </div>
+    </div>
+
+    <!-- NEWSLETTER title -->
+    <div class="nl-inner" style="padding-top:0;padding-bottom:0;">
+      <div class="nl-title">NEWSLETTER</div>
+    </div>
+
+    <div class="nl-inner" id="nl-content">
+      <!-- Dynamically rendered -->
+    </div>
+
+    <!-- Footer -->
+    <div class="nl-footer">
+      <div class="footer-icons">
+        <div class="footer-icon">f</div>
+        <div class="footer-icon">in</div>
+        <div class="footer-icon">ig</div>
+        <div class="footer-icon">yt</div>
+        <div class="footer-icon">tw</div>
+      </div>
+      <p class="footer-email">strategy-team@gridwiz.com</p>
+      <p class="footer-addr">
+        그리드위즈<br>
+        경기도 성남시 판교구 판교로 255번길 9호, 14층/13층
+      </p>
+      <div class="footer-logo">Gridwiz</div>
+    </div>
+  </div>
+
+  <div class="send-bar">
+    <button class="btn-send" onclick="sendNewsletter()">발송하기</button>
+  </div>
+</div>
+
+<!-- ═══ SCREEN 4: DONE ════════════════════ -->
+<div class="screen" id="screen-done">
+  <div class="done-box">
+    <div class="done-icon">✓</div>
+    <p class="done-title">발송 완료</p>
+    <p class="done-sub" id="done-time"></p>
+    <button class="btn-restart" onclick="goToStart()">처음으로</button>
+  </div>
+</div>
+
+<script>
+// ── 데이터 ──────────────────────────────────────────────────
+const DATA = {
+  "top_news": [
+    {
+      "title": "2030년 재생에너지 20%…지역 차등요금제 도입 - 연합뉴스TV",
+      "source": "연합뉴스TV",
+      "category": "재생에너지",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FV...",
+      "summary_line1": "2030년 재생에너지 비율 20% 목표 설정됨",
+      "summary_line2": "지역 차등요금제 도입으로 에너지 가격 형성 변화됨"
+    },
+    {
+      "title": "복기왕 \"천차만별 전기차 충전요금… 가격표시 의무화법 발의\" - v.daum.net",
+      "source": "v.daum.net",
+      "category": "전기차",
+      "link": "https://news.google.com/rss/articles/CBMiT0FV...",
+      "summary_line1": "복기왕 의원이 전기차 충전요금 가격표시 의무화법을 발의함",
+      "summary_line2": "전기차 충전요금 투명화로 소비자 보호와 시장 활성화 기대됨"
+    }
+  ],
+  "market_snapshot": {
+    "수요관리": [
+      { "title": "(수요광장)에너지 위기 시대, 수요관리는 VPP로 진화해야 한다 - 전기신문", "link": "#" }
+    ],
+    "에너지저장장치": [
+      { "title": "(기자의눈) 에너지 비상 상황, ESS '버팀목'으로 활용하자 - 전기신문", "link": "#" },
+      { "title": "ESS·배터리 SW 시장 선점하는 LG엔솔, 2분기 턴어라운드 노림수 - econovill.com", "link": "#" }
+    ],
+    "전기차": [
+      { "title": "기후부 '전기차 보급사업 수행자 평가' 테슬라 불리하나 - 블로터", "link": "#" },
+      { "title": "주유소가 테슬라 전기차 충전소로 변신..경주 수퍼차저 오픈 - 카가이", "link": "#" }
+    ],
+    "재생에너지": [
+      { "title": "[브리핑ON] 에너지 안보 개념 전환 선언…화석연료에서 재생에너지로 - 전기신문", "link": "#" },
+      { "title": "풍력협회, '국민주권정부 에너지 대전환 추진계획' 적극 환영 - 전기신문", "link": "#" },
+      { "title": "'2030년 재생에너지 100GW' 기후부 \"에너지 자립\" - 네이트", "link": "#" },
+      { "title": "지정학적 위기마다 '화석연료 쇼크'…\"변동성 적은 재생에너지는 완충재\" - 경향신문", "link": "#" },
+      { "title": "1초가 급한 에너지 위기, 정부 카드는 태양광 - 중앙일보", "link": "#" }
+    ],
+    "전력시스템": []
+  },
+  "gridwiz_news": []
+};
+
+const CATEGORY_ORDER = ["수요관리", "에너지저장장치", "전기차", "재생에너지", "전력시스템"];
+
+function cleanTitle(t) {
+  if (!t) return '';
+  const idx = t.lastIndexOf(' - ');
+  return idx > 0 ? t.substring(0, idx) : t;
+}
+
+// ── 뉴스레터 렌더링 ─────────────────────────────────────────
+function renderNewsletter() {
+  const ct = document.getElementById('nl-content');
+  let html = '';
+
+  // GridWiz News
+  html += `<div class="nl-section">
+    <div class="nl-section-title"><span class="icon">★</span> Gridwiz News</div>`;
+  if (!DATA.gridwiz_news || DATA.gridwiz_news.length === 0) {
+    html += `<p class="no-article">오늘 그리드위즈 관련 기사가 없습니다.</p>`;
+  } else {
+    DATA.gridwiz_news.forEach(item => {
+      const t = cleanTitle(item.title);
+      const s1 = item.summary_line1 || '';
+      const s2 = item.summary_line2 || '';
+      html += `<p class="gw-article-title">${t}</p>`;
+      if (s1) html += `<p class="top-summary">${s1}</p>`;
+      if (s2) html += `<p class="top-summary dim">${s2}</p>`;
+    });
+  }
+  html += `</div>`;
+
+  // Top News
+  html += `<div class="nl-section">
+    <div class="nl-section-title">Top News of the Day</div>`;
+  DATA.top_news.forEach(item => {
+    const t = cleanTitle(item.title);
+    const s1 = item.summary_line1 || '';
+    const s2 = item.summary_line2 || '';
+    const l = item.link || '#';
+    html += `<div class="top-news-item">
+      <div class="top-news-row">
+        <span class="top-news-title">${t}</span>
+        <a href="${l}" class="link-btn" target="_blank">바로가기</a>
+      </div>
+      ${s1 ? `<p class="top-summary">${s1}</p>` : ''}
+      ${s2 ? `<p class="top-summary dim">${s2}</p>` : ''}
+    </div>`;
+  });
+  html += `</div>`;
+
+  // Market Snapshot
+  html += `<div class="nl-section">
+    <div class="nl-section-title">Market Snapshot</div>`;
+  CATEGORY_ORDER.forEach(cat => {
+    const items = DATA.market_snapshot[cat] || [];
+    html += `<div class="snap-category">
+      <div class="snap-cat-name">${cat}</div>`;
+    if (items.length === 0) {
+      html += `<p class="no-article">관련 기사 없음</p>`;
+    } else {
+      items.forEach(item => {
+        const t = cleanTitle(item.title);
+        const l = item.link || '#';
+        html += `<div class="snap-item-row">
+          <span class="snap-bullet">${t}</span>
+          <a href="${l}" class="link-btn" target="_blank">바로가기</a>
+        </div>`;
+      });
+    }
+    html += `</div>`;
+  });
+  html += `</div>`;
+
+  ct.innerHTML = html;
+}
+
+// ── 화면 전환 ───────────────────────────────────────────────
+function showScreen(id) {
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+}
+
+function startLoading() {
+  showScreen('screen-loading');
+  const messages = [
+    '뉴스를 수집하는 중',
+    '카테고리에 맞게 분류 중',
+    '요약 중',
+    '뉴스레터 생성 중'
+  ];
+  const msgEl = document.getElementById('loading-msg');
+  const bar = document.getElementById('progress-fill');
+  let step = 0;
+
+  const interval = setInterval(() => {
+    step++;
+    if (step < messages.length) {
+      msgEl.textContent = messages[step];
+      bar.style.width = ((step + 1) / messages.length * 100) + '%';
+    } else {
+      clearInterval(interval);
+      setTimeout(() => {
+        renderNewsletter();
+        showScreen('screen-preview');
+      }, 400);
+    }
+  }, 900);
+
+  bar.style.width = '25%';
+}
+
+function sendNewsletter() {
+  const btn = document.querySelector('.btn-send');
+  btn.disabled = true;
+  btn.textContent = '발송 중...';
+  setTimeout(() => {
+    const now = new Date();
+    const kst = new Date(now.getTime() + 9 * 60 * 60 * 1000);
+    const str = kst.toISOString().replace('T', ' ').substring(0, 16);
+    document.getElementById('done-time').textContent = `발송 시각: ${str}`;
+    document.getElementById('last-sent-text').textContent = `마지막으로 발송한 시각 : ${str}`;
+    showScreen('screen-done');
+  }, 1500);
+}
+
+function goToStart() {
+  const btn = document.querySelector('.btn-send');
+  btn.disabled = false;
+  btn.textContent = '발송하기';
+  showScreen('screen-start');
+}
+</script>
+</body>
+</html>

@@ -1,3 +1,7 @@
+#cluster_labeler.py
+from config import OUTPUT_DIR
+input_file = f"{OUTPUT_DIR}/representative_news.json"
+output_file = f"{OUTPUT_DIR}/labeled_clusters.json"
 import os
 import json
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -20,7 +24,7 @@ def classify_cluster_label(cluster_topic, representative_title, article_titles):
     )
 
     response = client.chat.completions.create(
-        model="gpt-5-mini",
+        model="gpt-4o-mini",
         messages=[
             {"role": "system", "content": CLUSTER_LABEL_SYSTEM_PROMPT},
             {"role": "user", "content": user_prompt},
@@ -33,7 +37,7 @@ def classify_cluster_label(cluster_topic, representative_title, article_titles):
         return json.loads(content)
     except Exception:
         return {
-            "cluster_label": "MARKET",
+            "label": "MARKET_SNAPSHOT",
             "reason": content,
         }
 
@@ -56,11 +60,11 @@ def process_cluster(idx, cluster):
             article_titles,
         )
 
-        cluster["cluster_label"] = result.get("cluster_label", "MARKET")
+        cluster["cluster_label"] = result.get("label", "MARKET_SNAPSHOT")
         cluster["cluster_reason"] = result.get("reason", "분류 실패")
 
     except Exception as e:
-        cluster["cluster_label"] = "MARKET"
+        cluster["cluster_label"] = "MARKET_SNAPSHOT"
         cluster["cluster_reason"] = f"API 실패: {str(e)}"
 
     return idx, cluster

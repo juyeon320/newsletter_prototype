@@ -7,6 +7,10 @@ from config import (
 )
 from models import NewsItem
 
+import re
+
+def filter_non_korean_titles(items: List[NewsItem]) -> List[NewsItem]:
+    return [item for item in items if re.search(r'[가-힣]', item.title)]
 
 def deduplicate_news(items: List[NewsItem]) -> List[NewsItem]:
     seen = set()
