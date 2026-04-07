@@ -105,6 +105,19 @@ def main():
         json.dump(newsletter_result, f, ensure_ascii=False, indent=2)
     print(f"완료: {output_file}")
 
+    # ← 여기에 추가
+    import re
+
+    with open("index.html", "r", encoding="utf-8") as f:
+        html = f.read()
+
+    json_str = json.dumps(newsletter_result, ensure_ascii=False)
+    html = re.sub(r'const DATA = \{.*?\};', f'const DATA = {json_str};', html, flags=re.DOTALL)
+
+    with open("index.html", "w", encoding="utf-8") as f:
+        f.write(html)
+    print("index.html 업데이트 완료")
+
     # 출력
     print("\n=== 그리드위즈 뉴스 ===")
     for item in newsletter_result["gridwiz_news"]:
@@ -120,17 +133,6 @@ def main():
         for item in items:
             print(f"- {item['title']} ({item['source']})")
 
-import re
-
-with open("index.html", "r", encoding="utf-8") as f:
-    html = f.read()
-
-import json
-json_str = json.dumps(newsletter_result, ensure_ascii=False)
-html = re.sub(r'const DATA = \{.*?\};', f'const DATA = {json_str};', html, flags=re.DOTALL)
-
-with open("index.html", "w", encoding="utf-8") as f:
-    f.write(html)
     
 if __name__ == "__main__":
     main()
