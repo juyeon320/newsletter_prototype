@@ -1,7 +1,6 @@
 #news_collector.py
 
 from config import OUTPUT_DIR
-# "filtered_news.json" → f"{OUTPUT_DIR}/filtered_news.json"
 
 from datetime import datetime
 from typing import List
@@ -101,7 +100,7 @@ def collect_news_for_keywords(
 
     deduped = deduplicate_by_title(deduped)
 
-    # 정렬
+
     deduped.sort(key=lambda x: x.published_at_kst, reverse=True)
 
     return deduped

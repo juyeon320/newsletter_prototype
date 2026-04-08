@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Gridwiz Newsletter</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="newsletter-wrap">
+        <div class="newsletter-container">
+
+            <!-- 상단 로고 -->
+            <section class="block logo-block">
+                <img
+                    src="https://img.stibee.com/39712_1678868547.png"
+                    alt="Gridwiz"
+                    class="logo"
+                >
+            </section>
+
+            <div class="divider"></div>
+
+            <!-- Gridwiz News -->
+            <section class="block">
+                <h2 class="section-title">🍀 <span>Gridwiz News</span></h2>
+
+                {% if data.get("gridwiz_news") %}
+                    {% for news in data.get("gridwiz_news", []) %}
+                        <div class="headline">
+                            <span class="headline-text">{{ news.title }}</span>
+                            {% if news.link %}
+                                <a href="{{ news.link }}" target="_blank" class="quick-link">바로가기</a>
+                            {% endif %}
+                        </div>
+
+                        {% if news.summary_points %}
+                            <ul class="news-bullets">
+                                {% for point in news.summary_points %}
+                                    <li>{{ point }}</li>
+                                {% endfor %}
+                            </ul>
+                        {% elif news.summary %}
+                            <ul class="news-bullets">
+                                <li>{{ news.summary }}</li>
+                            </ul>
+                        {% endif %}
+                    {% endfor %}
+                {% else %}
+                    <div class="empty-message">표시할 Gridwiz News가 없습니다.</div>
+                {% endif %}
+            </section>
+
+            <div class="divider"></div>
+
+            <!-- Top News -->
+            <section class="block">
+                <h2 class="section-title">💌 <span>Top News of the Day</span></h2>
+
+                {% if data.get("top_news") %}
+                    {% for news in data.get("top_news", []) %}
+                        <div class="headline">
+                            <span class="headline-text">{{ news.title }}</span>
+                            {% if news.link %}
+                                <a href="{{ news.link }}" target="_blank" class="quick-link">바로가기</a>
+                            {% endif %}
+                        </div>
+
+                        {% if news.summary_points %}
+                            <ul class="news-bullets">
+                                {% for point in news.summary_points %}
+                                    <li>{{ point }}</li>
+                                {% endfor %}
+                            </ul>
+                        {% elif news.summary %}
+                            <ul class="news-bullets">
+                                <li>{{ news.summary }}</li>
+                            </ul>
+                        {% else %}
+                            <ul class="news-bullets">
+                                <li>{{ news.source }}</li>
+                            </ul>
+                        {% endif %}
+                    {% endfor %}
+                {% else %}
+                    <div class="empty-message">Top News가 없습니다.</div>
+                {% endif %}
+            </section>
+
+            <div class="divider"></div>
+
+            <!-- Market Snapshot -->
+            <section class="block">
+                <h2 class="section-title">🗓️ <span>Market Snapshot</span></h2>
+
+                {% set category_order = ["수요관리", "전기차충전", "ESS", "재생에너지", "전력계통", "기타"] %}
+
+                {% for category in category_order %}
+                    {% set items = data.get("market_snapshot", {}).get(category, []) %}
+                    {% if items %}
+                        <div class="category-block">
+                            <h3 class="category-title">{{ category }}</h3>
+                            <ul class="category-list">
+                                {% for news in items %}
+                                    <li>
+                                        <span class="category-item-title">{{ news.title }}</span>
+                                        {% if news.link %}
+                                            <a href="{{ news.link }}" target="_blank" class="quick-link">바로가기</a>
+                                        {% endif %}
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </section>
+
+            <div class="divider"></div>
+
+            <!-- 액션 -->
+            <section class="block action-block">
+            </section>
+
+            <!-- SNS -->
+            <section class="block sns-block">
+                <a href="https://www.gridwiz.com/kr/" target="_blank">
+                    <img src="https://resource.stibee.com/editor/icon/sns/homepage2-snsB.png" alt="홈페이지">
+                </a>
+                <a href="https://www.youtube.com/channel/UCRba9bGYBvxi4xNgMBT2UGg" target="_blank">
+                    <img src="https://resource.stibee.com/editor/icon/sns/youtube-snsB.png" alt="유튜브">
+                </a>
+                <a href="https://www.facebook.com/gridwiz/?locale=ko_KR" target="_blank">
+                    <img src="https://resource.stibee.com/editor/icon/sns/facebook-snsB.png" alt="페이스북">
+                </a>
+                <a href="https://www.instagram.com/gridwiz.official/" target="_blank">
+                    <img src="https://resource.stibee.com/editor/icon/sns/instagram-snsB.png" alt="인스타그램">
+                </a>
+                <a href="https://www.linkedin.com/company/gridwiz" target="_blank">
+                    <img src="https://resource.stibee.com/editor/icon/sns/linkedin-snsB.png" alt="링크드인">
+                </a>
+            </section>
+
+            <!-- 문의 -->
+            <section class="block footer-note">
+                🍀 뉴스레터 문의하기 <span>strategy-team@gridwiz.com</span>
+            </section>
+
+            <!-- 회사정보 -->
+            <section class="block company-info">
+                <div>그리드위즈</div>
+                <div>경기도 성남시 분당구 산운로 208번길 25, 1010빌딩</div>
+            </section>
+
+        </div>
+    </div>
+</body>
+</html>
