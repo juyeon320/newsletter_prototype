@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>뉴스레터 생성 중</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="preview-header">
+        <div class="preview-brand">Gridwiz</div>
+        <div class="preview-center-title">Newsletter</div>
+        <div class="preview-last-time">마지막으로 발송한 시간 : {{ last_run_time }}</div>
+    </div>
+
+    <div class="page-shell">
+        <div class="frame-layout">
+            <div class="main-panel">
+                <div class="panel-body">
+                    <h1 class="hero-title">그리드위즈 뉴스레터 발송하기</h1>
+
+                    <div class="loading-wrap">
+                        <div class="loading-spinner"></div>
+                        <div class="loading-text" id="loading-text">뉴스를 수집하는 중...</div>
+                    </div>
+
+                    <div id="status-message" class="status-message"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        async function runPipeline() {
+            const status = document.getElementById("status-message");
+            const loadingText = document.getElementById("loading-text");
+
+            try {
+                loadingText.textContent = "수집 / 분류 / 요약 / 뉴스레터 생성 중...";
+
+                const response = await fetch("/api/run", {
+                    method: "POST"
+                });
+
+                const result = await response.json();
+
+                if (response.ok && result.success) {
+                    loadingText.textContent = "생성 완료! 결과 페이지로 이동합니다.";
+                    window.location.href = "{{ url_for('newsletter') }}";
+                } else {
+                    status.textContent = result.message || "생성 중 오류가 발생했습니다.";
+
+                    if (result.stderr) {
+                        status.textContent += "\n\n" + result.stderr;
+                    }
+                }
+            } catch (error) {
+                status.textContent = "서버와 통신 중 오류가 발생했습니다.";
+            }
+        }
+
+        window.addEventListener("load", runPipeline);
+    </script>
+</body>
+</html>

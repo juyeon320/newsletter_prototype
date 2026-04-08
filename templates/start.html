@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>뉴스레터 시작</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="preview-header">
+        <div class="preview-brand">Gridwiz</div>
+        <div class="preview-center-title">Newsletter</div>
+        <div class="preview-last-time">마지막으로 발송한 시간 : {{ last_run_time }}</div>
+    </div>
+
+    <div class="page-shell">
+        <div class="frame-layout">
+            <div class="main-panel">
+                <div class="panel-body">
+                    <h1 class="hero-title">그리드위즈 뉴스레터 발송하기</h1>
+                    <p class="hero-desc"></p>
+
+                    <a href="{{ url_for('run_page') }}" class="start-button">시작</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

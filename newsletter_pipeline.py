@@ -108,13 +108,13 @@ def main():
     # ← 여기에 추가
     import re
 
-    with open("index.html", "r", encoding="utf-8") as f:
+    with open("templates/index.html", "r", encoding="utf-8") as f:
         html = f.read()
 
     json_str = json.dumps(newsletter_result, ensure_ascii=False)
     html = re.sub(r'const DATA = \{.*?\};', f'const DATA = {json_str};', html, flags=re.DOTALL)
 
-    with open("index.html", "w", encoding="utf-8") as f:
+    with open("templates/index.html", "w", encoding="utf-8") as f:
         f.write(html)
     print("index.html 업데이트 완료")
 

@@ -2,156 +2,875 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Gridwiz Newsletter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>뉴스레터 미리보기</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
-<body>
-    <div class="newsletter-wrap">
-        <div class="newsletter-container">
 
-            <!-- 상단 로고 -->
-            <section class="block logo-block">
-                <img
-                    src="https://img.stibee.com/39712_1678868547.png"
-                    alt="Gridwiz"
-                    class="logo"
-                >
-            </section>
+<body class="preview-mode">
+    <div class="preview-page">
 
-            <div class="divider"></div>
+        <div class="preview-container">
+            <div class="preview-header">
+                <div class="preview-brand">Gridwiz</div>
+                <div class="preview-center-title">Newsletter</div>
+                <div class="preview-last-time">마지막으로 발송한 시간 : {{ last_run_time }}</div>
+            </div>
 
-            <!-- Gridwiz News -->
-            <section class="block">
-                <h2 class="section-title">🍀 <span>Gridwiz News</span></h2>
+            <div class="preview-scroll-area">
+                <div class="newsletter-card">
 
-                {% if data.get("gridwiz_news") %}
-                    {% for news in data.get("gridwiz_news", []) %}
-                        <div class="headline">
-                            <span class="headline-text">{{ news.title }}</span>
-                            {% if news.link %}
-                                <a href="{{ news.link }}" target="_blank" class="quick-link">바로가기</a>
+                    <div class="newsletter-actions">
+                        <button type="button" class="toolbar-btn">주소록</button>
+                        <button type="button" class="toolbar-btn hidden" id="view-all-news-btn">뉴스 모두 보기</button>
+                        <button type="button" class="toolbar-btn toolbar-btn-dark" id="edit-btn">편집</button>
+                    </div>
+
+                <div class="newsletter-wrap">
+                    <div class="newsletter-container">
+
+                        <section class="block logo-block">
+                            <img
+                                src="https://img.stibee.com/39712_1678868547.png"
+                                alt="Gridwiz"
+                                class="logo"
+                            >
+                        </section>
+
+                        {% set gridwiz_news = data.get("gridwiz_news", []) %}
+                        {% set top_news = data.get("top_news", []) %}
+                        {% set market_snapshot = data.get("market_snapshot", {}) %}
+
+                        {% set category_order = ["수요관리", "ESS", "전기차", "재생에너지", "전력시스템", "기타"] %}
+                        {% set ns = namespace(has_market=false) %}
+                        {% for category in category_order %}
+                            {% if market_snapshot.get(category) %}
+                                {% set ns.has_market = true %}
                             {% endif %}
-                        </div>
+                        {% endfor %}
 
-                        {% if news.summary_points %}
-                            <ul class="news-bullets">
-                                {% for point in news.summary_points %}
-                                    <li>{{ point }}</li>
-                                {% endfor %}
-                            </ul>
-                        {% elif news.summary %}
-                            <ul class="news-bullets">
-                                <li>{{ news.summary }}</li>
-                            </ul>
-                        {% endif %}
-                    {% endfor %}
-                {% else %}
-                    <div class="empty-message">표시할 Gridwiz News가 없습니다.</div>
-                {% endif %}
-            </section>
+                        {% if gridwiz_news %}
+                            <div class="divider"></div>
+                            <section class="block editable-section">
+                                <h2 class="section-title">🍀 <span>Gridwiz News</span></h2>
 
-            <div class="divider"></div>
-
-            <!-- Top News -->
-            <section class="block">
-                <h2 class="section-title">💌 <span>Top News of the Day</span></h2>
-
-                {% if data.get("top_news") %}
-                    {% for news in data.get("top_news", []) %}
-                        <div class="headline">
-                            <span class="headline-text">{{ news.title }}</span>
-                            {% if news.link %}
-                                <a href="{{ news.link }}" target="_blank" class="quick-link">바로가기</a>
-                            {% endif %}
-                        </div>
-
-                        {% if news.summary_points %}
-                            <ul class="news-bullets">
-                                {% for point in news.summary_points %}
-                                    <li>{{ point }}</li>
-                                {% endfor %}
-                            </ul>
-                        {% elif news.summary %}
-                            <ul class="news-bullets">
-                                <li>{{ news.summary }}</li>
-                            </ul>
-                        {% else %}
-                            <ul class="news-bullets">
-                                <li>{{ news.source }}</li>
-                            </ul>
-                        {% endif %}
-                    {% endfor %}
-                {% else %}
-                    <div class="empty-message">Top News가 없습니다.</div>
-                {% endif %}
-            </section>
-
-            <div class="divider"></div>
-
-            <!-- Market Snapshot -->
-            <section class="block">
-                <h2 class="section-title">🗓️ <span>Market Snapshot</span></h2>
-
-                {% set category_order = ["수요관리", "전기차충전", "ESS", "재생에너지", "전력계통", "기타"] %}
-
-                {% for category in category_order %}
-                    {% set items = data.get("market_snapshot", {}).get(category, []) %}
-                    {% if items %}
-                        <div class="category-block">
-                            <h3 class="category-title">{{ category }}</h3>
-                            <ul class="category-list">
-                                {% for news in items %}
-                                    <li>
-                                        <span class="category-item-title">{{ news.title }}</span>
+                                {% for news in gridwiz_news %}
+                                    <div class="headline news-item-block"
+                                        data-news-id="gridwiz-{{ loop.index0 }}"
+                                        data-news-group="gridwiz">
+                                        <span class="headline-text">{{ news.title }}</span>
                                         {% if news.link %}
                                             <a href="{{ news.link }}" target="_blank" class="quick-link">바로가기</a>
                                         {% endif %}
-                                    </li>
+                                    </div>
+
+                                    {% if news.summary_points %}
+                                        <ul class="news-bullets news-item-summary" data-news-id="gridwiz-{{ loop.index0 }}">
+                                            {% for point in news.summary_points %}
+                                                <li>{{ point }}</li>
+                                            {% endfor %}
+                                        </ul>
+                                    {% elif news.summary %}
+                                        <ul class="news-bullets news-item-summary" data-news-id="gridwiz-{{ loop.index0 }}">
+                                            <li>{{ news.summary }}</li>
+                                        </ul>
+                                    {% endif %}
                                 {% endfor %}
-                            </ul>
-                        </div>
-                    {% endif %}
-                {% endfor %}
-            </section>
+                            </section>
+                        {% endif %}
 
-            <div class="divider"></div>
+                        {% if top_news %}
+                            <div class="divider"></div>
+                            <section class="block editable-section">
+                                <h2 class="section-title">💌 <span>Top News of the Day</span></h2>
 
-            <!-- 액션 -->
-            <section class="block action-block">
-            </section>
+                                {% for news in top_news %}
+                                    <div class="headline news-item-block"
+                                        data-news-id="top-{{ loop.index0 }}"
+                                        data-news-group="top">
+                                        <span class="headline-text">{{ news.title }}</span>
+                                        {% if news.link %}
+                                            <a href="{{ news.link }}" target="_blank" class="quick-link">바로가기</a>
+                                        {% endif %}
+                                    </div>
 
-            <!-- SNS -->
-            <section class="block sns-block">
-                <a href="https://www.gridwiz.com/kr/" target="_blank">
-                    <img src="https://resource.stibee.com/editor/icon/sns/homepage2-snsB.png" alt="홈페이지">
-                </a>
-                <a href="https://www.youtube.com/channel/UCRba9bGYBvxi4xNgMBT2UGg" target="_blank">
-                    <img src="https://resource.stibee.com/editor/icon/sns/youtube-snsB.png" alt="유튜브">
-                </a>
-                <a href="https://www.facebook.com/gridwiz/?locale=ko_KR" target="_blank">
-                    <img src="https://resource.stibee.com/editor/icon/sns/facebook-snsB.png" alt="페이스북">
-                </a>
-                <a href="https://www.instagram.com/gridwiz.official/" target="_blank">
-                    <img src="https://resource.stibee.com/editor/icon/sns/instagram-snsB.png" alt="인스타그램">
-                </a>
-                <a href="https://www.linkedin.com/company/gridwiz" target="_blank">
-                    <img src="https://resource.stibee.com/editor/icon/sns/linkedin-snsB.png" alt="링크드인">
-                </a>
-            </section>
+                                    {% if news.summary_points %}
+                                        <ul class="news-bullets news-item-summary" data-news-id="top-{{ loop.index0 }}">
+                                            {% for point in news.summary_points %}
+                                                <li>{{ point }}</li>
+                                            {% endfor %}
+                                        </ul>
+                                    {% elif news.summary %}
+                                        <ul class="news-bullets news-item-summary" data-news-id="top-{{ loop.index0 }}">
+                                            <li>{{ news.summary }}</li>
+                                        </ul>
+                                    {% else %}
+                                        <ul class="news-bullets news-item-summary" data-news-id="top-{{ loop.index0 }}">
+                                            <li>{{ news.source }}</li>
+                                        </ul>
+                                    {% endif %}
+                                {% endfor %}
+                            </section>
+                        {% endif %}
 
-            <!-- 문의 -->
-            <section class="block footer-note">
-                🍀 뉴스레터 문의하기 <span>strategy-team@gridwiz.com</span>
-            </section>
+                        {% if ns.has_market %}
+                            <div class="divider"></div>
+                            <section class="block editable-section">
+                                <h2 class="section-title">🗓️ <span>Market Snapshot</span></h2>
 
-            <!-- 회사정보 -->
-            <section class="block company-info">
-                <div>그리드위즈</div>
-                <div>경기도 성남시 분당구 산운로 208번길 25, 1010빌딩</div>
-            </section>
+                               {% for category in category_order %}
+                                {% set items = market_snapshot.get(category, []) %}
+                                {% if items %}
+                                    <div class="category-block">
+                                        <h3 class="category-title">{{ category }}</h3>
+                                        <ul class="category-list">
+                                            {% for news in items %}
+                                                <li class="market-news-item"
+                                                    data-news-id="market-{{ category }}-{{ loop.index0 }}"
+                                                    data-news-group="market">
+                                                    <span class="category-item-title">{{ news.title }}</span>
+                                                    {% if news.link %}
+                                                        <a href="{{ news.link }}" target="_blank" class="quick-link">바로가기</a>
+                                                    {% endif %}
+                                                </li>
+                                            {% endfor %}
+                                        </ul>
+                                    </div>
+                                {% endif %}
+{% endfor %}
+                            </section>
+                        {% endif %}
 
+                        <div class="divider"></div>
+
+                        <section class="block action-block"></section>
+
+                        <section class="block sns-block">
+                            <a href="https://www.gridwiz.com/kr/" target="_blank">
+                                <img src="https://resource.stibee.com/editor/icon/sns/homepage2-snsB.png" alt="홈페이지">
+                            </a>
+                            <a href="https://www.youtube.com/channel/UCRba9bGYBvxi4xNgMBT2UGg" target="_blank">
+                                <img src="https://resource.stibee.com/editor/icon/sns/youtube-snsB.png" alt="유튜브">
+                            </a>
+                            <a href="https://www.facebook.com/gridwiz/?locale=ko_KR" target="_blank">
+                                <img src="https://resource.stibee.com/editor/icon/sns/facebook-snsB.png" alt="페이스북">
+                            </a>
+                            <a href="https://www.instagram.com/gridwiz.official/" target="_blank">
+                                <img src="https://resource.stibee.com/editor/icon/sns/instagram-snsB.png" alt="인스타그램">
+                            </a>
+                            <a href="https://www.linkedin.com/company/gridwiz" target="_blank">
+                                <img src="https://resource.stibee.com/editor/icon/sns/linkedin-snsB.png" alt="링크드인">
+                            </a>
+                        </section>
+
+                        <section class="block footer-note">
+                            🍀 뉴스레터 문의하기 <span>strategy-team@gridwiz.com</span>
+                        </section>
+
+                        <section class="block company-info">
+                            <div>그리드위즈</div>
+                            <div>서울특별시 서초구 양재천로9길 1, 그리드위즈빌딩</div>
+                        </section>
+
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="preview-footer">
+                <button type="button" class="send-btn">발송하기</button>
+            </div>
         </div>
     </div>
+    <div id="link-edit-modal" class="link-modal hidden">
+    <div class="link-modal-backdrop"></div>
+
+        <div class="link-modal-dialog">
+            <div class="link-modal-header">
+                <h3>바로가기 링크 수정</h3>
+                <button type="button" id="link-modal-close" class="link-modal-close">×</button>
+            </div>
+
+            <div class="link-modal-body">
+                <label for="link-url-input" class="link-modal-label">URL</label>
+                <input
+                    type="text"
+                    id="link-url-input"
+                    class="link-modal-input"
+                    placeholder="https://example.com"
+                >
+            </div>
+
+            <div class="link-modal-footer">
+                <button type="button" id="link-modal-cancel" class="toolbar-btn">취소</button>
+                <button type="button" id="link-modal-save" class="toolbar-btn toolbar-btn-dark">저장</button>
+            </div>
+        </div>
+    </div>
+
+        <div id="all-news-modal" class="link-modal hidden">
+        <div class="link-modal-backdrop"></div>
+
+        <div class="link-modal-dialog">
+            <div class="link-modal-header">
+                <h3>뉴스 모두 보기</h3>
+                <button type="button" id="all-news-modal-close" class="link-modal-close">×</button>
+            </div>
+
+            <div class="link-modal-body">
+
+                <div class="all-news-topbar">
+                    <input
+                        type="text"
+                        id="all-news-date-input"
+                        class="link-modal-input all-news-date-input"
+                        placeholder="수집 날짜"
+                    >
+
+                    <button type="button" id="all-news-apply" class="toolbar-btn toolbar-btn-dark">확인</button>
+                </div>
+
+                <div class="all-news-content">
+                    <div class="all-news-left">
+                        <div id="all-news-list" class="all-news-list"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="link-modal-footer">
+                <button type="button" id="all-news-modal-cancel" class="toolbar-btn">닫기</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+const editBtn = document.getElementById("edit-btn");
+const viewAllNewsBtn = document.getElementById("view-all-news-btn");
+
+/* 링크 모달 */
+const linkModal = document.getElementById("link-edit-modal");
+const linkUrlInput = document.getElementById("link-url-input");
+const linkModalClose = document.getElementById("link-modal-close");
+const linkModalCancel = document.getElementById("link-modal-cancel");
+const linkModalSave = document.getElementById("link-modal-save");
+const linkModalBackdrop = document.querySelector("#link-edit-modal .link-modal-backdrop");
+
+/* 뉴스 모두 보기 모달 */
+const allNewsModal = document.getElementById("all-news-modal");
+const allNewsModalClose = document.getElementById("all-news-modal-close");
+const allNewsModalCancel = document.getElementById("all-news-modal-cancel");
+const allNewsModalBackdrop = document.querySelector("#all-news-modal .link-modal-backdrop");
+const allNewsList = document.getElementById("all-news-list");
+const allNewsApplyBtn = document.getElementById("all-news-apply");
+const allNewsDateInput = document.getElementById("all-news-date-input");
+
+let isEditMode = false;
+let currentEditingLink = null;
+let lastFetchedItems = [];
+
+const MARKET_CATEGORY_ORDER = [
+    "수요관리",
+    "ESS",
+    "전기차",
+    "재생에너지",
+    "전력시스템",
+    "기타"
+];
+
+function escapeHtml(str = "") {
+    return String(str)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#39;");
+}
+
+async function fetchSummary(title) {
+    try {
+        const response = await fetch("/api/summary", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ title })
+        });
+
+        const result = await response.json();
+
+        if (!response.ok || !result.success) {
+            return [];
+        }
+
+        return result.summary_points || [];
+    } catch (error) {
+        return [];
+    }
+}
+
+function closeLinkModal() {
+    linkModal.classList.add("hidden");
+    currentEditingLink = null;
+    linkUrlInput.value = "";
+}
+
+function closeAllNewsModal() {
+    allNewsModal.classList.add("hidden");
+}
+
+function setEditStateForElement(el, editable) {
+    if (!el) return;
+    el.contentEditable = editable ? "true" : "false";
+    el.style.outline = editable ? "2px dashed #4ea968" : "none";
+    el.style.background = editable ? "#fffbe6" : "transparent";
+}
+
+function setEditStateForAddedItem(el, editable) {
+    if (!el) return;
+    el.contentEditable = editable ? "true" : "false";
+    el.style.outline = editable ? "1px dashed #aaa" : "none";
+    el.style.background = editable ? "#fffbe6" : "transparent";
+}
+
+function findSectionByTitle(keyword) {
+    return [...document.querySelectorAll(".editable-section")].find((el) =>
+        el.querySelector(".section-title span")?.innerText.includes(keyword)
+    );
+}
+
+function getNewsletterContainer() {
+    return document.querySelector(".newsletter-container");
+}
+
+function getInsertAnchor(sectionTitleText) {
+    const topSection = findSectionByTitle("Top News");
+    const marketSection = findSectionByTitle("Market Snapshot");
+    const snsBlock = document.querySelector(".sns-block");
+    const footerNote = document.querySelector(".footer-note");
+    const companyInfo = document.querySelector(".company-info");
+
+    if (sectionTitleText === "Gridwiz News") {
+        return topSection || marketSection || snsBlock || footerNote || companyInfo;
+    }
+
+    if (sectionTitleText === "Top News of the Day") {
+        return marketSection || snsBlock || footerNote || companyInfo;
+    }
+
+    if (sectionTitleText === "Market Snapshot") {
+        return snsBlock || footerNote || companyInfo;
+    }
+
+    return snsBlock || footerNote || companyInfo;
+}
+
+function createSection(sectionTitleText, emoji) {
+    const newsletterContainer = getNewsletterContainer();
+
+    const divider = document.createElement("div");
+    divider.className = "divider added-section-divider";
+
+    const section = document.createElement("section");
+    section.className = "block editable-section";
+    setEditStateForElement(section, isEditMode);
+
+    const h2 = document.createElement("h2");
+    h2.className = "section-title";
+    h2.innerHTML = `${emoji} <span>${sectionTitleText}</span>`;
+    section.appendChild(h2);
+
+    const anchor = getInsertAnchor(sectionTitleText);
+
+    if (anchor) {
+        newsletterContainer.insertBefore(divider, anchor);
+        newsletterContainer.insertBefore(section, anchor);
+    } else {
+        newsletterContainer.appendChild(divider);
+        newsletterContainer.appendChild(section);
+    }
+
+    return section;
+}
+
+function insertBlockRightAfterTitle(section, block) {
+    const title = section.querySelector(".section-title");
+    if (!title) {
+        section.appendChild(block);
+        return;
+    }
+
+    const next = title.nextElementSibling;
+    if (next) {
+        section.insertBefore(block, next);
+    } else {
+        section.appendChild(block);
+    }
+}
+
+function addDragEvents(item) {
+    item.addEventListener("dragstart", () => {
+        item.classList.add("dragging");
+    });
+
+    item.addEventListener("dragend", () => {
+        item.classList.remove("dragging");
+    });
+}
+
+function getDragAfterElement(container, y) {
+    const draggableElements = [...container.querySelectorAll(".all-news-item:not(.dragging)")];
+
+    return draggableElements.reduce((closest, child) => {
+        const box = child.getBoundingClientRect();
+        const offset = y - box.top - box.height / 2;
+
+        if (offset < 0 && offset > closest.offset) {
+            return { offset, element: child };
+        }
+        return closest;
+    }, { offset: Number.NEGATIVE_INFINITY }).element;
+}
+
+function clearRowSelection(row) {
+    row.dataset.selectionType = "";
+    row.dataset.marketCategory = "";
+
+    row.querySelectorAll(".selection-btn").forEach((btn) => {
+        btn.classList.remove("selected");
+    });
+}
+
+function setRowSelection(row, type, marketCategory = "") {
+    clearRowSelection(row);
+
+    row.dataset.selectionType = type;
+    row.dataset.marketCategory = marketCategory;
+
+    if (type === "gridwiz") {
+        const btn = row.querySelector('.selection-btn[data-type="gridwiz"]');
+        if (btn) btn.classList.add("selected");
+    }
+
+    if (type === "top") {
+        const btn = row.querySelector('.selection-btn[data-type="top"]');
+        if (btn) btn.classList.add("selected");
+    }
+
+    if (type === "market") {
+        const btn = row.querySelector(`.selection-btn[data-type="market"][data-market-category="${marketCategory}"]`);
+        if (btn) btn.classList.add("selected");
+    }
+}
+
+function createSelectionControls() {
+    const marketButtonsHtml = MARKET_CATEGORY_ORDER.map((category) => `
+        <button
+            type="button"
+            class="selection-btn selection-btn-market"
+            data-type="market"
+            data-market-category="${escapeHtml(category)}"
+        >
+            ${escapeHtml(category)}
+        </button>
+    `).join("");
+
+    return `
+        <div class="all-news-selection-group">
+            <button type="button" class="selection-btn" data-type="gridwiz">Gridwiz News</button>
+            <button type="button" class="selection-btn" data-type="top">Top News</button>
+        </div>
+
+        <div class="market-snapshot-label">Market Snapshot</div>
+
+        <div class="all-news-selection-group market-category-group">
+            ${marketButtonsHtml}
+            <button type="button" class="selection-btn selection-btn-exclude" data-type="exclude">제외</button>
+        </div>
+    `;
+}
+
+function renderCollectedNews(items) {
+    allNewsList.innerHTML = "";
+
+    if (!items || items.length === 0) {
+        allNewsList.innerHTML = "<div class='all-news-empty'>대표 뉴스가 없습니다.</div>";
+        return;
+    }
+
+    items.forEach((item, index) => {
+        const row = document.createElement("div");
+        row.className = "all-news-item";
+        row.draggable = true;
+        row.dataset.newsId = item.id || String(index);
+        row.dataset.newsLink = item.link || "";
+        row.dataset.newsSource = item.source || "";
+        row.dataset.newsTitle = item.title || "";
+        row.dataset.selectionType = "";
+        row.dataset.marketCategory = "";
+
+        row.innerHTML = `
+            <div class="all-news-item-main">
+                <div class="all-news-item-title">${escapeHtml(item.title || "(제목 없음)")}</div>
+                <div class="all-news-item-meta">${escapeHtml(((item.source || "") + " " + (item.category || "")).trim())}</div>
+            </div>
+
+            <div class="all-news-item-control">
+                 <select class="news-category-select">
+                    <option value="">선택 안 함</option>
+                    <option value="gridwiz">Gridwiz News</option>
+                    <option value="top">Top News</option>
+                    <option value="market:수요관리">Market Snapshot > 수요관리</option>
+                    <option value="market:ESS">Market Snapshot > ESS</option>
+                    <option value="market:전기차">Market Snapshot > 전기차</option>
+                    <option value="market:재생에너지">Market Snapshot > 재생에너지</option>
+                    <option value="market:전력시스템">Market Snapshot > 전력시스템</option>
+                    <option value="market:기타">Market Snapshot > 기타</option>
+                    <option value="exclude">제외</option>
+                </select>
+            </div>
+        `;
+
+        addDragEvents(row);
+        allNewsList.appendChild(row);
+    });
+}
+
+async function createNewsBlock(item) {
+    const safeTitle = escapeHtml(item.title || "");
+    const safeLink = escapeHtml(item.link || "");
+
+    const block = document.createElement("div");
+    block.className = "added-news-block";
+    setEditStateForAddedItem(block, isEditMode);
+
+    // 👉 1. 먼저 로딩 상태로 렌더
+    block.innerHTML = `
+        <div class="headline">
+            <span class="headline-text">${safeTitle}</span>
+            ${safeLink ? `<a href="${safeLink}" target="_blank" class="quick-link">바로가기</a>` : ""}
+        </div>
+
+        <ul class="news-bullets summary-loading">
+            <li>요약 생성 중...</li>
+        </ul>
+    `;
+
+    // 👉 2. DOM 먼저 반환 (UI 바로 뜸)
+    setTimeout(async () => {
+        const summaryPoints = await fetchSummary(item.title || "");
+
+        let summaryHtml = "";
+
+        if (summaryPoints.length > 0) {
+            summaryHtml = `
+                <ul class="news-bullets">
+                    ${summaryPoints.map(point => `<li>${escapeHtml(point)}</li>`).join("")}
+                </ul>
+            `;
+        } else {
+            summaryHtml = `
+                <ul class="news-bullets">
+                    <li>요약 생성 실패</li>
+                </ul>
+            `;
+        }
+
+        block.querySelector(".summary-loading").outerHTML = summaryHtml;
+
+    }, 0);
+
+    return block;
+}
+
+function getOrCreateMarketCategoryBlock(marketSection, categoryName) {
+    const normalized = categoryName.trim();
+    const existingBlocks = [...marketSection.querySelectorAll(".category-block")];
+
+    let block = existingBlocks.find((el) => {
+        return el.querySelector(".category-title")?.innerText.trim() === normalized;
+    });
+
+    if (block) return block;
+
+    block = document.createElement("div");
+    block.className = "category-block";
+
+    const title = document.createElement("h3");
+    title.className = "category-title";
+    title.innerText = normalized;
+
+    const list = document.createElement("ul");
+    list.className = "category-list";
+
+    block.appendChild(title);
+    block.appendChild(list);
+
+    const orderedBlocks = [...marketSection.querySelectorAll(".category-block")];
+
+    const newIndex = MARKET_CATEGORY_ORDER.indexOf(normalized);
+
+    let inserted = false;
+
+    for (const existingBlock of orderedBlocks) {
+        const existingTitle = existingBlock.querySelector(".category-title")?.innerText.trim() || "";
+        const existingIndex = MARKET_CATEGORY_ORDER.indexOf(existingTitle);
+
+        if (existingIndex !== -1 && (newIndex === -1 || existingIndex > newIndex)) {
+            marketSection.insertBefore(block, existingBlock);
+            inserted = true;
+            break;
+        }
+    }
+
+    if (!inserted) {
+        marketSection.appendChild(block);
+    }
+
+    return block;
+}
+
+async function applySelectedNewsToSections(selectedNews) {
+    let gridwizSection = findSectionByTitle("Gridwiz News");
+    let topSection = findSectionByTitle("Top News");
+    let marketSection = findSectionByTitle("Market Snapshot");
+
+    for (const item of selectedNews) {
+        if (!item.category || item.category === "exclude") {
+            continue;
+        }
+
+        if (item.category === "gridwiz") {
+            if (!gridwizSection) {
+                gridwizSection = createSection("Gridwiz News", "🍀");
+            }
+
+            const block = await createNewsBlock(item);
+            insertBlockRightAfterTitle(gridwizSection, block);
+            continue;
+        }
+
+        if (item.category === "top") {
+            if (!topSection) {
+                topSection = createSection("Top News of the Day", "💌");
+            }
+
+            const block = await createNewsBlock(item);
+            insertBlockRightAfterTitle(topSection, block);
+            continue;
+        }
+
+        if (item.category === "market") {
+            if (!marketSection) {
+                marketSection = createSection("Market Snapshot", "🗓️");
+            }
+
+            const categoryName = item.marketCategory || "기타";
+            let categoryBlock = [...marketSection.querySelectorAll(".category-block")].find((block) =>
+                block.querySelector(".category-title")?.innerText.trim() === categoryName
+            );
+
+            if (!categoryBlock) {
+                categoryBlock = document.createElement("div");
+                categoryBlock.className = "category-block";
+
+                const title = document.createElement("h3");
+                title.className = "category-title";
+                title.innerText = categoryName;
+
+                const list = document.createElement("ul");
+                list.className = "category-list";
+
+                categoryBlock.appendChild(title);
+                categoryBlock.appendChild(list);
+
+                const existingBlocks = [...marketSection.querySelectorAll(".category-block")];
+                const newIndex = MARKET_CATEGORY_ORDER.indexOf(categoryName);
+
+                let inserted = false;
+
+                for (const existingBlock of existingBlocks) {
+                    const existingTitle = existingBlock.querySelector(".category-title")?.innerText.trim() || "";
+                    const existingIndex = MARKET_CATEGORY_ORDER.indexOf(existingTitle);
+
+                    if (existingIndex > newIndex) {
+                        marketSection.insertBefore(categoryBlock, existingBlock);
+                        inserted = true;
+                        break;
+                    }
+                }
+
+                if (!inserted) {
+                    marketSection.appendChild(categoryBlock);
+                }
+            }
+
+            const list = categoryBlock.querySelector(".category-list");
+            const li = document.createElement("li");
+            li.className = "market-news-item market-news-item-added";
+
+            if (isEditMode) {
+                li.contentEditable = "true";
+                li.style.outline = "1px dashed #aaa";
+                li.style.background = "#fffbe6";
+            }
+
+
+            li.innerHTML = `
+                <div class="headline">
+                    <span class="category-item-title">${escapeHtml(item.title || "")}</span>
+                    ${(item.link || item.newsLink) ? `<a href="${escapeHtml(item.link || item.newsLink)}" target="_blank" class="quick-link">바로가기</a>` : ""}
+                </div>
+            `;
+
+            if (list.firstChild) {
+                list.insertBefore(li, list.firstChild);
+            } else {
+                list.appendChild(li);
+            }
+        }
+    }
+}
+/* 편집 모드 */
+editBtn.addEventListener("click", () => {
+    isEditMode = !isEditMode;
+    document.body.classList.toggle("edit-mode", isEditMode);
+
+    document.querySelectorAll(".editable-section").forEach((el) => {
+        setEditStateForElement(el, isEditMode);
+    });
+
+    document.querySelectorAll(".added-news-block, .market-news-item-added").forEach((el) => {
+        setEditStateForAddedItem(el, isEditMode);
+    });
+
+    viewAllNewsBtn.classList.toggle("hidden", !isEditMode);
+
+    if (!isEditMode) {
+        closeLinkModal();
+        closeAllNewsModal();
+    }
+
+    editBtn.textContent = isEditMode ? "완료" : "편집";
+});
+
+/* 링크 수정 */
+document.addEventListener("click", (e) => {
+    if (!isEditMode) return;
+
+    if (e.target.classList.contains("quick-link")) {
+        e.preventDefault();
+        e.stopPropagation();
+
+        currentEditingLink = e.target;
+        linkUrlInput.value = e.target.getAttribute("href") || "";
+        linkModal.classList.remove("hidden");
+
+        setTimeout(() => linkUrlInput.focus(), 0);
+    }
+});
+
+
+
+linkModalClose.addEventListener("click", closeLinkModal);
+linkModalCancel.addEventListener("click", closeLinkModal);
+linkModalBackdrop.addEventListener("click", closeLinkModal);
+
+linkModalSave.addEventListener("click", () => {
+    if (!currentEditingLink) return;
+
+    const newUrl = linkUrlInput.value.trim();
+    if (!newUrl) return;
+
+    currentEditingLink.setAttribute("href", newUrl);
+    closeLinkModal();
+});
+
+linkUrlInput.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+        e.preventDefault();
+        linkModalSave.click();
+    }
+
+    if (e.key === "Escape") {
+        closeLinkModal();
+    }
+});
+
+/* 뉴스 모두 보기 모달 열기 */
+viewAllNewsBtn.addEventListener("click", async () => {
+    if (!isEditMode) return;
+
+    try {
+        const response = await fetch("/api/all-news");
+        const result = await response.json();
+
+        if (!result.success) {
+            allNewsList.innerHTML = "<div class='all-news-empty'>대표 뉴스가 없습니다.</div>";
+            allNewsModal.classList.remove("hidden");
+            return;
+        }
+
+        lastFetchedItems = result.items || [];
+        renderCollectedNews(lastFetchedItems);
+        allNewsModal.classList.remove("hidden");
+    } catch (error) {
+        allNewsList.innerHTML = "<div class='all-news-empty'>뉴스를 불러오는 중 오류가 발생했습니다.</div>";
+        allNewsModal.classList.remove("hidden");
+    }
+});
+
+/* 드래그 정렬 */
+allNewsList.addEventListener("dragover", (e) => {
+    e.preventDefault();
+
+    const dragging = allNewsList.querySelector(".dragging");
+    const afterElement = getDragAfterElement(allNewsList, e.clientY);
+
+    if (!dragging) return;
+
+    if (afterElement == null) {
+        allNewsList.appendChild(dragging);
+    } else {
+        allNewsList.insertBefore(dragging, afterElement);
+    }
+});
+
+/* 확인 버튼 */
+allNewsApplyBtn.addEventListener("click", async () => {
+    const rows = [...allNewsList.querySelectorAll(".all-news-item")];
+
+    const selectedNews = rows.map((row) => {
+    const select = row.querySelector(".news-category-select");
+    const rawValue = select.value;
+
+    let category = "";
+    let marketCategory = "";
+
+    if (rawValue.startsWith("market:")) {
+        category = "market";
+        marketCategory = rawValue.split(":")[1] || "기타";
+    } else {
+        category = rawValue;
+    }
+
+    return {
+        newsId: row.dataset.newsId,
+        category,
+        marketCategory,
+        title: row.querySelector(".all-news-item-title")?.innerText || "",
+        link: row.dataset.newsLink || "",
+        source: row.dataset.newsSource || ""
+    };
+});
+
+    await applySelectedNewsToSections(selectedNews);
+    closeAllNewsModal();
+});
+
+allNewsModalClose.addEventListener("click", closeAllNewsModal);
+allNewsModalCancel.addEventListener("click", closeAllNewsModal);
+allNewsModalBackdrop.addEventListener("click", closeAllNewsModal);
+</script>
+
 </body>
 </html>
