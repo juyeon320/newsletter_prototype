@@ -14,7 +14,7 @@ load_dotenv()
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 # 병렬 작업 수
-MAX_WORKERS = 10
+MAX_WORKERS = 5
 
 
 def classify_article(title: str, summary: str):
