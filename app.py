@@ -128,24 +128,43 @@ def run_pipeline():
         is_running = True
 
     try:
-        result = subprocess.run(
-            [sys.executable, "newsletter_pipeline.py"],
-            capture_output=True,
-            text=True,
-            check=True,
-            cwd=os.path.dirname(os.path.abspath(__file__))
-        )
+        base_dir = os.path.dirname(os.path.abspath(__file__))
+        logs = []
+
+        scripts = [
+            "news_collector.py",
+            "classifier.py",
+            "newsletter_pipeline.py"
+        ]
+
+        for script in scripts:
+            logs.append(f"\n===== {script} 실행 시작 =====\n")
+
+            result = subprocess.run(
+                [sys.executable, script],
+                capture_output=True,
+                text=True,
+                check=True,
+                cwd=base_dir
+            )
+
+            if result.stdout:
+                logs.append(result.stdout)
+            if result.stderr:
+                logs.append(result.stderr)
+
+            logs.append(f"\n===== {script} 실행 완료 =====\n")
 
         return jsonify({
             "success": True,
-            "message": "생성 완료",
-            "stdout": result.stdout
+            "message": "뉴스 수집부터 뉴스레터 생성까지 완료되었습니다.",
+            "stdout": "\n".join(logs)
         })
 
     except subprocess.CalledProcessError as e:
         return jsonify({
             "success": False,
-            "message": "파이프라인 실행 중 오류가 발생했습니다.",
+            "message": f"{os.path.basename(e.cmd[1])} 실행 중 오류가 발생했습니다.",
             "stdout": e.stdout,
             "stderr": e.stderr
         }), 500
