@@ -56,7 +56,7 @@ def process_article(idx: int, article: dict) -> tuple[int, dict]:
 
 def main():
     input_file = f"{OUTPUT_DIR}/filtered_news.json"
-    output_file = "classified_news.json"
+    output_file = f"{OUTPUT_DIR}/classified_news.json"
 
     if not os.path.exists(input_file):
         print(f"{input_file} 파일이 없습니다.")
