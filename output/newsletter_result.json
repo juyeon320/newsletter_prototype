@@ -1,7 +1,7 @@
 {
   "top_news": [
     {
-      "cluster_id": 6,
+      "cluster_id": 14,
       "cluster_topic": "전력거래소, 자원안보 위기상황 적극 대응 - 일렉트릭파워",
       "article_count": 1,
       "title": "전력거래소, 자원안보 위기상황 적극 대응 - 일렉트릭파워",
@@ -9,84 +9,179 @@
       "published_at_kst": "2026-04-08T09:08:00+09:00",
       "category": "기타",
       "cluster_label": "TOP",
-      "cluster_reason": "전력 수급 위기 및 계통 안정화 이슈 대응",
+      "cluster_reason": "전력 수급 위기 관련 대응 발표",
       "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1xTW45Z2F4RnJCUlB4RXZndkxHREdYLXhZdkFZdmpEcWpUampfNnBzc2drbHlFNTdsOXk1dTF4LVRvdGV6WFhMTktFeU1PODBDVm11VXdZN2ZQWVNoTFlzaVh1am4?oc=5",
       "score": 60,
-      "summary_line1": "전력거래소, 자원안보 위기상황에 대한 적극 대응 강조... 비상 상황 대비 및 자원 관리 체계 점검 필요성 제기",
-      "summary_line2": "에너지 공급 안정성 확보를 위한 전략적 접근 중요성 부각... 업계 전반의 위기 대응 능력 신장 요구",
+      "summary_line1": "전력거래소, 자원안보 위기상황 적극 대응... 즉각적인 조치와 새로운 전략 필요성 제기",
+      "summary_line2": "자원 안정성 확보를 위한 시스템 개선 중요성 강조... 전력 시장 안정화를 위한 정책 변화 요구",
       "summary_points": [
-        "전력거래소, 자원안보 위기상황에 대한 적극 대응 강조... 비상 상황 대비 및 자원 관리 체계 점검 필요성 제기",
-        "에너지 공급 안정성 확보를 위한 전략적 접근 중요성 부각... 업계 전반의 위기 대응 능력 신장 요구"
+        "전력거래소, 자원안보 위기상황 적극 대응... 즉각적인 조치와 새로운 전략 필요성 제기",
+        "자원 안정성 확보를 위한 시스템 개선 중요성 강조... 전력 시장 안정화를 위한 정책 변화 요구"
       ],
-      "summary": "전력거래소, 자원안보 위기상황에 대한 적극 대응 강조... 비상 상황 대비 및 자원 관리 체계 점검 필요성 제기 에너지 공급 안정성 확보를 위한 전략적 접근 중요성 부각... 업계 전반의 위기 대응 능력 신장 요구"
+      "summary": "전력거래소, 자원안보 위기상황 적극 대응... 즉각적인 조치와 새로운 전략 필요성 제기 자원 안정성 확보를 위한 시스템 개선 중요성 강조... 전력 시장 안정화를 위한 정책 변화 요구"
     },
     {
-      "cluster_id": 5,
-      "cluster_topic": "'배전망 ESS' 구축지원 공모...VPP 사업자·컨소시엄 대상 - 딜북뉴스",
-      "article_count": 1,
-      "title": "'배전망 ESS' 구축지원 공모...VPP 사업자·컨소시엄 대상 - 딜북뉴스",
-      "source": "딜북뉴스",
-      "published_at_kst": "2026-04-08T09:30:11+09:00",
-      "category": "에너지저장장치",
+      "cluster_id": 1,
+      "cluster_topic": "아파트 건물 내 전기차 충전소 설치 관련 규정이 4월 30일 이전에 발표될 예정입니다. - Vietnam.vn",
+      "article_count": 5,
+      "title": "[단독] 정부, 전기차 완속 충전요금 13% 낮춘다…상한가 손질 - 에너지경제신문",
+      "source": "에너지경제신문",
+      "published_at_kst": "2026-04-09T08:44:23+09:00",
+      "category": "전기차",
       "cluster_label": "TOP",
-      "cluster_reason": "'배전망 ESS' 구축지원 공모는 VPP 사업자와 관련된 정책 변화로 간주될 수 있음",
-      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPQWdvZlNRSEwwX2xMdWtPMnB3ZDlfcmR3UTdibk5xRTR0eUJGQmVYS0N4ckJBVmhxcXd4eGxKNlhJS1ZRaEJwb0U3RjlNODZiTXZCXzNYemVPWHhFUUprT1dGemxQMHlRM0hjT1NuNHhYVklMNWpqR2RHWnJDZFdqQUZxUnpjWUZiR3JQcVRucEhYNE9oSTVfMTlR?oc=5",
+      "cluster_reason": "전기차 충전소 설치 규정 발표 및 충전요금 인하 관련 정책",
+      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9CSmExYWtfUkNING5SYmxpUWlvQjE3bHlrOGJRU1I3OThkdFZodEJYRnFjN3l2MG5MQWlwQU9iSnRvNXFvVUpKN1NWaHVtb2dVM2NZdkNGZjZQOXNta0tHY3hBcw?oc=5",
       "score": 80,
-      "summary_line1": "배전망 ESS 구축지원 공모 발표... VPP 사업자와 컨소시엄 참여 유도",
-      "summary_line2": "전력망 안정성 강화와 신재생 에너지 활용 촉진 기대감 증대",
+      "summary_line1": "정부 전기차 완속 충전요금 13% 인하 결정... 전기차 이용 활성화 기대와 함께 민간사업자 수익성 우려 발생",
+      "summary_line2": "충전요금 상한가 손질로 충전 인프라 확충 촉진... 가격 경쟁력 강화로 소비자 선택의 폭 확대",
       "summary_points": [
-        "배전망 ESS 구축지원 공모 발표... VPP 사업자와 컨소시엄 참여 유도",
-        "전력망 안정성 강화와 신재생 에너지 활용 촉진 기대감 증대"
+        "정부 전기차 완속 충전요금 13% 인하 결정... 전기차 이용 활성화 기대와 함께 민간사업자 수익성 우려 발생",
+        "충전요금 상한가 손질로 충전 인프라 확충 촉진... 가격 경쟁력 강화로 소비자 선택의 폭 확대"
       ],
-      "summary": "배전망 ESS 구축지원 공모 발표... VPP 사업자와 컨소시엄 참여 유도 전력망 안정성 강화와 신재생 에너지 활용 촉진 기대감 증대"
+      "summary": "정부 전기차 완속 충전요금 13% 인하 결정... 전기차 이용 활성화 기대와 함께 민간사업자 수익성 우려 발생 충전요금 상한가 손질로 충전 인프라 확충 촉진... 가격 경쟁력 강화로 소비자 선택의 폭 확대"
     }
   ],
   "market_snapshot": {
-    "수요관리": [],
-    "전기차": [],
-    "에너지저장장치": [],
-    "재생에너지": [
+    "수요관리": [
       {
-        "cluster_id": 4,
-        "cluster_topic": "영국, 재생 에너지로 한 달 만에 1조 7천억 원 가스 수입 비용 절감... 한국 에너지 정책에 주는 시사점 - 환경감시일보",
+        "cluster_id": 9,
+        "cluster_topic": "LG엔솔 ‘독주’ 깬 삼성SDI… 한전 ESS 시장 극적 진입 - 전기신문",
+        "article_count": 5,
+        "title": "전력거래소, 차량 2부제 넘어 ‘자발적 카풀’로 자원안보 위기 대응 선도 - 전기신문",
+        "source": "전기신문",
+        "published_at_kst": "2026-04-09T04:10:56+09:00",
+        "category": "수요관리",
+        "cluster_label": "MARKET_SNAPSHOT",
+        "cluster_reason": "에너지 기업의 ESS 시장 진입 및 변화에 관한 기술 개발 및 투자 소식",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5fRTZzVTZvaDdGVzlGU29JendtblVoUGtlWFNCREdPYkt3ajVIUm5JNjdCWWhNd0ZCNnJhNFBoN0ppR1RtNXNvVmNaeEN4d1R2Nm1XZmhpME9qcGxoQUNUcUJ2Ql9TNURWSHFnR9IBcEFVX3lxTE1mdnZKLUo2UkNhVC1PTEN3c1BHRmVZN3F2TUcxMmtlbVNxTDB5QjJ4andEclVRTVdXV0RzbmxnVG0wdm9RQXBZVm9UNTdpdGtacDFEOHVJT2dvWkNZRFZpREZnVEEzQWtULXRxLTVZR2M?oc=5",
+        "score": 35
+      }
+    ],
+    "전기차": [
+      {
+        "cluster_id": 7,
+        "cluster_topic": "배경훈 부총리 \"전력이 AI 데이터센터 특별법 핵심\" - 디지털투데이",
         "article_count": 3,
-        "title": "“재생에너지 확대” 한강청, ‘수도권 기후에너지 정책협의체’ 개최 - 뉴스1",
-        "source": "뉴스1",
-        "published_at_kst": "2026-04-08T09:13:08+09:00",
-        "category": "재생에너지",
+        "title": "김성환 기후부 장관, \"전기차 보조금 배점 다시 검토하겠다\" - 스타뉴스",
+        "source": "스타뉴스",
+        "published_at_kst": "2026-04-09T03:48:28+09:00",
+        "category": "전기차",
         "cluster_label": "TOP",
-        "cluster_reason": "재생에너지 확대와 관련된 정책 협의체 개최 및 해외 사례가 한국 에너지 정책에 주는 시사점",
-        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFAxYkFKZmNJdzNZUW10b01DU2UxZVZRQTRDeVFKNTdCZGU2Q0RBdHh3anBTZjZZU3JpX2FDM1praVZ1WkNac1hqVGpWeGkzbmI1QzloMk5R?oc=5",
-        "score": 85
+        "cluster_reason": "전기차 보조금 배점 검토 및 에너지 관련 특별법 관련 정책 변화",
+        "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1qVkZwVnRvQ0toRzlNN3d3TjhJZ1NyMGRpeG1UbjJ5X0dIOHpDeDBPWU44MVp3WUcwcnExLUVBaUxXZVM4ME9XYWw5ZFB5bnNtODFRd0FHS3YzMmtwM3UtSzRaN2Z0ZlBkVWhGYi1ESms4SjRpcnNha1otMUJTN3M?oc=5",
+        "score": 80
+      }
+    ],
+    "에너지저장장치": [
+      {
+        "cluster_id": 8,
+        "cluster_topic": "최영훈 채비 대표 \"전기차 침투율 20% 돌파, 이제는 '충전 숏티지' 시대\" - 네이트",
+        "article_count": 3,
+        "title": "K-배터리 3사 1분기 나란히 적자 전망...보급형 EV·ESS로 반등 기대감↑ - 아주경제",
+        "source": "아주경제",
+        "published_at_kst": "2026-04-08T20:00:00+09:00",
+        "category": "에너지저장장치",
+        "cluster_label": "MARKET_SNAPSHOT",
+        "cluster_reason": "전기차 및 ESS 관련 기업 소식과 기술 개발 전망",
+        "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1VVWk4Vk5nRWtLREVFU0tJX0pMQlNWUXc4blpuMkE0cHd3WGttdUNvbmVaMnVycThYR2Vld2dPaWVDWHNrUmFYZzd0UmFCS0lQMVYydmxwX3laQdIBWEFVX3lxTE82RlpPRFhnc2tQdFdLeHBwQWZhUHhqLVFaZE1acFBtZVB0NFQtZGYxRDl5UjBwcm02bWh1QVBucEt1bTBpQzhwX2stZWRlX1pkYnlBZE5pdUs?oc=5",
+        "score": 50
       },
       {
-        "cluster_id": 2,
-        "cluster_topic": "김성환표 '재생E 중심 대전환', ‘청사진’ 원대하나 ‘실행력’은 미지수 - 전기신문",
-        "article_count": 4,
-        "title": "김성환표 '재생E 중심 대전환', ‘청사진’ 원대하나 ‘실행력’은 미지수 - 전기신문",
-        "source": "전기신문",
-        "published_at_kst": "2026-04-09T00:37:30+09:00",
+        "cluster_id": 11,
+        "cluster_topic": "中 EVE에너지, 대규모 투자 예고…ESS·EV 배터리 생산 능력 확충 - 더구루",
+        "article_count": 2,
+        "title": "내년 상업운전 BESS부터 그리드포밍 인버터 의무화 - 이투뉴스",
+        "source": "이투뉴스",
+        "published_at_kst": "2026-04-09T01:39:55+09:00",
+        "category": "에너지저장장치",
+        "cluster_label": "MARKET_SNAPSHOT",
+        "cluster_reason": "해외 ESS 및 EV 시장 동향과 기술 규제 변화 소식 포함",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1nelFMWUFzN1lidUtTZnlycjIzSTlCN0ZtZUlramI3UWhtZkpJZ0lwWUIzWWU0Nl9QNHVvYVFuRHBfUnZweVNlSUMwS1FrN0o5WXlNSVdUcTBNSVdyZFBPRE1CVlZJM0nSAWtBVV95cUxQcEFFbmRXMHFEMWxFNUVKd0Zra1VZWVBOVlNHUGd5WmNhbU9fUUZQLVI1ZldtR0JMRHE1bWUyd0hQLW42dXN2SVI3WGszdFBqM2FqRXM4SlJ1WEVWbnNuX2loUnl2UWV1QTQzWQ?oc=5",
+        "score": 50
+      }
+    ],
+    "재생에너지": [
+      {
+        "cluster_id": 3,
+        "cluster_topic": "전북자치도, RE100 실행 본격화… 에너지정책 분과 회의 개최 - 전북금강일보",
+        "article_count": 5,
+        "title": "전북도, RE100 실행 본격화…에너지정책 분과 첫 회의 - 전자신문",
+        "source": "전자신문",
+        "published_at_kst": "2026-04-09T01:48:32+09:00",
         "category": "재생에너지",
         "cluster_label": "TOP",
-        "cluster_reason": "재생에너지 중심의 정책 발표 및 실행력에 대한 논의가 포함되어 있어",
-        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8wSzlfdGN3S1U3aEE4TC1WOHFWZkNDcnd2a1E0MUVXemdneXlIQ1pIVjl2ZEVJVmZBUEFtWHd0bDlubkpDVGlRN2RTLVg1WXQzNzJCbEhlU2FyRzBCVFo5WmpCcnRHZkNRZXJoQdIBcEFVX3lxTFBmRXphVUhwc01uc0xpSjRVNVEzU3oxUk9YMDBSdnhXZGYzelBJZ2xKOS1XcEhtanJvVmlWUjFHT3d4YVlTUlY4QUFHeU1FUjhHVG0wSzNxNXpxWXZiYm1NTElUX2o4Zk5YUjFMRU9BOUs?oc=5",
+        "cluster_reason": "RE100 실행 본격화와 관련된 에너지 정책 및 제도 변화",
+        "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE12TDZBYkdkZkZjT19jZWxHRGpPTnZGcjM0S2hlYzRBZlk2d3pDd1FSbDdoUWxUVHhLNHB2Y2ZMZm9YUUZFa0VuOFBlSWpqZw?oc=5",
         "score": 65
       },
       {
-        "cluster_id": 1,
-        "cluster_topic": "2026년 풍력 고정가격계약 경쟁입찰 공고 발표 - 법률신문",
-        "article_count": 1,
+        "cluster_id": 12,
+        "cluster_topic": "2026년 상반기 풍력 고정가격계약 경쟁입찰 공고 - 법률신문",
+        "article_count": 2,
         "title": "2026년 풍력 고정가격계약 경쟁입찰 공고 발표 - 법률신문",
         "source": "법률신문",
         "published_at_kst": "2026-04-09T00:48:14+09:00",
         "category": "재생에너지",
         "cluster_label": "TOP",
-        "cluster_reason": "전력시장 제도 변화로 풍력 고정가격계약에 대한 경쟁입찰 공고 발표",
+        "cluster_reason": "전력시장 제도 변화와 관련된 풍력 고정가격계약 경쟁입찰 공고",
         "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBrVUg2N0dxTE0zUXh1YWpvb29yeF9LaFIzT1pyYTVweW9SN0p2V3dzM2YwMUFfalp1aE8tQ2ZYeTh4OUQ5c0RIS1BCMzM3bU45RkUyTjlieE5SOTY2cHZId3hxTVM1bE8wRk1TUzR30gFyQVVfeXFMTXd5dlhNdkpGOHhvZkhONnJfQUpIdnNGaUNySnJxWlJNckVmSGJ5eUtadnp2dFhfUWhMak5XNk00MUx4SU5pMUpaNFFhc2FkTnBoNG1tQ29jSXNSUkxKTjVXLXBJQl9ZXzlDQWNoWmt4MjB3?oc=5",
         "score": 60
+      },
+      {
+        "cluster_id": 6,
+        "cluster_topic": "태양광 보급 확대, 주요국의 정책 비교 - 이코리아",
+        "article_count": 5,
+        "title": "KCL, 2MW급 태양광 발전설비 구축·전국 사업장 확대 추진 - 전기신문",
+        "source": "전기신문",
+        "published_at_kst": "2026-04-09T05:50:55+09:00",
+        "category": "재생에너지",
+        "cluster_label": "MARKET_SNAPSHOT",
+        "cluster_reason": "태양광 보급 확대와 관련된 기업 소식 및 정책 비교 기사 포함",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9qVnVDYVluT2k4eFFjLTRyeWhWWEF3U1pZR1RBRGh2MjZwTXhySzRUNUxIMmhvZkdrT0JReEJIby05bUpYM1NMUnBNVjJBSEh3TVdjMzRWMzVzak5FMUZxZGk3dFZYNE00cDVISNIBcEFVX3lxTE9ucC1FSEZRUm1YM0xTdHFoRlpwVzNSdmRRUi1iZFZMRGFLdWtjcVdSZlhUNm1tYnhENTdDMnFDeV9zRlNXS2tTMmVUY1dwcGE4aDdwS2JxOFZTbjJhcUw4eUk0UGdqcGRYU2ZVcVpiRGY?oc=5",
+        "score": 35
+      },
+      {
+        "cluster_id": 2,
+        "cluster_topic": "북미 ESS시장, 中 기업 퇴출에 사실상 한일전 양상 - 스트레이트뉴스",
+        "article_count": 5,
+        "title": "포항시, 무탄소 에너지 전환 본격화 - 글로벌경제신문",
+        "source": "글로벌경제신문",
+        "published_at_kst": "2026-04-09T07:45:52+09:00",
+        "category": "재생에너지",
+        "cluster_label": "MARKET_SNAPSHOT",
+        "cluster_reason": "북미 ESS 시장 동향 및 기업 영업 예상과 관련된 내용 포함",
+        "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1ISXBnRXRIYmkxbkN0MHRCdHRySlQ2TWpyNC1MMVdCdmE3bzJtSF9aYjh2ckRYdUt3Q3VoT3AweEFVYkhPYkpXLU56N1N5Q3doTExDZnR3aFBRU3lvbmp0Q0x0cmxQeVNyT0xRUTF3?oc=5",
+        "score": 30
+      },
+      {
+        "cluster_id": 4,
+        "cluster_topic": "총 3조4000억 투입 '신안우이' 해상풍력...여의도서 2조8900억 금융조달 확정 - M이코노미뉴스",
+        "article_count": 4,
+        "title": "18개 금융기관, 신안우이 해상풍력에 2.5조 지원 - 조선비즈 - Chosunbiz",
+        "source": "Chosunbiz",
+        "published_at_kst": "2026-04-09T05:03:45+09:00",
+        "category": "재생에너지",
+        "cluster_label": "MARKET_SNAPSHOT",
+        "cluster_reason": "```json\n{\n  \"label\": \"MARKET_SNAPSHOT\",\n  \"reason\": \"해외 재생에너지 프로젝트에 대한 금융 지원 소식\"\n}\n```",
+        "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOcDlEQ2dqMm1rYlA3Um1RQlBYcDVRNmVHU1U0TDhjSDJmdTc4NFRUaWlLQS1ydzlzR2FpT1BTelYzclFkN2JaQkZRTUpPWllTSlNNTlVIS0hEVU42djdwc2JZMk9TUXlHS25LbWJiY0NEcnlpeTA3QjUwSndZN0MwdtIBlAFBVV95cUxNcERxYkx4eDRVVDVlWFR6aENLSDQxd3V2a1hTd0RPY2VVZEZub2FXREZhTFl5dkFGWDNfM01TM1hJTFMyZjVNV21NaDFKbWdUUzl3SGlnNmw3TDljTzJNYm5KMGhQQUFQOXpQQk90a0R3S2Y3b1dLd2RWcXVnS3I3NE9jYllnZXVjbHR5NmxVY3UtTnFW?oc=5",
+        "score": 30
       }
     ],
-    "전력시스템": []
+    "전력시스템": [
+      {
+        "cluster_id": 5,
+        "cluster_topic": "美 EV 충전 인프라 34% 늘었지만…수요 폭증에 ‘역부족’ - ESG경제",
+        "article_count": 5,
+        "title": "12차 전기본, LNG ‘30년 제한’ 검토…수소발전도 사실상 퇴출 수순 - 에너지경제신문",
+        "source": "에너지경제신문",
+        "published_at_kst": "2026-04-09T02:22:05+09:00",
+        "category": "전력시스템",
+        "cluster_label": "TOP",
+        "cluster_reason": "전력시장 제도 변화 및 에너지 정책 발표가 포함되어 있음",
+        "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9LV1NiVjVKaG53OEJ6U013YkRmN2FxN1kxSkhDRENLUjh2UVk1YlVjMTQteGoxSWJqU1VHS3dIMDFuMEwzN1EyVjBSVk5NdGFPRHg3Umw4YW1sNU0?oc=5",
+        "score": 60
+      }
+    ]
   },
   "gridwiz_news": []
 }

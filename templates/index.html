@@ -23,6 +23,7 @@
                     <div class="newsletter-actions">
                         <button type="button" class="toolbar-btn">주소록</button>
                         <button type="button" class="toolbar-btn hidden" id="view-all-news-btn">뉴스 모두 보기</button>
+                        <button type="button" class="toolbar-btn hidden" id="cancel-edit-btn">취소</button>
                         <button type="button" class="toolbar-btn toolbar-btn-dark" id="edit-btn">편집</button>
                     </div>
 
@@ -55,26 +56,32 @@
                                 <h2 class="section-title">🍀 <span>Gridwiz News</span></h2>
 
                                 {% for news in gridwiz_news %}
-                                    <div class="headline news-item-block"
-                                        data-news-id="gridwiz-{{ loop.index0 }}"
-                                        data-news-group="gridwiz">
-                                        <span class="headline-text">{{ news.title }}</span>
-                                        {% if news.link %}
-                                            <a href="{{ news.link }}" target="_blank" class="quick-link">바로가기</a>
-                                        {% endif %}
-                                    </div>
-
-                                    {% if news.summary_points %}
-                                        <ul class="news-bullets news-item-summary" data-news-id="gridwiz-{{ loop.index0 }}">
-                                            {% for point in news.summary_points %}
-                                                <li>{{ point }}</li>
-                                            {% endfor %}
-                                        </ul>
-                                    {% elif news.summary %}
-                                        <ul class="news-bullets news-item-summary" data-news-id="gridwiz-{{ loop.index0 }}">
-                                            <li>{{ news.summary }}</li>
-                                        </ul>
-                                    {% endif %}
+                                <div class="headline news-item-block"
+                                data-news-id="gridwiz-{{ loop.index0 }}"
+                                data-news-group="gridwiz"
+                                data-news-title="{{ news.title }}">
+                                <span class="headline-text">{{ news.title }}</span>
+                                {% if news.link %}
+                                    <a href="{{ news.link }}" target="_blank" class="quick-link">바로가기</a>
+                                {% endif %}
+                            </div>
+                            
+                            {% if news.summary_points %}
+                                <ul class="news-bullets news-item-summary"
+                                    data-news-id="gridwiz-{{ loop.index0 }}"
+                                    data-news-title="{{ news.title }}">
+                                    {% for point in news.summary_points %}
+                                        <li>{{ point }}</li>
+                                    {% endfor %}
+                                </ul>
+                            {% elif news.summary %}
+                                <ul class="news-bullets news-item-summary"
+                                    data-news-id="gridwiz-{{ loop.index0 }}"
+                                    data-news-title="{{ news.title }}">
+                                    <li>{{ news.summary }}</li>
+                                </ul>
+                            {% endif %}
+                                   
                                 {% endfor %}
                             </section>
                         {% endif %}
@@ -85,30 +92,38 @@
                                 <h2 class="section-title">💌 <span>Top News of the Day</span></h2>
 
                                 {% for news in top_news %}
-                                    <div class="headline news-item-block"
-                                        data-news-id="top-{{ loop.index0 }}"
-                                        data-news-group="top">
-                                        <span class="headline-text">{{ news.title }}</span>
-                                        {% if news.link %}
-                                            <a href="{{ news.link }}" target="_blank" class="quick-link">바로가기</a>
-                                        {% endif %}
-                                    </div>
+                                <div class="headline news-item-block"
+                                data-news-id="top-{{ loop.index0 }}"
+                                data-news-group="top"
+                                data-news-title="{{ news.title }}">
+                                <span class="headline-text">{{ news.title }}</span>
+                                {% if news.link %}
+                                    <a href="{{ news.link }}" target="_blank" class="quick-link">바로가기</a>
+                                {% endif %}
+                            </div>
+                            
+                            {% if news.summary_points %}
+                                <ul class="news-bullets news-item-summary"
+                                    data-news-id="top-{{ loop.index0 }}"
+                                    data-news-title="{{ news.title }}">
+                                    {% for point in news.summary_points %}
+                                        <li>{{ point }}</li>
+                                    {% endfor %}
+                                </ul>
+                            {% elif news.summary %}
+                                <ul class="news-bullets news-item-summary"
+                                    data-news-id="top-{{ loop.index0 }}"
+                                    data-news-title="{{ news.title }}">
+                                    <li>{{ news.summary }}</li>
+                                </ul>
+                            {% else %}
+                                <ul class="news-bullets news-item-summary"
+                                    data-news-id="top-{{ loop.index0 }}"
+                                    data-news-title="{{ news.title }}">
+                                    <li>{{ news.source }}</li>
+                                </ul>
+                            {% endif %}
 
-                                    {% if news.summary_points %}
-                                        <ul class="news-bullets news-item-summary" data-news-id="top-{{ loop.index0 }}">
-                                            {% for point in news.summary_points %}
-                                                <li>{{ point }}</li>
-                                            {% endfor %}
-                                        </ul>
-                                    {% elif news.summary %}
-                                        <ul class="news-bullets news-item-summary" data-news-id="top-{{ loop.index0 }}">
-                                            <li>{{ news.summary }}</li>
-                                        </ul>
-                                    {% else %}
-                                        <ul class="news-bullets news-item-summary" data-news-id="top-{{ loop.index0 }}">
-                                            <li>{{ news.source }}</li>
-                                        </ul>
-                                    {% endif %}
                                 {% endfor %}
                             </section>
                         {% endif %}
@@ -125,14 +140,15 @@
                                         <h3 class="category-title">{{ category }}</h3>
                                         <ul class="category-list">
                                             {% for news in items %}
-                                                <li class="market-news-item"
-                                                    data-news-id="market-{{ category }}-{{ loop.index0 }}"
-                                                    data-news-group="market">
-                                                    <span class="category-item-title">{{ news.title }}</span>
-                                                    {% if news.link %}
-                                                        <a href="{{ news.link }}" target="_blank" class="quick-link">바로가기</a>
-                                                    {% endif %}
-                                                </li>
+                                            <li class="market-news-item"
+                                            data-news-id="market-{{ category }}-{{ loop.index0 }}"
+                                            data-news-group="market"
+                                            data-news-title="{{ news.title }}">
+                                            <span class="category-item-title">{{ news.title }}</span>
+                                            {% if news.link %}
+                                                <a href="{{ news.link }}" target="_blank" class="quick-link">바로가기</a>
+                                            {% endif %}
+                                        </li>
                                             {% endfor %}
                                         </ul>
                                     </div>
@@ -220,14 +236,9 @@
             <div class="link-modal-body">
 
                 <div class="all-news-topbar">
-                    <input
-                        type="text"
-                        id="all-news-date-input"
-                        class="link-modal-input all-news-date-input"
-                        placeholder="수집 날짜"
-                    >
-
-                    <button type="button" id="all-news-apply" class="toolbar-btn toolbar-btn-dark">확인</button>
+                    <div id="all-news-range-text" class="all-news-range-text">
+                        수집 시간 범위 불러오는 중...
+                    </div>
                 </div>
 
                 <div class="all-news-content">
@@ -239,6 +250,7 @@
 
             <div class="link-modal-footer">
                 <button type="button" id="all-news-modal-cancel" class="toolbar-btn">닫기</button>
+                <button type="button" id="all-news-apply" class="toolbar-btn toolbar-btn-dark">확인</button>
             </div>
         </div>
     </div>
@@ -246,7 +258,7 @@
     <script>
 const editBtn = document.getElementById("edit-btn");
 const viewAllNewsBtn = document.getElementById("view-all-news-btn");
-
+const cancelEditBtn = document.getElementById("cancel-edit-btn");
 /* 링크 모달 */
 const linkModal = document.getElementById("link-edit-modal");
 const linkUrlInput = document.getElementById("link-url-input");
@@ -262,11 +274,12 @@ const allNewsModalCancel = document.getElementById("all-news-modal-cancel");
 const allNewsModalBackdrop = document.querySelector("#all-news-modal .link-modal-backdrop");
 const allNewsList = document.getElementById("all-news-list");
 const allNewsApplyBtn = document.getElementById("all-news-apply");
-const allNewsDateInput = document.getElementById("all-news-date-input");
+const allNewsRangeText = document.getElementById("all-news-range-text");
 
 let isEditMode = false;
 let currentEditingLink = null;
 let lastFetchedItems = [];
+let originalNewsletterHtml = "";
 
 const MARKET_CATEGORY_ORDER = [
     "수요관리",
@@ -284,6 +297,115 @@ function escapeHtml(str = "") {
         .replace(/>/g, "&gt;")
         .replace(/"/g, "&quot;")
         .replace(/'/g, "&#39;");
+}
+
+function normalizeText(str = "") {
+    return String(str).replace(/\s+/g, " ").trim();
+}
+
+function isSameTitle(a = "", b = "") {
+    const aa = normalizeText(a)
+        .replace(/[“”"'‘’]/g, "")
+        .replace(/\s*[\-–—:·|]\s*/g, " ")
+        .trim();
+
+    const bb = normalizeText(b)
+        .replace(/[“”"'‘’]/g, "")
+        .replace(/\s*[\-–—:·|]\s*/g, " ")
+        .trim();
+
+    return aa === bb;
+}
+
+function getElementTitle(el) {
+    if (!el) return "";
+
+    if (el.dataset?.newsTitle) {
+        return el.dataset.newsTitle;
+    }
+
+    const headlineText = el.querySelector(".headline-text")?.innerText;
+    if (headlineText) return headlineText;
+
+    const categoryItemTitle = el.querySelector(".category-item-title")?.innerText;
+    if (categoryItemTitle) return categoryItemTitle;
+
+    return el.innerText || "";
+}
+
+function getCurrentPlacement(title) {
+    const gridwizSection = findSectionByTitle("Gridwiz News");
+    if (gridwizSection) {
+        const items = [
+            ...gridwizSection.querySelectorAll(".news-item-block"),
+            ...gridwizSection.querySelectorAll(".added-news-block")
+        ];
+
+        const found = items.find((el) => isSameTitle(getElementTitle(el), title));
+        if (found) return "gridwiz";
+    }
+
+    const topSection = findSectionByTitle("Top News");
+    if (topSection) {
+        const items = [
+            ...topSection.querySelectorAll(".news-item-block"),
+            ...topSection.querySelectorAll(".added-news-block")
+        ];
+
+        const found = items.find((el) => isSameTitle(getElementTitle(el), title));
+        if (found) return "top";
+    }
+
+    const marketSection = findSectionByTitle("Market Snapshot");
+    if (marketSection) {
+        const categoryBlocks = [...marketSection.querySelectorAll(".category-block")];
+
+        for (const categoryBlock of categoryBlocks) {
+            const categoryTitle = categoryBlock.querySelector(".category-title")?.innerText?.trim() || "기타";
+            const items = [...categoryBlock.querySelectorAll(".market-news-item")];
+
+            const found = items.find((el) => isSameTitle(getElementTitle(el), title));
+            if (found) {
+                return `market:${categoryTitle}`;
+            }
+        }
+    }
+
+    return "";
+}
+
+function getPlacementLabel(value = "") {
+    if (!value) return "미포함";
+    if (value === "gridwiz") return "Gridwiz News";
+    if (value === "top") return "Top News";
+    if (value.startsWith("market:")) {
+        return `Market Snapshot > ${value.split(":")[1] || "기타"}`;
+    }
+    return "미포함";
+}
+
+function getSortRankByPlacement(value = "") {
+    if (value === "gridwiz") return 0;
+    if (value === "top") return 1;
+    if (value.startsWith("market:")) return 2;
+    return 3;
+}
+
+function compareNewsItems(a, b) {
+    const placementA = getCurrentPlacement(a.title || "");
+    const placementB = getCurrentPlacement(b.title || "");
+
+    const rankDiff = getSortRankByPlacement(placementA) - getSortRankByPlacement(placementB);
+    if (rankDiff !== 0) return rankDiff;
+
+    if (placementA.startsWith("market:") && placementB.startsWith("market:")) {
+        const catA = placementA.split(":")[1] || "기타";
+        const catB = placementB.split(":")[1] || "기타";
+        const catDiff = MARKET_CATEGORY_ORDER.indexOf(catA) - MARKET_CATEGORY_ORDER.indexOf(catB);
+        if (catDiff !== 0) return catDiff;
+    }
+
+    return (a.title || "").localeCompare(b.title || "", "ko");
 }
 
 async function fetchSummary(title) {
@@ -306,6 +428,99 @@ async function fetchSummary(title) {
     } catch (error) {
         return [];
     }
+}
+
+function isSameTitle(a = "", b = "") {
+    const aa = normalizeText(a)
+        .replace(/[“”"'‘’]/g, "")
+        .replace(/\s*[\-–—:·|]\s*/g, " ")
+        .trim();
+
+    const bb = normalizeText(b)
+        .replace(/[“”"'‘’]/g, "")
+        .replace(/\s*[\-–—:·|]\s*/g, " ")
+        .trim();
+
+    return aa === bb;
+}
+
+function getElementTitle(el) {
+    if (!el) return "";
+
+    if (el.dataset?.newsTitle) {
+        return el.dataset.newsTitle;
+    }
+
+    const headlineText = el.querySelector(".headline-text")?.innerText;
+    if (headlineText) return headlineText;
+
+    const categoryItemTitle = el.querySelector(".category-item-title")?.innerText;
+    if (categoryItemTitle) return categoryItemTitle;
+
+    return el.innerText || "";
+}
+
+function removeEmptyCategoryBlocks() {
+    document.querySelectorAll(".category-block").forEach((block) => {
+        const items = block.querySelectorAll(".market-news-item");
+        if (items.length === 0) {
+            block.remove();
+        }
+    });
+}
+
+function removeEmptySections() {
+    document.querySelectorAll(".editable-section").forEach((section) => {
+        const title = section.querySelector(".section-title span")?.innerText || "";
+
+        if (title.includes("Market Snapshot")) {
+            const categoryBlocks = section.querySelectorAll(".category-block");
+            if (categoryBlocks.length === 0) {
+                const prev = section.previousElementSibling;
+                if (prev && prev.classList.contains("divider")) prev.remove();
+                section.remove();
+            }
+            return;
+        }
+
+        const blocks = section.querySelectorAll(".news-item-block, .added-news-block");
+        if (blocks.length === 0) {
+            const prev = section.previousElementSibling;
+            if (prev && prev.classList.contains("divider")) prev.remove();
+            section.remove();
+        }
+    });
+}
+
+function removeNewsFromNewsletter(title) {
+    document.querySelectorAll(".news-item-block").forEach((el) => {
+        if (isSameTitle(getElementTitle(el), title)) {
+            const section = el.closest(".editable-section");
+            const summaries = [...(section?.querySelectorAll(".news-item-summary") || [])];
+
+            const matchedSummary = summaries.find((summaryEl) =>
+                isSameTitle(summaryEl.dataset.newsTitle || "", title)
+            );
+
+            if (matchedSummary) matchedSummary.remove();
+            el.remove();
+        }
+    });
+
+    document.querySelectorAll(".added-news-block").forEach((el) => {
+        if (isSameTitle(getElementTitle(el), title)) {
+            el.remove();
+        }
+    });
+
+    document.querySelectorAll(".market-news-item").forEach((el) => {
+        if (isSameTitle(getElementTitle(el), title)) {
+            el.remove();
+        }
+    });
+
+    removeEmptyCategoryBlocks();
+    removeEmptySections();
 }
 
 function closeLinkModal() {
@@ -488,16 +703,27 @@ function createSelectionControls() {
         </div>
     `;
 }
-
 function renderCollectedNews(items) {
     allNewsList.innerHTML = "";
 
     if (!items || items.length === 0) {
-        allNewsList.innerHTML = "<div class='all-news-empty'>대표 뉴스가 없습니다.</div>";
+        allNewsList.innerHTML = "<div class='all-news-empty'>수집된 뉴스가 없습니다.</div>";
         return;
     }
 
-    items.forEach((item, index) => {
+    const sortedItems = [...items].sort(compareNewsItems);
+
+    sortedItems.forEach((item, index) => {
+        const placementValue = getCurrentPlacement(item.title || "");
+        const publishedAt =
+            item.published_at ||
+            item.published_at_kst ||
+            item.published ||
+            item.pub_date ||
+            item.date ||
+            "";
+        const sourceText = ((item.source || "") + " " + (item.category || "")).trim();
+
         const row = document.createElement("div");
         row.className = "all-news-item";
         row.draggable = true;
@@ -511,20 +737,29 @@ function renderCollectedNews(items) {
         row.innerHTML = `
             <div class="all-news-item-main">
                 <div class="all-news-item-title">${escapeHtml(item.title || "(제목 없음)")}</div>
-                <div class="all-news-item-meta">${escapeHtml(((item.source || "") + " " + (item.category || "")).trim())}</div>
+                <div class="all-news-item-meta">${escapeHtml(sourceText)}</div>
+                <div class="all-news-item-submeta">
+                    ${publishedAt ? `<span>발행일: ${escapeHtml(publishedAt)}</span>` : ""}
+                    <span>현재 분류: ${escapeHtml(getPlacementLabel(placementValue))}</span>
+                </div>
+                ${
+                    item.link
+                        ? `<div class="all-news-item-link"><a href="${escapeHtml(item.link)}" target="_blank">바로가기</a></div>`
+                        : ""
+                }
             </div>
 
             <div class="all-news-item-control">
-                 <select class="news-category-select">
-                    <option value="">선택 안 함</option>
-                    <option value="gridwiz">Gridwiz News</option>
-                    <option value="top">Top News</option>
-                    <option value="market:수요관리">Market Snapshot > 수요관리</option>
-                    <option value="market:ESS">Market Snapshot > ESS</option>
-                    <option value="market:전기차">Market Snapshot > 전기차</option>
-                    <option value="market:재생에너지">Market Snapshot > 재생에너지</option>
-                    <option value="market:전력시스템">Market Snapshot > 전력시스템</option>
-                    <option value="market:기타">Market Snapshot > 기타</option>
+                <select class="news-category-select">
+                    <option value="" ${placementValue === "" ? "selected" : ""}>미포함</option>
+                    <option value="gridwiz" ${placementValue === "gridwiz" ? "selected" : ""}>Gridwiz News</option>
+                    <option value="top" ${placementValue === "top" ? "selected" : ""}>Top News</option>
+                    <option value="market:수요관리" ${placementValue === "market:수요관리" ? "selected" : ""}>Market Snapshot > 수요관리</option>
+                    <option value="market:ESS" ${placementValue === "market:ESS" ? "selected" : ""}>Market Snapshot > ESS</option>
+                    <option value="market:전기차" ${placementValue === "market:전기차" ? "selected" : ""}>Market Snapshot > 전기차</option>
+                    <option value="market:재생에너지" ${placementValue === "market:재생에너지" ? "selected" : ""}>Market Snapshot > 재생에너지</option>
+                    <option value="market:전력시스템" ${placementValue === "market:전력시스템" ? "selected" : ""}>Market Snapshot > 전력시스템</option>
+                    <option value="market:기타" ${placementValue === "market:기타" ? "selected" : ""}>Market Snapshot > 기타</option>
                     <option value="exclude">제외</option>
                 </select>
             </div>
@@ -541,6 +776,7 @@ async function createNewsBlock(item) {
 
     const block = document.createElement("div");
     block.className = "added-news-block";
+    block.dataset.newsTitle = item.title || "";
     setEditStateForAddedItem(block, isEditMode);
 
     // 👉 1. 먼저 로딩 상태로 렌더
@@ -707,6 +943,8 @@ async function applySelectedNewsToSections(selectedNews) {
             const list = categoryBlock.querySelector(".category-list");
             const li = document.createElement("li");
             li.className = "market-news-item market-news-item-added";
+            li.dataset.newsTitle = item.title || "";
+            //block.dataset.newsTitle = item.title || "";
 
             if (isEditMode) {
                 li.contentEditable = "true";
@@ -730,9 +968,9 @@ async function applySelectedNewsToSections(selectedNews) {
         }
     }
 }
+
 /* 편집 모드 */
-editBtn.addEventListener("click", () => {
-    isEditMode = !isEditMode;
+function applyEditModeState() {
     document.body.classList.toggle("edit-mode", isEditMode);
 
     document.querySelectorAll(".editable-section").forEach((el) => {
@@ -744,13 +982,40 @@ editBtn.addEventListener("click", () => {
     });
 
     viewAllNewsBtn.classList.toggle("hidden", !isEditMode);
+    cancelEditBtn.classList.toggle("hidden", !isEditMode);
+    editBtn.textContent = isEditMode ? "완료" : "편집";
+}
 
+function enterEditMode() {
+    const newsletterContainer = getNewsletterContainer();
+    originalNewsletterHtml = newsletterContainer ? newsletterContainer.innerHTML : "";
+    isEditMode = true;
+    applyEditModeState();
+}
+
+function exitEditMode() {
+    isEditMode = false;
+    closeLinkModal();
+    closeAllNewsModal();
+    applyEditModeState();
+}
+
+editBtn.addEventListener("click", () => {
     if (!isEditMode) {
-        closeLinkModal();
-        closeAllNewsModal();
+        enterEditMode();
+    } else {
+        exitEditMode();
+    }
+});
+
+cancelEditBtn.addEventListener("click", () => {
+    const newsletterContainer = getNewsletterContainer();
+
+    if (newsletterContainer && originalNewsletterHtml) {
+        newsletterContainer.innerHTML = originalNewsletterHtml;
     }
 
-    editBtn.textContent = isEditMode ? "완료" : "편집";
+    exitEditMode();
 });
 
 /* 링크 수정 */
@@ -804,8 +1069,10 @@ viewAllNewsBtn.addEventListener("click", async () => {
         const response = await fetch("/api/all-news");
         const result = await response.json();
 
+        allNewsRangeText.textContent = result.time_range || "수집 시간 범위를 불러올 수 없습니다.";
+
         if (!result.success) {
-            allNewsList.innerHTML = "<div class='all-news-empty'>대표 뉴스가 없습니다.</div>";
+            allNewsList.innerHTML = "<div class='all-news-empty'>수집된 뉴스가 없습니다.</div>";
             allNewsModal.classList.remove("hidden");
             return;
         }
@@ -814,6 +1081,7 @@ viewAllNewsBtn.addEventListener("click", async () => {
         renderCollectedNews(lastFetchedItems);
         allNewsModal.classList.remove("hidden");
     } catch (error) {
+        allNewsRangeText.textContent = "수집 시간 범위를 불러올 수 없습니다.";
         allNewsList.innerHTML = "<div class='all-news-empty'>뉴스를 불러오는 중 오류가 발생했습니다.</div>";
         allNewsModal.classList.remove("hidden");
     }
@@ -840,32 +1108,48 @@ allNewsApplyBtn.addEventListener("click", async () => {
     const rows = [...allNewsList.querySelectorAll(".all-news-item")];
 
     const selectedNews = rows.map((row) => {
-    const select = row.querySelector(".news-category-select");
-    const rawValue = select.value;
+        const select = row.querySelector(".news-category-select");
+        const rawValue = select.value;
 
-    let category = "";
-    let marketCategory = "";
+        let category = "";
+        let marketCategory = "";
 
-    if (rawValue.startsWith("market:")) {
-        category = "market";
-        marketCategory = rawValue.split(":")[1] || "기타";
-    } else {
-        category = rawValue;
-    }
+        if (rawValue.startsWith("market:")) {
+            category = "market";
+            marketCategory = rawValue.split(":")[1] || "기타";
+        } else {
+            category = rawValue;
+        }
 
-    return {
-        newsId: row.dataset.newsId,
-        category,
-        marketCategory,
-        title: row.querySelector(".all-news-item-title")?.innerText || "",
-        link: row.dataset.newsLink || "",
-        source: row.dataset.newsSource || ""
-    };
-});
+        return {
+            newsId: row.dataset.newsId,
+            category,
+            marketCategory,
+            title: row.querySelector(".all-news-item-title")?.innerText || "",
+            link: row.dataset.newsLink || "",
+            source: row.dataset.newsSource || ""
+        };
+    });
 
-    await applySelectedNewsToSections(selectedNews);
+    // 1. 제외 선택한 기사 제거
+    selectedNews
+        .filter((item) => item.category === "exclude")
+        .forEach((item) => removeNewsFromNewsletter(item.title));
+
+    // 2. 특정 섹션으로 이동/추가할 기사들은 먼저 기존 위치에서 제거 후 다시 추가
+    const toAdd = selectedNews.filter((item) =>
+        item.category === "gridwiz" ||
+        item.category === "top" ||
+        item.category === "market"
+    );
+
+    toAdd.forEach((item) => removeNewsFromNewsletter(item.title));
+
+    await applySelectedNewsToSections(toAdd);
+
     closeAllNewsModal();
 });
+
 
 allNewsModalClose.addEventListener("click", closeAllNewsModal);
 allNewsModalCancel.addEventListener("click", closeAllNewsModal);

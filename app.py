@@ -4,8 +4,8 @@ import os
 import subprocess
 import sys
 import threading
-
-from datetime import datetime
+from datetime import datetime, timedelta
+from zoneinfo import ZoneInfo
 from summary_generator import generate_summary
 
 app = Flask(__name__)
@@ -24,6 +24,24 @@ def get_last_run_time():
         ).strftime("%Y-%m-%d %H:%M:%S")
     return "없음"
 
+def get_collection_time_range():
+    kst = ZoneInfo("Asia/Seoul")
+    now = datetime.now(kst)
+
+    today_1300 = now.replace(hour=13, minute=0, second=0, microsecond=0)
+
+    if now >= today_1300:
+        end_time = today_1300
+    else:
+        end_time = today_1300 - timedelta(days=1)
+
+    # 월요일이면 금요일 13시 ~ 월요일 13시
+    if end_time.weekday() == 0:
+        start_time = end_time - timedelta(days=3)
+    else:
+        start_time = end_time - timedelta(days=1)
+
+    return f"{start_time.strftime('%Y.%m.%d %H:%M:%S')} ~ {end_time.strftime('%Y.%m.%d %H:%M:%S')}"
 
 # 시작 페이지
 @app.route("/")
@@ -55,35 +73,49 @@ def newsletter():
 
     return render_template("index.html", data=data, last_run_time=last_run_time)
 
-
 @app.route("/api/all-news")
 def all_news():
-    path = "output/representative_news.json"
+    path = "output/classified_news.json"
 
     if not os.path.exists(path):
-        return jsonify({"success": False, "items": []})
+        return jsonify({
+            "success": False,
+            "items": [],
+            "time_range": get_collection_time_range()
+        })
 
     with open(path, "r", encoding="utf-8") as f:
         data = json.load(f)
 
     items = []
 
-    for cluster in data:
-        rep = cluster.get("representative", {})
+    for idx, article in enumerate(data):
+        published_at = (
+            article.get("published_at")
+            or article.get("published_at_kst")  # 👈 이거 추가
+            or article.get("published")
+            or article.get("pub_date")
+            or article.get("published_date")
+            or article.get("date")
+            or ""
+        )
 
         items.append({
-            "id": f"cluster-{cluster.get('cluster_id')}",
-            "title": rep.get("title"),
-            "link": rep.get("link"),
-            "source": rep.get("source"),
-            "category": rep.get("label"),
-            "topic": cluster.get("cluster_topic")
+            "id": article.get("id") or f"news-{idx}",
+            "title": article.get("title", ""),
+            "link": article.get("link", ""),
+            "source": article.get("source", ""),
+            "category": article.get("label") or article.get("category") or "",
+            "summary": article.get("summary", ""),
+            "published_at": published_at
         })
 
     return jsonify({
         "success": True,
-        "items": items
+        "items": items,
+        "time_range": get_collection_time_range()
     })
+
 
 @app.route("/api/summary", methods=["POST"])
 def summarize_news():
