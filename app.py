@@ -15,6 +15,9 @@ RESULT_PATH = "output/newsletter_result.json"
 # 중복 실행 방지
 pipeline_lock = threading.Lock()
 is_running = False
+last_run_success = False
+last_run_error = ""
+last_run_logs = ""
 
 def normalize_published_at(article: dict) -> str:
     raw = (
@@ -160,7 +163,7 @@ def summarize_news():
 # 파이프라인 실행 API
 @app.route("/api/run", methods=["POST"])
 def run_pipeline():
-    global is_running
+    global is_running, last_run_success, last_run_error, last_run_logs
 
     with pipeline_lock:
         if is_running:
@@ -168,7 +171,22 @@ def run_pipeline():
                 "success": False,
                 "message": "이미 생성 작업이 진행 중입니다."
             }), 409
+
         is_running = True
+        last_run_success = False
+        last_run_error = ""
+        last_run_logs = ""
+
+    thread = threading.Thread(target=run_pipeline_job, daemon=True)
+    thread.start()
+
+    return jsonify({
+        "success": True,
+        "message": "생성 작업이 시작되었습니다."
+    })
+
+def run_pipeline_job():
+    global is_running, last_run_success, last_run_error, last_run_logs
 
     try:
         base_dir = os.path.dirname(os.path.abspath(__file__))
@@ -196,33 +214,23 @@ def run_pipeline():
             if result.stderr:
                 logs.append(result.stderr)
 
-            logs.append(f"\n===== {script} 실행 완료 =====\n")
-
-        return jsonify({
-            "success": True,
-            "message": "뉴스 수집부터 뉴스레터 생성까지 완료되었습니다.",
-            "stdout": "\n".join(logs)
-        })
+        last_run_logs = "\n".join(logs)
+        last_run_success = True
+        last_run_error = ""
 
     except subprocess.CalledProcessError as e:
-        return jsonify({
-            "success": False,
-            "message": f"{os.path.basename(e.cmd[1])} 실행 중 오류가 발생했습니다.",
-            "stdout": e.stdout,
-            "stderr": e.stderr
-        }), 500
+        last_run_success = False
+        last_run_error = f"{os.path.basename(e.cmd[-1])} 실행 중 오류가 발생했습니다.\n{e.stderr}"
+        last_run_logs = e.stderr or ""
 
     except Exception as e:
-        return jsonify({
-            "success": False,
-            "message": f"서버 오류: {str(e)}"
-        }), 500
+        last_run_success = False
+        last_run_error = str(e)
+        last_run_logs = str(e)
 
     finally:
-        with pipeline_lock:
-            is_running = False
-
-
+        is_running = False
+        
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 10000))
     app.run(host="0.0.0.0", port=port, debug=True)

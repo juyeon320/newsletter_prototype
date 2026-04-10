@@ -45,7 +45,7 @@ def main():
 
     # 3. TOP/MARKET_SNAPSHOT 재판단
     labeled_results = [None] * len(representatives)
-    with ThreadPoolExecutor(max_workers=10) as executor:
+    with ThreadPoolExecutor(max_workers=3) as executor:
         futures = {executor.submit(process_cluster_label, idx, cluster): idx
                    for idx, cluster in enumerate(representatives)}
         for future in as_completed(futures):
@@ -58,7 +58,7 @@ def main():
 
     # 4. 카테고리 부여
     categorized_results = [None] * len(labeled_clusters)
-    with ThreadPoolExecutor(max_workers=10) as executor:
+    with ThreadPoolExecutor(max_workers=3) as executor:
         futures = {executor.submit(process_cluster_category, idx, cluster): idx
                    for idx, cluster in enumerate(labeled_clusters)
                    if cluster is not None}
