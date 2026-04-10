@@ -69,9 +69,6 @@
                                 {% endif %}
                             </div>
 
-                            {% if news.published_at_kst %}
-                                
-                            {% endif %}
                             {% if news.summary_points %}
                                 <ul class="news-bullets news-item-summary"
                                     data-news-id="gridwiz-{{ loop.index0 }}"
@@ -445,36 +442,6 @@ async function fetchSummary(title) {
     }
 }
 
-function isSameTitle(a = "", b = "") {
-    const aa = normalizeText(a)
-        .replace(/[“”"'‘’]/g, "")
-        .replace(/\s*[\-–—:·|]\s*/g, " ")
-        .trim();
-
-    const bb = normalizeText(b)
-        .replace(/[“”"'‘’]/g, "")
-        .replace(/\s*[\-–—:·|]\s*/g, " ")
-        .trim();
-
-    return aa === bb;
-}
-
-function getElementTitle(el) {
-    if (!el) return "";
-
-    if (el.dataset?.newsTitle) {
-        return el.dataset.newsTitle;
-    }
-
-    const headlineText = el.querySelector(".headline-text")?.innerText;
-    if (headlineText) return headlineText;
-
-    const categoryItemTitle = el.querySelector(".category-item-title")?.innerText;
-    if (categoryItemTitle) return categoryItemTitle;
-
-    return el.innerText || "";
-}
-
 function removeEmptyCategoryBlocks() {
     document.querySelectorAll(".category-block").forEach((block) => {
         const items = block.querySelectorAll(".market-news-item");
@@ -637,7 +604,7 @@ function insertBlockRightAfterTitle(section, block) {
     }
 }
 
-function addDragEvents(item) {
+/*function addDragEvents(item) {
     item.addEventListener("dragstart", () => {
         item.classList.add("dragging");
     });
@@ -645,9 +612,9 @@ function addDragEvents(item) {
     item.addEventListener("dragend", () => {
         item.classList.remove("dragging");
     });
-}
+}*/
 
-function getDragAfterElement(container, y) {
+/*function getDragAfterElement(container, y) {
     const draggableElements = [...container.querySelectorAll(".all-news-item:not(.dragging)")];
 
     return draggableElements.reduce((closest, child) => {
@@ -659,65 +626,8 @@ function getDragAfterElement(container, y) {
         }
         return closest;
     }, { offset: Number.NEGATIVE_INFINITY }).element;
-}
+}*/
 
-function clearRowSelection(row) {
-    row.dataset.selectionType = "";
-    row.dataset.marketCategory = "";
-
-    row.querySelectorAll(".selection-btn").forEach((btn) => {
-        btn.classList.remove("selected");
-    });
-}
-
-function setRowSelection(row, type, marketCategory = "") {
-    clearRowSelection(row);
-
-    row.dataset.selectionType = type;
-    row.dataset.marketCategory = marketCategory;
-
-    if (type === "gridwiz") {
-        const btn = row.querySelector('.selection-btn[data-type="gridwiz"]');
-        if (btn) btn.classList.add("selected");
-    }
-
-    if (type === "top") {
-        const btn = row.querySelector('.selection-btn[data-type="top"]');
-        if (btn) btn.classList.add("selected");
-    }
-
-    if (type === "market") {
-        const btn = row.querySelector(`.selection-btn[data-type="market"][data-market-category="${marketCategory}"]`);
-        if (btn) btn.classList.add("selected");
-    }
-}
-
-function createSelectionControls() {
-    const marketButtonsHtml = MARKET_CATEGORY_ORDER.map((category) => `
-        <button
-            type="button"
-            class="selection-btn selection-btn-market"
-            data-type="market"
-            data-market-category="${escapeHtml(category)}"
-        >
-            ${escapeHtml(category)}
-        </button>
-    `).join("");
-
-    return `
-        <div class="all-news-selection-group">
-            <button type="button" class="selection-btn" data-type="gridwiz">Gridwiz News</button>
-            <button type="button" class="selection-btn" data-type="top">Top News</button>
-        </div>
-
-        <div class="market-snapshot-label">Market Snapshot</div>
-
-        <div class="all-news-selection-group market-category-group">
-            ${marketButtonsHtml}
-            <button type="button" class="selection-btn selection-btn-exclude" data-type="exclude">제외</button>
-        </div>
-    `;
-}
 
 function getPublishedAtText(item) {
     const raw =
@@ -819,7 +729,7 @@ function renderCollectedNews(items) {
         });
 
 
-        addDragEvents(row);
+        //addDragEvents(row);
         allNewsList.appendChild(row);
     });
 }
@@ -1163,7 +1073,7 @@ allNewsList.addEventListener("dragover", (e) => {
     e.preventDefault();
 
     const dragging = allNewsList.querySelector(".dragging");
-    const afterElement = getDragAfterElement(allNewsList, e.clientY);
+    //const afterElement = getDragAfterElement(allNewsList, e.clientY);
 
     if (!dragging) return;
 
