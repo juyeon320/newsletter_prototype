@@ -1,62 +1,115 @@
 {
   "top_news": [
     {
-      "cluster_id": 2,
-      "cluster_topic": "프랑스 12GW 재생에너지 입찰, '유럽 우선주의' 강화로 한국 기업 전략 전환 요구 - 유스연합",
-      "article_count": 3,
-      "title": "[공감경제] 재생에너지 중심 에너지대전환 추진 - BBS불교방송",
-      "source": "BBS불교방송",
-      "published_at_kst": "2026-04-09T10:00:00+09:00",
-      "category": "재생에너지",
-      "cluster_label": "MARKET_SNAPSHOT",
-      "cluster_reason": "해외 재생에너지 시장 동향 및 기업 전략 관련",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1xaEV6VHRRZDlEYlFYQkppaktLRVVDSXVmamxhRHpyNmU2VVl6V3dJUFlXQllpX1dGYXIyVmJrQzd0cEx5YTRCNzJxYnNpeXAxVTBjYU4xYUk2OURUZWFJdEZDVXNZWFY4S0M4?oc=5",
-      "score": 50,
-      "summary_line1": "재생에너지 중심의 에너지 대전환 추진 필요성 강조... 지속 가능한 발전을 위한 정책 방향 설정",
-      "summary_line2": "업계의 적극적인 참여와 협력이 요구되는 상황... 전환 과정에서 다양한 이해관계 조정 필요성 제기",
+      "cluster_id": 1,
+      "cluster_topic": "GS건설, 미국 아모지와 무탄소 전력 시장 본격 진출…그린암모니아 시장 진입 - 서울타임즈뉴스",
+      "article_count": 5,
+      "title": "전력시장 요금구조 개편 더 이상 미룰 수 없어 - 마켓인",
+      "source": "마켓인",
+      "published_at_kst": "2026-04-10T03:36:13+09:00",
+      "category": "기타",
+      "cluster_label": "TOP",
+      "cluster_reason": "클러스터에 전력시장 요금구조 개편 관련 기사(요금제 개편)가 포함되어 있어 전력시장 제도 변화로 판단되어 TOP로 분류함",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5VRWNXVGQ0QTJ3elJ1ZU1QSDNESXZaR215d0twS3ZsUEdyYlhkeG5EaEZBMmxzdDhmLUNuSi04b1dMZXROaU95UEQtWENrNXF5UWJpbzVsM1VTZFFWenJBd3EyMXpVLXd1MXJreVJrRDZkZWM?oc=5",
+      "score": 80,
+      "summary_line1": "전력시장 요금구조 개편 시급성 부각...기존 요금체계로는 수급 불균형과 투자 왜곡 우려 강조",
+      "summary_line2": "시장 기능 회복과 재생에너지·수요관리 수용성 확보 필요성 제기...사업자·정책당국의 신속한 정책 전환 촉구",
       "summary_points": [
-        "재생에너지 중심의 에너지 대전환 추진 필요성 강조... 지속 가능한 발전을 위한 정책 방향 설정",
-        "업계의 적극적인 참여와 협력이 요구되는 상황... 전환 과정에서 다양한 이해관계 조정 필요성 제기"
+        "전력시장 요금구조 개편 시급성 부각...기존 요금체계로는 수급 불균형과 투자 왜곡 우려 강조",
+        "시장 기능 회복과 재생에너지·수요관리 수용성 확보 필요성 제기...사업자·정책당국의 신속한 정책 전환 촉구"
       ],
-      "summary": "재생에너지 중심의 에너지 대전환 추진 필요성 강조... 지속 가능한 발전을 위한 정책 방향 설정 업계의 적극적인 참여와 협력이 요구되는 상황... 전환 과정에서 다양한 이해관계 조정 필요성 제기"
+      "summary": "전력시장 요금구조 개편 시급성 부각...기존 요금체계로는 수급 불균형과 투자 왜곡 우려 강조 시장 기능 회복과 재생에너지·수요관리 수용성 확보 필요성 제기...사업자·정책당국의 신속한 정책 전환 촉구"
     },
     {
-      "cluster_id": 4,
-      "cluster_topic": "북미 ESS시장, 中 기업 퇴출에 사실상 한일전 양상 - 스트레이트뉴스",
+      "cluster_id": 10,
+      "cluster_topic": "정부, 완속 충전 로밍요금 13% 인하 …업계 “현실 외면한 탁상행정” - 전기신문",
       "article_count": 1,
-      "title": "북미 ESS시장, 中 기업 퇴출에 사실상 한일전 양상 - 스트레이트뉴스",
-      "source": "스트레이트뉴스",
-      "published_at_kst": "2026-04-09T09:55:29+09:00",
-      "category": "에너지저장장치",
-      "cluster_label": "MARKET_SNAPSHOT",
-      "cluster_reason": "해외 ESS 시장 동향",
-      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9Jd2ZBTkEzM0k2SXN0UzUwbnN4bTNYS3I3NFUwWXZYODhLUVlxYTZWN1J3Z1lqR2pDTnJkLVBYcWpIdXR0UHF1VEFuRHdacC1aeFl1SXNMTGJ3bDlYLXJlTTVnZkVSdEJJSzR0UkVwVUpJUUnSAXdBVV95cUxObC01bi0xS3FKcWtqcklQc2JTZDJLVnk4S3ItemlOazR4MkFVYVdfcmFRZ3QtMW51eXk3S3JSZ1NTZzFra2N1dlVCQ2p1YktBNzhsUHI4WF9OZ2lKVjhGNmFneFNTSFhzNVN3UU5TaVJXN1lKX3hocw?oc=5",
-      "score": 50,
-      "summary_line1": "북미 ESS시장, 중국 기업 퇴출에 따른 한일 경쟁 심화... 시장 점유율 확보를 위한 기술력 강화 전망",
-      "summary_line2": "중국 기업의 영향력 감소가 한일 기업 간 협력 필요성 제기... ESS 분야에서의 전략적 투자와 연구개발 촉구",
+      "title": "정부, 완속 충전 로밍요금 13% 인하 …업계 “현실 외면한 탁상행정” - 전기신문",
+      "source": "전기신문",
+      "published_at_kst": "2026-04-10T00:22:10+09:00",
+      "category": "전기차",
+      "cluster_label": "TOP",
+      "cluster_reason": "정부의 완속 충전 로밍요금 13% 인하는 전기차 충전 요금 관련 정책 변화로, 수요관리·충전 사업 영향이 큰 핵심 이슈임",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFA4Yll4Q1lFbm1VeEM5TjNjRGdWMlpqVVRrSjZLR3hyTWExQjlmaXhwRXhubFpIeno2eVNsNlhkQ1ZCb1pwTkw4RUFTXzR6bUw0Nmx1UlhMT1NxWVdBVHRnclp4UDNSaHVzazVpRNIBcEFVX3lxTE9wSUpGSkxUUU5pU0ZDekowZXdZOHotM2REMUR1US1UTnJXVF9telJ0Z2FBV29TdFR5SWh5SF9qTDJsd2s4S08xVnpDQU1pbVRsd3JvajdUV3YzVHVKVERRVGtWbnRJUFhHQWFyekEyNEQ?oc=5",
+      "score": 85,
+      "summary_line1": "정부, 완속 충전 로밍요금 13% 인하 결정...업계 현실 외면한 탁상행정 비판 제기",
+      "summary_line2": "요금 인하로 사업자 수익성 악화 및 충전 인프라 투자 지연 우려...정책 보완 필요성 제기",
       "summary_points": [
-        "북미 ESS시장, 중국 기업 퇴출에 따른 한일 경쟁 심화... 시장 점유율 확보를 위한 기술력 강화 전망",
-        "중국 기업의 영향력 감소가 한일 기업 간 협력 필요성 제기... ESS 분야에서의 전략적 투자와 연구개발 촉구"
+        "정부, 완속 충전 로밍요금 13% 인하 결정...업계 현실 외면한 탁상행정 비판 제기",
+        "요금 인하로 사업자 수익성 악화 및 충전 인프라 투자 지연 우려...정책 보완 필요성 제기"
       ],
-      "summary": "북미 ESS시장, 중국 기업 퇴출에 따른 한일 경쟁 심화... 시장 점유율 확보를 위한 기술력 강화 전망 중국 기업의 영향력 감소가 한일 기업 간 협력 필요성 제기... ESS 분야에서의 전략적 투자와 연구개발 촉구"
+      "summary": "정부, 완속 충전 로밍요금 13% 인하 결정...업계 현실 외면한 탁상행정 비판 제기 요금 인하로 사업자 수익성 악화 및 충전 인프라 투자 지연 우려...정책 보완 필요성 제기"
     }
   ],
   "market_snapshot": {
     "수요관리": [],
     "전기차": [],
-    "에너지저장장치": [],
+    "에너지저장장치": [
+      {
+        "cluster_id": 2,
+        "cluster_topic": "주말 낮 시간대 공공 전기차 충전 요금 할인(4/18~) - 전체 | 카드/한컷 | 멀티미디어 - 대한민국 정책브리핑",
+        "article_count": 5,
+        "title": "ESS로 달려간 K-배터리, 정작 돈은 전기차가 쥐고 있다 - 리드경제",
+        "source": "리드경제",
+        "published_at_kst": "2026-04-10T02:07:49+09:00",
+        "category": "에너지저장장치",
+        "cluster_label": "TOP",
+        "cluster_reason": "공공 전기차 충전 요금의 주말 낮 할인(4/18~) 정책 발표로 전기차 충전 정책·요금 변동에 해당하며 수요관리·충전 인프라 및 요금제에 직접적 영향이 있음",
+        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1ZV0lBeDJOczBXbjBIcUZLQmFaeVRSbHNtV0JnTVRUTW1vWVlDcVpBMS14aTB5LWJMMm9hbTAyYVFUOXA4MHYyT2gyNUNVdWh4c3VpS1hoQ3ZDNk52QmQ4YlNpbkhVNkZmSnZoVmg2RQ?oc=5",
+        "score": 80
+      }
+    ],
     "재생에너지": [
       {
+        "cluster_id": 8,
+        "cluster_topic": "‘녹색공공은행’, 공공재생에너지 전환의 조타수 - 참세상",
+        "article_count": 5,
+        "title": "(사설)중동발 에너지안보 해법, 재생에너지와 전력망이 관건이다 - 전기신문",
+        "source": "전기신문",
+        "published_at_kst": "2026-04-10T00:16:50+09:00",
+        "category": "재생에너지",
+        "cluster_label": "TOP",
+        "cluster_reason": "공공재생 전환(녹색공공은행)과 재생에너지 공급 제도·전력망·에너지안보 논의가 포함되어 전력시장·정책·수급·계통 안정화 관련 핵심 이슈에 해당",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5XRC1idG5WX0pDOW1hbURvXzlNeXpSNVIzLVBTQ3JHSWJnb0lGX0phVElndlFvLWdxcGloRUxucXVBWjVoOFN2cXRnTUdiNUdrZGVXTEh5R2Uzcm94X3JCVEhkUHpVMHVmQ0t5ONIBcEFVX3lxTE9FRFZvYTJNSDJuczR3eUZfelJTczhVSEtybVhIVHo5VVpLUUpXUEhsQnEwQ3J3NVRwaUh4RUFKUlF1TDl3SWg3MlJYN2haOFRVc0k4dmgtVXhndmhHTUo5bG01S1JaeU93bHdqYjgydlY?oc=5",
+        "score": 85
+      },
+      {
+        "cluster_id": 4,
+        "cluster_topic": "선익시스템, 美 현지 법인 설립 ··· 차세대 태양광 제조 인프라 시장 공략 - 데이터넷",
+        "article_count": 5,
+        "title": "“기관이 RE100을?” 공공이 관여한 PPA 확산에 시장 혼선 우려 - 전기신문",
+        "source": "전기신문",
+        "published_at_kst": "2026-04-10T00:30:45+09:00",
+        "category": "재생에너지",
+        "cluster_label": "TOP",
+        "cluster_reason": "전력거래소의 전력규제 거버넌스 논의와 공공 개입 PPA 확산 관련 시장·제도 쟁점이 포함되어 전력시장·정책 이슈에 해당함.",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE81N1VTeHFNbW1pdUFxUUxXWTdfY2J0V1ZLbko5NXh4cE1TNEFuNXpLZ09tVGR4d2FxckhpdlBhd1JYTTRoWU52N3c4YXYyc3Vyd2dVWm1QU0dycFhkaHh1ZVdaS0w1VWRRc2V3adIBcEFVX3lxTE5ZMkVMVmZCbHEtajZ1b2ZTVmNPd1VTVFJEQ1ROODBFWWJOR2E2eHFta1czR3RrbzZvanNMdkE5dzVDU3NjZXlDN2d0TUJzYXdjTzNWQlRtYTZ5YmV0YXJmbm5OYlhhQkxMWE0ySmp6a1o?oc=5",
+        "score": 65
+      },
+      {
         "cluster_id": 3,
-        "cluster_topic": "아이파크 현대산업개발 등 건물일체형 태양광·녹색기술 경쟁…아파트 ‘에너지 생산 기지’로 진화 - 녹색경제신문",
-        "article_count": 1,
-        "title": "아이파크 현대산업개발 등 건물일체형 태양광·녹색기술 경쟁…아파트 ‘에너지 생산 기지’로 진화 - 녹색경제신문",
-        "source": "녹색경제신문",
-        "published_at_kst": "2026-04-09T12:50:04+09:00",
+        "cluster_topic": "디아이, 브이텐시스템 인수로 2차전지·ESS 날개… 사업 다각화 결실 - 핀포인트뉴스",
+        "article_count": 5,
+        "title": "풍력 블레이드 원가절감 및 육성방안 모색 - 이투뉴스",
+        "source": "이투뉴스",
+        "published_at_kst": "2026-04-10T02:18:05+09:00",
+        "category": "재생에너지",
+        "cluster_label": "TOP",
+        "cluster_reason": "정부의 재생에너지 가속화(전기의날 발표) 및 풍력 블레이드 육성 논의는 재생 확대에 따른 저장·수요관리 수요(ESS·VPP)와 전력시장·제도 변화에 직접적 영향이 예상되어 TOP으로 분류함",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1scjFLaTJEU05sMHVfdG53aHJJTS1EMjRwQ24xa1ZkNzhnbWplR3V0SVdKSXBlZFF6a2NodW45TEdsY0Rsa0plYVFZUHVVU3RiYzFaRWRsNUUyWmFxRXE4aFJzLUNmVm_SAWtBVV95cUxNczNpUEFDOFh3Nk80bHVUQlRWeExjMF9jQ3B0emp3Zm5jUDBPdmQxeGNpQ3VWQ1hjbkc5ZktDakhkZmFUOEhNNUFLNmx3Y3pFbnU2R3FydHhNOGcybWtGRFJscWNkSXlMeFBSSQ?oc=5",
+        "score": 60
+      },
+      {
+        "cluster_id": 6,
+        "cluster_topic": "‘역대 최대 2.89조 재원 조달’… 한국중부발전, 신안우이 해상풍력 PF 금융약정 체결 - 에너지코리아뉴스",
+        "article_count": 5,
+        "title": "중부발전, 국내 최대 390㎿ 해상풍력 2조8900억원 금융약정 체결 - 데일리안",
+        "source": "데일리안",
+        "published_at_kst": "2026-04-10T00:26:00+09:00",
         "category": "재생에너지",
         "cluster_label": "MARKET_SNAPSHOT",
-        "cluster_reason": "건물일체형 태양광과 녹색기술에 대한 경쟁은 엔지니어링 및 기술 개발과 관련된 시장 동향을 나타냄",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE4zVzAyRU9tLTRiSV9uQmFrczRhVzhrSE5SSzNlYV96NDdzTmgtQzQyd1BRcFVMd1I1WHFLZ3hZd1ZtNlRxSG45bHJpbHNTczBEN0tVY3I1dzFuTGYyZkNvUWFZdVRJNnkz?oc=5",
+        "cluster_reason": "대규모 해상풍력(PF) 금융약정·사업 추진(기업·투자 소식)으로 그리드위즈의 수요관리·VPP·전력시장 제도 변화와 직접적 관련이 적어 MARKET_SNAPSHOT에 해당",
+        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFB0WHlST2RkUGZHZ3h0YWpTTWgxS0w3VlF4SnFlNW50TDdreEJLSHA4MDR6SExsWFhYeF9jVG9HT3N5WVFybWs1bGZUQ1E0QjMwUjNCNWJR0gGGAkFVX3lxTFBnU05TakQyVnQ0MGpfS2JTLXZVZTZpM1ZBMFRwdHJVbUpOeGUxbmt5VzBWREROenJHeHZMY19YbEVzSHdla2s0Vm1ERk55MktkRTZXSWNxenRSaXI2SDctQlpzR0Fya19ZeVJoY0x6bE1SeXR5S1hobk8yWEN5UE5DYmhvcHFON0NGZy1uaGJyYjlQUW4ybWQ1STljR1RxZHFOTEVpTGczQUt6RUdWZUF5bGtRUk5LZ1pabUdRQkdBQzhrY0p2ZzlrRkF3bThXdG1ELVU0dl9jbWkyY3cwUDRxWFJDQndTU3FkbWhuV2E5N2o0UnRqSHZvQVdvR3BjbzIyMGRmUEE?oc=5",
         "score": 30
       }
     ],

@@ -238,16 +238,18 @@
 
         <div class="link-modal-dialog">
             <div class="link-modal-header">
-                <h3>뉴스 모두 보기</h3>
+                <div class="modal-title-wrap">
+                    <h3>뉴스 모두 보기</h3>
+                    <span id="all-news-range-text" class="modal-time-text">
+                    </span>
+                </div>
+
                 <button type="button" id="all-news-modal-close" class="link-modal-close">×</button>
             </div>
 
             <div class="link-modal-body">
 
                 <div class="all-news-topbar">
-                    <div id="all-news-range-text" class="all-news-range-text">
-                        수집 시간 범위 불러오는 중...
-                    </div>
                     <div class="all-news-guide">
                         카테고리를 선택해 뉴스레터에 추가하세요
                     </div>
@@ -692,8 +694,7 @@ function renderCollectedNews(items) {
                 <div class="all-news-item-title">${escapeHtml(item.title || "(제목 없음)")}</div>
                 <div class="all-news-item-meta">${escapeHtml(sourceText)}</div>
                 <div class="all-news-item-submeta">
-                    ${publishedAt ? `<span>발행일: ${escapeHtml(publishedAt)}</span>` : ""}
-                    <span>현재 분류: ${escapeHtml(getPlacementLabel(placementValue))}</span>
+                    ${publishedAt ? `<span>${escapeHtml(publishedAt)}</span>` : ""}
                 </div>
                 ${
                     item.link

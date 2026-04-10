@@ -21,7 +21,7 @@ def classify_article(title: str, summary: str):
     user_prompt = build_user_prompt(title, summary)
 
     response = client.chat.completions.create(
-        model="gpt-4o-mini",
+        model="gpt-5-mini",
         messages=[
             {"role": "system", "content": SYSTEM_PROMPT},
             {"role": "user", "content": user_prompt}

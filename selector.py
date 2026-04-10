@@ -51,7 +51,7 @@ def select_top_news_by_llm(candidates: list) -> list:
     )
 
     response = client.chat.completions.create(
-        model="gpt-4o-mini",
+        model="gpt-5-mini",
         messages=[
             {"role": "system", "content": TOP_NEWS_SELECTOR_PROMPT},
             {"role": "user", "content": numbered},

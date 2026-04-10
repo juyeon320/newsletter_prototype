@@ -1,5 +1,5 @@
 #cluster_labeler.py
-from project.config import OUTPUT_DIR
+from config import OUTPUT_DIR
 input_file = f"{OUTPUT_DIR}/representative_news.json"
 output_file = f"{OUTPUT_DIR}/labeled_clusters.json"
 import os
@@ -24,7 +24,7 @@ def classify_cluster_label(cluster_topic, representative_title, article_titles):
     )
 
     response = client.chat.completions.create(
-        model="gpt-4o-mini",
+        model="gpt-5-mini",
         messages=[
             {"role": "system", "content": CLUSTER_LABEL_SYSTEM_PROMPT},
             {"role": "user", "content": user_prompt},

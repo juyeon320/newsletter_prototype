@@ -1,149 +1,638 @@
 [
   {
     "cluster_id": 1,
-    "cluster_topic": "\"데이터센터 수도권 쏠림 풀려면…지역별 전기료 차등 둬야\" - 네이트",
-    "article_count": 3,
+    "cluster_topic": "GS건설, 미국 아모지와 무탄소 전력 시장 본격 진출…그린암모니아 시장 진입 - 서울타임즈뉴스",
+    "article_count": 5,
     "representative": {
       "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
-      "title": "\"데이터센터 수도권 쏠림 풀려면...지역별 전기료 차등 둬야\" - 마켓인",
-      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE8yRUdmU2RzUUZzZ2U4RFNUMXY5bE9USmJkdXhjdjBOMnVkby1adUdqUnQwYnpXMVQwVVlHb0F1UWJYRzRUZGNxY3BHTDFIRUN4QUNFYnQwRmVnZDBHX0s2bWdPY2hCUHozUklmSnNRbUxCODQ?oc=5",
-      "published_at_kst": "2026-04-09T21:00:03+09:00",
+      "title": "전력시장 요금구조 개편 더 이상 미룰 수 없어 - 마켓인",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5VRWNXVGQ0QTJ3elJ1ZU1QSDNESXZaR215d0twS3ZsUEdyYlhkeG5EaEZBMmxzdDhmLUNuSi04b1dMZXROaU95UEQtWENrNXF5UWJpbzVsM1VTZFFWenJBd3EyMXpVLXd1MXJreVJrRDZkZWM?oc=5",
+      "published_at_kst": "2026-04-10T03:36:13+09:00",
       "source": "마켓인",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMic0FVX3lxTE8yRUdmU2RzUUZzZ2U4RFNUMXY5bE9USmJkdXhjdjBOMnVkby1adUdqUnQwYnpXMVQwVVlHb0F1UWJYRzRUZGNxY3BHTDFIRUN4QUNFYnQwRmVnZDBHX0s2bWdPY2hCUHozUklmSnNRbUxCODQ?oc=5\" target=\"_blank\">\"데이터센터 수도권 쏠림 풀려면...지역별 전기료 차등 둬야\"</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">마켓인</font>",
-      "label": "MARKET_SNAPSHOT",
-      "reason": "전기료 차등 정책이 데이터센터의 지역 분산에 미치는 영향에 대한 논의"
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMic0FVX3lxTE5VRWNXVGQ0QTJ3elJ1ZU1QSDNESXZaR215d0twS3ZsUEdyYlhkeG5EaEZBMmxzdDhmLUNuSi04b1dMZXROaU95UEQtWENrNXF5UWJpbzVsM1VTZFFWenJBd3EyMXpVLXd1MXJreVJrRDZkZWM?oc=5\" target=\"_blank\">전력시장 요금구조 개편 더 이상 미룰 수 없어</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">마켓인</font>",
+      "label": "TOP",
+      "reason": "전력시장 요금구조 개편을 다룬 기사로 전기요금·시장 규칙 변화에 해당하여 DR/VPP·ESS·전기차충전사업자 등 수익구조와 제도에 직접적 영향이 예상됨"
     },
     "articles": [
       {
         "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
-        "title": "\"데이터센터 수도권 쏠림 풀려면...지역별 전기료 차등 둬야\" - 마켓인",
-        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE8yRUdmU2RzUUZzZ2U4RFNUMXY5bE9USmJkdXhjdjBOMnVkby1adUdqUnQwYnpXMVQwVVlHb0F1UWJYRzRUZGNxY3BHTDFIRUN4QUNFYnQwRmVnZDBHX0s2bWdPY2hCUHozUklmSnNRbUxCODQ?oc=5",
-        "published_at_kst": "2026-04-09T21:00:03+09:00",
+        "title": "전력시장 요금구조 개편 더 이상 미룰 수 없어 - 마켓인",
+        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5VRWNXVGQ0QTJ3elJ1ZU1QSDNESXZaR215d0twS3ZsUEdyYlhkeG5EaEZBMmxzdDhmLUNuSi04b1dMZXROaU95UEQtWENrNXF5UWJpbzVsM1VTZFFWenJBd3EyMXpVLXd1MXJreVJrRDZkZWM?oc=5",
+        "published_at_kst": "2026-04-10T03:36:13+09:00",
         "source": "마켓인",
-        "summary": "<a href=\"https://news.google.com/rss/articles/CBMic0FVX3lxTE8yRUdmU2RzUUZzZ2U4RFNUMXY5bE9USmJkdXhjdjBOMnVkby1adUdqUnQwYnpXMVQwVVlHb0F1UWJYRzRUZGNxY3BHTDFIRUN4QUNFYnQwRmVnZDBHX0s2bWdPY2hCUHozUklmSnNRbUxCODQ?oc=5\" target=\"_blank\">\"데이터센터 수도권 쏠림 풀려면...지역별 전기료 차등 둬야\"</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">마켓인</font>",
-        "label": "MARKET_SNAPSHOT",
-        "reason": "전기료 차등 정책이 데이터센터의 지역 분산에 미치는 영향에 대한 논의"
-      },
-      {
-        "keyword": "AI 데이터센터 OR 데이터센터 OR 전력수요",
-        "title": "\"데이터센터 수도권 쏠림 풀려면...지역별 전기료 차등 둬야\" - 이데일리",
-        "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQQkpPQ1RzdzBIRHNVOHZNbzVPSDE1UlRaVDdIakctb1BUbWxpY2N3NW5VWW1Db1ZKNDNsWmVYTXhCRHhITlBBaFNBOTR4NFVzeVdZQmR6aG1sbUkwVXlvRzVFeWZ5UXIxdzBZQXJtczR1aFpHYVZ2SzBzNFdGWUN2Uw?oc=5",
-        "published_at_kst": "2026-04-09T21:00:03+09:00",
-        "source": "이데일리",
-        "summary": "<a href=\"https://news.google.com/rss/articles/CBMigAFBVV95cUxQQkpPQ1RzdzBIRHNVOHZNbzVPSDE1UlRaVDdIakctb1BUbWxpY2N3NW5VWW1Db1ZKNDNsWmVYTXhCRHhITlBBaFNBOTR4NFVzeVdZQmR6aG1sbUkwVXlvRzVFeWZ5UXIxdzBZQXJtczR1aFpHYVZ2SzBzNFdGWUN2Uw?oc=5\" target=\"_blank\">\"데이터센터 수도권 쏠림 풀려면...지역별 전기료 차등 둬야\"</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">이데일리</font>",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMic0FVX3lxTE5VRWNXVGQ0QTJ3elJ1ZU1QSDNESXZaR215d0twS3ZsUEdyYlhkeG5EaEZBMmxzdDhmLUNuSi04b1dMZXROaU95UEQtWENrNXF5UWJpbzVsM1VTZFFWenJBd3EyMXpVLXd1MXJreVJrRDZkZWM?oc=5\" target=\"_blank\">전력시장 요금구조 개편 더 이상 미룰 수 없어</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">마켓인</font>",
         "label": "TOP",
-        "reason": "지역별 전기료 차등을 통한 수요관리 정책 제안"
+        "reason": "전력시장 요금구조 개편을 다룬 기사로 전기요금·시장 규칙 변화에 해당하여 DR/VPP·ESS·전기차충전사업자 등 수익구조와 제도에 직접적 영향이 예상됨"
+      },
+      {
+        "keyword": "전력시장 OR 전력계통 OR 전력시스템 OR 전력거래소 OR 계통안정화 OR 광역정전 OR 대규모정전",
+        "title": "[기고]전력시장 요금구조 개편 더 이상 미룰 수 없어 - 네이트",
+        "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5EaDBnQ3haVndldW9jT05GYjlkVWppUmlXajdIdUtOZU1CLURwSmM2cDhIS2ktazVJNVlCWGkxY3c5TXdGbnNzckV5QmNLNk13LXJr?oc=5",
+        "published_at_kst": "2026-04-10T03:38:00+09:00",
+        "source": "네이트",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiU0FVX3lxTE5EaDBnQ3haVndldW9jT05GYjlkVWppUmlXajdIdUtOZU1CLURwSmM2cDhIS2ktazVJNVlCWGkxY3c5TXdGbnNzckV5QmNLNk13LXJr?oc=5\" target=\"_blank\">[기고]전력시장 요금구조 개편 더 이상 미룰 수 없어</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">네이트</font>",
+        "label": "TOP",
+        "reason": "전력시장 요금구조 개편을 다룬 기고문으로 전기요금·시장규칙 변경 논의에 해당해 DR/VPP/ESS 및 충전요금·수익구조에 직접적 영향이 예상되어 TOP으로 분류함."
       },
       {
         "keyword": "AI 데이터센터 OR 데이터센터 OR 전력수요",
-        "title": "\"데이터센터 수도권 쏠림 풀려면…지역별 전기료 차등 둬야\" - 네이트",
-        "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFA3ZTdRZndWM3dfNEw3ZG82aU14aXhjX2RMczdtUWJpWEJ2Y3MwQU5TeHBlR3BXdU5yT2N4RmktdGNWQjFhN0sxWi01N0FqNVFhVHhv?oc=5",
-        "published_at_kst": "2026-04-09T21:02:00+09:00",
-        "source": "네이트",
-        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiU0FVX3lxTFA3ZTdRZndWM3dfNEw3ZG82aU14aXhjX2RMczdtUWJpWEJ2Y3MwQU5TeHBlR3BXdU5yT2N4RmktdGNWQjFhN0sxWi01N0FqNVFhVHhv?oc=5\" target=\"_blank\">\"데이터센터 수도권 쏠림 풀려면…지역별 전기료 차등 둬야\"</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">네이트</font>",
+        "title": "버려지는 전력, 놓치는 수익: AI 데이터센터 혁신의 핵심은 ‘전력 구조’다 - 유스연합",
+        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5JLTBtbmw2V3RtLWhobUFDMWwxOUw1UHg5cTVVdTlhd24zdnYtdnJhX0dxejhqVjNQWjZaSkxCOTlpdk9sMzhaRXpBblVXRVM2OWc?oc=5",
+        "published_at_kst": "2026-04-10T03:55:49+09:00",
+        "source": "유스연합",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiUkFVX3lxTE5JLTBtbmw2V3RtLWhobUFDMWwxOUw1UHg5cTVVdTlhd24zdnYtdnJhX0dxejhqVjNQWjZaSkxCOTlpdk9sMzhaRXpBblVXRVM2OWc?oc=5\" target=\"_blank\">버려지는 전력, 놓치는 수익: AI 데이터센터 혁신의 핵심은 ‘전력 구조’다</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">유스연합</font>",
         "label": "MARKET_SNAPSHOT",
-        "reason": "전기료 차등을 통한 데이터센터 수도권 쏠림 문제 해결 방안 제안"
+        "reason": "AI 데이터센터의 전력구조와 운영 방식 분석으로 수요관리·VPP·전력시장 대응에 대한 시장 동향 및 사업기회에 영향 가능하므로 MARKET_SNAPSHOT"
+      },
+      {
+        "keyword": "전력시장 OR 전력계통 OR 전력시스템 OR 전력거래소 OR 계통안정화 OR 광역정전 OR 대규모정전",
+        "title": "GS건설, 무탄소 분산 발전시장 진출…美 아모지와 합작투자 - 글로벌이코노믹",
+        "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPUzJzcTdSNWQ3UlVQbk02LWRDcWRXbmltbDN4UWtrR2d5NnhmMGFxdFpVTFFiaC1wM3N3TmctWFh6dnBlWHVHcEdpTENtc2Vfam1QYUdKQnBPNUxrLWh5S0dkNEV4MlBGX2MwRWIzd2RsNndUWjZLS1dGbjBPV2x2S0N6b0J5Y2Iwcmc?oc=5",
+        "published_at_kst": "2026-04-10T04:54:31+09:00",
+        "source": "글로벌이코노믹",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiigFBVV95cUxPUzJzcTdSNWQ3UlVQbk02LWRDcWRXbmltbDN4UWtrR2d5NnhmMGFxdFpVTFFiaC1wM3N3TmctWFh6dnBlWHVHcEdpTENtc2Vfam1QYUdKQnBPNUxrLWh5S0dkNEV4MlBGX2MwRWIzd2RsNndUWjZLS1dGbjBPV2x2S0N6b0J5Y2Iwcmc?oc=5\" target=\"_blank\">GS건설, 무탄소 분산 발전시장 진출…美 아모지와 합작투자</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">글로벌이코노믹</font>",
+        "label": "MARKET_SNAPSHOT",
+        "reason": "GS건설의 무탄소 분산발전 시장 진출·미국사와의 합작투자는 분산에너지·사업자 동향으로 수요관리·VPP·ESS 시장에 간접적 영향이 있어 MARKET_SNAPSHOT에 해당합니다."
+      },
+      {
+        "keyword": "전력시장 OR 전력계통 OR 전력시스템 OR 전력거래소 OR 계통안정화 OR 광역정전 OR 대규모정전",
+        "title": "GS건설, 미국 아모지와 무탄소 전력 시장 본격 진출…그린암모니아 시장 진입 - 서울타임즈뉴스",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE14eU9uZkNDRTVuRnVoYkM5R0dlRlJUNGpPTm1jX0I4bUphaTM1ODh0QUZCN0I4UjhjSmJWSUJRZDZ1OEF5cldVQmMzZWlPSEhsb0wzcWNBejhrajM5QlVPX3F2MUQ5cktOb2Vz?oc=5",
+        "published_at_kst": "2026-04-10T04:55:10+09:00",
+        "source": "서울타임즈뉴스",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMia0FVX3lxTE14eU9uZkNDRTVuRnVoYkM5R0dlRlJUNGpPTm1jX0I4bUphaTM1ODh0QUZCN0I4UjhjSmJWSUJRZDZ1OEF5cldVQmMzZWlPSEhsb0wzcWNBejhrajM5QlVPX3F2MUQ5cktOb2Vz?oc=5\" target=\"_blank\">GS건설, 미국 아모지와 무탄소 전력 시장 본격 진출…그린암모니아 시장 진입</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">서울타임즈뉴스</font>",
+        "label": "MARKET_SNAPSHOT",
+        "reason": "GS건설의 미국 기업(아모지)과의 협력으로 무탄소 전력·그린암모니아 시장에 본격 진출하는 기업 투자·사업 확장 소식으로, 제도·규제 변화나 전력시장 규칙 영향은 없어 산업 동향으로 분류함."
       }
     ]
   },
   {
     "cluster_id": 2,
-    "cluster_topic": "프랑스 12GW 재생에너지 입찰, '유럽 우선주의' 강화로 한국 기업 전략 전환 요구 - 유스연합",
-    "article_count": 3,
+    "cluster_topic": "주말 낮 시간대 공공 전기차 충전 요금 할인(4/18~) - 전체 | 카드/한컷 | 멀티미디어 - 대한민국 정책브리핑",
+    "article_count": 5,
     "representative": {
-      "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
-      "title": "[공감경제] 재생에너지 중심 에너지대전환 추진 - BBS불교방송",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1xaEV6VHRRZDlEYlFYQkppaktLRVVDSXVmamxhRHpyNmU2VVl6V3dJUFlXQllpX1dGYXIyVmJrQzd0cEx5YTRCNzJxYnNpeXAxVTBjYU4xYUk2OURUZWFJdEZDVXNZWFY4S0M4?oc=5",
-      "published_at_kst": "2026-04-09T10:00:00+09:00",
-      "source": "BBS불교방송",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMia0FVX3lxTE1xaEV6VHRRZDlEYlFYQkppaktLRVVDSXVmamxhRHpyNmU2VVl6V3dJUFlXQllpX1dGYXIyVmJrQzd0cEx5YTRCNzJxYnNpeXAxVTBjYU4xYUk2OURUZWFJdEZDVXNZWFY4S0M4?oc=5\" target=\"_blank\">[공감경제] 재생에너지 중심 에너지대전환 추진</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">BBS불교방송</font>",
-      "label": "TOP",
-      "reason": "정부의 재생에너지 중심의 에너지 대전환 추진은 주요 에너지 정책 발표로, 그리드위즈와 관련된 수요관리 및 분산에너지 분야에 직접적인 영향을 미침."
+      "keyword": "ESS OR 에너지저장장치 OR BESS OR 배터리에너지저장장치",
+      "title": "ESS로 달려간 K-배터리, 정작 돈은 전기차가 쥐고 있다 - 리드경제",
+      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1ZV0lBeDJOczBXbjBIcUZLQmFaeVRSbHNtV0JnTVRUTW1vWVlDcVpBMS14aTB5LWJMMm9hbTAyYVFUOXA4MHYyT2gyNUNVdWh4c3VpS1hoQ3ZDNk52QmQ4YlNpbkhVNkZmSnZoVmg2RQ?oc=5",
+      "published_at_kst": "2026-04-10T02:07:49+09:00",
+      "source": "리드경제",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMib0FVX3lxTE1ZV0lBeDJOczBXbjBIcUZLQmFaeVRSbHNtV0JnTVRUTW1vWVlDcVpBMS14aTB5LWJMMm9hbTAyYVFUOXA4MHYyT2gyNUNVdWh4c3VpS1hoQ3ZDNk52QmQ4YlNpbkhVNkZmSnZoVmg2RQ?oc=5\" target=\"_blank\">ESS로 달려간 K-배터리, 정작 돈은 전기차가 쥐고 있다</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">리드경제</font>",
+      "label": "MARKET_SNAPSHOT",
+      "reason": "국내 배터리 산업의 수익구조(ESS 대비 전기차 매출 비중)를 다룬 시장·산업 동향 기사로, ESS 시장 전망 및 기업 전략에 간접적 영향을 미침"
     },
     "articles": [
       {
-        "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
-        "title": "[공감경제] 재생에너지 중심 에너지대전환 추진 - BBS불교방송",
-        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1xaEV6VHRRZDlEYlFYQkppaktLRVVDSXVmamxhRHpyNmU2VVl6V3dJUFlXQllpX1dGYXIyVmJrQzd0cEx5YTRCNzJxYnNpeXAxVTBjYU4xYUk2OURUZWFJdEZDVXNZWFY4S0M4?oc=5",
-        "published_at_kst": "2026-04-09T10:00:00+09:00",
-        "source": "BBS불교방송",
-        "summary": "<a href=\"https://news.google.com/rss/articles/CBMia0FVX3lxTE1xaEV6VHRRZDlEYlFYQkppaktLRVVDSXVmamxhRHpyNmU2VVl6V3dJUFlXQllpX1dGYXIyVmJrQzd0cEx5YTRCNzJxYnNpeXAxVTBjYU4xYUk2OURUZWFJdEZDVXNZWFY4S0M4?oc=5\" target=\"_blank\">[공감경제] 재생에너지 중심 에너지대전환 추진</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">BBS불교방송</font>",
+        "keyword": "ESS OR 에너지저장장치 OR BESS OR 배터리에너지저장장치",
+        "title": "ESS로 달려간 K-배터리, 정작 돈은 전기차가 쥐고 있다 - 리드경제",
+        "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1ZV0lBeDJOczBXbjBIcUZLQmFaeVRSbHNtV0JnTVRUTW1vWVlDcVpBMS14aTB5LWJMMm9hbTAyYVFUOXA4MHYyT2gyNUNVdWh4c3VpS1hoQ3ZDNk52QmQ4YlNpbkhVNkZmSnZoVmg2RQ?oc=5",
+        "published_at_kst": "2026-04-10T02:07:49+09:00",
+        "source": "리드경제",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMib0FVX3lxTE1ZV0lBeDJOczBXbjBIcUZLQmFaeVRSbHNtV0JnTVRUTW1vWVlDcVpBMS14aTB5LWJMMm9hbTAyYVFUOXA4MHYyT2gyNUNVdWh4c3VpS1hoQ3ZDNk52QmQ4YlNpbkhVNkZmSnZoVmg2RQ?oc=5\" target=\"_blank\">ESS로 달려간 K-배터리, 정작 돈은 전기차가 쥐고 있다</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">리드경제</font>",
+        "label": "MARKET_SNAPSHOT",
+        "reason": "국내 배터리 산업의 수익구조(ESS 대비 전기차 매출 비중)를 다룬 시장·산업 동향 기사로, ESS 시장 전망 및 기업 전략에 간접적 영향을 미침"
+      },
+      {
+        "keyword": "전기차 충전 OR 전기자동차 OR EV 충전 OR V2G OR 충전인프라 OR K-충전 OR 충전사업자 OR 충전CPO",
+        "title": "주말 낮 시간대 공공 전기차 충전 요금 할인(4/18~) - 대한민국 정책브리핑",
+        "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNUGVVX0k5ZlA4MG8yeVVBQ0JySUFXNVFrRkRzc01sY2RRb04yWHVCMi1HYjIwQVY0MVdTNFp1cTBFRi1KcG80a0RabzFVQktfaWFwX2duQUJITEhXY1dIZnpLUzJWcUhEc1htX1Q5b1FZXzdjUXl0UjRUZzR6Yy1lX2xEVFlyX1FybGF6WlgwWjFvT2dmNHZZdHpnU25vVVFLdHc?oc=5",
+        "published_at_kst": "2026-04-10T02:14:56+09:00",
+        "source": "대한민국 정책브리핑",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiogFBVV95cUxNUGVVX0k5ZlA4MG8yeVVBQ0JySUFXNVFrRkRzc01sY2RRb04yWHVCMi1HYjIwQVY0MVdTNFp1cTBFRi1KcG80a0RabzFVQktfaWFwX2duQUJITEhXY1dIZnpLUzJWcUhEc1htX1Q5b1FZXzdjUXl0UjRUZzR6Yy1lX2xEVFlyX1FybGF6WlgwWjFvT2dmNHZZdHpnU25vVVFLdHc?oc=5\" target=\"_blank\">주말 낮 시간대 공공 전기차 충전 요금 할인(4/18~)</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">대한민국 정책브리핑</font>",
         "label": "TOP",
-        "reason": "정부의 재생에너지 중심의 에너지 대전환 추진은 주요 에너지 정책 발표로, 그리드위즈와 관련된 수요관리 및 분산에너지 분야에 직접적인 영향을 미침."
+        "reason": "정부(정책브리핑) 발표로 공공 전기차 충전요금의 주말 낮 할인 시행(4/18~)이 확정되어 충전요금 변화가 충전사업자·수요관리 수익구조에 직접적 영향을 줌"
+      },
+      {
+        "keyword": "전기요금 OR PPA OR 기후부",
+        "title": "기후부, ‘제61회 전기의 날’ 기념식 개최… ‘전기국가’ 도약 선포 - 기계신문",
+        "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFB5anBRNXVYUUdDTVFseVE2T3RfcGlQdzgxMzV4ZmpwSGd5U0FZV1V5Ujk5VVBfbm4yMklPTHVBd2QtRVRoTlgyTXRROVdabERmN1pfZDFsRHVBMFlhclQ3czhaeURsQQ?oc=5",
+        "published_at_kst": "2026-04-10T02:52:47+09:00",
+        "source": "기계신문",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiZkFVX3lxTFB5anBRNXVYUUdDTVFseVE2T3RfcGlQdzgxMzV4ZmpwSGd5U0FZV1V5Ujk5VVBfbm4yMklPTHVBd2QtRVRoTlgyTXRROVdabERmN1pfZDFsRHVBMFlhclQ3czhaeURsQQ?oc=5\" target=\"_blank\">기후부, ‘제61회 전기의 날’ 기념식 개최… ‘전기국가’ 도약 선포</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">기계신문</font>",
+        "label": "MARKET_SNAPSHOT",
+        "reason": "기후부의 '전기국가' 비전 선포는 정부 의지와 에너지정책 방향을 보여주나 기사에 구체적 제도·요금·규제 변경이나 시행계획이 없어 직접적 시장규칙 영향으로 보기 어렵습니다."
       },
       {
         "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
-        "title": "\"AI·재생에너지 전환…유연성 자원 확보에 성패 달려\" - 이데일리",
-        "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOd0pUNWM4bi1famo3MzA5bW5lYWV5akhvQ0o3eTNDOHBTZkV0b3Y0dkNYTllpdUR4SERvODVFU3dvc3dzcnZCNHA2QXRwS1Z6aFZISGNEbWVPbG5VRUJuTl9fdlpEdHQ1ZExwRmsyOHc1OUxMSkpMRTNfMUMwMnFtbQ?oc=5",
-        "published_at_kst": "2026-04-09T11:05:30+09:00",
-        "source": "이데일리",
-        "summary": "<a href=\"https://news.google.com/rss/articles/CBMigAFBVV95cUxOd0pUNWM4bi1famo3MzA5bW5lYWV5akhvQ0o3eTNDOHBTZkV0b3Y0dkNYTllpdUR4SERvODVFU3dvc3dzcnZCNHA2QXRwS1Z6aFZISGNEbWVPbG5VRUJuTl9fdlpEdHQ1ZExwRmsyOHc1OUxMSkpMRTNfMUMwMnFtbQ?oc=5\" target=\"_blank\">\"AI·재생에너지 전환…유연성 자원 확보에 성패 달려\"</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">이데일리</font>",
+        "title": "선익시스템, 북미 법인 설립…페로브스카이트 상용화 대응 - 디일렉",
+        "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFAxZ2x2Y04waHR6MWFacjlJN29wckU3MHY2akFWcVgxeFBaUkpoN3VyVE1JYndJZEFfQ0dtRWJsTTFuYlFqZTRuRnJSRFVOQTk0NTRHY3BkcTBxaVpEdkxBLUFuaWp2dw?oc=5",
+        "published_at_kst": "2026-04-10T04:09:43+09:00",
+        "source": "디일렉",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiZkFVX3lxTFAxZ2x2Y04waHR6MWFacjlJN29wckU3MHY2akFWcVgxeFBaUkpoN3VyVE1JYndJZEFfQ0dtRWJsTTFuYlFqZTRuRnJSRFVOQTk0NTRHY3BkcTBxaVpEdkxBLUFuaWp2dw?oc=5\" target=\"_blank\">선익시스템, 북미 법인 설립…페로브스카이트 상용화 대응</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">디일렉</font>",
         "label": "MARKET_SNAPSHOT",
-        "reason": "재생에너지 전환 및 유연성 자원 확보에 대한 산업 동향을 다루고 있음"
+        "reason": "국내 기업의 북미 법인 설립 및 페로브스카이트 상용화 대응은 재생에너지(태양광) 시장·산업 동향으로 분산전원·VRE 영향 가능하여 간접적 시장 인사이트 제공"
       },
       {
-        "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
-        "title": "프랑스 12GW 재생에너지 입찰, '유럽 우선주의' 강화로 한국 기업 전략 전환 요구 - 유스연합",
-        "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5qUGRnbzRwMjhPamRSbndGRmNzclFnZF9hVVBjSWVsQkp6U1VxbnBRRnVEc2VZc21rTm9yWVAtZ3pMYkcxLXRxd3RvbFNpLWVuNkE?oc=5",
-        "published_at_kst": "2026-04-09T20:45:28+09:00",
-        "source": "유스연합",
-        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiUkFVX3lxTE5qUGRnbzRwMjhPamRSbndGRmNzclFnZF9hVVBjSWVsQkp6U1VxbnBRRnVEc2VZc21rTm9yWVAtZ3pMYkcxLXRxd3RvbFNpLWVuNkE?oc=5\" target=\"_blank\">프랑스 12GW 재생에너지 입찰, '유럽 우선주의' 강화로 한국 기업 전략 전환 요구</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">유스연합</font>",
-        "label": "MARKET_SNAPSHOT",
-        "reason": "프랑스 재생에너지 입찰 뉴스는 한국 기업의 전략 전환과 관련된 시장 동향을 반영"
+        "keyword": "전기차 충전 OR 전기자동차 OR EV 충전 OR V2G OR 충전인프라 OR K-충전 OR 충전사업자 OR 충전CPO",
+        "title": "주말 낮 시간대 공공 전기차 충전 요금 할인(4/18~) - 전체 | 카드/한컷 | 멀티미디어 - 대한민국 정책브리핑",
+        "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPMnR0TWdKMEh5NWRSaGlxTmRMWlk3NUR0ZWVmdDBSV085SzF2SHBETjRKZ1A5SDU2SEFNZEx5VmdIM0ZoMWltdUJJMHN4XzdCcUpKUkFSc3otSnQ3cU1CRGJaOG9JN240R0UyVHRpSTdHT0k4bWRpaE5zNVoxU1dPQURTdGE3b3lUdFJN?oc=5",
+        "published_at_kst": "2026-04-10T04:51:08+09:00",
+        "source": "대한민국 정책브리핑",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiiwFBVV95cUxPMnR0TWdKMEh5NWRSaGlxTmRMWlk3NUR0ZWVmdDBSV085SzF2SHBETjRKZ1A5SDU2SEFNZEx5VmdIM0ZoMWltdUJJMHN4XzdCcUpKUkFSc3otSnQ3cU1CRGJaOG9JN240R0UyVHRpSTdHT0k4bWRpaE5zNVoxU1dPQURTdGE3b3lUdFJN?oc=5\" target=\"_blank\">주말 낮 시간대 공공 전기차 충전 요금 할인(4/18~) - 전체 | 카드/한컷 | 멀티미디어</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">대한민국 정책브리핑</font>",
+        "label": "TOP",
+        "reason": "정부 발표로 공공 전기차 충전요금 할인(4/18~) 시행되어 충전요금·가격 신호 변화로 시장 참여자 수익구조와 수요에 직접적 영향"
       }
     ]
   },
   {
     "cluster_id": 3,
-    "cluster_topic": "아이파크 현대산업개발 등 건물일체형 태양광·녹색기술 경쟁…아파트 ‘에너지 생산 기지’로 진화 - 녹색경제신문",
-    "article_count": 1,
+    "cluster_topic": "디아이, 브이텐시스템 인수로 2차전지·ESS 날개… 사업 다각화 결실 - 핀포인트뉴스",
+    "article_count": 5,
     "representative": {
       "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
-      "title": "아이파크 현대산업개발 등 건물일체형 태양광·녹색기술 경쟁…아파트 ‘에너지 생산 기지’로 진화 - 녹색경제신문",
-      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE4zVzAyRU9tLTRiSV9uQmFrczRhVzhrSE5SSzNlYV96NDdzTmgtQzQyd1BRcFVMd1I1WHFLZ3hZd1ZtNlRxSG45bHJpbHNTczBEN0tVY3I1dzFuTGYyZkNvUWFZdVRJNnkz?oc=5",
-      "published_at_kst": "2026-04-09T12:50:04+09:00",
-      "source": "녹색경제신문",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiaEFVX3lxTE4zVzAyRU9tLTRiSV9uQmFrczRhVzhrSE5SSzNlYV96NDdzTmgtQzQyd1BRcFVMd1I1WHFLZ3hZd1ZtNlRxSG45bHJpbHNTczBEN0tVY3I1dzFuTGYyZkNvUWFZdVRJNnkz?oc=5\" target=\"_blank\">아이파크 현대산업개발 등 건물일체형 태양광·녹색기술 경쟁…아파트 ‘에너지 생산 기지’로 진화</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">녹색경제신문</font>",
+      "title": "풍력 블레이드 원가절감 및 육성방안 모색 - 이투뉴스",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1scjFLaTJEU05sMHVfdG53aHJJTS1EMjRwQ24xa1ZkNzhnbWplR3V0SVdKSXBlZFF6a2NodW45TEdsY0Rsa0plYVFZUHVVU3RiYzFaRWRsNUUyWmFxRXE4aFJzLUNmVm_SAWtBVV95cUxNczNpUEFDOFh3Nk80bHVUQlRWeExjMF9jQ3B0emp3Zm5jUDBPdmQxeGNpQ3VWQ1hjbkc5ZktDakhkZmFUOEhNNUFLNmx3Y3pFbnU2R3FydHhNOGcybWtGRFJscWNkSXlMeFBSSQ?oc=5",
+      "published_at_kst": "2026-04-10T02:18:05+09:00",
+      "source": "이투뉴스",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1scjFLaTJEU05sMHVfdG53aHJJTS1EMjRwQ24xa1ZkNzhnbWplR3V0SVdKSXBlZFF6a2NodW45TEdsY0Rsa0plYVFZUHVVU3RiYzFaRWRsNUUyWmFxRXE4aFJzLUNmVm_SAWtBVV95cUxNczNpUEFDOFh3Nk80bHVUQlRWeExjMF9jQ3B0emp3Zm5jUDBPdmQxeGNpQ3VWQ1hjbkc5ZktDakhkZmFUOEhNNUFLNmx3Y3pFbnU2R3FydHhNOGcybWtGRFJscWNkSXlMeFBSSQ?oc=5\" target=\"_blank\">풍력 블레이드 원가절감 및 육성방안 모색</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">이투뉴스</font>",
       "label": "MARKET_SNAPSHOT",
-      "reason": "건물일체형 태양광 및 녹색기술 경쟁이 아파트의 에너지 생산 기지로의 진화를 언급함으로써 수요관리 및 재생에너지 시장 동향과 관련이 있음"
+      "reason": "풍력 블레이드 원가절감·육성방안은 재생에너지 산업 경쟁력·육성 논의로 시장·산업 동향에 해당하며(공식 제도·요금·규칙 변경 확정 아님) MARKET_SNAPSHOT로 분류합니다."
     },
     "articles": [
       {
-        "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
-        "title": "아이파크 현대산업개발 등 건물일체형 태양광·녹색기술 경쟁…아파트 ‘에너지 생산 기지’로 진화 - 녹색경제신문",
-        "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE4zVzAyRU9tLTRiSV9uQmFrczRhVzhrSE5SSzNlYV96NDdzTmgtQzQyd1BRcFVMd1I1WHFLZ3hZd1ZtNlRxSG45bHJpbHNTczBEN0tVY3I1dzFuTGYyZkNvUWFZdVRJNnkz?oc=5",
-        "published_at_kst": "2026-04-09T12:50:04+09:00",
-        "source": "녹색경제신문",
-        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiaEFVX3lxTE4zVzAyRU9tLTRiSV9uQmFrczRhVzhrSE5SSzNlYV96NDdzTmgtQzQyd1BRcFVMd1I1WHFLZ3hZd1ZtNlRxSG45bHJpbHNTczBEN0tVY3I1dzFuTGYyZkNvUWFZdVRJNnkz?oc=5\" target=\"_blank\">아이파크 현대산업개발 등 건물일체형 태양광·녹색기술 경쟁…아파트 ‘에너지 생산 기지’로 진화</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">녹색경제신문</font>",
+        "keyword": "ESS OR 에너지저장장치 OR BESS OR 배터리에너지저장장치",
+        "title": "디아이, 브이텐시스템 인수로 2차전지·ESS 날개… 사업 다각화 결실 - 핀포인트뉴스",
+        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBfOWk3WVBhZy1GaG92MWI2N1k1eTVaTlpKQk5aR0RMOE95R2lpVTJqcE5tRHFiNWxNVVNjWm91eDlrYl91NFNMaEtKeWVVZHo0eTFxMHdRYS1uN21tazY1N0NBQmVuN2E1ZzQ5MklGSXN2R2vSAXdBVV95cUxNa1hBN0puM0VmV2g4WnBZMHRKc0JFYkVNUUdqRjU1MlJHQUEzVjZCVXNBRjk5em1HT1lobXJhdFMxN3RwSG1sUVh3LU96TjAxVlB2X2x1eGhBMzc0QTBlaTdhVkpXV3hCOHNxc3JMRGw5U2NtWFVGNA?oc=5",
+        "published_at_kst": "2026-04-10T04:37:51+09:00",
+        "source": "핀포인트뉴스",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMic0FVX3lxTFBfOWk3WVBhZy1GaG92MWI2N1k1eTVaTlpKQk5aR0RMOE95R2lpVTJqcE5tRHFiNWxNVVNjWm91eDlrYl91NFNMaEtKeWVVZHo0eTFxMHdRYS1uN21tazY1N0NBQmVuN2E1ZzQ5MklGSXN2R2vSAXdBVV95cUxNa1hBN0puM0VmV2g4WnBZMHRKc0JFYkVNUUdqRjU1MlJHQUEzVjZCVXNBRjk5em1HT1lobXJhdFMxN3RwSG1sUVh3LU96TjAxVlB2X2x1eGhBMzc0QTBlaTdhVkpXV3hCOHNxc3JMRGw5U2NtWFVGNA?oc=5\" target=\"_blank\">디아이, 브이텐시스템 인수로 2차전지·ESS 날개… 사업 다각화 결실</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">핀포인트뉴스</font>",
         "label": "MARKET_SNAPSHOT",
-        "reason": "건물일체형 태양광 및 녹색기술 경쟁이 아파트의 에너지 생산 기지로의 진화를 언급함으로써 수요관리 및 재생에너지 시장 동향과 관련이 있음"
+        "reason": "디아이의 브이텐시스템 인수는 2차전지·ESS로의 사업확장(기업 M&A)에 따른 산업·시장 동향으로, 그리드위즈의 ESS·VPP 관련 시장 영향 가능성이 있어 MARKET_SNAPSHOT로 분류."
+      },
+      {
+        "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
+        "title": "[칼럼] 원유·핵심 원자재 추가 확보와 재생에너지 전환 가속, 더 이상 미룰 수 없다 - 케이에스피뉴스",
+        "link": "https://news.google.com/rss/articles/CBMiREFVX3lxTE9laXB5RldubHFqZHVzdlJIbFJTREdmVVpSOF8tVFlrZEt3OXZJcUpadjNoNnVkbEZGSF82LXdaSEpHamta?oc=5",
+        "published_at_kst": "2026-04-10T03:12:00+09:00",
+        "source": "케이에스피뉴스",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiREFVX3lxTE9laXB5RldubHFqZHVzdlJIbFJTREdmVVpSOF8tVFlrZEt3OXZJcUpadjNoNnVkbEZGSF82LXdaSEpHamta?oc=5\" target=\"_blank\">[칼럼] 원유·핵심 원자재 추가 확보와 재생에너지 전환 가속, 더 이상 미룰 수 없다</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">케이에스피뉴스</font>",
+        "label": "MARKET_SNAPSHOT",
+        "reason": "원유·핵심 원자재 확보와 재생에너지 전환을 주장하는 칼럼성 기사로, 정부·규제의 확정 조치나 시장제도 변경은 아니지만 에너지 전환 관련 산업·시장 논의에 영향을 주는 성격이므로 MARKET_SNAPSHOT"
+      },
+      {
+        "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
+        "title": "풍력 블레이드 원가절감 및 육성방안 모색 - 이투뉴스",
+        "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1scjFLaTJEU05sMHVfdG53aHJJTS1EMjRwQ24xa1ZkNzhnbWplR3V0SVdKSXBlZFF6a2NodW45TEdsY0Rsa0plYVFZUHVVU3RiYzFaRWRsNUUyWmFxRXE4aFJzLUNmVm_SAWtBVV95cUxNczNpUEFDOFh3Nk80bHVUQlRWeExjMF9jQ3B0emp3Zm5jUDBPdmQxeGNpQ3VWQ1hjbkc5ZktDakhkZmFUOEhNNUFLNmx3Y3pFbnU2R3FydHhNOGcybWtGRFJscWNkSXlMeFBSSQ?oc=5",
+        "published_at_kst": "2026-04-10T02:18:05+09:00",
+        "source": "이투뉴스",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1scjFLaTJEU05sMHVfdG53aHJJTS1EMjRwQ24xa1ZkNzhnbWplR3V0SVdKSXBlZFF6a2NodW45TEdsY0Rsa0plYVFZUHVVU3RiYzFaRWRsNUUyWmFxRXE4aFJzLUNmVm_SAWtBVV95cUxNczNpUEFDOFh3Nk80bHVUQlRWeExjMF9jQ3B0emp3Zm5jUDBPdmQxeGNpQ3VWQ1hjbkc5ZktDakhkZmFUOEhNNUFLNmx3Y3pFbnU2R3FydHhNOGcybWtGRFJscWNkSXlMeFBSSQ?oc=5\" target=\"_blank\">풍력 블레이드 원가절감 및 육성방안 모색</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">이투뉴스</font>",
+        "label": "MARKET_SNAPSHOT",
+        "reason": "풍력 블레이드 원가절감·육성방안은 재생에너지 산업 경쟁력·육성 논의로 시장·산업 동향에 해당하며(공식 제도·요금·규칙 변경 확정 아님) MARKET_SNAPSHOT로 분류합니다."
+      },
+      {
+        "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
+        "title": "선익시스템, 미국 법인 설립…페로브스카이트 태양전지 장비 시장 공략 - 네이트",
+        "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBYSjgzOXBIVl91R0RXekVOZG1XTHpOTkZNMEEyLUd1RzFKWHBJVkVtVEhDYV8wVDBtdTFGRXp2dlpNd0V5YVlKSWtYSTVxWUxscnpF?oc=5",
+        "published_at_kst": "2026-04-10T02:04:00+09:00",
+        "source": "네이트",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiU0FVX3lxTFBYSjgzOXBIVl91R0RXekVOZG1XTHpOTkZNMEEyLUd1RzFKWHBJVkVtVEhDYV8wVDBtdTFGRXp2dlpNd0V5YVlKSWtYSTVxWUxscnpF?oc=5\" target=\"_blank\">선익시스템, 미국 법인 설립…페로브스카이트 태양전지 장비 시장 공략</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">네이트</font>",
+        "label": "MARKET_SNAPSHOT",
+        "reason": "국내 장비업체의 미국 법인 설립은 페로브스카이트 태양전지 장비 시장 진출을 보여주는 기업 투자·동향으로, 재생에너지·장비 시장에 대한 간접적 영향이 있음."
+      },
+      {
+        "keyword": "전기요금 OR PPA OR 기후부",
+        "title": "정부, 전기의날 맞아 재생에너지 속도…김성환 기후부 장관 \"전기국가 실현' - 뉴스핌",
+        "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5GWVhmeGlwWGRRbzRmOEUya1BEeDZzc0pyWlZESUJScXhycFBVdVdEdDJpdXFLcV9kaGhlMEUwaGprX0lOdnZvUWRJU0FkSTM4VlNFdml1NjNXSE82?oc=5",
+        "published_at_kst": "2026-04-10T02:00:00+09:00",
+        "source": "뉴스핌",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiXEFVX3lxTE5GWVhmeGlwWGRRbzRmOEUya1BEeDZzc0pyWlZESUJScXhycFBVdVdEdDJpdXFLcV9kaGhlMEUwaGprX0lOdnZvUWRJU0FkSTM4VlNFdml1NjNXSE82?oc=5\" target=\"_blank\">정부, 전기의날 맞아 재생에너지 속도…김성환 기후부 장관 \"전기국가 실현'</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">뉴스핌</font>",
+        "label": "TOP",
+        "reason": "기후부 장관의 재생에너지 속도화 추진(정부 차원의 정책 의지 표명)은 전력전환·수요관리·VPP·충전 인프라 등 시장·제도에 영향 가능"
       }
     ]
   },
   {
     "cluster_id": 4,
-    "cluster_topic": "북미 ESS시장, 中 기업 퇴출에 사실상 한일전 양상 - 스트레이트뉴스",
-    "article_count": 1,
+    "cluster_topic": "선익시스템, 美 현지 법인 설립 ··· 차세대 태양광 제조 인프라 시장 공략 - 데이터넷",
+    "article_count": 5,
     "representative": {
-      "keyword": "ESS OR 에너지저장장치 OR BESS OR 배터리에너지저장장치",
-      "title": "북미 ESS시장, 中 기업 퇴출에 사실상 한일전 양상 - 스트레이트뉴스",
-      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9Jd2ZBTkEzM0k2SXN0UzUwbnN4bTNYS3I3NFUwWXZYODhLUVlxYTZWN1J3Z1lqR2pDTnJkLVBYcWpIdXR0UHF1VEFuRHdacC1aeFl1SXNMTGJ3bDlYLXJlTTVnZkVSdEJJSzR0UkVwVUpJUUnSAXdBVV95cUxObC01bi0xS3FKcWtqcklQc2JTZDJLVnk4S3ItemlOazR4MkFVYVdfcmFRZ3QtMW51eXk3S3JSZ1NTZzFra2N1dlVCQ2p1YktBNzhsUHI4WF9OZ2lKVjhGNmFneFNTSFhzNVN3UU5TaVJXN1lKX3hocw?oc=5",
-      "published_at_kst": "2026-04-09T09:55:29+09:00",
-      "source": "스트레이트뉴스",
-      "summary": "<a href=\"https://news.google.com/rss/articles/CBMic0FVX3lxTE9Jd2ZBTkEzM0k2SXN0UzUwbnN4bTNYS3I3NFUwWXZYODhLUVlxYTZWN1J3Z1lqR2pDTnJkLVBYcWpIdXR0UHF1VEFuRHdacC1aeFl1SXNMTGJ3bDlYLXJlTTVnZkVSdEJJSzR0UkVwVUpJUUnSAXdBVV95cUxObC01bi0xS3FKcWtqcklQc2JTZDJLVnk4S3ItemlOazR4MkFVYVdfcmFRZ3QtMW51eXk3S3JSZ1NTZzFra2N1dlVCQ2p1YktBNzhsUHI4WF9OZ2lKVjhGNmFneFNTSFhzNVN3UU5TaVJXN1lKX3hocw?oc=5\" target=\"_blank\">북미 ESS시장, 中 기업 퇴출에 사실상 한일전 양상</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">스트레이트뉴스</font>",
-      "label": "MARKET_SNAPSHOT",
-      "reason": "북미 ESS 시장 동향 및 한일 기업 경쟁 양상에 대한 정보"
+      "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
+      "title": "“기관이 RE100을?” 공공이 관여한 PPA 확산에 시장 혼선 우려 - 전기신문",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE81N1VTeHFNbW1pdUFxUUxXWTdfY2J0V1ZLbko5NXh4cE1TNEFuNXpLZ09tVGR4d2FxckhpdlBhd1JYTTRoWU52N3c4YXYyc3Vyd2dVWm1QU0dycFhkaHh1ZVdaS0w1VWRRc2V3adIBcEFVX3lxTE5ZMkVMVmZCbHEtajZ1b2ZTVmNPd1VTVFJEQ1ROODBFWWJOR2E2eHFta1czR3RrbzZvanNMdkE5dzVDU3NjZXlDN2d0TUJzYXdjTzNWQlRtYTZ5YmV0YXJmbm5OYlhhQkxMWE0ySmp6a1o?oc=5",
+      "published_at_kst": "2026-04-10T00:30:45+09:00",
+      "source": "전기신문",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMibEFVX3lxTE81N1VTeHFNbW1pdUFxUUxXWTdfY2J0V1ZLbko5NXh4cE1TNEFuNXpLZ09tVGR4d2FxckhpdlBhd1JYTTRoWU52N3c4YXYyc3Vyd2dVWm1QU0dycFhkaHh1ZVdaS0w1VWRRc2V3adIBcEFVX3lxTE5ZMkVMVmZCbHEtajZ1b2ZTVmNPd1VTVFJEQ1ROODBFWWJOR2E2eHFta1czR3RrbzZvanNMdkE5dzVDU3NjZXlDN2d0TUJzYXdjTzNWQlRtYTZ5YmV0YXJmbm5OYlhhQkxMWE0ySmp6a1o?oc=5\" target=\"_blank\">“기관이 RE100을?” 공공이 관여한 PPA 확산에 시장 혼선 우려</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">전기신문</font>",
+      "label": "TOP",
+      "reason": "공공 참여 PPA 확산은 RE100·재생에너지 직접구매 시장과 전력거래·가격 구조에 영향을 미쳐 제도·시장 혼선 우려가 있어 정책·시장 영향도가 큼"
     },
     "articles": [
       {
-        "keyword": "ESS OR 에너지저장장치 OR BESS OR 배터리에너지저장장치",
-        "title": "북미 ESS시장, 中 기업 퇴출에 사실상 한일전 양상 - 스트레이트뉴스",
-        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9Jd2ZBTkEzM0k2SXN0UzUwbnN4bTNYS3I3NFUwWXZYODhLUVlxYTZWN1J3Z1lqR2pDTnJkLVBYcWpIdXR0UHF1VEFuRHdacC1aeFl1SXNMTGJ3bDlYLXJlTTVnZkVSdEJJSzR0UkVwVUpJUUnSAXdBVV95cUxObC01bi0xS3FKcWtqcklQc2JTZDJLVnk4S3ItemlOazR4MkFVYVdfcmFRZ3QtMW51eXk3S3JSZ1NTZzFra2N1dlVCQ2p1YktBNzhsUHI4WF9OZ2lKVjhGNmFneFNTSFhzNVN3UU5TaVJXN1lKX3hocw?oc=5",
-        "published_at_kst": "2026-04-09T09:55:29+09:00",
-        "source": "스트레이트뉴스",
-        "summary": "<a href=\"https://news.google.com/rss/articles/CBMic0FVX3lxTE9Jd2ZBTkEzM0k2SXN0UzUwbnN4bTNYS3I3NFUwWXZYODhLUVlxYTZWN1J3Z1lqR2pDTnJkLVBYcWpIdXR0UHF1VEFuRHdacC1aeFl1SXNMTGJ3bDlYLXJlTTVnZkVSdEJJSzR0UkVwVUpJUUnSAXdBVV95cUxObC01bi0xS3FKcWtqcklQc2JTZDJLVnk4S3ItemlOazR4MkFVYVdfcmFRZ3QtMW51eXk3S3JSZ1NTZzFra2N1dlVCQ2p1YktBNzhsUHI4WF9OZ2lKVjhGNmFneFNTSFhzNVN3UU5TaVJXN1lKX3hocw?oc=5\" target=\"_blank\">북미 ESS시장, 中 기업 퇴출에 사실상 한일전 양상</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">스트레이트뉴스</font>",
+        "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
+        "title": "선익시스템, 美 현지 법인 설립 ··· 차세대 태양광 제조 인프라 시장 공략 - 데이터넷",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE13QkZGRzVoR0ViNUdyMmpCNVJNMDF4aHVPZWJOazFwNlJOVHVuYjRJWHNXSC1mSlhXUHg4NU1fSG9IWjRNX2w3Y2ZTRUhyNGxaRkdkVkF4VmNUd25SN2pkaVlsTEtqeFNMdzhFWA?oc=5",
+        "published_at_kst": "2026-04-10T04:37:35+09:00",
+        "source": "데이터넷",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMibEFVX3lxTE13QkZGRzVoR0ViNUdyMmpCNVJNMDF4aHVPZWJOazFwNlJOVHVuYjRJWHNXSC1mSlhXUHg4NU1fSG9IWjRNX2w3Y2ZTRUhyNGxaRkdkVkF4VmNUd25SN2pkaVlsTEtqeFNMdzhFWA?oc=5\" target=\"_blank\">선익시스템, 美 현지 법인 설립 ··· 차세대 태양광 제조 인프라 시장 공략</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">데이터넷</font>",
         "label": "MARKET_SNAPSHOT",
-        "reason": "북미 ESS 시장 동향 및 한일 기업 경쟁 양상에 대한 정보"
+        "reason": "선익시스템의 美 현지법인 설립은 태양광 제조 인프라 분야의 기업 투자·해외진출 소식으로 시장 동향에 해당하며 그리드위즈의 재생에너지·연계사업에 간접적 영향 가능"
+      },
+      {
+        "keyword": "전력시장 OR 전력계통 OR 전력시스템 OR 전력거래소 OR 계통안정화 OR 광역정전 OR 대규모정전",
+        "title": "전력거래소, 에너지 전환에 발맞춘 전력규제 거버넌스 논의 - 네이트",
+        "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9TZDVQaVAxZkExM3pyemVHcS1ac1ItYmM1RVlNTldIS2lYU0JLY3lIcVR6X3NscGFwTWpjRk9nSHNaRUxYSHRzRWlLU2NRNkZzTF9j?oc=5",
+        "published_at_kst": "2026-04-10T02:07:00+09:00",
+        "source": "네이트",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiU0FVX3lxTE9TZDVQaVAxZkExM3pyemVHcS1ac1ItYmM1RVlNTldIS2lYU0JLY3lIcVR6X3NscGFwTWpjRk9nSHNaRUxYSHRzRWlLU2NRNkZzTF9j?oc=5\" target=\"_blank\">전력거래소, 에너지 전환에 발맞춘 전력규제 거버넌스 논의</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">네이트</font>",
+        "label": "MARKET_SNAPSHOT",
+        "reason": "전력거래소가 에너지 전환 대응 차원의 전력규제 거버넌스 논의를 진행한 보도로 제도·시장에 영향 가능성은 있으나 확정된 정책·법령·시장 규칙 변화 발표가 아니라 논의 수준임."
+      },
+      {
+        "keyword": "전기차 충전 OR 전기자동차 OR EV 충전 OR V2G OR 충전인프라 OR K-충전 OR 충전사업자 OR 충전CPO",
+        "title": "치킨 먹으면서 9분 만에 충전 끝…BYD, 중국 KFC와 맞손 - 디지털투데이",
+        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9NUldIc21qUC1VZHBfYlkxZ3dqUDRoS3kyMEpXaE9zQnlJRnhtY1lHR0psM0xQeUU1NzJvZWVBSU04R0hDZXRYMWc5b19PNXpQVjhrd1JNT3NJR2ZteS1FaHJBNjdobElLdGNDcGREMXhqUnM?oc=5",
+        "published_at_kst": "2026-04-10T01:12:00+09:00",
+        "source": "디지털투데이",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMic0FVX3lxTE9NUldIc21qUC1VZHBfYlkxZ3dqUDRoS3kyMEpXaE9zQnlJRnhtY1lHR0psM0xQeUU1NzJvZWVBSU04R0hDZXRYMWc5b19PNXpQVjhrd1JNT3NJR2ZteS1FaHJBNjdobElLdGNDcGREMXhqUnM?oc=5\" target=\"_blank\">치킨 먹으면서 9분 만에 충전 끝…BYD, 중국 KFC와 맞손</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">디지털투데이</font>",
+        "label": "MARKET_SNAPSHOT",
+        "reason": "중국 BYD의 KFC 제휴는 전기차 충전 인프라 확대·서비스 모델 관련 해외 시장 동향으로, 그리드위즈의 전기차 충전 사업에 간접적 시사점을 줌."
+      },
+      {
+        "keyword": "AI 데이터센터 OR 데이터센터 OR 전력수요",
+        "title": "[숏폼] '100% 중국산' 알리바바, 자체 칩 탑재 AI 데이터센터 구축 - SBS Biz",
+        "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9Vc1pybGdMU2JPU3BmcWs2S0pwQ2g1WlpXRUVjcnh5ZC1TUXF0d2VlVTdoT2RwcGFiWnNWS2tEYmZmMWFRVUlweGQ5VEFGSzZHSkV30gFYQVVfeXFMTWpXODlHSHJyelVhaWlnMUt0ajJLTl9PZDBvbkVUZEtHLVFjc21JWHRLNFcxYTJvYkJsWUhmVTJzWWM0YmRJcEVyZThsVERUcUNtYnhpdnlMZQ?oc=5",
+        "published_at_kst": "2026-04-10T01:10:00+09:00",
+        "source": "SBS Biz",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiU0FVX3lxTE9Vc1pybGdMU2JPU3BmcWs2S0pwQ2g1WlpXRUVjcnh5ZC1TUXF0d2VlVTdoT2RwcGFiWnNWS2tEYmZmMWFRVUlweGQ5VEFGSzZHSkV30gFYQVVfeXFMTWpXODlHSHJyelVhaWlnMUt0ajJLTl9PZDBvbkVUZEtHLVFjc21JWHRLNFcxYTJvYkJsWUhmVTJzWWM0YmRJcEVyZThsVERUcUNtYnhpdnlMZQ?oc=5\" target=\"_blank\">[숏폼] '100% 중국산' 알리바바, 자체 칩 탑재 AI 데이터센터 구축</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">SBS Biz</font>",
+        "label": "MARKET_SNAPSHOT",
+        "reason": "알리바바의 자체 칩 탑재 AI 데이터센터 구축은 대규모 전력수요와 데이터센터 운영 방식 변화에 대한 산업·수요관리 동향으로 그리드위즈의 DR/VPP·데이터센터 전력시장 관점에서 유의미함."
+      },
+      {
+        "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
+        "title": "“기관이 RE100을?” 공공이 관여한 PPA 확산에 시장 혼선 우려 - 전기신문",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE81N1VTeHFNbW1pdUFxUUxXWTdfY2J0V1ZLbko5NXh4cE1TNEFuNXpLZ09tVGR4d2FxckhpdlBhd1JYTTRoWU52N3c4YXYyc3Vyd2dVWm1QU0dycFhkaHh1ZVdaS0w1VWRRc2V3adIBcEFVX3lxTE5ZMkVMVmZCbHEtajZ1b2ZTVmNPd1VTVFJEQ1ROODBFWWJOR2E2eHFta1czR3RrbzZvanNMdkE5dzVDU3NjZXlDN2d0TUJzYXdjTzNWQlRtYTZ5YmV0YXJmbm5OYlhhQkxMWE0ySmp6a1o?oc=5",
+        "published_at_kst": "2026-04-10T00:30:45+09:00",
+        "source": "전기신문",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMibEFVX3lxTE81N1VTeHFNbW1pdUFxUUxXWTdfY2J0V1ZLbko5NXh4cE1TNEFuNXpLZ09tVGR4d2FxckhpdlBhd1JYTTRoWU52N3c4YXYyc3Vyd2dVWm1QU0dycFhkaHh1ZVdaS0w1VWRRc2V3adIBcEFVX3lxTE5ZMkVMVmZCbHEtajZ1b2ZTVmNPd1VTVFJEQ1ROODBFWWJOR2E2eHFta1czR3RrbzZvanNMdkE5dzVDU3NjZXlDN2d0TUJzYXdjTzNWQlRtYTZ5YmV0YXJmbm5OYlhhQkxMWE0ySmp6a1o?oc=5\" target=\"_blank\">“기관이 RE100을?” 공공이 관여한 PPA 확산에 시장 혼선 우려</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">전기신문</font>",
+        "label": "TOP",
+        "reason": "공공 참여 PPA 확산은 RE100·재생에너지 직접구매 시장과 전력거래·가격 구조에 영향을 미쳐 제도·시장 혼선 우려가 있어 정책·시장 영향도가 큼"
+      }
+    ]
+  },
+  {
+    "cluster_id": 5,
+    "cluster_topic": "‘전기 먹는 하마’ AI 데이터센터, 바닷속으로 간다 - kmjournal.net",
+    "article_count": 5,
+    "representative": {
+      "keyword": "AI 데이터센터 OR 데이터센터 OR 전력수요",
+      "title": "SK텔레콤, Arm·리벨리온과 AI데이터센터 효율화 나선다 - fetv.co.kr",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1Ga0xiRlJ5X3FlbEVEVVVFQTNNb050U01mQi0xQ3lVME1vdXAydlZ6alVMdkEyQnA1ZDRYWGU4LWJqcGsxU0RBcHQwNFQ2RG1BR2cwX2NFVUFLTlViaWRR?oc=5",
+      "published_at_kst": "2026-04-10T01:46:40+09:00",
+      "source": "fetv.co.kr",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiX0FVX3lxTE1Ga0xiRlJ5X3FlbEVEVVVFQTNNb050U01mQi0xQ3lVME1vdXAydlZ6alVMdkEyQnA1ZDRYWGU4LWJqcGsxU0RBcHQwNFQ2RG1BR2cwX2NFVUFLTlViaWRR?oc=5\" target=\"_blank\">SK텔레콤, Arm·리벨리온과 AI데이터센터 효율화 나선다</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">fetv.co.kr</font>",
+      "label": "MARKET_SNAPSHOT",
+      "reason": "AI 데이터센터 전력 효율화 관련 SK텔레콤·Arm·리벨리온 협업은 수요관리·데이터센터 운영 방식 변화와 시장 동향에 간접적 영향이 있어 MARKET_SNAPSHOT로 분류됩니다."
+    },
+    "articles": [
+      {
+        "keyword": "AI 데이터센터 OR 데이터센터 OR 전력수요",
+        "title": "SK텔레콤, Arm·리벨리온과 AI데이터센터 효율화 나선다 - fetv.co.kr",
+        "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1Ga0xiRlJ5X3FlbEVEVVVFQTNNb050U01mQi0xQ3lVME1vdXAydlZ6alVMdkEyQnA1ZDRYWGU4LWJqcGsxU0RBcHQwNFQ2RG1BR2cwX2NFVUFLTlViaWRR?oc=5",
+        "published_at_kst": "2026-04-10T01:46:40+09:00",
+        "source": "fetv.co.kr",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiX0FVX3lxTE1Ga0xiRlJ5X3FlbEVEVVVFQTNNb050U01mQi0xQ3lVME1vdXAydlZ6alVMdkEyQnA1ZDRYWGU4LWJqcGsxU0RBcHQwNFQ2RG1BR2cwX2NFVUFLTlViaWRR?oc=5\" target=\"_blank\">SK텔레콤, Arm·리벨리온과 AI데이터센터 효율화 나선다</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">fetv.co.kr</font>",
+        "label": "MARKET_SNAPSHOT",
+        "reason": "AI 데이터센터 전력 효율화 관련 SK텔레콤·Arm·리벨리온 협업은 수요관리·데이터센터 운영 방식 변화와 시장 동향에 간접적 영향이 있어 MARKET_SNAPSHOT로 분류됩니다."
+      },
+      {
+        "keyword": "AI 데이터센터 OR 데이터센터 OR 전력수요",
+        "title": "구글, 인텔과 '맞손'…AI 데이터센터에 인텔 CPU 도입 확대키로 - news1.kr",
+        "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBxbmlFSmhPTWdxWHdmdEFYallmeXhkOEFORFJKUVhLNU9PeEs0cWgxeXpadHJVY0FOMXdNMVBENzFMVTVZQWxfd1BiRTRVN1lWT1lVbEdsZkM?oc=5",
+        "published_at_kst": "2026-04-10T02:14:20+09:00",
+        "source": "news1.kr",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiWEFVX3lxTFBxbmlFSmhPTWdxWHdmdEFYallmeXhkOEFORFJKUVhLNU9PeEs0cWgxeXpadHJVY0FOMXdNMVBENzFMVTVZQWxfd1BiRTRVN1lWT1lVbEdsZkM?oc=5\" target=\"_blank\">구글, 인텔과 '맞손'…AI 데이터센터에 인텔 CPU 도입 확대키로</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">news1.kr</font>",
+        "label": "MARKET_SNAPSHOT",
+        "reason": "구글의 AI 데이터센터용 CPU 도입 확대는 데이터센터 전력수요 및 운영 방식에 간접적 영향을 미쳐 수요관리·전력수요 동향 관점에서 의미 있음."
+      },
+      {
+        "keyword": "AI 데이터센터 OR 데이터센터 OR 전력수요",
+        "title": "SKT·Arm·리벨리온 'AI동맹'…글로벌 데이터센터 공략 - 경제타임스",
+        "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE05cVM4N1Z5OHlJMU5GZkt4RHhlRER0enJRWlFXN2JfQ0h6dG1QaVgtZ0ZuY3gyVG1nNTR2ZkR5NmlGNm11cVdtellTYWFXWDBTZlFB?oc=5",
+        "published_at_kst": "2026-04-10T03:02:59+09:00",
+        "source": "경제타임스",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiU0FVX3lxTE05cVM4N1Z5OHlJMU5GZkt4RHhlRER0enJRWlFXN2JfQ0h6dG1QaVgtZ0ZuY3gyVG1nNTR2ZkR5NmlGNm11cVdtellTYWFXWDBTZlFB?oc=5\" target=\"_blank\">SKT·Arm·리벨리온 'AI동맹'…글로벌 데이터센터 공략</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">경제타임스</font>",
+        "label": "MARKET_SNAPSHOT",
+        "reason": "SKT·Arm·리벨리온의 AI 동맹은 글로벌 데이터센터 운영 방식과 전력수요에 영향을 미칠 가능성이 있어 수요관리·데이터센터 전력 동향 관점에서 시장 동향으로 분류됨."
+      },
+      {
+        "keyword": "AI 데이터센터 OR 데이터센터 OR 전력수요",
+        "title": "오픈AI, 영국 ‘스타게이트’ 데이터센터 구축 연기 - PRESS9",
+        "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9MR3lsaVhwYm84R050RmtDdTdBTm5zTVFCZTdac1NtRW56OXVJT3UyeERWc3p4Yk5WMUFnWklVUGJqR2hvVXlfV1lMQ3gtNDFSd0dYMUdxa0MxdElvVjhzcFg2MWU?oc=5",
+        "published_at_kst": "2026-04-10T04:14:07+09:00",
+        "source": "PRESS9",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiZEFVX3lxTE9MR3lsaVhwYm84R050RmtDdTdBTm5zTVFCZTdac1NtRW56OXVJT3UyeERWc3p4Yk5WMUFnWklVUGJqR2hvVXlfV1lMQ3gtNDFSd0dYMUdxa0MxdElvVjhzcFg2MWU?oc=5\" target=\"_blank\">오픈AI, 영국 ‘스타게이트’ 데이터센터 구축 연기</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">PRESS9</font>",
+        "label": "MARKET_SNAPSHOT",
+        "reason": "영국 AI 데이터센터(오픈AI) 건설 연기 소식으로 전력수요·인프라 수요 전망에 간접적 영향이 있어 그리드위즈의 데이터센터 수요관리 및 대응사업과 연관 가능"
+      },
+      {
+        "keyword": "AI 데이터센터 OR 데이터센터 OR 전력수요",
+        "title": "‘전기 먹는 하마’ AI 데이터센터, 바닷속으로 간다 - kmjournal.net",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9hY2F4WHkxeE0wbU5vTDdXMjVzMkx4R2dkVXR2d3V0Z19oeHNaeUstUjFCRTZfX01zRmNSTVBIdlY1QUh4LVB0My1rV054TGhfUmFDV3A1dldQTE5CbXA3TzJOWmVVUC1JbTB3?oc=5",
+        "published_at_kst": "2026-04-10T04:36:56+09:00",
+        "source": "kmjournal.net",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMia0FVX3lxTE9hY2F4WHkxeE0wbU5vTDdXMjVzMkx4R2dkVXR2d3V0Z19oeHNaeUstUjFCRTZfX01zRmNSTVBIdlY1QUh4LVB0My1rV054TGhfUmFDV3A1dldQTE5CbXA3TzJOWmVVUC1JbTB3?oc=5\" target=\"_blank\">‘전기 먹는 하마’ AI 데이터센터, 바닷속으로 간다</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">kmjournal.net</font>",
+        "label": "MARKET_SNAPSHOT",
+        "reason": "AI 데이터센터의 해저 이전은 대규모 전력수요·냉각·분산에너지 영향이 큰 산업 동향으로 그리드위즈 사업에 간접적 영향이 있으나 정부·제도·계통 이슈가 아님"
+      }
+    ]
+  },
+  {
+    "cluster_id": 6,
+    "cluster_topic": "‘역대 최대 2.89조 재원 조달’… 한국중부발전, 신안우이 해상풍력 PF 금융약정 체결 - 에너지코리아뉴스",
+    "article_count": 5,
+    "representative": {
+      "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
+      "title": "중부발전, 국내 최대 390㎿ 해상풍력 2조8900억원 금융약정 체결 - 데일리안",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFB0WHlST2RkUGZHZ3h0YWpTTWgxS0w3VlF4SnFlNW50TDdreEJLSHA4MDR6SExsWFhYeF9jVG9HT3N5WVFybWs1bGZUQ1E0QjMwUjNCNWJR0gGGAkFVX3lxTFBnU05TakQyVnQ0MGpfS2JTLXZVZTZpM1ZBMFRwdHJVbUpOeGUxbmt5VzBWREROenJHeHZMY19YbEVzSHdla2s0Vm1ERk55MktkRTZXSWNxenRSaXI2SDctQlpzR0Fya19ZeVJoY0x6bE1SeXR5S1hobk8yWEN5UE5DYmhvcHFON0NGZy1uaGJyYjlQUW4ybWQ1STljR1RxZHFOTEVpTGczQUt6RUdWZUF5bGtRUk5LZ1pabUdRQkdBQzhrY0p2ZzlrRkF3bThXdG1ELVU0dl9jbWkyY3cwUDRxWFJDQndTU3FkbWhuV2E5N2o0UnRqSHZvQVdvR3BjbzIyMGRmUEE?oc=5",
+      "published_at_kst": "2026-04-10T00:26:00+09:00",
+      "source": "데일리안",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiVkFVX3lxTFB0WHlST2RkUGZHZ3h0YWpTTWgxS0w3VlF4SnFlNW50TDdreEJLSHA4MDR6SExsWFhYeF9jVG9HT3N5WVFybWs1bGZUQ1E0QjMwUjNCNWJR0gGGAkFVX3lxTFBnU05TakQyVnQ0MGpfS2JTLXZVZTZpM1ZBMFRwdHJVbUpOeGUxbmt5VzBWREROenJHeHZMY19YbEVzSHdla2s0Vm1ERk55MktkRTZXSWNxenRSaXI2SDctQlpzR0Fya19ZeVJoY0x6bE1SeXR5S1hobk8yWEN5UE5DYmhvcHFON0NGZy1uaGJyYjlQUW4ybWQ1STljR1RxZHFOTEVpTGczQUt6RUdWZUF5bGtRUk5LZ1pabUdRQkdBQzhrY0p2ZzlrRkF3bThXdG1ELVU0dl9jbWkyY3cwUDRxWFJDQndTU3FkbWhuV2E5N2o0UnRqSHZvQVdvR3BjbzIyMGRmUEE?oc=5\" target=\"_blank\">중부발전, 국내 최대 390㎿ 해상풍력 2조8900억원 금융약정 체결</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">데일리안</font>",
+      "label": "MARKET_SNAPSHOT",
+      "reason": "중부발전의 390MW 해상풍력에 대한 2조8900억원 규모 금융약정은 재생에너지 대규모 투자·사업 동향으로 그리드위즈의 시장·사업 환경에 간접적 영향을 미치나, 규제·요금·제도 변화 등 TOP 요건에는 해당하지 않음."
+    },
+    "articles": [
+      {
+        "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
+        "title": "중부발전, 국내 최대 390㎿ 해상풍력 2조8900억원 금융약정 체결 - 데일리안",
+        "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFB0WHlST2RkUGZHZ3h0YWpTTWgxS0w3VlF4SnFlNW50TDdreEJLSHA4MDR6SExsWFhYeF9jVG9HT3N5WVFybWs1bGZUQ1E0QjMwUjNCNWJR0gGGAkFVX3lxTFBnU05TakQyVnQ0MGpfS2JTLXZVZTZpM1ZBMFRwdHJVbUpOeGUxbmt5VzBWREROenJHeHZMY19YbEVzSHdla2s0Vm1ERk55MktkRTZXSWNxenRSaXI2SDctQlpzR0Fya19ZeVJoY0x6bE1SeXR5S1hobk8yWEN5UE5DYmhvcHFON0NGZy1uaGJyYjlQUW4ybWQ1STljR1RxZHFOTEVpTGczQUt6RUdWZUF5bGtRUk5LZ1pabUdRQkdBQzhrY0p2ZzlrRkF3bThXdG1ELVU0dl9jbWkyY3cwUDRxWFJDQndTU3FkbWhuV2E5N2o0UnRqSHZvQVdvR3BjbzIyMGRmUEE?oc=5",
+        "published_at_kst": "2026-04-10T00:26:00+09:00",
+        "source": "데일리안",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiVkFVX3lxTFB0WHlST2RkUGZHZ3h0YWpTTWgxS0w3VlF4SnFlNW50TDdreEJLSHA4MDR6SExsWFhYeF9jVG9HT3N5WVFybWs1bGZUQ1E0QjMwUjNCNWJR0gGGAkFVX3lxTFBnU05TakQyVnQ0MGpfS2JTLXZVZTZpM1ZBMFRwdHJVbUpOeGUxbmt5VzBWREROenJHeHZMY19YbEVzSHdla2s0Vm1ERk55MktkRTZXSWNxenRSaXI2SDctQlpzR0Fya19ZeVJoY0x6bE1SeXR5S1hobk8yWEN5UE5DYmhvcHFON0NGZy1uaGJyYjlQUW4ybWQ1STljR1RxZHFOTEVpTGczQUt6RUdWZUF5bGtRUk5LZ1pabUdRQkdBQzhrY0p2ZzlrRkF3bThXdG1ELVU0dl9jbWkyY3cwUDRxWFJDQndTU3FkbWhuV2E5N2o0UnRqSHZvQVdvR3BjbzIyMGRmUEE?oc=5\" target=\"_blank\">중부발전, 국내 최대 390㎿ 해상풍력 2조8900억원 금융약정 체결</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">데일리안</font>",
+        "label": "MARKET_SNAPSHOT",
+        "reason": "중부발전의 390MW 해상풍력에 대한 2조8900억원 규모 금융약정은 재생에너지 대규모 투자·사업 동향으로 그리드위즈의 시장·사업 환경에 간접적 영향을 미치나, 규제·요금·제도 변화 등 TOP 요건에는 해당하지 않음."
+      },
+      {
+        "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
+        "title": "[정책브리핑] 신안우이 해상풍력 PF 약정…3.4조 사업 본궤도 - ESG경제",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBIZjNob3g2NUdDSFlZLUNtNzlkN2FlbW1mMnJqR195ZEdUYm5uTVFKZzJhRmhtNUtUTTRYd0xUbTlJZmRoaFUxOUxHM21xVFh0MGk0RF9IUFptdGcxcnZibjVONXZMNEI1YTVucw?oc=5",
+        "published_at_kst": "2026-04-10T00:28:24+09:00",
+        "source": "ESG경제",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMibEFVX3lxTFBIZjNob3g2NUdDSFlZLUNtNzlkN2FlbW1mMnJqR195ZEdUYm5uTVFKZzJhRmhtNUtUTTRYd0xUbTlJZmRoaFUxOUxHM21xVFh0MGk0RF9IUFptdGcxcnZibjVONXZMNEI1YTVucw?oc=5\" target=\"_blank\">[정책브리핑] 신안우이 해상풍력 PF 약정…3.4조 사업 본궤도</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">ESG경제</font>",
+        "label": "MARKET_SNAPSHOT",
+        "reason": "신안우이 해상풍력의 3.4조원 PF 약정은 대규모 재생에너지 사업·금융 동향에 직접적 의미가 있으나, 정부 정책·제도 변경이나 전력시장 규칙 변화와 관련된 내용은 아니므로 MARKET_SNAPSHOT으로 분류됩니다."
+      },
+      {
+        "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
+        "title": "한국중부발전, 신안우이 해상풍력 PF 금융약정 체결 - kscnews.co.kr",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1uUUdNS2h3NTlTYk9VVHBWX3NibVZtYUdPOUNhMERndURKOTNSX2NfTDJZR3VIMXZGSXpaclRDUjlEN2tZZkxvUEtLYktFVGw3aUN0Vmt0RE5oaHNUUXBsTlNWNGk0QV9VQ1Jj?oc=5",
+        "published_at_kst": "2026-04-10T00:58:00+09:00",
+        "source": "kscnews.co.kr",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMia0FVX3lxTE1uUUdNS2h3NTlTYk9VVHBWX3NibVZtYUdPOUNhMERndURKOTNSX2NfTDJZR3VIMXZGSXpaclRDUjlEN2tZZkxvUEtLYktFVGw3aUN0Vmt0RE5oaHNUUXBsTlNWNGk0QV9VQ1Jj?oc=5\" target=\"_blank\">한국중부발전, 신안우이 해상풍력 PF 금융약정 체결</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">kscnews.co.kr</font>",
+        "label": "MARKET_SNAPSHOT",
+        "reason": "한국중부발전의 신안우이 해상풍력 PF 금융약정 체결은 재생에너지 프로젝트에 대한 실질적 투자·산업 동향에 해당하나, 정책·요금·계통 등 그리드위즈에 직접적인 제도적 영향은 없어 MARKET_SNAPSHOT로 분류됨."
+      },
+      {
+        "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
+        "title": "전력거래소·전기위원회, ‘재생에너지 100GW 시대’ 전력규제 혁신 논의 - 에너지코리아뉴스",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBGSUFSbVdXbVMyVF9lVkJZWFJhaVB1YnJfZHRDWDBjOVd3TUstRjdFZXNBcDR3Sl83MGhOT2VtVHl2ZDdtYzBOV09xcTIyQzJfVEIxYnZyR1NJSnpKd3ZIbnFvVE1zODBJRjdoaElkWDQ?oc=5",
+        "published_at_kst": "2026-04-10T02:03:02+09:00",
+        "source": "에너지코리아뉴스",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMicEFVX3lxTFBGSUFSbVdXbVMyVF9lVkJZWFJhaVB1YnJfZHRDWDBjOVd3TUstRjdFZXNBcDR3Sl83MGhOT2VtVHl2ZDdtYzBOV09xcTIyQzJfVEIxYnZyR1NJSnpKd3ZIbnFvVE1zODBJRjdoaElkWDQ?oc=5\" target=\"_blank\">전력거래소·전기위원회, ‘재생에너지 100GW 시대’ 전력규제 혁신 논의</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">에너지코리아뉴스</font>",
+        "label": "TOP",
+        "reason": "전력거래소·전기위원회(공식 규제기관)가 재생에너지 100GW 시대에 맞춘 전력규제 혁신을 논의 — 제도·시장 규칙 변화 가능성이 있어 DR/VPP/ESS·전기차충전 등에 직접적 영향 예상"
+      },
+      {
+        "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
+        "title": "‘역대 최대 2.89조 재원 조달’… 한국중부발전, 신안우이 해상풍력 PF 금융약정 체결 - 에너지코리아뉴스",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE42cnpVRjdLRHBJU3dJWTdvRjVzdGVEUTN2cHNkR2RPb3A1ai16N0FxMVpGbGc3VXFISUVZT3hLY2dkZlp2UXJ0a1otYmJJRlRtUnFENkhieW15TDdNR3lJejRjNjRrcFdWYlRTR2xPV2Q?oc=5",
+        "published_at_kst": "2026-04-10T02:04:38+09:00",
+        "source": "에너지코리아뉴스",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMicEFVX3lxTE42cnpVRjdLRHBJU3dJWTdvRjVzdGVEUTN2cHNkR2RPb3A1ai16N0FxMVpGbGc3VXFISUVZT3hLY2dkZlp2UXJ0a1otYmJJRlRtUnFENkhieW15TDdNR3lJejRjNjRrcFdWYlRTR2xPV2Q?oc=5\" target=\"_blank\">‘역대 최대 2.89조 재원 조달’… 한국중부발전, 신안우이 해상풍력 PF 금융약정 체결</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">에너지코리아뉴스</font>",
+        "label": "MARKET_SNAPSHOT",
+        "reason": "한국중부발전의 대규모(2.89조원) 신안우이 해상풍력 PF 금융약정은 재생에너지 투자·금융 동향에 대한 시장 영향이 큰 사례로, 제도·요금 등 규제 변경에 해당하지 않아 MARKET_SNAPSHOT에 해당함."
+      }
+    ]
+  },
+  {
+    "cluster_id": 7,
+    "cluster_topic": "함양 휴천일반산업단지 AI 데이터센터 인·허가 완료 - 뉴스프리존",
+    "article_count": 4,
+    "representative": {
+      "keyword": "AI 데이터센터 OR 데이터센터 OR 전력수요",
+      "title": "데이터센터 냉각 수요 급증… 매출 1년 새 두 배로 - 조선일보",
+      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNSGlwOUlYZUttLXUwNGJ1ZzVnRVFvWDVxaUR2ZFJKRTFSWjNPRHR3czI3SlNYWVlKbk1qYXdHNC1NRzFOeVNHQS1Oa3ljTEZhOTF2LW9EQ3YzdHFhSVdwcnlsY0ZEcHd0Rk1NQWs1eVJXWF9NcVAzYmlkYmI0TWF4eUppUdIBlwFBVV95cUxQUXFZUFpqNUFYdDBrbG1BSE11RVNDRk1HN29NNWY1eTU2QWJqQ0JmbjRxYUR3U3FoSHZUenhaOXZOZDYwc2ltM2NtOWFCSTVibFhacTNBZ1AxZDdhRkdzMEt4S1FieC1BRzVITnpmRWlIcVltU0JXR1RrRmE5UWVmQUVmQ2xDdHJ3UnlITFlRaWZpOV9RTmxV?oc=5",
+      "published_at_kst": "2026-04-09T15:33:00+09:00",
+      "source": "조선일보",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMigwFBVV95cUxNSGlwOUlYZUttLXUwNGJ1ZzVnRVFvWDVxaUR2ZFJKRTFSWjNPRHR3czI3SlNYWVlKbk1qYXdHNC1NRzFOeVNHQS1Oa3ljTEZhOTF2LW9EQ3YzdHFhSVdwcnlsY0ZEcHd0Rk1NQWs1eVJXWF9NcVAzYmlkYmI0TWF4eUppUdIBlwFBVV95cUxQUXFZUFpqNUFYdDBrbG1BSE11RVNDRk1HN29NNWY1eTU2QWJqQ0JmbjRxYUR3U3FoSHZUenhaOXZOZDYwc2ltM2NtOWFCSTVibFhacTNBZ1AxZDdhRkdzMEt4S1FieC1BRzVITnpmRWlIcVltU0JXR1RrRmE5UWVmQUVmQ2xDdHJ3UnlITFlRaWZpOV9RTmxV?oc=5\" target=\"_blank\">데이터센터 냉각 수요 급증… 매출 1년 새 두 배로</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">조선일보</font>",
+      "label": "MARKET_SNAPSHOT",
+      "reason": "데이터센터 냉각 수요 급증은 전력수요 증가와 수요관리 측면의 시장·기업 동향에 해당하며, 정부·제도 변화나 계통위기 등 핵심 정책 이슈가 없어 MARKET_SNAPSHOT로 분류함."
+    },
+    "articles": [
+      {
+        "keyword": "AI 데이터센터 OR 데이터센터 OR 전력수요",
+        "title": "데이터센터 냉각 수요 급증… 매출 1년 새 두 배로 - 조선일보",
+        "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNSGlwOUlYZUttLXUwNGJ1ZzVnRVFvWDVxaUR2ZFJKRTFSWjNPRHR3czI3SlNYWVlKbk1qYXdHNC1NRzFOeVNHQS1Oa3ljTEZhOTF2LW9EQ3YzdHFhSVdwcnlsY0ZEcHd0Rk1NQWs1eVJXWF9NcVAzYmlkYmI0TWF4eUppUdIBlwFBVV95cUxQUXFZUFpqNUFYdDBrbG1BSE11RVNDRk1HN29NNWY1eTU2QWJqQ0JmbjRxYUR3U3FoSHZUenhaOXZOZDYwc2ltM2NtOWFCSTVibFhacTNBZ1AxZDdhRkdzMEt4S1FieC1BRzVITnpmRWlIcVltU0JXR1RrRmE5UWVmQUVmQ2xDdHJ3UnlITFlRaWZpOV9RTmxV?oc=5",
+        "published_at_kst": "2026-04-09T15:33:00+09:00",
+        "source": "조선일보",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMigwFBVV95cUxNSGlwOUlYZUttLXUwNGJ1ZzVnRVFvWDVxaUR2ZFJKRTFSWjNPRHR3czI3SlNYWVlKbk1qYXdHNC1NRzFOeVNHQS1Oa3ljTEZhOTF2LW9EQ3YzdHFhSVdwcnlsY0ZEcHd0Rk1NQWs1eVJXWF9NcVAzYmlkYmI0TWF4eUppUdIBlwFBVV95cUxQUXFZUFpqNUFYdDBrbG1BSE11RVNDRk1HN29NNWY1eTU2QWJqQ0JmbjRxYUR3U3FoSHZUenhaOXZOZDYwc2ltM2NtOWFCSTVibFhacTNBZ1AxZDdhRkdzMEt4S1FieC1BRzVITnpmRWlIcVltU0JXR1RrRmE5UWVmQUVmQ2xDdHJ3UnlITFlRaWZpOV9RTmxV?oc=5\" target=\"_blank\">데이터센터 냉각 수요 급증… 매출 1년 새 두 배로</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">조선일보</font>",
+        "label": "MARKET_SNAPSHOT",
+        "reason": "데이터센터 냉각 수요 급증은 전력수요 증가와 수요관리 측면의 시장·기업 동향에 해당하며, 정부·제도 변화나 계통위기 등 핵심 정책 이슈가 없어 MARKET_SNAPSHOT로 분류함."
+      },
+      {
+        "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
+        "title": "우주로 가는 데이터센터…배터리·태양광 새 ‘판’ 열리나 - 한스경제",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1ReGh2UWI4NGoxVUNYZjV3T2NDS2lQQlEzcUpjSzRzYTVmOHFneldjdWphT19ySDcyc3ctS3Y3bU9PejkyX3YtcTV6UzVLMmVYSjdwSC11Mllheld0SUJtREFrZGFkREJmYVp30gFvQVVfeXFMUDJ3X1RNLURrY29NUjdkSkg1czVKUmppNVdRSXFZVWJsSGxZQURiSEhhbUFGclhRMDdJSlFNelVkOU5IdUx3bXg5VHNPTEZLVHlfNWh5dEoxNHRpamhaTVdnSlV4M3pDNmtmTHNtTms4?oc=5",
+        "published_at_kst": "2026-04-09T22:30:00+09:00",
+        "source": "한스경제",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMia0FVX3lxTE1ReGh2UWI4NGoxVUNYZjV3T2NDS2lQQlEzcUpjSzRzYTVmOHFneldjdWphT19ySDcyc3ctS3Y3bU9PejkyX3YtcTV6UzVLMmVYSjdwSC11Mllheld0SUJtREFrZGFkREJmYVp30gFvQVVfeXFMUDJ3X1RNLURrY29NUjdkSkg1czVKUmppNVdRSXFZVWJsSGxZQURiSEhhbUFGclhRMDdJSlFNelVkOU5IdUx3bXg5VHNPTEZLVHlfNWh5dEoxNHRpamhaTVdnSlV4M3pDNmtmTHNtTms4?oc=5\" target=\"_blank\">우주로 가는 데이터센터…배터리·태양광 새 ‘판’ 열리나</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">한스경제</font>",
+        "label": "MARKET_SNAPSHOT",
+        "reason": "우주 기반 데이터센터가 배터리·태양광 등 에너지 시장의 사업기회와 산업 동향을 다루는 기사로, 정부·제도·전력수급 관련 핵심 정책 변화나 규제 이슈를 포함하지 않음."
+      },
+      {
+        "keyword": "AI 데이터센터 OR 데이터센터 OR 전력수요",
+        "title": "SK텔레콤·Arm·리벨리온 'AI 동맹' 구축, AI데이터센터 경쟁력 강화 - 비즈니스포스트",
+        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9qbmhXb3RISHd5TC1yVXQwUkVoeWZwTldhM0Qzb0hLNm9QOEJpS1J3c045VUl1THoxQVRCQlVhMlllZDFzR0VmeFhWSHF4ZnZTeUpJalpmb0REeE9PTzNFdkx3bWZpc0RrNjF0aWh1TGpLWjg?oc=5",
+        "published_at_kst": "2026-04-10T00:40:14+09:00",
+        "source": "비즈니스포스트",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMic0FVX3lxTE9qbmhXb3RISHd5TC1yVXQwUkVoeWZwTldhM0Qzb0hLNm9QOEJpS1J3c045VUl1THoxQVRCQlVhMlllZDFzR0VmeFhWSHF4ZnZTeUpJalpmb0REeE9PTzNFdkx3bWZpc0RrNjF0aWh1TGpLWjg?oc=5\" target=\"_blank\">SK텔레콤·Arm·리벨리온 'AI 동맹' 구축, AI데이터센터 경쟁력 강화</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">비즈니스포스트</font>",
+        "label": "MARKET_SNAPSHOT",
+        "reason": "SK텔레콤·Arm·리벨리온의 AI 데이터센터 경쟁력 강화 연합은 데이터센터 전력수요·운영 방식에 대한 산업·시장 동향으로 간주됨."
+      },
+      {
+        "keyword": "AI 데이터센터 OR 데이터센터 OR 전력수요",
+        "title": "함양 휴천일반산업단지 AI 데이터센터 인·허가 완료 - 뉴스프리존",
+        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE81a1Y4c0dLb0V5QTVaMVlreUN2Um5DdUtuamtjWDFlMlJzRUVBeHhfSEdFT0QzVVBiMVloQnJmb0xRSDg1WlU4M18yZEVvTHRSYWJiaUV2bXJJZDgycnhJbXlyOXRlbHdoYmEyR19weXZzc3PSAXdBVV95cUxOWkk3TmhualVFMEdDSG9ZUnlCMWtDZjEyS3BiZGdYeWxGNEpyZDVFZnRwTGpmOGFGV3Y5N3lKTGRSVGZOeDJ4WFRuYmpocmFWTEZWSTBZYW9uZGhOQ1BqUFN1cDRybTdTQ2JpcGl2VjgtSk1FRkFBMA?oc=5",
+        "published_at_kst": "2026-04-10T01:03:07+09:00",
+        "source": "뉴스프리존",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMic0FVX3lxTE81a1Y4c0dLb0V5QTVaMVlreUN2Um5DdUtuamtjWDFlMlJzRUVBeHhfSEdFT0QzVVBiMVloQnJmb0xRSDg1WlU4M18yZEVvTHRSYWJiaUV2bXJJZDgycnhJbXlyOXRlbHdoYmEyR19weXZzc3PSAXdBVV95cUxOWkk3TmhualVFMEdDSG9ZUnlCMWtDZjEyS3BiZGdYeWxGNEpyZDVFZnRwTGpmOGFGV3Y5N3lKTGRSVGZOeDJ4WFRuYmpocmFWTEZWSTBZYW9uZGhOQ1BqUFN1cDRybTdTQ2JpcGl2VjgtSk1FRkFBMA?oc=5\" target=\"_blank\">함양 휴천일반산업단지 AI 데이터센터 인·허가 완료</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">뉴스프리존</font>",
+        "label": "MARKET_SNAPSHOT",
+        "reason": "국내 AI 데이터센터 인·허가 완료는 향후 전력수요 증가와 수요관리·전력시장에 간접적 영향을 줄 수 있는 산업 투자·동향 뉴스로 MARKET_SNAPSHOT에 해당."
+      }
+    ]
+  },
+  {
+    "cluster_id": 8,
+    "cluster_topic": "‘녹색공공은행’, 공공재생에너지 전환의 조타수 - 참세상",
+    "article_count": 5,
+    "representative": {
+      "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
+      "title": "(사설)중동발 에너지안보 해법, 재생에너지와 전력망이 관건이다 - 전기신문",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5XRC1idG5WX0pDOW1hbURvXzlNeXpSNVIzLVBTQ3JHSWJnb0lGX0phVElndlFvLWdxcGloRUxucXVBWjVoOFN2cXRnTUdiNUdrZGVXTEh5R2Uzcm94X3JCVEhkUHpVMHVmQ0t5ONIBcEFVX3lxTE9FRFZvYTJNSDJuczR3eUZfelJTczhVSEtybVhIVHo5VVpLUUpXUEhsQnEwQ3J3NVRwaUh4RUFKUlF1TDl3SWg3MlJYN2haOFRVc0k4dmgtVXhndmhHTUo5bG01S1JaeU93bHdqYjgydlY?oc=5",
+      "published_at_kst": "2026-04-10T00:16:50+09:00",
+      "source": "전기신문",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMibEFVX3lxTE5XRC1idG5WX0pDOW1hbURvXzlNeXpSNVIzLVBTQ3JHSWJnb0lGX0phVElndlFvLWdxcGloRUxucXVBWjVoOFN2cXRnTUdiNUdrZGVXTEh5R2Uzcm94X3JCVEhkUHpVMHVmQ0t5ONIBcEFVX3lxTE9FRFZvYTJNSDJuczR3eUZfelJTczhVSEtybVhIVHo5VVpLUUpXUEhsQnEwQ3J3NVRwaUh4RUFKUlF1TDl3SWg3MlJYN2haOFRVc0k4dmgtVXhndmhHTUo5bG01S1JaeU93bHdqYjgydlY?oc=5\" target=\"_blank\">(사설)중동발 에너지안보 해법, 재생에너지와 전력망이 관건이다</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">전기신문</font>",
+      "label": "MARKET_SNAPSHOT",
+      "reason": "사설 형태의 정책·시장 분석으로 재생에너지·전력망의 중요성을 제시하지만 정부·규제기관의 확정된 정책·제도 변경이나 시장 규칙 변화 발표는 아니어서 TOP 기준에 해당하지 않음."
+    },
+    "articles": [
+      {
+        "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
+        "title": "‘녹색공공은행’, 공공재생에너지 전환의 조타수 - 참세상",
+        "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5pQUpRd1B3eHJpdXlaVGpKaUFQVDVmam5NSjZjRWYzMVFvQUZXN29BbVNrMXZUaE1jRm05MjNNTFJBWnVqdlJTczJ6OEE1LWNv?oc=5",
+        "published_at_kst": "2026-04-10T01:03:00+09:00",
+        "source": "참세상",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiUEFVX3lxTE5pQUpRd1B3eHJpdXlaVGpKaUFQVDVmam5NSjZjRWYzMVFvQUZXN29BbVNrMXZUaE1jRm05MjNNTFJBWnVqdlJTczJ6OEE1LWNv?oc=5\" target=\"_blank\">‘녹색공공은행’, 공공재생에너지 전환의 조타수</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">참세상</font>",
+        "label": "MARKET_SNAPSHOT",
+        "reason": "공공재생에너지 전환을 위한 '녹색공공은행' 제안·논의 기사로 재생·공공부문 수요/시장에 간접적 영향은 있으나 정부의 확정된 정책·제도 변경 발표는 아님"
+      },
+      {
+        "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
+        "title": "(월요객석) 새로운 재생에너지 공급 제도의 성공 조건 - 전기신문",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFB3Rk9KRU9qT1dEVUxXdDN5SWsyMHc0QjFrWmxnM0dxNEZCUWY5QzVONHNhUUY3Qkl5NENzcHFrU3A5Z1FRaHlLa0Y3OGpBRkJwUV94WG5UdEFTV240U0pjNEdGOG9jMzRNaFJqZNIBcEFVX3lxTE9LRUdXSzR4QWtibjJDZzlVVTJQamoxQWpxZEhHUENwMjFhVGs5U09ieGZFM29SMHlhR21FM3FRSXhBU3ZjN1ZzOURhcmdVaXF5SVlvRjhtMkRrWlVIRGs5R0NUVGdueGZkQ0pFR25iTzU?oc=5",
+        "published_at_kst": "2026-04-10T00:18:12+09:00",
+        "source": "전기신문",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMibEFVX3lxTFB3Rk9KRU9qT1dEVUxXdDN5SWsyMHc0QjFrWmxnM0dxNEZCUWY5QzVONHNhUUY3Qkl5NENzcHFrU3A5Z1FRaHlLa0Y3OGpBRkJwUV94WG5UdEFTV240U0pjNEdGOG9jMzRNaFJqZNIBcEFVX3lxTE9LRUdXSzR4QWtibjJDZzlVVTJQamoxQWpxZEhHUENwMjFhVGs5U09ieGZFM29SMHlhR21FM3FRSXhBU3ZjN1ZzOURhcmdVaXF5SVlvRjhtMkRrWlVIRGs5R0NUVGdueGZkQ0pFR25iTzU?oc=5\" target=\"_blank\">(월요객석) 새로운 재생에너지 공급 제도의 성공 조건</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">전기신문</font>",
+        "label": "MARKET_SNAPSHOT",
+        "reason": "칼럼 형식의 제도·정책 분석으로 재생에너지 공급제도의 성공 조건을 논의하지만 정부의 확정안·법령·시장규칙 변경 발표는 아니므로 MARKET_SNAPSHOT."
+      },
+      {
+        "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
+        "title": "(사설)중동발 에너지안보 해법, 재생에너지와 전력망이 관건이다 - 전기신문",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5XRC1idG5WX0pDOW1hbURvXzlNeXpSNVIzLVBTQ3JHSWJnb0lGX0phVElndlFvLWdxcGloRUxucXVBWjVoOFN2cXRnTUdiNUdrZGVXTEh5R2Uzcm94X3JCVEhkUHpVMHVmQ0t5ONIBcEFVX3lxTE9FRFZvYTJNSDJuczR3eUZfelJTczhVSEtybVhIVHo5VVpLUUpXUEhsQnEwQ3J3NVRwaUh4RUFKUlF1TDl3SWg3MlJYN2haOFRVc0k4dmgtVXhndmhHTUo5bG01S1JaeU93bHdqYjgydlY?oc=5",
+        "published_at_kst": "2026-04-10T00:16:50+09:00",
+        "source": "전기신문",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMibEFVX3lxTE5XRC1idG5WX0pDOW1hbURvXzlNeXpSNVIzLVBTQ3JHSWJnb0lGX0phVElndlFvLWdxcGloRUxucXVBWjVoOFN2cXRnTUdiNUdrZGVXTEh5R2Uzcm94X3JCVEhkUHpVMHVmQ0t5ONIBcEFVX3lxTE9FRFZvYTJNSDJuczR3eUZfelJTczhVSEtybVhIVHo5VVpLUUpXUEhsQnEwQ3J3NVRwaUh4RUFKUlF1TDl3SWg3MlJYN2haOFRVc0k4dmgtVXhndmhHTUo5bG01S1JaeU93bHdqYjgydlY?oc=5\" target=\"_blank\">(사설)중동발 에너지안보 해법, 재생에너지와 전력망이 관건이다</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">전기신문</font>",
+        "label": "MARKET_SNAPSHOT",
+        "reason": "사설 형태의 정책·시장 분석으로 재생에너지·전력망의 중요성을 제시하지만 정부·규제기관의 확정된 정책·제도 변경이나 시장 규칙 변화 발표는 아니어서 TOP 기준에 해당하지 않음."
+      },
+      {
+        "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
+        "title": "중동발 에너지 쇼크…아시아, 원전·석탄·재생에너지 ‘전략 재편’ 가속 - 에너지프로슈머",
+        "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1ZNkRlb1VmYm5iNEM5Y1dhQjVyaGw4Nzlfb2F1Y2Nabjc4SE5uTlF4RHRPUHhZU2xxRUFnSUQ2VHFvRDktSlRoR2ZvcFo?oc=5",
+        "published_at_kst": "2026-04-09T23:11:00+09:00",
+        "source": "에너지프로슈머",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiTEFVX3lxTE1ZNkRlb1VmYm5iNEM5Y1dhQjVyaGw4Nzlfb2F1Y2Nabjc4SE5uTlF4RHRPUHhZU2xxRUFnSUQ2VHFvRDktSlRoR2ZvcFo?oc=5\" target=\"_blank\">중동발 에너지 쇼크…아시아, 원전·석탄·재생에너지 ‘전략 재편’ 가속</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">에너지프로슈머</font>",
+        "label": "MARKET_SNAPSHOT",
+        "reason": "중동발 공급 충격에 따른 아시아의 원전·석탄·재생 전략 재편은 산업·시장 및 투자 방향에 영향을 주는 시장 동향 기사로 그리드위즈에 간접적 영향이 있어 MARKET_SNAPSHOT."
+      },
+      {
+        "keyword": "해상풍력 OR 육상풍력 OR 재생에너지 입찰",
+        "title": "프랑스 12GW 재생에너지 입찰, '유럽 우선주의' 강화로 한국 기업 전략 전환 요구 - 브랜드경제신문",
+        "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBObkZzTFBXT3dWempQTEFSX3NLOERjamI3VlB5dUl1OXVFTG0wektSamU2UFNlVlJDUDNSb0M2c0g4YWt4WFQtd3NrWVg?oc=5",
+        "published_at_kst": "2026-04-09T20:45:28+09:00",
+        "source": "브랜드경제신문",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiTEFVX3lxTFBObkZzTFBXT3dWempQTEFSX3NLOERjamI3VlB5dUl1OXVFTG0wektSamU2UFNlVlJDUDNSb0M2c0g4YWt4WFQtd3NrWVg?oc=5\" target=\"_blank\">프랑스 12GW 재생에너지 입찰, '유럽 우선주의' 강화로 한국 기업 전략 전환 요구</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">브랜드경제신문</font>",
+        "label": "MARKET_SNAPSHOT",
+        "reason": "프랑스의 12GW 재생에너지 입찰과 '유럽 우선주의' 강화는 한국 기업의 해외 수주·전략에 직접적 영향을 미치는 해외 시장 동향으로, 그리드위즈의 글로벌 사업기회·경쟁전략 관점에서 중요한 정보임"
+      }
+    ]
+  },
+  {
+    "cluster_id": 9,
+    "cluster_topic": "페인트·플라스틱 등 원료 수입 빨라진다…기후부, 화학물질 규제 한시 완화 - 네이트",
+    "article_count": 1,
+    "representative": {
+      "keyword": "전기요금 OR PPA OR 기후부",
+      "title": "페인트·플라스틱 등 원료 수입 빨라진다…기후부, 화학물질 규제 한시 완화 - 네이트",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFAwWjNORTVsRnYyQjIwdzlSOGNrdmpua1Jub0o1M3NXM0xiaFFYTzFPY0x2NDN6WWlyT05lOTBvYzF2NHhUemZBN003Sm5ZRmRWcEVn?oc=5",
+      "published_at_kst": "2026-04-10T00:48:00+09:00",
+      "source": "네이트",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMiU0FVX3lxTFAwWjNORTVsRnYyQjIwdzlSOGNrdmpua1Jub0o1M3NXM0xiaFFYTzFPY0x2NDN6WWlyT05lOTBvYzF2NHhUemZBN003Sm5ZRmRWcEVn?oc=5\" target=\"_blank\">페인트·플라스틱 등 원료 수입 빨라진다…기후부, 화학물질 규제 한시 완화</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">네이트</font>",
+      "label": "MARKET_SNAPSHOT",
+      "reason": "기후부의 화학물질 규제 한시 완화는 정부 정책 변화지만 전력수급·DR/VPP/충전 등 그리드위즈 핵심 시장 규칙에는 직접적 영향이 적고 산업 생산·에너지 수요·공급망에 간접적 영향을 줄 수 있어 MARKET_SNAPSHOT로 분류함"
+    },
+    "articles": [
+      {
+        "keyword": "전기요금 OR PPA OR 기후부",
+        "title": "페인트·플라스틱 등 원료 수입 빨라진다…기후부, 화학물질 규제 한시 완화 - 네이트",
+        "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFAwWjNORTVsRnYyQjIwdzlSOGNrdmpua1Jub0o1M3NXM0xiaFFYTzFPY0x2NDN6WWlyT05lOTBvYzF2NHhUemZBN003Sm5ZRmRWcEVn?oc=5",
+        "published_at_kst": "2026-04-10T00:48:00+09:00",
+        "source": "네이트",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMiU0FVX3lxTFAwWjNORTVsRnYyQjIwdzlSOGNrdmpua1Jub0o1M3NXM0xiaFFYTzFPY0x2NDN6WWlyT05lOTBvYzF2NHhUemZBN003Sm5ZRmRWcEVn?oc=5\" target=\"_blank\">페인트·플라스틱 등 원료 수입 빨라진다…기후부, 화학물질 규제 한시 완화</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">네이트</font>",
+        "label": "MARKET_SNAPSHOT",
+        "reason": "기후부의 화학물질 규제 한시 완화는 정부 정책 변화지만 전력수급·DR/VPP/충전 등 그리드위즈 핵심 시장 규칙에는 직접적 영향이 적고 산업 생산·에너지 수요·공급망에 간접적 영향을 줄 수 있어 MARKET_SNAPSHOT로 분류함"
+      }
+    ]
+  },
+  {
+    "cluster_id": 10,
+    "cluster_topic": "정부, 완속 충전 로밍요금 13% 인하 …업계 “현실 외면한 탁상행정” - 전기신문",
+    "article_count": 1,
+    "representative": {
+      "keyword": "전기차 충전 OR 전기자동차 OR EV 충전 OR V2G OR 충전인프라 OR K-충전 OR 충전사업자 OR 충전CPO",
+      "title": "정부, 완속 충전 로밍요금 13% 인하 …업계 “현실 외면한 탁상행정” - 전기신문",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFA4Yll4Q1lFbm1VeEM5TjNjRGdWMlpqVVRrSjZLR3hyTWExQjlmaXhwRXhubFpIeno2eVNsNlhkQ1ZCb1pwTkw4RUFTXzR6bUw0Nmx1UlhMT1NxWVdBVHRnclp4UDNSaHVzazVpRNIBcEFVX3lxTE9wSUpGSkxUUU5pU0ZDekowZXdZOHotM2REMUR1US1UTnJXVF9telJ0Z2FBV29TdFR5SWh5SF9qTDJsd2s4S08xVnpDQU1pbVRsd3JvajdUV3YzVHVKVERRVGtWbnRJUFhHQWFyekEyNEQ?oc=5",
+      "published_at_kst": "2026-04-10T00:22:10+09:00",
+      "source": "전기신문",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMibEFVX3lxTFA4Yll4Q1lFbm1VeEM5TjNjRGdWMlpqVVRrSjZLR3hyTWExQjlmaXhwRXhubFpIeno2eVNsNlhkQ1ZCb1pwTkw4RUFTXzR6bUw0Nmx1UlhMT1NxWVdBVHRnclp4UDNSaHVzazVpRNIBcEFVX3lxTE9wSUpGSkxUUU5pU0ZDekowZXdZOHotM2REMUR1US1UTnJXVF9telJ0Z2FBV29TdFR5SWh5SF9qTDJsd2s4S08xVnpDQU1pbVRsd3JvajdUV3YzVHVKVERRVGtWbnRJUFhHQWFyekEyNEQ?oc=5\" target=\"_blank\">정부, 완속 충전 로밍요금 13% 인하 …업계 “현실 외면한 탁상행정”</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">전기신문</font>",
+      "label": "TOP",
+      "reason": "정부의 완속충전 로밍요금 13% 인하 결정은 전기차 충전요금·수익구조에 직접 영향을 주는 시장 규칙(요금) 변화에 해당됨"
+    },
+    "articles": [
+      {
+        "keyword": "전기차 충전 OR 전기자동차 OR EV 충전 OR V2G OR 충전인프라 OR K-충전 OR 충전사업자 OR 충전CPO",
+        "title": "정부, 완속 충전 로밍요금 13% 인하 …업계 “현실 외면한 탁상행정” - 전기신문",
+        "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFA4Yll4Q1lFbm1VeEM5TjNjRGdWMlpqVVRrSjZLR3hyTWExQjlmaXhwRXhubFpIeno2eVNsNlhkQ1ZCb1pwTkw4RUFTXzR6bUw0Nmx1UlhMT1NxWVdBVHRnclp4UDNSaHVzazVpRNIBcEFVX3lxTE9wSUpGSkxUUU5pU0ZDekowZXdZOHotM2REMUR1US1UTnJXVF9telJ0Z2FBV29TdFR5SWh5SF9qTDJsd2s4S08xVnpDQU1pbVRsd3JvajdUV3YzVHVKVERRVGtWbnRJUFhHQWFyekEyNEQ?oc=5",
+        "published_at_kst": "2026-04-10T00:22:10+09:00",
+        "source": "전기신문",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMibEFVX3lxTFA4Yll4Q1lFbm1VeEM5TjNjRGdWMlpqVVRrSjZLR3hyTWExQjlmaXhwRXhubFpIeno2eVNsNlhkQ1ZCb1pwTkw4RUFTXzR6bUw0Nmx1UlhMT1NxWVdBVHRnclp4UDNSaHVzazVpRNIBcEFVX3lxTE9wSUpGSkxUUU5pU0ZDekowZXdZOHotM2REMUR1US1UTnJXVF9telJ0Z2FBV29TdFR5SWh5SF9qTDJsd2s4S08xVnpDQU1pbVRsd3JvajdUV3YzVHVKVERRVGtWbnRJUFhHQWFyekEyNEQ?oc=5\" target=\"_blank\">정부, 완속 충전 로밍요금 13% 인하 …업계 “현실 외면한 탁상행정”</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">전기신문</font>",
+        "label": "TOP",
+        "reason": "정부의 완속충전 로밍요금 13% 인하 결정은 전기차 충전요금·수익구조에 직접 영향을 주는 시장 규칙(요금) 변화에 해당됨"
+      }
+    ]
+  },
+  {
+    "cluster_id": 11,
+    "cluster_topic": "중부발전, 신안우이 해상풍력 PF 2.89조원 확보 - 이뉴스투데이",
+    "article_count": 4,
+    "representative": {
+      "keyword": "수요반응 OR 플러스DR OR 전력수요관리 OR 수요관리",
+      "title": "3차 석유 최고가격 '동결'… 국민부담 완화·수요관리 초점 - 머니투데이 - mt.co.kr",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1TZEFqUTM3SWZkS3lVR0tmcjY0Ukl1X2dFSm85TWswV3hUbGZ2YkszQnI0TF9UVTI3XzllQW1UNmxjbGxKSFJDWWttY0FYSENYRVVkLVRmaWJzSmZmSVMwVEkwUEFGZ0FvRk9hTkhDWHXSAXBBVV95cUxNU2RBalEzN0lmZEt5VUdLZnI2NFJJdV9nRUpvOU1rMFd4VGxmdmJLM0JyNExfVFUyN185ZUFtVDZsY2xsSkhSQ1lrbWNBWEhDWEVVZC1UZmlic0pmZklTMFRJMFBBRmdBb0ZPYU5IQ1h1?oc=5",
+      "published_at_kst": "2026-04-09T19:00:00+09:00",
+      "source": "mt.co.kr",
+      "summary": "<a href=\"https://news.google.com/rss/articles/CBMicEFVX3lxTE1TZEFqUTM3SWZkS3lVR0tmcjY0Ukl1X2dFSm85TWswV3hUbGZ2YkszQnI0TF9UVTI3XzllQW1UNmxjbGxKSFJDWWttY0FYSENYRVVkLVRmaWJzSmZmSVMwVEkwUEFGZ0FvRk9hTkhDWHXSAXBBVV95cUxNU2RBalEzN0lmZEt5VUdLZnI2NFJJdV9nRUpvOU1rMFd4VGxmdmJLM0JyNExfVFUyN185ZUFtVDZsY2xsSkhSQ1lrbWNBWEhDWEVVZC1UZmlic0pmZklTMFRJMFBBRmdBb0ZPYU5IQ1h1?oc=5\" target=\"_blank\">3차 석유 최고가격 '동결'… 국민부담 완화·수요관리 초점 - 머니투데이</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">mt.co.kr</font>",
+      "label": "TOP",
+      "reason": "정부의 석유제품 최고가격 '동결' 공식 발표로 국민부담 완화 및 수요관리 정책 방향이 제시되어 에너지 정책·수요관리 관점에서 직접적 영향이 있음"
+    },
+    "articles": [
+      {
+        "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
+        "title": "중부발전, 신안우이 해상풍력 PF 2.89조원 확보 - 이뉴스투데이",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5oZWpUTldyMjVyekdqWWE2RzFxa294Yi1JZGItOEtBMDhqUUhzM1FCRnNoOGFRVThJM2YyVEVsNTl2Z2lpRGVDRl9EQmFLRkk4NDREcFBzVURKRUV6Qkh5TGFzUkhvN1o0Sk80M0VHMELSAXRBVV95cUxQQnlHdW1sbExyRzhRV2hUMzI3QzQxNlVKajhYV1k4R0NWb3NJcUhHQ0s3RWtfR2ZGQU5kUXBaZ1RISDUwRHFxTHdpVWZwMS04M1IzUzR2aG9oRkdWZU9JXzFta1FoVWFoWGV0azk3Snk5YXFjcQ?oc=5",
+        "published_at_kst": "2026-04-09T23:10:00+09:00",
+        "source": "이뉴스투데이",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMicEFVX3lxTE5oZWpUTldyMjVyekdqWWE2RzFxa294Yi1JZGItOEtBMDhqUUhzM1FCRnNoOGFRVThJM2YyVEVsNTl2Z2lpRGVDRl9EQmFLRkk4NDREcFBzVURKRUV6Qkh5TGFzUkhvN1o0Sk80M0VHMELSAXRBVV95cUxQQnlHdW1sbExyRzhRV2hUMzI3QzQxNlVKajhYV1k4R0NWb3NJcUhHQ0s3RWtfR2ZGQU5kUXBaZ1RISDUwRHFxTHdpVWZwMS04M1IzUzR2aG9oRkdWZU9JXzFta1FoVWFoWGV0azk3Snk5YXFjcQ?oc=5\" target=\"_blank\">중부발전, 신안우이 해상풍력 PF 2.89조원 확보</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">이뉴스투데이</font>",
+        "label": "MARKET_SNAPSHOT",
+        "reason": "중부발전의 신안우이 해상풍력 대규모 PF(2.89조원) 확보는 재생에너지 투자·사업 동향에 해당하며, 정책·제도·시장 규칙 변화가 아닌 기업의 투자·프로젝트 소식이므로 MARKET_SNAPSHOT입니다."
+      },
+      {
+        "keyword": "수요반응 OR 플러스DR OR 전력수요관리 OR 수요관리",
+        "title": "3차 석유 최고가격 '동결'… 국민부담 완화·수요관리 초점 - 머니투데이 - mt.co.kr",
+        "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1TZEFqUTM3SWZkS3lVR0tmcjY0Ukl1X2dFSm85TWswV3hUbGZ2YkszQnI0TF9UVTI3XzllQW1UNmxjbGxKSFJDWWttY0FYSENYRVVkLVRmaWJzSmZmSVMwVEkwUEFGZ0FvRk9hTkhDWHXSAXBBVV95cUxNU2RBalEzN0lmZEt5VUdLZnI2NFJJdV9nRUpvOU1rMFd4VGxmdmJLM0JyNExfVFUyN185ZUFtVDZsY2xsSkhSQ1lrbWNBWEhDWEVVZC1UZmlic0pmZklTMFRJMFBBRmdBb0ZPYU5IQ1h1?oc=5",
+        "published_at_kst": "2026-04-09T19:00:00+09:00",
+        "source": "mt.co.kr",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMicEFVX3lxTE1TZEFqUTM3SWZkS3lVR0tmcjY0Ukl1X2dFSm85TWswV3hUbGZ2YkszQnI0TF9UVTI3XzllQW1UNmxjbGxKSFJDWWttY0FYSENYRVVkLVRmaWJzSmZmSVMwVEkwUEFGZ0FvRk9hTkhDWHXSAXBBVV95cUxNU2RBalEzN0lmZEt5VUdLZnI2NFJJdV9nRUpvOU1rMFd4VGxmdmJLM0JyNExfVFUyN185ZUFtVDZsY2xsSkhSQ1lrbWNBWEhDWEVVZC1UZmlic0pmZklTMFRJMFBBRmdBb0ZPYU5IQ1h1?oc=5\" target=\"_blank\">3차 석유 최고가격 '동결'… 국민부담 완화·수요관리 초점 - 머니투데이</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">mt.co.kr</font>",
+        "label": "TOP",
+        "reason": "정부의 석유제품 최고가격 '동결' 공식 발표로 국민부담 완화 및 수요관리 정책 방향이 제시되어 에너지 정책·수요관리 관점에서 직접적 영향이 있음"
+      },
+      {
+        "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
+        "title": "‘신안우이 해상풍력’ 사업 위한 금융단 구성 완료... PF금융 약정식 가져 - 쉬핑뉴스넷",
+        "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE16M2tnUkNYbklTRWhsMmpRXzJmZzFvWnpEWV9BVWZmRWJ3WlVvS3lGN3pGcnJnMFQ1bjNBQmFWNG1BVHluU1drS2tweUpockkzZ1RrMTI2RmprOHlPNzdJczJYdXZ3RHJOUVo4VnJETEtqaTA?oc=5",
+        "published_at_kst": "2026-04-09T17:34:19+09:00",
+        "source": "쉬핑뉴스넷",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMic0FVX3lxTE16M2tnUkNYbklTRWhsMmpRXzJmZzFvWnpEWV9BVWZmRWJ3WlVvS3lGN3pGcnJnMFQ1bjNBQmFWNG1BVHluU1drS2tweUpockkzZ1RrMTI2RmprOHlPNzdJczJYdXZ3RHJOUVo4VnJETEtqaTA?oc=5\" target=\"_blank\">‘신안우이 해상풍력’ 사업 위한 금융단 구성 완료... PF금융 약정식 가져</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">쉬핑뉴스넷</font>",
+        "label": "MARKET_SNAPSHOT",
+        "reason": "신안우이 해상풍력의 PF금융 약정은 재생에너지 프로젝트의 금융 조달·투자 동향에 해당하나, 전력요금·제도·계통 운영 등의 직접적 변화가 아니므로 MARKET_SNAPSHOT로 분류됩니다."
+      },
+      {
+        "keyword": "재생에너지 OR 신재생에너지 OR 태양광 OR 풍력",
+        "title": "NKT, 차세대 해저케이블 포설선 ‘NKT Eleonora’ 진수…해상풍력 케이블 시공 역량 확대 - 해사신문",
+        "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE95bUxPSEtieF9fcWIwZmpoQzVwV3k1eG85OVRZbTZfWllUTEgxZWZkWG0yVjRQRThRUWphMGxiLVhtRVpZS2F5V0ctcGRlcHBSeE55ZjdyajFCd3ZhWUwtc2ZFVUdSTE95NEhR?oc=5",
+        "published_at_kst": "2026-04-09T14:11:00+09:00",
+        "source": "해사신문",
+        "summary": "<a href=\"https://news.google.com/rss/articles/CBMia0FVX3lxTE95bUxPSEtieF9fcWIwZmpoQzVwV3k1eG85OVRZbTZfWllUTEgxZWZkWG0yVjRQRThRUWphMGxiLVhtRVpZS2F5V0ctcGRlcHBSeE55ZjdyajFCd3ZhWUwtc2ZFVUdSTE95NEhR?oc=5\" target=\"_blank\">NKT, 차세대 해저케이블 포설선 ‘NKT Eleonora’ 진수…해상풍력 케이블 시공 역량 확대</a>&nbsp;&nbsp;<font color=\"#6f6f6f\">해사신문</font>",
+        "label": "MARKET_SNAPSHOT",
+        "reason": "NKT의 해저케이블 포설선 진수는 해상풍력 인프라(케이블 시공) 공급능력 확대에 따른 업계·시장 동향으로 그리드위즈에 간접적 영향이 있어 MARKET_SNAPSHOT."
       }
     ]
   }
