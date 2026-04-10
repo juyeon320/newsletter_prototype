@@ -755,3 +755,64 @@ body.preview-mode {
 .all-news-item-link a:hover {
     text-decoration: underline;
 }
+
+.news-published-at {
+    margin-top: 4px;
+    font-size: 12px;
+    color: #777;
+    line-height: 1.4;
+}
+
+.all-news-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.all-news-guide {
+    font-size: 13px;
+    color: #666;
+    opacity: 0.8;
+}
+
+.news-category-select {
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 13px;
+    background: #fff;
+    transition: all 0.2s;
+}
+
+/* Gridwiz - Green */
+.news-category-select.gridwiz {
+    background-color: #e8f5e9;
+    border-color: #4ea968;
+    color: #2e7d32;
+}
+
+/* Top - Red */
+.news-category-select.top {
+    background-color: #fdecea;
+    border-color: #e53935;
+    color: #c62828;
+}
+
+/* Market - Yellow */
+.news-category-select.market {
+    background-color: #fff8e1;
+    border-color: #f9a825;
+    color: #8d6e00;
+}
+
+/* 제외 */
+.news-category-select.exclude {
+    background-color: #f5f5f5;
+    color: #777;
+}
+
+.header-logo {
+    height: 28px;
+    object-fit: contain;
+}

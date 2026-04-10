@@ -1,5 +1,5 @@
 #cluster_labeler.py
-from config import OUTPUT_DIR
+from project.config import OUTPUT_DIR
 input_file = f"{OUTPUT_DIR}/representative_news.json"
 output_file = f"{OUTPUT_DIR}/labeled_clusters.json"
 import os

@@ -8,7 +8,9 @@
 </head>
 <body>
     <div class="preview-header">
-        <div class="preview-brand">Gridwiz</div>
+       <div class="brand">
+            <img src="{{ url_for('static', filename='image/logo.png') }}" alt="Gridwiz Logo" class="header-logo">
+        </div>
         <div class="preview-center-title">Newsletter</div>
         <div class="preview-last-time">마지막으로 발송한 시간 : {{ last_run_time }}</div>
     </div>

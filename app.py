@@ -16,6 +16,30 @@ RESULT_PATH = "output/newsletter_result.json"
 pipeline_lock = threading.Lock()
 is_running = False
 
+def normalize_published_at(article: dict) -> str:
+    raw = (
+        article.get("published_at_kst")
+        or article.get("published_at")
+        or article.get("published")
+        or article.get("pub_date")
+        or article.get("published_date")
+        or article.get("date")
+        or ""
+    )
+
+    if not raw:
+        return ""
+
+    # 필드명 문자열 자체가 잘못 들어온 경우 방어
+    if raw in {"published_at_kst", "published_at", "published", "pub_date", "published_date", "date"}:
+        return ""
+
+    try:
+        dt = datetime.fromisoformat(raw.replace("Z", "+00:00"))
+        dt = dt.astimezone(ZoneInfo("Asia/Seoul"))
+        return dt.strftime("%Y.%m.%d %H:%M")
+    except Exception:
+        return str(raw)
 
 def get_last_run_time():
     if os.path.exists(RESULT_PATH):
@@ -27,19 +51,8 @@ def get_last_run_time():
 def get_collection_time_range():
     kst = ZoneInfo("Asia/Seoul")
     now = datetime.now(kst)
-
-    today_1300 = now.replace(hour=13, minute=0, second=0, microsecond=0)
-
-    if now >= today_1300:
-        end_time = today_1300
-    else:
-        end_time = today_1300 - timedelta(days=1)
-
-    # 월요일이면 금요일 13시 ~ 월요일 13시
-    if end_time.weekday() == 0:
-        start_time = end_time - timedelta(days=3)
-    else:
-        start_time = end_time - timedelta(days=1)
+    start_time = now - timedelta(hours=24)
+    end_time = now
 
     return f"{start_time.strftime('%Y.%m.%d %H:%M:%S')} ~ {end_time.strftime('%Y.%m.%d %H:%M:%S')}"
 
@@ -92,7 +105,7 @@ def all_news():
     for idx, article in enumerate(data):
         published_at = (
             article.get("published_at")
-            or article.get("published_at_kst")  # 👈 이거 추가
+            or article.get("published_at_kst")
             or article.get("published")
             or article.get("pub_date")
             or article.get("published_date")
@@ -107,15 +120,13 @@ def all_news():
             "source": article.get("source", ""),
             "category": article.get("label") or article.get("category") or "",
             "summary": article.get("summary", ""),
-            "published_at": published_at
+            "published_at_kst": normalize_published_at(article)
         })
-
     return jsonify({
-        "success": True,
-        "items": items,
-        "time_range": get_collection_time_range()
+            "success": True,
+            "items": items,
+            "time_range": get_collection_time_range()
     })
-
 
 @app.route("/api/summary", methods=["POST"])
 def summarize_news():

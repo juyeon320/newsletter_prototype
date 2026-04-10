@@ -1,20 +1,19 @@
 #news_collector.py
 
-from config import OUTPUT_DIR
-import sys
-sys.stdout.reconfigure(encoding='utf-8')
+from project.config import OUTPUT_DIR
+
 from datetime import datetime
 from typing import List
 
 import feedparser
 
-from config import (
+from project.config import (
     KST,
     STOCK_EXCLUDE_KEYWORDS,
     LOCAL_EXCLUDE_KEYWORDS,
     KEYWORDS,
 )
-from filters import (
+from project.filters import (
     deduplicate_news,
     deduplicate_by_title,
     filter_foreign_news,
@@ -22,8 +21,8 @@ from filters import (
     filter_local_news,
     filter_non_korean_titles,
 )
-from models import NewsItem
-from utils import (
+from project.models import NewsItem
+from project.utils import (
     get_news_window,
     build_google_news_rss_url,
     parse_entry_datetime,

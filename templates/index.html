@@ -12,7 +12,9 @@
 
         <div class="preview-container">
             <div class="preview-header">
-                <div class="preview-brand">Gridwiz</div>
+                <div class="preview-brand">
+                    <img src="{{ url_for('static', filename='image/logo.png') }}" alt="Gridwiz Logo" class="header-logo">
+                </div>
                 <div class="preview-center-title">Newsletter</div>
                 <div class="preview-last-time">마지막으로 발송한 시간 : {{ last_run_time }}</div>
             </div>
@@ -56,7 +58,8 @@
                                 <h2 class="section-title">🍀 <span>Gridwiz News</span></h2>
 
                                 {% for news in gridwiz_news %}
-                                <div class="headline news-item-block"
+                                
+                            <div class="headline news-item-block"
                                 data-news-id="gridwiz-{{ loop.index0 }}"
                                 data-news-group="gridwiz"
                                 data-news-title="{{ news.title }}">
@@ -65,7 +68,10 @@
                                     <a href="{{ news.link }}" target="_blank" class="quick-link">바로가기</a>
                                 {% endif %}
                             </div>
-                            
+
+                            {% if news.published_at_kst %}
+                                
+                            {% endif %}
                             {% if news.summary_points %}
                                 <ul class="news-bullets news-item-summary"
                                     data-news-id="gridwiz-{{ loop.index0 }}"
@@ -93,37 +99,40 @@
 
                                 {% for news in top_news %}
                                 <div class="headline news-item-block"
-                                data-news-id="top-{{ loop.index0 }}"
-                                data-news-group="top"
-                                data-news-title="{{ news.title }}">
-                                <span class="headline-text">{{ news.title }}</span>
-                                {% if news.link %}
-                                    <a href="{{ news.link }}" target="_blank" class="quick-link">바로가기</a>
-                                {% endif %}
-                            </div>
-                            
-                            {% if news.summary_points %}
-                                <ul class="news-bullets news-item-summary"
                                     data-news-id="top-{{ loop.index0 }}"
+                                    data-news-group="top"
                                     data-news-title="{{ news.title }}">
-                                    {% for point in news.summary_points %}
-                                        <li>{{ point }}</li>
-                                    {% endfor %}
-                                </ul>
-                            {% elif news.summary %}
-                                <ul class="news-bullets news-item-summary"
-                                    data-news-id="top-{{ loop.index0 }}"
-                                    data-news-title="{{ news.title }}">
-                                    <li>{{ news.summary }}</li>
-                                </ul>
-                            {% else %}
-                                <ul class="news-bullets news-item-summary"
-                                    data-news-id="top-{{ loop.index0 }}"
-                                    data-news-title="{{ news.title }}">
-                                    <li>{{ news.source }}</li>
-                                </ul>
-                            {% endif %}
+                                    <span class="headline-text">{{ news.title }}</span>
+                                    {% if news.link %}
+                                        <a href="{{ news.link }}" target="_blank" class="quick-link">바로가기</a>
+                                    {% endif %}
+                                </div>
 
+                                {% if news.published_at_kst %}
+                                    
+                                {% endif %}
+
+                                {% if news.summary_points %}
+                                    <ul class="news-bullets news-item-summary"
+                                        data-news-id="top-{{ loop.index0 }}"
+                                        data-news-title="{{ news.title }}">
+                                        {% for point in news.summary_points %}
+                                            <li>{{ point }}</li>
+                                        {% endfor %}
+                                    </ul>
+                                {% elif news.summary %}
+                                    <ul class="news-bullets news-item-summary"
+                                        data-news-id="top-{{ loop.index0 }}"
+                                        data-news-title="{{ news.title }}">
+                                        <li>{{ news.summary }}</li>
+                                    </ul>
+                                {% else %}
+                                    <ul class="news-bullets news-item-summary"
+                                        data-news-id="top-{{ loop.index0 }}"
+                                        data-news-title="{{ news.title }}">
+                                        <li>{{ news.source }}</li>
+                                    </ul>
+                                {% endif %}
                                 {% endfor %}
                             </section>
                         {% endif %}
@@ -141,14 +150,17 @@
                                         <ul class="category-list">
                                             {% for news in items %}
                                             <li class="market-news-item"
-                                            data-news-id="market-{{ category }}-{{ loop.index0 }}"
-                                            data-news-group="market"
-                                            data-news-title="{{ news.title }}">
-                                            <span class="category-item-title">{{ news.title }}</span>
-                                            {% if news.link %}
-                                                <a href="{{ news.link }}" target="_blank" class="quick-link">바로가기</a>
-                                            {% endif %}
-                                        </li>
+                                                data-news-id="market-{{ category }}-{{ loop.index0 }}"
+                                                data-news-group="market"
+                                                data-news-title="{{ news.title }}">
+                                                <span class="category-item-title">{{ news.title }}</span>
+                                                {% if news.link %}
+                                                    <a href="{{ news.link }}" target="_blank" class="quick-link">바로가기</a>
+                                                {% endif %}
+                                                {% if news.published_at_kst %}
+                                                    
+                                                {% endif %}
+                                            </li>
                                             {% endfor %}
                                         </ul>
                                     </div>
@@ -238,6 +250,9 @@
                 <div class="all-news-topbar">
                     <div id="all-news-range-text" class="all-news-range-text">
                         수집 시간 범위 불러오는 중...
+                    </div>
+                    <div class="all-news-guide">
+                        카테고리를 선택해 뉴스레터에 추가하세요
                     </div>
                 </div>
 
@@ -703,6 +718,40 @@ function createSelectionControls() {
         </div>
     `;
 }
+
+function getPublishedAtText(item) {
+    const raw =
+        item.published_at_kst ||
+        item.published_at ||
+        item.published ||
+        item.pub_date ||
+        item.date ||
+        "";
+
+    if (!raw) return "";
+
+    if (["published_at_kst", "published_at", "published", "pub_date", "date"].includes(raw)) {
+        return "";
+    }
+
+    const parsed = new Date(raw);
+
+    if (!isNaN(parsed.getTime())) {
+        return parsed.toLocaleString("ko-KR", {
+            timeZone: "Asia/Seoul",
+            year: "numeric",
+            month: "2-digit",
+            day: "2-digit",
+            hour: "2-digit",
+            minute: "2-digit",
+            hour12: false
+        }).replace(/\./g, ".").replace(/\s$/, "");
+    }
+
+    return String(raw);
+}
+
+
 function renderCollectedNews(items) {
     allNewsList.innerHTML = "";
 
@@ -715,15 +764,8 @@ function renderCollectedNews(items) {
 
     sortedItems.forEach((item, index) => {
         const placementValue = getCurrentPlacement(item.title || "");
-        const publishedAt =
-            item.published_at ||
-            item.published_at_kst ||
-            item.published ||
-            item.pub_date ||
-            item.date ||
-            "";
+        const publishedAt = getPublishedAtText(item);
         const sourceText = ((item.source || "") + " " + (item.category || "")).trim();
-
         const row = document.createElement("div");
         row.className = "all-news-item";
         row.draggable = true;
@@ -731,6 +773,7 @@ function renderCollectedNews(items) {
         row.dataset.newsLink = item.link || "";
         row.dataset.newsSource = item.source || "";
         row.dataset.newsTitle = item.title || "";
+        row.dataset.publishedAt = publishedAt;
         row.dataset.selectionType = "";
         row.dataset.marketCategory = "";
 
@@ -765,10 +808,38 @@ function renderCollectedNews(items) {
             </div>
         `;
 
+        const select = row.querySelector(".news-category-select");
+
+        // 초기 색 적용
+        applySelectColor(select);
+
+        // 변경 시 색 변경
+        select.addEventListener("change", () => {
+            applySelectColor(select);
+        });
+
+
         addDragEvents(row);
         allNewsList.appendChild(row);
     });
 }
+
+function applySelectColor(select) {
+    const value = select.value;
+
+    select.classList.remove("gridwiz", "top", "market", "exclude");
+
+    if (value === "gridwiz") {
+        select.classList.add("gridwiz");
+    } else if (value === "top") {
+        select.classList.add("top");
+    } else if (value.startsWith("market")) {
+        select.classList.add("market");
+    } else if (value === "exclude") {
+        select.classList.add("exclude");
+    }
+}
+
 
 async function createNewsBlock(item) {
     const safeTitle = escapeHtml(item.title || "");
@@ -790,7 +861,6 @@ async function createNewsBlock(item) {
             <li>요약 생성 중...</li>
         </ul>
     `;
-
     // 👉 2. DOM 먼저 반환 (UI 바로 뜸)
     setTimeout(async () => {
         const summaryPoints = await fetchSummary(item.title || "");
@@ -958,6 +1028,7 @@ async function applySelectedNewsToSections(selectedNews) {
                     <span class="category-item-title">${escapeHtml(item.title || "")}</span>
                     ${(item.link || item.newsLink) ? `<a href="${escapeHtml(item.link || item.newsLink)}" target="_blank" class="quick-link">바로가기</a>` : ""}
                 </div>
+                
             `;
 
             if (list.firstChild) {
@@ -1120,15 +1191,16 @@ allNewsApplyBtn.addEventListener("click", async () => {
         } else {
             category = rawValue;
         }
-
         return {
             newsId: row.dataset.newsId,
             category,
             marketCategory,
             title: row.querySelector(".all-news-item-title")?.innerText || "",
             link: row.dataset.newsLink || "",
-            source: row.dataset.newsSource || ""
+            source: row.dataset.newsSource || "",
+            published_at_kst: row.dataset.publishedAt || ""
         };
+        
     });
 
     // 1. 제외 선택한 기사 제거

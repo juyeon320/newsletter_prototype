@@ -13,14 +13,7 @@ from models import NewsItem
 
 def get_news_window(now: datetime) -> tuple[datetime, datetime]:
     now = now.astimezone(KST)
-
-    if now.weekday() == 0:  # Monday
-        friday = now - timedelta(days=3)
-        start = friday.replace(hour=15, minute=0, second=0, microsecond=0)
-    else:
-        yesterday = now - timedelta(days=1)
-        start = yesterday.replace(hour=9, minute=0, second=0, microsecond=0)
-
+    start = now - timedelta(hours=24)
     end = now
     return start, end
 
